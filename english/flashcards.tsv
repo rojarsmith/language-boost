@@ -1,0 +1,68 @@
+Front	Back	Tag
+What is EDT HMI Studio?	It is a no-code development environment for embedded touch interfaces.	pitch
+What are the five workflow steps?	Design, Logic, Connect, Validate, and Deploy.	pitch
+What is the main business value?	Fewer handoffs, earlier integration feedback, and a more repeatable path to hardware.	pitch
+What is the key product difference?	The Emulator compiles and runs the generated C with real LVGL.	pitch
+What does supported hardware mean?	Only board profiles and feature combinations implemented and validated in the current release scope.	facts
+How many current palette components are there?	25 in the 2026-08-23 source snapshot.	facts
+Which three boards are modeled?	STM32F746G-DISCO, STM32H747I-DISCO, and EDT EVK043027B.	facts
+Which serial protocol paths are implemented?	Modbus RTU and configurable serial commands.	facts
+Is CAN a current production path?	No. It is modeled and researched, but not a current production runtime path.	facts
+Is Ethernet a current production path?	No. The H747 hardware has Ethernet, but the current build has no TCP/IP stack.	facts
+Can every board play video?	No. The current video path requires H747-class JPEG hardware, SD storage, and enough memory.	facts
+What is a tag?	A named value shared by the UI, logic, communication runtime, and Emulator.	technical
+What does scale and offset mean?	Engineering value equals raw value times scale plus offset.	technical
+Can several widgets share one tag?	Yes. The tag is polled once and its value is fanned out to all bindings.	technical
+What is a panel-memory tag?	A named value stored inside the HMI with no external device address.	technical
+What does the Monitor show?	Direction, bytes, device, tag meaning, values, timeouts, refusals, and invalid frames.	technical
+Prototype	An instant Canvas 2D approximation made by the editor.	preview
+Simulator	Real LVGL rendering from UI JSON, without generated application code.	preview
+Emulator	Generated C running with real LVGL, events, logic, and the HMI runtime.	preview
+Deploy	Build the target firmware and flash supported hardware.	preview
+Does the Emulator replace hardware testing?	No. It cannot prove memory, timing, touch, or the physical bus.	qa
+Is it really no-code?	For supported workflows, yes; advanced custom C remains available in Factory Dev Mode.	qa
+Does it replace embedded engineers?	No. It moves common HMI work into a visual workflow and leaves special integration to engineers.	qa
+What problem does it solve?	Fragmented HMI development and late integration feedback.	qa
+What makes it different from GUI editors?	Continuity across design, logic, tags, protocol testing, generated-code emulation, and deployment.	qa
+Who is the ideal customer?	An embedded product or industrial equipment team building a touch interface on a supported path.	qa
+What is the ROI?	Measure time to first screen, handoffs, protocol-debug time, and time to validated firmware in a pilot.	qa
+Is the product ready now?	Use the approved launch statement; the source snapshot is active pre-launch development with implemented core workflows.	qa
+When will it launch?	Do not guess. Use the approved date or promise a confirmed written follow-up.	commercial
+What is the price?	I do not want to give an unofficial number. I will confirm the approved model and follow up.	commercial
+What is the license?	The repository statement is not a complete legal grant; provide the approved product license.	commercial
+Can we offer exclusivity?	Only through an approved written territory, term, performance commitment, and review clause.	commercial
+What is the distributor margin?	It is not defined in the product source; provide the approved channel terms.	commercial
+Who owns global accounts?	The company must define account ownership and local opportunity credit in writing.	commercial
+Who handles support?	The SLA and L1/L2/L3 ownership require an approved partner support model.	commercial
+Can customers add a board?	Yes as an engineering integration, not as only a JSON change.	technical
+What does a new board require?	Display, touch, memory, build, flash, connectors, optional peripherals, and hardware validation.	technical
+Which LVGL version is primary?	Firmware and Emulator target LVGL 9.5; prebuilt Simulator artifacts remain 9.2.	technical
+What code files are generated?	ui.c/h, ui_events.c/h, and ui_logic.c/h, plus communication and display configuration.	technical
+Can the panel be a Modbus server?	Yes. In responder role, the tag table becomes the register map.	technical
+Can the panel be a Modbus client?	Yes. In initiator role, it polls device tags and queues writes.	technical
+How do serial commands work?	Device-level templates plus a tag name, optional tag-specific commands, and reply locators.	technical
+Can the command panel send touch events?	Yes on the current responder path, through a configured event-line template.	technical
+Is binary custom protocol supported?	Not as a general current feature; the implemented command path is line-oriented.	technical
+How are CJK fonts kept small?	The build collects used glyphs per font and size and converts only the required set.	technical
+What languages are in the Coffee demo?	English, Traditional Chinese, and Japanese.	demo
+How many logic graphs are in the Coffee demo?	Zero; it uses direct event bindings, so Logic must be demonstrated separately.	demo
+How many screens are in the Coffee demo?	Four: Home, Drinks, Brewing, and Settings.	demo
+What should a POC fix first?	One target board, one protocol and role, one bounded UI, and explicit acceptance tests.	poc
+What four qualification questions matter most?	Which board, which protocol, who starts communication, and what must the POC prove?	poc
+How do I ask someone to repeat?	Sorry, could you say that once more, a little more slowly?	survival
+How do I confirm a question?	If I understand correctly, you are asking about [topic]. Is that right?	survival
+How do I split a large question?	There are two parts to that question. Let me take the technical part first.	survival
+How do I answer an unknown commercial question?	I do not want to give an unofficial answer. I will confirm [item] with [owner] by [date].	survival
+How do I return after an interruption?	Let me return to the key point.	survival
+How do I handle a failed demo?	Acknowledge it, use prepared evidence, capture logs, reproduce it, and send the verified root cause.	survival
+How do I close the meeting?	Summarize the use case, owners, open questions, next actions, and dates.	survival
+embedded	Built into a product rather than used as a general-purpose computer.	vocabulary
+firmware	Software that runs on the target hardware.	vocabulary
+protocol	Rules that define the meaning of communication.	vocabulary
+distributor	A partner that sells and supports products in a market.	vocabulary
+subsidiary	A company controlled by a parent company.	vocabulary
+proof of concept	A bounded project that proves a defined use case.	vocabulary
+acceptance criteria	The tests that decide whether a POC succeeded.	vocabulary
+roadmap	Planned future product work, not a current promise.	vocabulary
+SLA	A written service-level commitment.	vocabulary
+NRE	A one-time fee for custom engineering.	vocabulary
