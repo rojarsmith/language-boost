@@ -1,0 +1,84 @@
+id	stage	intent_zh	japanese	reading_kana	keywords	caution	source_doc	tags
+F001	survival	感謝對方撥空	本日はお時間をいただき、ありがとうございます。	ほんじつ は / おじかん を いただき、/ ありがとうございます。//	本日,時間,感謝	開場微笑後停一拍	02_SURVIVAL_JAPANESE.md	survival,greeting
+F002	survival	自我介紹姓名與職責	EDTの王と申します。海外事業を担当しております。	イー・ディー・ティー の / おう と もうします。/ かいがい じぎょう を たんとう して おります。//	申します,担当	替換真實姓名與職責	02_SURVIVAL_JAPANESE.md	survival,introduction
+F003	survival	說明會議順序	最初に製品をご紹介し、その後、デモと質疑応答を行います。	さいしょ に せいひん を ごしょうかい し、/ そのご、/ デモ と しつぎ おうとう を おこないます。//	最初,その後,質疑応答	先講順序再開始	02_SURVIVAL_JAPANESE.md	survival,agenda
+F004	survival	邀請隨時提問	ご質問があれば、いつでもお知らせください。	ごしつもん が あれば、/ いつでも おしらせ ください。//	質問,いつでも	說完後看向聽眾	02_SURVIVAL_JAPANESE.md	survival,questions
+F005	survival	請對方重說	申し訳ありません。もう一度お願いできますか。	もうしわけ ありません。/ もう いちど / おねがい できます か。//	もう一度,お願いします	不要假裝聽懂	23_LISTENING_REPAIR_AND_VARIANTS.md	survival,listening,repair
+F006	survival	請對方放慢	もう一度、少しゆっくりお願いできますか。	もう いちど、/ すこし ゆっくり / おねがい できます か。//	ゆっくり,もう一度	語氣平穩即可	23_LISTENING_REPAIR_AND_VARIANTS.md	survival,listening,slow
+F007	survival	只重說最後一段	恐れ入りますが、最後の部分をもう一度お願いできますか。	おそれいります が、/ さいご の ぶぶん を / もう いちど おねがい できます か。//	最後,部分	已懂前段時不要要求全題重來	23_LISTENING_REPAIR_AND_VARIANTS.md	survival,listening,repair
+F008	survival	確認問題主題	ご質問は、価格について、という理解でよろしいでしょうか。	ごしつもん は、/ かかく に ついて、/ と いう りかい で よろしい でしょう か。//	質問,理解,価格	把價格替換成實際主題	02_SURVIVAL_JAPANESE.md	survival,clarify
+F009	survival	把多段問題拆開	二つに分けてお答えします。	ふたつ に わけて / おこたえ します。//	二つ,分ける	先重述兩個主題	02_SURVIVAL_JAPANESE.md	survival,structure
+F010	survival	爭取幾秒思考	少し考える時間をいただけますか。	すこし かんがえる じかん を / いただけます か。//	考える,時間	不要用很長的填充音	02_SURVIVAL_JAPANESE.md	survival,thinking
+F011	survival	查看手邊資料	正確にお答えするため、手元の資料を確認します。	せいかく に おこたえ する ため、/ てもと の しりょう を かくにん します。//	正確,資料,確認	只查看已核對資料	02_SURVIVAL_JAPANESE.md	survival,accuracy
+F012	survival	先說結論	結論から申し上げます。	けつろん から / もうしあげます。//	結論,申し上げる	後面立刻接直接答案	02_SURVIVAL_JAPANESE.md	survival,direct
+F013	survival	限定現行範圍	現時点で確認できる範囲をご説明します。	げんじてん で / かくにん できる はんい を / ごせつめい します。//	現時点,範囲	避免把未來功能混進來	02_SURVIVAL_JAPANESE.md	survival,scope
+F014	survival	區分未來與現在	計画にはありますが、現在の提供機能ではありません。	けいかく に は あります が、/ げんざい の ていきょう きのう では / ありません。//	計画,現在	roadmap不等於承諾	02_SURVIVAL_JAPANESE.md	survival,future,boundary
+F015	survival	不知道時不猜	現時点では正確にお答えできません。	げんじてん では / せいかく に おこたえ できません。//	正確,回答	不能只停在不知道；接下一張	02_SURVIVAL_JAPANESE.md	survival,unknown
+F016	survival	承諾確認與日期	担当チームに確認し、九月五日までに回答いたします。	たんとう チーム に かくにん し、/ くがつ いつか まで に / かいとう いたします。//	担当,確認,日付	日期必須換成真實可做到的日期	02_SURVIVAL_JAPANESE.md	survival,followup
+F017	survival	回答後接回主線	では、先ほどの要点に戻ります。	では、/ さきほど の ようてん に / もどります。//	要点,戻る	先完整回答再接回	02_SURVIVAL_JAPANESE.md	survival,transition
+F018	survival	Demo失敗時控場	現在の画面では確認できないため、確認済みの資料に切り替えます。	げんざい の がめん では / かくにん できない ため、/ かくにんずみ の しりょう に / きりかえます。//	確認済み,切り替える	承認失敗，不找藉口	02_SURVIVAL_JAPANESE.md	survival,demo,recovery
+F019	pitch	一句產品定位	EDT HMI Studioは、組み込みHMI向けのビジュアル開発環境です。	イー・ディー・ティー エイチ・エム・アイ スタジオ は、/ くみこみ エイチ・エム・アイ むけ の / ビジュアル かいはつ かんきょう です。//	組み込みHMI,開発環境	不要擴大成任何需求都免程式	03_PITCH_30_SECONDS.md	pitch,positioning
+F020	pitch	說明整合流程	画面設計、ロジック、機器通信、検証、展開までを、一つのプロジェクトでつなぎます。	がめん せっけい、ロジック、きき つうしん、けんしょう、てんかい まで を、/ ひとつ の プロジェクト で つなぎます。//	画面設計,通信,検証,展開	這是流程連結，不是所有硬體保證	03_PITCH_30_SECONDS.md	pitch,workflow
+F021	pitch	描述工程分散問題	組み込みHMI開発は、複数の工程やツールに分かれがちです。	くみこみ エイチ・エム・アイ かいはつ は、/ ふくすう の こうてい や ツール に / わかれがち です。//	工程,ツール,分断	不要自行加成本百分比	04_PITCH_2_MINUTES.md	pitch,problem
+F022	pitch	說明同一專案價值	同じプロジェクトで作業をつなぐことで、受け渡しを減らし、問題を早く見つけやすくします。	おなじ プロジェクト で さぎょう を つなぐ こと で、/ うけわたし を へらし、/ もんだい を はやく みつけやすく します。//	受け渡し,早期発見	說容易做到，不保證量化成果	04_PITCH_2_MINUTES.md	pitch,value,qualify
+F023	pitch	五步驟之一設計	まず、画面を設計します。	まず、/ がめん を せっけい します。//	まず,画面,設計	設計的促音要留一拍	04_PITCH_2_MINUTES.md	pitch,five_steps,design
+F024	pitch	五步驟之二邏輯	次に、動作とロジックを定義します。	つぎ に、/ どうさ と ロジック を / ていぎ します。//	次に,動作,ロジック	一句只講一個步驟	04_PITCH_2_MINUTES.md	pitch,five_steps,logic
+F025	pitch	五步驟之三連接	そして、機器通信とタグを設定します。	そして、/ きき つうしん と タグ を / せってい します。//	通信,タグ,設定	不要省略設定的促音	04_PITCH_2_MINUTES.md	pitch,five_steps,connect
+F026	pitch	五步驟之四驗證	生成したアプリケーションをEmulatorで確認します。	せいせい した アプリケーション を / エミュレーター で かくにん します。//	生成,Emulator,確認	Emulator不是實機證明	04_PITCH_2_MINUTES.md	pitch,five_steps,validate
+F027	pitch	五步驟之五展開	最後に、対応ハードウェア向けにビルドして展開します。	さいご に、/ たいおう ハードウェア むけ に / ビルド して てんかい します。//	最後,対応,展開	一定保留対応ハードウェア	04_PITCH_2_MINUTES.md	pitch,five_steps,deploy
+F028	pitch	安全描述no-code	対応ボードと標準機能の範囲では、アプリケーションコードを手で書かずに開発できます。	たいおう ボード と ひょうじゅん きのう の はんい では、/ アプリケーション コード を て で かかず に / かいはつ できます。//	対応範囲,標準機能,no-code	不能說任何需求都零程式碼	00_PRODUCT_TRUTH.md	pitch,no_code,boundary
+F029	pitch	說明Emulator差異	Emulatorでは、今回生成したCコードを実際のLVGLと一緒にコンパイルします。	エミュレーター では、/ こんかい せいせい した シー コード を / じっさい の エル・ブイ・ジー・エル と いっしょ に / コンパイル します。//	生成C,LVGL,コンパイル	只證明生成碼與模擬環境	00_PRODUCT_TRUTH.md	pitch,emulator,evidence
+F030	pitch	說明Emulator限制	実機のメモリ、タイミング、表示、通信品質は、実機での確認が必要です。	じっき の メモリ、タイミング、ひょうじ、つうしん ひんしつ は、/ じっき で の かくにん が ひつよう です。//	実機,確認,限界	不可把Emulator等同量產	00_PRODUCT_TRUTH.md	pitch,emulator,boundary
+F031	pitch	元件數量快照	二〇二六年九月三日のソースでは、二十五種類のコンポーネントがあります。	にせん にじゅうろくねん / くがつ みっか の ソース では、/ にじゅうご しゅるい の コンポーネント が あります。//	25種類,スナップショット	數量必須連同日期	00_PRODUCT_TRUTH.md	pitch,components,snapshot
+F032	pitch	目前三個板卡profile	現在は三つのボードプロファイルがあります。利用可能な機能はボードごとに異なります。	げんざい は / みっつ の ボード プロファイル が あります。/ りよう かのう な きのう は / ボード ごと に ことなります。//	三つ,ボード,異なる	不代表三板功能相同	00_PRODUCT_TRUTH.md	pitch,boards,boundary
+F033	pitch	目前主要通訊	主要なシリアル経路では、Modbus RTUと設定可能なシリアルコマンドを用意しています。	しゅよう な シリアル けいろ では、/ モドバス アール・ティー・ユー と / せってい かのう な シリアル コマンド を / ようい して います。//	Modbus RTU,serial commands	需限定connector與已驗證構成	00_PRODUCT_TRUTH.md	pitch,protocol,current
+F034	qa	回答經營價值	工程間の分断を小さくし、統合上の問題を早い段階で見つけやすくします。	こうていかん の ぶんだん を ちいさく し、/ とうごうじょう の もんだい を / はやい だんかい で みつけやすく します。//	分断,統合,早期	不加未量測百分比	08_EXECUTIVE_QA.md	qa,executive,value
+F035	qa	沒有通用ROI時	共通の承認済みROI数値はありません。実案件で現行方法と比較することをご提案します。	きょうつう の しょうにんずみ アール・オー・アイ すうち は / ありません。/ じつあんけん で げんこう ほうほう と / ひかく する こと を ごていあん します。//	ROI,比較,実案件	[CONFIRM] 不猜數字	08_EXECUTIVE_QA.md	qa,roi,confirm
+F036	qa	說明首波目標客戶	現在の対応構成に近いボードとシリアル通信を使う組み込みHMI案件が、最初の候補です。	げんざい の たいおう こうせい に ちかい ボード と / シリアル つうしん を つかう / くみこみ エイチ・エム・アイ あんけん が、/ さいしょ の こうほ です。//	対応構成,候補	先做適合性確認	09_CHANNEL_PARTNER_QA.md	qa,channel,target
+F037	qa	避免無證據競品比較	同一条件の比較結果がないため、優位性を断定しません。	どういつ じょうけん の ひかく けっか が ない ため、/ ゆういせい を だんてい しません。//	比較,優位性,断定	[CONFIRM] 不貶低競爭者	08_EXECUTIVE_QA.md	qa,competition,confirm
+F038	qa	回答正式出貨狀態	提供時期と正式な出荷条件は、確認が必要です。	ていきょう じき と / せいしき な しゅっか じょうけん は、/ かくにん が ひつよう です。//	提供時期,出荷条件	[CONFIRM] 開發版不等於GA	08_EXECUTIVE_QA.md	qa,release,confirm
+F039	qa	回答價格與授權	価格とライセンスは、担当部門に確認して文書で回答いたします。	かかく と ライセンス は、/ たんとう ぶもん に かくにん して / ぶんしょ で かいとう いたします。//	価格,ライセンス,文書	[CONFIRM] 加真實回覆日期	08_EXECUTIVE_QA.md	qa,commercial,confirm
+F040	qa	回答新板卡	新しいボードには、表示、タッチ、メモリー、ビルド、通信の統合と実機検証が必要です。	あたらしい ボード に は、/ ひょうじ、タッチ、メモリー、ビルド、つうしん の / とうごう と じっき けんしょう が ひつよう です。//	新規ボード,統合,実機	不要先承諾工期	10_TECHNICAL_QA.md	qa,board,qualify
+F041	qa	回答通路毛利	承認済みのチャネルマージンは、この場では申し上げられません。	しょうにんずみ の チャネル マージン は、/ この ば では もうしあげられません。//	マージン,承認	[CONFIRM] 接owner與date	09_CHANNEL_PARTNER_QA.md	qa,channel,margin,confirm
+F042	qa	回答區域獨家	独占条件は文書で定義すべき事項です。この場ではお約束できません。	どくせん じょうけん は / ぶんしょ で ていぎ すべき じこう です。/ この ば では おやくそく できません。//	独占,文書,約束	[CONFIRM] 不口頭答應	09_CHANNEL_PARTNER_QA.md	qa,channel,exclusivity,confirm
+F043	qa	回答支援責任	責任範囲、応答時間、SLAは、正式に合意する必要があります。	せきにん はんい、おうとう じかん、エス・エル・エー は、/ せいしき に ごうい する ひつよう が あります。//	責任範囲,SLA	[CONFIRM] 不承諾無限支援	09_CHANNEL_PARTNER_QA.md	qa,support,confirm
+F044	qa	回答CAN現況	CANは現在、接続層とループバック確認の段階です。	キャン は げんざい、/ せつぞく そう と ループバック かくにん の / だんかい です。//	CAN,接続層,loopback	不能說tag到畫面已完成	00_PRODUCT_TRUTH.md	qa,technical,can
+F045	qa	回答Ethernet現況	Ethernetは現在の製品経路では利用できません。	イーサネット は / げんざい の せいひん けいろ では / りよう できません。//	Ethernet,現在	H747有PHY不等於有TCP/IP stack	10_TECHNICAL_QA.md	qa,technical,ethernet
+F046	qa	回答Video範圍	動画対応はボード固有で、現在はH747向けのMotion JPEG AVI再生経路に限定されます。	どうが たいおう は ボード こゆう で、/ げんざい は エイチ なな よん なな むけ の / モーション ジェイペグ エーブイアイ さいせい けいろ に / げんてい されます。//	動画,H747,MJPEG AVI	不能說三板都支援	00_PRODUCT_TRUTH.md	qa,technical,video
+F047	qa	回答安全性	正式なセキュリティ方針は、このソースだけでは確定できません。	せいしき な セキュリティ ほうしん は、/ この ソース だけ では かくてい できません。//	security,方針	[CONFIRM] 另取正式資安答案	10_TECHNICAL_QA.md	qa,security,confirm
+F048	qa	回答AI範圍	AIアシスタントは任意機能で、成果はエンジニアが確認します。	エーアイ アシスタント は にんい きのう で、/ せいか は エンジニア が かくにん します。//	AI,任意,確認	不可宣稱自主交付或品質保證	00_PRODUCT_TRUTH.md	qa,ai,boundary
+F049	qa	回答不知道的板級細節	ボードレベルの詳細は推測ではお答えできませんので、担当チームに確認します。	ボード レベル の しょうさい は / すいそく では おこたえ できません ので、/ たんとう チーム に かくにん します。//	推測,担当チーム	加具體日期	10_TECHNICAL_QA.md	qa,unknown,technical
+F050	qa	提出最小下一步	対象ユースケース、ボード、通信方式を一つずつ選び、成功条件について合意します。	たいしょう ユース ケース、ボード、つうしん ほうしき を / ひとつずつ えらび、/ せいこう じょうけん に ついて ごうい します。//	use case,board,protocol	不要一開始擴大範圍	08_EXECUTIVE_QA.md	qa,next_step
+F051	qa	探索決策角色	技術評価、商務判断、最終承認は、それぞれどなたが担当されますか。	ぎじゅつ ひょうか、しょうむ はんだん、さいしゅう しょうにん は、/ それぞれ どなた が たんとう されます か。//	技術評価,商務,承認	記錄姓名與時程	12_DISCOVERY_QUESTIONS.md	qa,discovery,stakeholder
+F052	meeting	正式稱呼社長	田中社長、本日はお目にかかれて光栄です。	たなか しゃちょう、/ ほんじつ は おめ に かかれて / こうえい です。//	社長,お目にかかる	不用社長様	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md	meeting,title,greeting
+F053	meeting	不確定職稱時稱呼	鈴木様、本日はありがとうございます。	すずき さま、/ ほんじつ は ありがとうございます。//	様,本日	先確認姓名讀音	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md	meeting,title
+F054	meeting	取得議程同意	この進め方でよろしいでしょうか。	この すすめかた で / よろしい でしょう か。//	進め方,よろしい	說完停下等回答	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md	meeting,agenda
+F055	meeting	先問對方重點	特に確認されたい点がございましたら、先にお聞かせください。	とくに かくにん されたい てん が ございましたら、/ さき に おきかせ ください。//	確認点,先に	用答案調整簡報	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md	meeting,discovery
+F056	meeting	從簡報轉Demo	ここから、操作の流れをデモでご紹介します。	ここ から、/ そうさ の ながれ を / デモ で ごしょうかい します。//	操作,流れ,Demo	不要邊操作邊講長句	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md	meeting,transition,demo
+F057	meeting	確認技術或商務面	技術面についてでしょうか。それとも商務面についてでしょうか。	ぎじゅつめん に ついて でしょう か。/ それとも しょうむめん に ついて でしょう か。//	技術面,商務面	先分流再答	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md	meeting,clarify
+F058	meeting	將技術細節交棒	製品全体については私がお答えし、技術の詳細は佐藤から補足いたします。	せいひん ぜんたい に ついて は / わたし が おこたえ し、/ ぎじゅつ の しょうさい は / さとう から ほそく いたします。//	全体,詳細,補足	對外提自己同事通常不加さん	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md	meeting,handoff
+F059	meeting	確認會議三點	本日の内容を、三点確認させてください。	ほんじつ の ないよう を、/ さんてん かくにん させて ください。//	三点,確認	逐一念owner、action、date	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md	meeting,summary
+F060	meeting	校正共識	私の理解に相違があれば、ご指摘ください。	わたし の りかい に / そうい が あれば、/ ごしてき ください。//	理解,相違,指摘	不要只問大丈夫ですか	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md	meeting,alignment
+F061	meeting	承諾會後紀錄	本日中に議事メモをお送りします。	ほんじつちゅう に / ぎじ メモ を おおくり します。//	本日中,議事メモ	必須真的寄出	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md	meeting,followup
+F062	dining	感謝餐敘邀請	本日はお招きいただき、ありがとうございます。	ほんじつ は / おまねき いただき、/ ありがとうございます。//	お招き,感謝	抵達時使用	24_DINING_SMALL_TALK.md	dining,greeting
+F063	dining	不確定座位	どちらに座ればよろしいでしょうか。	どちら に すわれば / よろしい でしょう か。//	座る,どちら	跟隨主人指示，不搶上座	24_DINING_SMALL_TALK.md	dining,seating
+F064	dining	簡短乾杯	皆様のご健勝を願って、乾杯。	みなさま の ごけんしょう を ねがって、/ かんぱい。//	健勝,乾杯	由主人或受邀者起頭	24_DINING_SMALL_TALK.md	dining,kanpai
+F065	dining	自然拒酒	体質的にお酒が飲めませんので、ノンアルコールで乾杯させてください。	たいしつてき に おさけ が のめません ので、/ ノンアルコール で かんぱい させて ください。//	体質,ノンアルコール	明確拒絕並給替代品	24_DINING_SMALL_TALK.md	dining,alcohol,refusal
+F066	dining	說明嚴重過敏	重度の甲殻類アレルギーがあります。エキスやだしも避ける必要があります。	じゅうど の こうかくるい アレルギー が あります。/ エキス や だし も / さける ひつよう が あります。//	甲殻類,アレルギー,だし	嚴重過敏不要只說苦手	24_DINING_SMALL_TALK.md	dining,allergy,safety
+F067	dining	稱讚具體料理	とてもおいしいです。特にこのソースが印象的です。	とても おいしい です。/ とくに この ソース が / いんしょうてき です。//	おいしい,印象的	具體比只說好吃自然	24_DINING_SMALL_TALK.md	dining,food
+F068	dining	安全詢問旅程	今回はいつまでこちらに滞在されますか。	こんかい は / いつ まで こちら に / たいざい されます か。//	今回,滞在	對方不想細答就換話題	24_DINING_SMALL_TALK.md	dining,small_talk,travel
+F069	dining	接住關鍵字追問	そうなんですね。特にどの点が印象に残りましたか。	そう なん です ね。/ とくに どの てん が / いんしょう に のこりました か。//	そうなんですね,印象	一次只追問一題	24_DINING_SMALL_TALK.md	dining,followup
+F070	dining	表達理解但不同意	お話は理解しましたが、合意については社内確認が必要です。	おはなし は りかい しました が、/ ごうい に ついて は / しゃない かくにん が ひつよう です。//	理解,合意,社内確認	[CONFIRM] はい不等於同意	24_DINING_SMALL_TALK.md	dining,aizuchi,confirm
+F071	dining	避開敏感話題	その点には詳しくないため、軽々しく意見を申し上げないようにしています。	その てん に は くわしく ない ため、/ かるがるしく いけん を もうしあげない よう に / して います。//	詳しくない,意見	再接一個安全話題	24_DINING_SMALL_TALK.md	dining,taboo,redirect
+F072	dining	不確定付款安排	お支払いは、どのようにいたしましょうか。	おしはらい は、/ どのよう に いたしましょう か。//	支払い	[CONFIRM] 遵守雙方招待政策	24_DINING_SMALL_TALK.md	dining,payment,confirm
+F073	dining	婉拒二次會	お誘いありがとうございます。明日の準備がございますので、今夜はここで失礼いたします。	おさそい ありがとうございます。/ あした の じゅんび が ございます ので、/ こんや は ここ で しつれい いたします。//	お誘い,準備,失礼	致謝後清楚離開	24_DINING_SMALL_TALK.md	dining,second_venue,farewell
+F074	pronunciation	練習組み込み節拍	組み込みHMI	く・み・こ・み / エイチ・エム・アイ	組み込み,mora	每個假名一拍，不念成中文四字音	13_PRONUNCIATION.md	pronunciation,mora
+F075	pronunciation	練習設計的促音與長音	設計	せっ・けい	設計,促音,長音	小っ停一拍；けい保留兩拍	13_PRONUNCIATION.md	pronunciation,sokuon,long_vowel
+F076	pronunciation	練習實機的促音	実機	じっ・き	実機,促音	じ後的小っ不可省略	13_PRONUNCIATION.md	pronunciation,sokuon
+F077	pronunciation	練習驗證的拗音與長音	検証	けん・しょう	検証,拗音,長音	しょう不是し・よ・う三個分離音	13_PRONUNCIATION.md	pronunciation,youon,long_vowel
+F078	pronunciation	練習通信的長音	通信	つう・しん	通信,長音,撥音	つう兩拍；末尾ん也一拍	13_PRONUNCIATION.md	pronunciation,long_vowel,n
+F079	pronunciation	練習評價的拗音	評価	ひょう・か	評価,拗音,長音	ひょう維持節拍，不念成中文音	13_PRONUNCIATION.md	pronunciation,youon,long_vowel
+F080	pronunciation	練習確認的撥音	確認	かく・にん	確認,撥音	末尾ん要留一拍	13_PRONUNCIATION.md	pronunciation,n
+F081	pronunciation	練習四十五分鐘	四十五分	よん・じゅう・ご・ふん	数字,分	使用ふん，不是ぷん	13_PRONUNCIATION.md	pronunciation,number,time
+F082	pronunciation	練習九月五日	九月五日	く・がつ / いつ・か	日付,特殊読音	五日念いつか，不念ごにち	13_PRONUNCIATION.md	pronunciation,date
+F083	pronunciation	練習LVGL逐字母	LVGL	エル・ブイ・ジー・エル	LVGL,略語	逐字母、等速，前後短停頓	13_PRONUNCIATION.md	pronunciation,acronym

@@ -1,0 +1,101 @@
+{"kind":"deck","id":"pr/dhoswr","name":"Deck"}
+{"kind":"layout","layoutId":"ab0d3510-2cf1-4d15-847f-7e607767b384","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"b723e5a9-0bfd-431b-a2d8-25d6cdaf966b","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/hcywq1","slide":1,"title":"EDT HMI Studio","textShapes":4}
+{"kind":"textbox","id":"sh/fep47m5w","slide":1,"name":"cover-eyebrow","text":"EDT HMI Studio","textPreview":"EDT HMI Studio","textChars":14,"textLines":1,"bbox":[56,48,500,54]}
+{"kind":"textbox","id":"sh/gfy50r6h","slide":1,"name":"cover-title","text":"組み込みHMI開発を、\n一つの流れに。","textPreview":"組み込みHMI開発を、 | 一つの流れに。","textChars":19,"textLines":2,"bbox":[56,154,590,220]}
+{"kind":"textbox","id":"sh/hg7m9wn2","slide":1,"name":"cover-subtitle","text":"設計・通信・検証・展開を\n同じプロジェクトでつなぐ","textPreview":"設計・通信・検証・展開を | 同じプロジェクトでつなぐ","textChars":25,"textLines":2,"bbox":[56,414,520,112]}
+{"kind":"textbox","id":"sh/2hgn21on","slide":1,"name":"cover-footer","text":"Executive Briefing  |  2026.09","textPreview":"Executive Briefing  |  2026.09","textChars":30,"textLines":1,"bbox":[56,650,420,28]}
+{"kind":"image","id":"im/qd8nq1wb","slide":1,"name":"","alt":"Colorful illustration of an embedded HMI screen and connected workflow","bbox":[672,64,550,566]}
+{"kind":"notes","id":"nt/hcywq1","slide":1,"text":"本日は貴重なお時間をいただき、ありがとうございます。EDT HMI Studioは、組み込みHMIの設計、通信、検証、展開を、一つのプロジェクトでつなぐビジュアル開発環境です。\n\n[Sources]\n- Local: edt-hmi-studio/README.zh-TW.md (positioning and workflow)\n- Asset: japanese/assets/hero-vivid.png; original edt-hmi-studio/docs/marketing/generator/hero-vivid.png"}
+{"kind":"slide","id":"sl/3d05x2","slide":2,"title":"問題は、機能不足より工程の分断","textShapes":5}
+{"kind":"textbox","id":"sh/876d0ryp","slide":2,"name":"slide-2-title","text":"問題は、機能不足より工程の分断","textPreview":"問題は、機能不足より工程の分断","textChars":15,"textLines":1,"bbox":[56,40,1080,78]}
+{"kind":"textbox","id":"sh/76xw76h4","slide":2,"name":"slide-2-number","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1170,48,54,36]}
+{"kind":"shape","id":"sh/m5ovy1gj","slide":2,"name":"slide-2-rule","bbox":[56,126,1168,2]}
+{"kind":"textbox","id":"sh/hwzexgz6","slide":2,"name":"problem-statement","text":"画面\nロジック\n通信\nファームウェア","textPreview":"画面 | ロジック | 通信 | ファームウェア","textChars":18,"textLines":4,"bbox":[68,176,430,388]}
+{"kind":"shape","id":"sh/wvqd4by1","slide":2,"name":"problem-accent","bbox":[548,178,8,380]}
+{"kind":"textbox","id":"sh/vuxwv6hg","slide":2,"name":"problem-consequence","text":"別々の担当者とツール\n\n受け渡しが増える\n\n統合上の問題が\n実機段階まで見えにくい","textPreview":"別々の担当者とツール |  | 受け渡しが増える |  | 統合上の問題が | 実機段階まで見えにくい","textChars":41,"textLines":6,"bbox":[620,188,540,350]}
+{"kind":"textbox","id":"sh/u9ov21gv","slide":2,"name":"problem-footer","text":"解決したいのは、工程間の分断です。","textPreview":"解決したいのは、工程間の分断です。","textChars":17,"textLines":1,"bbox":[620,572,540,48]}
+{"kind":"notes","id":"nt/3d05x2","slide":2,"text":"画面、ロジック、通信、ファームウェアが別々になると、受け渡しが増えます。統合上の問題が実機段階まで見えにくくなります。私たちが解決したいのは、この分断です。\n\n[Sources]\n- Local: edt-hmi-studio/README.zh-TW.md (separate capabilities brought into one product)\n- Interpretation: workflow-fragmentation statement is a product hypothesis; no quantified customer outcome is claimed"}
+{"kind":"slide","id":"sl/ucpg8x","slide":3,"title":"五つの作業を、同じプロジェクトで","textShapes":19}
+{"kind":"textbox","id":"sh/5cbqhs7u","slide":3,"name":"slide-3-title","text":"五つの作業を、同じプロジェクトで","textPreview":"五つの作業を、同じプロジェクトで","textChars":16,"textLines":1,"bbox":[56,40,1080,78]}
+{"kind":"textbox","id":"sh/ipkr6x8j","slide":3,"name":"slide-3-number","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1170,48,54,36]}
+{"kind":"shape","id":"sh/3qt8fip4","slide":3,"name":"slide-3-rule","bbox":[56,126,1168,2]}
+{"kind":"textbox","id":"sh/gn2p4nqd","slide":3,"name":"workflow-intro","text":"対応範囲では、アプリケーションコードから始める必要はありません。","textPreview":"対応範囲では、アプリケーションコードから始める必要はありません。","textChars":32,"textLines":1,"bbox":[72,162,1060,54]}
+{"kind":"shape","id":"sh/hobqds7y","slide":3,"name":"workflow-line","bbox":[126,342,1010,4]}
+{"kind":"shape","id":"sh/ul072d87","slide":3,"name":"workflow-node-1","bbox":[130,304,80,80]}
+{"kind":"textbox","id":"sh/vmt8bips","slide":3,"name":"workflow-node-number-1","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[130,320,80,40]}
+{"kind":"textbox","id":"sh/8jip03qh","slide":3,"name":"workflow-label-1","text":"画面設計","textPreview":"画面設計","textChars":4,"textLines":1,"bbox":[92,414,156,46]}
+{"kind":"textbox","id":"sh/tkrq987m","slide":3,"name":"workflow-sub-1","text":"Design","textPreview":"Design","textChars":6,"textLines":1,"bbox":[82,470,176,70]}
+{"kind":"shape","id":"sh/dgzmp8bq","slide":3,"name":"workflow-node-2","bbox":[350,304,80,80]}
+{"kind":"textbox","id":"sh/cfq5g3u5","slide":3,"name":"workflow-node-number-2","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[350,320,80,40]}
+{"kind":"textbox","id":"sh/beh4nitk","slide":3,"name":"workflow-label-2","text":"ロジック","textPreview":"ロジック","textChars":4,"textLines":1,"bbox":[312,414,156,46]}
+{"kind":"textbox","id":"sh/qto3edcz","slide":3,"name":"workflow-sub-2","text":"Events / Nodes","textPreview":"Events / Nodes","textChars":14,"textLines":1,"bbox":[302,470,176,70]}
+{"kind":"shape","id":"sh/psfml8be","slide":3,"name":"workflow-node-3","bbox":[570,304,80,80]}
+{"kind":"textbox","id":"sh/or6lc3u9","slide":3,"name":"workflow-node-number-3","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[570,320,80,40]}
+{"kind":"textbox","id":"sh/3qx4jyto","slide":3,"name":"workflow-label-3","text":"機器通信","textPreview":"機器通信","textChars":4,"textLines":1,"bbox":[532,414,156,46]}
+{"kind":"textbox","id":"sh/2po3atc3","slide":3,"name":"workflow-sub-3","text":"Tags / Protocol","textPreview":"Tags / Protocol","textChars":15,"textLines":1,"bbox":[522,470,176,70]}
+{"kind":"shape","id":"sh/1ofmhobi","slide":3,"name":"workflow-node-4","bbox":[790,304,80,80]}
+{"kind":"textbox","id":"sh/gn6l8jux","slide":3,"name":"workflow-node-number-4","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[790,320,80,40]}
+{"kind":"textbox","id":"sh/s7a5o32t","slide":3,"name":"workflow-label-4","text":"Emulator","textPreview":"Emulator","textChars":8,"textLines":1,"bbox":[752,414,156,46]}
+{"kind":"textbox","id":"sh/t8jmx8je","slide":3,"name":"workflow-sub-4","text":"生成Cを検証","textPreview":"生成Cを検証","textChars":6,"textLines":1,"bbox":[742,470,176,70]}
+{"kind":"shape","id":"sh/658nmtkn","slide":3,"name":"workflow-node-5","bbox":[1010,304,80,80]}
+{"kind":"textbox","id":"sh/76h4vy18","slide":3,"name":"workflow-node-number-5","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1010,320,80,40]}
+{"kind":"textbox","id":"sh/k3qlkj2x","slide":3,"name":"workflow-label-5","text":"Build / Flash","textPreview":"Build / Flash","textChars":13,"textLines":1,"bbox":[972,414,156,46]}
+{"kind":"textbox","id":"sh/54zmtoj2","slide":3,"name":"workflow-sub-5","text":"対応ハードへ","textPreview":"対応ハードへ","textChars":6,"textLines":1,"bbox":[962,470,176,70]}
+{"kind":"textbox","id":"sh/i183i9kr","slide":3,"name":"workflow-footer","text":"一つのプロジェクト  ×  名前付きタグ  ×  同じ生成アプリケーション","textPreview":"一つのプロジェクト  ×  名前付きタグ  ×  同じ生成アプリケーション","textChars":37,"textLines":1,"bbox":[140,596,1000,42]}
+{"kind":"notes","id":"nt/ucpg8x","slide":3,"text":"まず画面を設計し、イベントとロジックを定義します。名前付きタグで機器通信を設定し、生成アプリケーションをEmulatorで動かします。最後に、対応ハードウェア向けにビルドして書き込みます。\n\n[Sources]\n- Local: edt-hmi-studio/README.zh-TW.md (design, logic, protocol, preview, code generation and deployment)\n- Local: edt-hmi-studio/docs/preview-ladder.md (Emulator role)"}
+{"kind":"slide","id":"sl/y8ud7w","slide":4,"title":"実機の前に、生成コードを動かす","textShapes":6}
+{"kind":"textbox","id":"sh/836dwz2l","slide":4,"name":"slide-4-title","text":"実機の前に、生成コードを動かす","textPreview":"実機の前に、生成コードを動かす","textChars":15,"textLines":1,"bbox":[56,40,1080,78]}
+{"kind":"textbox","id":"sh/72xcnu10","slide":4,"name":"slide-4-number","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1170,48,54,36]}
+{"kind":"shape","id":"sh/6hovupkf","slide":4,"name":"slide-4-rule","bbox":[56,126,1168,2]}
+{"kind":"textbox","id":"sh/g7qd0z2h","slide":4,"name":"emulator-claim","text":"静的な画面ではなく、\n生成Cコードを動かす。","textPreview":"静的な画面ではなく、 | 生成Cコードを動かす。","textChars":22,"textLines":2,"bbox":[710,174,500,148]}
+{"kind":"textbox","id":"sh/v6hcru1w","slide":4,"name":"emulator-proof","text":"イベント\nロジック\n機器通信のシミュレーション","textPreview":"イベント | ロジック | 機器通信のシミュレーション","textChars":23,"textLines":3,"bbox":[710,366,480,148]}
+{"kind":"shape","id":"sh/u58vy9kr","slide":4,"name":"emulator-rule","bbox":[710,548,470,2]}
+{"kind":"textbox","id":"sh/xcvuhkjy","slide":4,"name":"emulator-boundary","text":"実機メモリー・性能・物理バスは\n別途、対象ハードウェアで検証","textPreview":"実機メモリー・性能・物理バスは | 別途、対象ハードウェアで検証","textChars":30,"textLines":2,"bbox":[710,570,480,72]}
+{"kind":"textbox","id":"sh/wbmdof2d","slide":4,"name":"emulator-image-label","text":"画面例（開発中／現在のUIとは一部異なります）","textPreview":"画面例（開発中／現在のUIとは一部異なります）","textChars":23,"textLines":1,"bbox":[74,564,560,26]}
+{"kind":"image","id":"im/wrmpkfup","slide":4,"name":"","alt":"Earlier development screenshot of a preview view","bbox":[54,166,610,382]}
+{"kind":"notes","id":"nt/y8ud7w","slide":4,"text":"Emulatorは単なる画面プレビューではありません。生成Cコードを実際のLVGLと一緒にコンパイルし、イベント、ロジック、シミュレーション通信を確認します。実機固有の条件は別途検証します。\n\n[Sources]\n- Local: edt-hmi-studio/docs/preview-ladder.md and server/emulator/ (generated C with real LVGL)\n- Asset: japanese/assets/screenshots/shot-preview.png, earlier marketing screenshot; used as a labeled development example only"}
+{"kind":"slide","id":"sl/0qbd4c","slide":5,"title":"現在のソースで確認できる範囲","textShapes":13}
+{"kind":"textbox","id":"sh/6hcz29cn","slide":5,"name":"slide-5-title","text":"現在のソースで確認できる範囲","textPreview":"現在のソースで確認できる範囲","textChars":14,"textLines":1,"bbox":[56,40,1080,78]}
+{"kind":"textbox","id":"sh/t43yd4by","slide":5,"name":"slide-5-number","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1170,48,54,36]}
+{"kind":"shape","id":"sh/s3uh4zut","slide":5,"name":"slide-5-rule","bbox":[56,126,1168,2]}
+{"kind":"textbox","id":"sh/f650fet4","slide":5,"name":"scope-number-1","text":"25","textPreview":"25","textChars":2,"textLines":1,"bbox":[72,194,290,138]}
+{"kind":"textbox","id":"sh/e5wz69cj","slide":5,"name":"scope-head-1","text":"コンポーネント","textPreview":"コンポーネント","textChars":7,"textLines":1,"bbox":[72,350,310,48]}
+{"kind":"textbox","id":"sh/18nihoba","slide":5,"name":"scope-detail-1","text":"Design palette","textPreview":"Design palette","textChars":14,"textLines":1,"bbox":[72,414,320,84]}
+{"kind":"textbox","id":"sh/g7eh8jup","slide":5,"name":"scope-number-2","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[450,194,290,138]}
+{"kind":"textbox","id":"sh/va1g3at0","slide":5,"name":"scope-head-2","text":"ボードプロファイル","textPreview":"ボードプロファイル","textChars":9,"textLines":1,"bbox":[450,350,310,48]}
+{"kind":"textbox","id":"sh/u9szupcf","slide":5,"name":"scope-detail-2","text":"F746 / H747 / EDT EVK","textPreview":"F746 / H747 / EDT EVK","textChars":21,"textLines":1,"bbox":[450,414,320,84]}
+{"kind":"textbox","id":"sh/8f25cji5","slide":5,"name":"scope-number-3","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[828,194,290,138]}
+{"kind":"textbox","id":"sh/9gb65ozq","slide":5,"name":"scope-head-3","text":"主なSerial方式","textPreview":"主なSerial方式","textChars":10,"textLines":1,"bbox":[828,350,310,48]}
+{"kind":"textbox","id":"sh/mdkna90f","slide":5,"name":"scope-detail-3","text":"Modbus RTU\nSerial commands","textPreview":"Modbus RTU | Serial commands","textChars":26,"textLines":2,"bbox":[828,414,320,84]}
+{"kind":"shape","id":"sh/7eto3eh0","slide":5,"name":"scope-bottom-rule","bbox":[72,536,1100,2]}
+{"kind":"textbox","id":"sh/w3m5g3yh","slide":5,"name":"scope-capabilities","text":"複数画面  ・  アニメーション  ・  多言語  ・  タグ連携","textPreview":"複数画面  ・  アニメーション  ・  多言語  ・  タグ連携","textChars":33,"textLines":1,"bbox":[72,568,1040,44]}
+{"kind":"textbox","id":"sh/h4v698z2","slide":5,"name":"scope-snapshot","text":"Source snapshot: a7cc2a8  |  2026-09-03","textPreview":"Source snapshot: a7cc2a8  |  2026-09-03","textChars":39,"textLines":1,"bbox":[790,650,390,24]}
+{"kind":"notes","id":"nt/0qbd4c","slide":5,"text":"現在のソースには、25種類のコンポーネント、3つのボードプロファイルがあります。主な実装済みシリアル経路では、Modbus RTUと設定可能なシリアルコマンドを利用できます。数字は現在のソーススナップショットです。\n\n[Sources]\n- Local: edt-hmi-studio/src/utils/componentDefinitions.ts (25 palette types)\n- Local: edt-hmi-studio/src/types/hmi.ts (three board profiles; Modbus RTU and serial-command connector capabilities)\n- Snapshot: git HEAD a7cc2a88204b71a3480042b267b8d3cfa816c2ef on 2026-09-03"}
+{"kind":"slide","id":"sl/dp7nj8","slide":6,"title":"現在・要確認・将来を分けて伝える","textShapes":10}
+{"kind":"textbox","id":"sh/7yhg7axc","slide":6,"name":"slide-6-title","text":"現在・要確認・将来を分けて伝える","textPreview":"現在・要確認・将来を分けて伝える","textChars":16,"textLines":1,"bbox":[56,40,1080,78]}
+{"kind":"textbox","id":"sh/8zqh0fex","slide":6,"name":"slide-6-number","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1170,48,54,36]}
+{"kind":"shape","id":"sh/90zy9kf2","slide":6,"name":"slide-6-rule","bbox":[56,126,1168,2]}
+{"kind":"shape","id":"sh/u1sz2pwn","slide":6,"name":"boundary-bar-1","bbox":[70,180,310,8]}
+{"kind":"textbox","id":"sh/v21gbux8","slide":6,"name":"boundary-head-1","text":"現在","textPreview":"現在","textChars":2,"textLines":1,"bbox":[70,214,330,56]}
+{"kind":"textbox","id":"sh/w3ah4zet","slide":6,"name":"boundary-body-1","text":"画面・ロジック\nModbus RTU\nSerial commands\nEmulator / Deploy※","textPreview":"画面・ロジック | Modbus RTU | Serial commands | Emulator / Deploy※","textChars":53,"textLines":4,"bbox":[70,306,320,210]}
+{"kind":"shape","id":"sh/h4jyd4fe","slide":6,"name":"boundary-bar-2","bbox":[466,180,310,8]}
+{"kind":"textbox","id":"sh/a5ofq5wj","slide":6,"name":"boundary-head-2","text":"構成ごとに確認","textPreview":"構成ごとに確認","textChars":7,"textLines":1,"bbox":[466,214,330,56]}
+{"kind":"textbox","id":"sh/b6xgzqx4","slide":6,"name":"boundary-body-2","text":"対象ボード\nツールチェーン\n実機性能\nAI運用条件","textPreview":"対象ボード | ツールチェーン | 実機性能 | AI運用条件","textChars":25,"textLines":4,"bbox":[466,306,320,210]}
+{"kind":"shape","id":"sh/f6p03y94","slide":6,"name":"boundary-bar-3","bbox":[862,180,310,8]}
+{"kind":"textbox","id":"sh/e5gzat8j","slide":6,"name":"boundary-head-3","text":"現在は約束しない","textPreview":"現在は約束しない","textChars":8,"textLines":1,"bbox":[862,214,330,56]}
+{"kind":"textbox","id":"sh/187i58ra","slide":6,"name":"boundary-body-3","text":"CANのタグ連携\nEthernet\n任意ボード対応\n未承認の商務条件","textPreview":"CANのタグ連携 | Ethernet | 任意ボード対応 | 未承認の商務条件","textChars":34,"textLines":4,"bbox":[862,306,320,210]}
+{"kind":"shape","id":"sh/07yhc3qp","slide":6,"name":"boundary-footer-rule","bbox":[70,554,1110,2]}
+{"kind":"textbox","id":"sh/r25gzy9s","slide":6,"name":"boundary-footer","text":"価格・ライセンス・GA・SLA・地域独占 ＝ 社内承認後に正式回答","textPreview":"価格・ライセンス・GA・SLA・地域独占 ＝ 社内承認後に正式回答","textChars":33,"textLines":1,"bbox":[70,584,1080,48]}
+{"kind":"textbox","id":"sh/q1wz6t8n","slide":6,"name":"boundary-footnote","text":"※対応ボードとローカル環境の準備が前提","textPreview":"※対応ボードとローカル環境の準備が前提","textChars":19,"textLines":1,"bbox":[70,652,440,22]}
+{"kind":"notes","id":"nt/dp7nj8","slide":6,"text":"お客様への約束は、現在利用できるもの、構成ごとに確認するもの、将来候補に分けます。CANのタグ連携とEthernetは現在の製品機能として案内しません。商務条件は承認後に回答します。\n\n[Sources]\n- Local: edt-hmi-studio/src/types/hmi.ts (connector statuses and board-specific capabilities)\n- Local: edt-hmi-studio/firmware/common/include/hmi_can.h (CAN signal-to-widget path not complete)\n- Local: japanese/00_PRODUCT_TRUTH.md (commercial and release claim boundaries)"}
+{"kind":"slide","id":"sl/0dmnbe","slide":7,"title":"NEXT STEP","textShapes":6}
+{"kind":"textbox","id":"sh/c36d8vip","slide":7,"name":"close-eyebrow","text":"NEXT STEP","textPreview":"NEXT STEP","textChars":9,"textLines":1,"bbox":[56,48,220,44]}
+{"kind":"textbox","id":"sh/r2dwzq14","slide":7,"name":"close-title","text":"一つの用途を、\nエンドツーエンドで\n確かめる。","textPreview":"一つの用途を、 | エンドツーエンドで | 確かめる。","textChars":23,"textLines":3,"bbox":[56,158,940,310]}
+{"kind":"shape","id":"sh/q14v6l0j","slide":7,"name":"close-rule","bbox":[56,518,1160,2]}
+{"kind":"textbox","id":"sh/18fe50j6","slide":7,"name":"close-step-1","text":"01  対象機器","textPreview":"01  対象機器","textChars":8,"textLines":1,"bbox":[56,558,250,42]}
+{"kind":"textbox","id":"sh/076dcvi1","slide":7,"name":"close-step-2","text":"02  ボード","textPreview":"02  ボード","textChars":7,"textLines":1,"bbox":[392,558,250,42]}
+{"kind":"textbox","id":"sh/z6xw3q1g","slide":7,"name":"close-step-3","text":"03  通信方式","textPreview":"03  通信方式","textChars":8,"textLines":1,"bbox":[716,558,270,42]}
+{"kind":"textbox","id":"sh/e5ova50v","slide":7,"name":"close-outcome","text":"成功条件・担当者・期限を合意","textPreview":"成功条件・担当者・期限を合意","textChars":14,"textLines":1,"bbox":[56,628,700,42]}
+{"kind":"notes","id":"nt/0dmnbe","slide":7,"text":"次のステップとして、対象機器を一つ、ボードを一つ、通信方式を一つ選びましょう。成功条件、担当者、期限を合意し、設計から実機までを一緒に検証することをご提案します。\n\n[Sources]\n- Local: japanese/01_MESSAGE_HOUSE.md (recommended evaluation call to action)\n- No external asset or quantitative claim on this slide"}

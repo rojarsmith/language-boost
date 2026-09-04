@@ -1,0 +1,65 @@
+id	audience	category	difficulty	question_ja	reading_kana	intent_zh	short_answer_ja	confirm_required	source_doc	tags
+Q001	executive	positioning	1	一言で言うと、何の製品ですか。	ひとこと で いう と、/ なん の せいひん です か。//	要求一句話產品定位	EDT HMI Studioは、組み込みHMIの設計、通信、検証、展開を一つのプロジェクトでつなぐビジュアル開発環境です。	false	08_EXECUTIVE_QA.md	executive,positioning,safe
+Q002	executive	business_value	2	どのような経営課題を解決しますか。	どのような けいえい かだい を / かいけつ します か。//	詢問可解決的經營問題	工程間の分断を小さくし、受け渡しを減らして、統合上の問題を早い段階で見つけやすくします。	false	08_EXECUTIVE_QA.md	executive,value,qualify
+Q003	executive	differentiation	2	既存のUIツールと何が違いますか。	きそん の ユーアイ ツール と / なに が ちがいます か。//	詢問和既有UI工具的差異	画面作成だけでなく、ロジック、通信、生成コードの検証、対応ハードウェアへの展開までを同じプロジェクトでつなぐ点です。	false	08_EXECUTIVE_QA.md	executive,differentiation,qualify
+Q004	executive	users	1	誰が使う製品ですか。	だれ が つかう / せいひん です か。//	確認主要使用者	組み込みHMIを設計、評価、統合するチーム向けです。具体的な役割は、お客様の開発体制を確認して整理します。	false	08_EXECUTIVE_QA.md	executive,user,safe
+Q005	executive	roi	3	投資対効果を数字で示せますか。	とうし たい こうか を / すうじ で しめせます か。//	要求ROI量化證據	共通の承認済みROI数値はありません。一つの案件で現行工程と比較し、評価時間、手戻り、支援工数を測定することをご提案します。	true	08_EXECUTIVE_QA.md	executive,roi,confirm
+Q006	executive	release	3	製品はもう出荷可能ですか。	せいひん は / もう しゅっか かのう です か。//	確認正式出貨狀態	提供時期と正式な出荷条件は最終確認が必要です。現在の開発版で確認できる機能と、正式提供条件を分けてご説明します。	true	08_EXECUTIVE_QA.md	executive,release,confirm
+Q007	executive	commercial	3	価格とライセンスはどうなっていますか。	かかく と ライセンス は / どう なって います か。//	要求價格與授權條件	価格とライセンスは承認済み条件を確認し、担当部門から書面で回答いたします。	true	08_EXECUTIVE_QA.md	executive,pricing,license,confirm
+Q008	executive	risk	2	導入の最大リスクは何ですか。	どうにゅう の さいだい リスク は / なん です か。//	詢問導入最大風險	対象ボード、通信方式、性能条件を確認せずに適用範囲を広げることです。小さな評価で技術適合性を先に確認します。	false	08_EXECUTIVE_QA.md	executive,risk,scope
+Q009	executive	limitations	2	現在、対応できない要求は何ですか。	げんざい、/ たいおう できない ようきゅう は / なん です か。//	要求說明現有限制	CANとEthernetは現在利用できる製品データ経路ではなく、すべてのボードや任意のプロトコルを保証することもできません。	false	08_EXECUTIVE_QA.md	executive,limitations,current
+Q010	executive	expansion	3	他のボードにも対応できますか。	ほか の ボード に も / たいおう できます か。//	詢問新增板卡可能性	可能ですが、表示、タッチ、メモリー、ビルド、書き込み、通信の統合と実機検証が必要です。要件ごとに工数を評価します。	false	08_EXECUTIVE_QA.md	executive,board,qualify
+Q011	executive	global_rollout	3	海外拠点でも展開できますか。	かいがい きょてん でも / てんかい できます か。//	詢問全球推廣可行性	多言語機能と一部の技術資料はありますが、対応OS、地域サポート、契約、研修、SLAは地域ごとに確認が必要です。	true	08_EXECUTIVE_QA.md	executive,global,support,confirm
+Q012	executive	competition	3	競合製品より優れている根拠はありますか。	きょうごう せいひん より / すぐれて いる こんきょ は あります か。//	要求競品優勢證據	同一条件の正式比較結果はないため、優位性を断定しません。同じボード、画面、通信要件で比較することをご提案します。	true	08_EXECUTIVE_QA.md	executive,competition,evidence,confirm
+Q013	channel	target_customer	1	どの顧客に提案すべきですか。	どの こきゃく に / ていあん すべき です か。//	詢問首波目標客戶	組み込みタッチHMIを開発し、現在の対応構成に近いボードとシリアル通信を使う案件が最初の候補です。	false	09_CHANNEL_PARTNER_QA.md	channel,target,qualification
+Q014	channel	partner_value	2	販売代理店にとっての価値は何ですか。	はんばい だいりてん に とって の かち は / なん です か。//	詢問通路合作價值	ハードウェアだけでなく、設計から評価までのワークフローを提案できる点です。収益性は商務条件を別途確認します。	false	09_CHANNEL_PARTNER_QA.md	channel,value,qualify
+Q015	channel	bundle	3	ディスプレイとセット販売できますか。	ディスプレイ と / セット はんばい できます か。//	詢問軟硬體綁售	一緒に評価する提案とは相性がありますが、セット品番、ライセンス、支援範囲、売上配分は承認が必要です。	true	09_CHANNEL_PARTNER_QA.md	channel,bundle,confirm
+Q016	channel	custom_display	2	カスタム表示器の販売にも使えますか。	カスタム ひょうじき の はんばい に も / つかえます か。//	詢問能否支援客製顯示器銷售	評価やHMI開発の提案には活用できますが、新しい表示器には統合と実機検証が必要です。納期は要件評価後に回答します。	false	09_CHANNEL_PARTNER_QA.md	channel,custom,qualify
+Q017	channel	margin	3	マージンはいくらですか。	マージン は / いくら です か。//	要求通路毛利	承認済みのチャネルマージンはこの場で申し上げられません。価格表、割引、適用条件を確認して回答します。	true	09_CHANNEL_PARTNER_QA.md	channel,margin,confirm
+Q018	channel	exclusivity	3	地域独占は可能ですか。	ちいき どくせん は / かのう です か。//	要求區域獨家	独占は地域、期間、業績条件、支援能力、見直し条項を文書で定義すべき事項です。この場では約束できません。	true	09_CHANNEL_PARTNER_QA.md	channel,exclusivity,confirm
+Q019	channel	deal_registration	3	案件登録はどうなりますか。	あんけん とうろく は / どう なります か。//	詢問案件登錄規則	所有者、登録期間、競合時の判断、越境案件の扱いについて、承認済み規則を確認して書面で回答します。	true	09_CHANNEL_PARTNER_QA.md	channel,deal_registration,confirm
+Q020	channel	local_pricing	3	現地で価格を決められますか。	げんち で かかく を / きめられます か。//	詢問地方定價權	地域価格、通貨、税、値引き権限の方針によります。承認フローを確認して正式に回答します。	true	09_CHANNEL_PARTNER_QA.md	channel,pricing,authority,confirm
+Q021	channel	evaluation_license	3	評価版やNFRはありますか。	ひょうかばん や / エヌ・エフ・アール は あります か。//	詢問評估版或NFR	正式条件は未確認です。対象者、期間、機能、再配布、支援条件を確認して書面でお送りします。	true	09_CHANNEL_PARTNER_QA.md	channel,nfr,evaluation,confirm
+Q022	channel	training	2	どんなトレーニングがありますか。	どんな トレーニング が / あります か。//	詢問夥伴培訓	営業、プリセールス、技術支援向けの構成が実用的ですが、提供方法、言語、費用、認定は承認が必要です。	true	09_CHANNEL_PARTNER_QA.md	channel,training,confirm
+Q023	channel	support	3	一次サポートは誰が担当しますか。	いちじ サポート は / だれ が たんとう します か。//	詢問第一線支援責任	一次切り分け、地域支援、製品開発へのエスカレーションが考えられますが、責任範囲、応答時間、SLAは正式合意が必要です。	true	09_CHANNEL_PARTNER_QA.md	channel,support,sla,confirm
+Q024	channel	next_step	1	会議後、最初に何をしますか。	かいぎご、/ さいしょ に なに を します か。//	詢問會後第一步	営業担当、プリセールス担当、現実的な顧客ユースケースを一つずつ決め、次回に技術適合性を確認します。	false	09_CHANNEL_PARTNER_QA.md	channel,next_step,safe
+Q025	technical	graphics	2	基盤のグラフィックスは何ですか。	きばん の グラフィックス は / なん です か。//	詢問底層圖形技術	ファームウェアとEmulatorはLVGL 9.5を対象にしています。Simulatorは検証範囲が異なります。	false	10_TECHNICAL_QA.md	technical,lvgl,safe
+Q026	technical	code_generation	2	どのコードを生成しますか。	どの コード を / せいせい します か。//	詢問產生哪些程式碼	主な出力はUI、イベント、ロジック用のCソースとヘッダーです。展開経路では通信とボード向け設定も生成します。	false	10_TECHNICAL_QA.md	technical,codegen,safe
+Q027	technical	preview	2	Prototype、Simulator、Emulatorの違いは何ですか。	プロトタイプ、シミュレーター、エミュレーター の / ちがい は なん です か。//	區分三種預覽層級	Prototypeは近似表示、Simulatorは実LVGL描画、Emulatorは生成Cをコンパイルしてイベント、ロジック、模擬通信まで動かします。	false	10_TECHNICAL_QA.md	technical,preview,emulator
+Q028	technical	hardware_validation	2	Emulatorだけで実機を保証できますか。	エミュレーター だけ で / じっき を ほしょう できます か。//	確認模擬器是否等於實機	いいえ。メモリー、リアルタイム性能、タッチ、物理バス、周辺回路は実機で確認する必要があります。	false	10_TECHNICAL_QA.md	technical,emulator,boundary
+Q029	technical	components	1	コンポーネントは何種類ですか。	コンポーネント は / なん しゅるい です か。//	詢問元件數量	2026年9月3日の追跡ソースでは、デザインパレットに二十五種類のコンポーネントがあります。スナップショット日も併記します。	false	10_TECHNICAL_QA.md	technical,components,snapshot
+Q030	technical	logic	2	ビジュアルロジックで何ができますか。	ビジュアル ロジック で / なに が できます か。//	詢問視覺邏輯能力	イベント、条件分岐、画面操作、変数、計算、文字列、タグの読み書きをノードで表現できます。高度なCは別経路です。	false	10_TECHNICAL_QA.md	technical,logic,safe
+Q031	technical	protocol	2	現在利用できる通信方式は何ですか。	げんざい りよう できる / つうしん ほうしき は なん です か。//	詢問目前通訊支援	主な実装済みシリアル経路では、Modbus RTUと設定可能なシリアルコマンドを利用できます。対象コネクターと構成の確認が必要です。	false	10_TECHNICAL_QA.md	technical,protocol,current
+Q032	technical	modbus_roles	2	パネルはModbusのクライアントにもサーバーにもなれますか。	パネル は モドバス の / クライアント に も サーバー に も / なれます か。//	詢問Modbus雙角色	はい。現在のモデルでは、パネルが問い合わせる役割と、ホスト要求に応答する役割の両方を設定できます。	false	10_TECHNICAL_QA.md	technical,modbus,roles
+Q033	technical	tags	1	タグとは何ですか。	タグ とは / なん です か。//	詢問tag概念	タグは、UI、ロジック、通信、エミュレーションで共有する名前付きの値です。型、アクセス、倍率、更新間隔などを持ちます。	false	10_TECHNICAL_QA.md	technical,tags,safe
+Q034	technical	can	3	CANは使えますか。	キャン は / つかえます か。//	詢問CAN現況	現在、CANをタグ通信の製品機能として約束できません。接続層とH747内部ループバックの確認段階です。	false	10_TECHNICAL_QA.md	technical,can,future,boundary
+Q035	technical	ethernet	3	EthernetやModbus TCPは使えますか。	イーサネット や / モドバス ティー・シー・ピー は / つかえます か。//	詢問Ethernet與Modbus TCP	現在の製品経路では利用できません。H747にEthernet PHYはありますが、現在のビルドにTCP/IPスタックは含まれません。	false	10_TECHNICAL_QA.md	technical,ethernet,future
+Q036	technical	boards	2	現在の対応ボードは何ですか。	げんざい の たいおう ボード は / なん です か。//	詢問目前板卡	STM32F746G-DISCO、STM32H747I-DISCO、EDT EVK043027Bの三つです。機能範囲はボードごとに異なります。	false	10_TECHNICAL_QA.md	technical,boards,snapshot
+Q037	technical	orientation	2	縦画面に対応しますか。	たて がめん に / たいおう します か。//	詢問直向畫面	H747とEDT EVKは横向きと縦向きをモデル化しています。F746は現在、横向きのみです。	false	10_TECHNICAL_QA.md	technical,orientation,board
+Q038	technical	video	3	動画はすべてのボードで使えますか。	どうが は / すべて の ボード で つかえます か。//	詢問影片跨板卡能力	いいえ。現在の動画経路は、Motion JPEG AVI、SDカード、JPEGハードウェアを持つH747向けに限定されます。	false	10_TECHNICAL_QA.md	technical,video,boundary
+Q039	technical	offline	3	オフラインで使えますか。	オフライン で / つかえます か。//	詢問離線使用政策	プロジェクトとビルドはローカル中心です。AIはOpenRouterまたは設定したOllamaホストを使います。完全にローカルで処理できるのは、Ollamaの接続先がこのコンピューター上にある場合です。正式方針は確認が必要です。	true	10_TECHNICAL_QA.md	technical,offline,confirm
+Q040	technical	security	3	セキュリティ対策は十分ですか。	セキュリティ たいさく は / じゅうぶん です か。//	要求資安保證	Secure Boot、署名更新、SBOM、脆弱性対応などの正式方針は、このソースだけでは確定できません。別途正式回答が必要です。	true	10_TECHNICAL_QA.md	technical,security,confirm
+Q041	technical	ai	3	AIアシスタントは何ができますか。	エーアイ アシスタント は / なに が できます か。//	詢問AI助理範圍	検証済み編集ツールを通じて一般のプロジェクト編集を支援し、変更は取り消せます。ただし品質評価は継続中で、Deployやハードウェアは操作しません。	false	10_TECHNICAL_QA.md	technical,ai,qualify
+Q042	hard	no_code	3	「ノーコード」は誇大ではありませんか。	ノーコード は / こだい では ありません か。//	質疑no-code宣稱	対応ボードと標準機能の範囲では、アプリケーションコードを手で書かずに進められます。特殊要件にはCustom Cや追加開発が必要です。	false	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md	hard,no_code,boundary
+Q043	hard	maturity	3	本当にProduction Readyですか。	ほんとう に / プロダクション レディー です か。//	挑戰產品成熟度	正式な提供状態と条件は確認が必要です。現在の開発版で確認できる事実と、正式出荷の承認を分けて回答します。	true	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md	hard,maturity,confirm
+Q044	hard	competition	3	競合より何が優れているのですか。	きょうごう より / なに が すぐれて いる の です か。//	逼迫做競品優劣宣稱	同一条件の比較結果がないため、優位性を断定しません。お客様の重要作業を同じ条件で比較します。	true	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md	hard,competition,confirm
+Q045	hard	one_click	3	どんなボードでもワンクリックで使えるのですか。	どんな ボード でも / ワンクリック で つかえる の です か。//	挑戰一鍵部署宣稱	いいえ。対応ボードでもツールチェーンと接続の準備が必要で、新しいボードには統合と実機検証が必要です。	false	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md	hard,deployment,boundary
+Q046	hard	emulator	3	Emulatorが動けば量産も大丈夫ですよね。	エミュレーター が うごけば / りょうさん も だいじょうぶ です よ ね。//	誘導把模擬器等同量產	いいえ。Emulatorは生成コードの確認に有効ですが、量産判断には実機の性能、通信、耐久性などの検証が必要です。	false	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md	hard,emulator,production
+Q047	hard	can	3	CAN対応と書いてあるのに、なぜ使えないのですか。	キャン たいおう と かいて ある の に、/ なぜ つかえない の です か。//	質疑CAN宣稱矛盾	現在は接続層とループバック確認の段階で、タグと画面部品を結ぶ製品機能としては案内していません。	false	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md	hard,can,boundary
+Q048	hard	ai_privacy	3	AIに機密情報が漏れませんか。	エーアイ に / きみつ じょうほう が もれません か。//	質疑AI資料外洩	OpenRouterでは送信内容がOpenRouterへ、Ollamaでは設定したホストへ送られます。本機内で完結するのはローカルホストの場合だけです。導入前に接続先、データ分類、モデル、保持条件を確認します。	true	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md	hard,ai,privacy,confirm
+Q049	hard	license	3	ソースのライセンスはMITではありませんか。	ソース の ライセンス は / エム・アイ・ティー では ありません か。//	要求確認MIT授權	READMEの記載だけでは正式な権利条件を約束できません。承認済みのライセンス文書を確認して回答します。	true	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md	hard,license,confirm
+Q050	hard	pricing_pressure	3	価格を今日出せないのですか。	かかく を / きょう だせない の です か。//	施壓要求當天報價	非公式な価格は申し上げません。案件条件と承認済み価格を担当部門に確認し、回答日をここで決めます。	true	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md	hard,pricing,pressure,confirm
+Q051	hard	exclusivity_pressure	3	今日、独占を約束してください。	きょう、/ どくせん を やくそく して ください。//	施壓要求當場獨家	この場では約束できません。地域、期間、業績条件、支援能力、見直し条項を確認し、正式に検討します。	true	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md	hard,exclusivity,pressure,confirm
+Q052	discovery	use_case	1	最初に想定している顧客と用途は何ですか。	さいしょ に そうてい して いる / こきゃく と ようと は なん です か。//	探索首個目標客戶與用途	回答を記録し、対象顧客、用途、現在の方法を一文で確認します。	false	12_DISCOVERY_QUESTIONS.md	discovery,customer,use_case
+Q053	discovery	pain	1	今の開発で一番時間がかかる工程はどこですか。	いま の かいはつ で / いちばん じかん が かかる こうてい は / どこ です か。//	探索現行最大瓶頸	具体例、頻度、影響を一つずつ追問し、推測で問題を決めません。	false	12_DISCOVERY_QUESTIONS.md	discovery,pain,workflow
+Q054	discovery	decision_roles	2	技術評価、商務判断、最終承認は、それぞれどなたが担当されますか。	ぎじゅつ ひょうか、しょうむ はんだん、さいしゅう しょうにん は、/ それぞれ どなた が たんとう されます か。//	確認決策角色	担当者の氏名、役割、必要な資料、判断時期を確認します。	false	12_DISCOVERY_QUESTIONS.md	discovery,stakeholders,decision
+Q055	discovery	hardware	2	対象のボード、MCU、表示インターフェースは決まっていますか。	たいしょう の ボード、エム・シー・ユー、ひょうじ インターフェース は / きまって います か。//	探索硬體前提	決まっていなければ候補を記録し、解像度、メモリー、タッチ、接続口も確認します。	false	12_DISCOVERY_QUESTIONS.md	discovery,hardware,requirements
+Q056	discovery	communication	2	どの接続口を使い、どのプロトコルで、どちら側が通信を開始しますか。	どの せつぞくぐち を つかい、/ どの プロトコル で、/ どちらがわ が つうしん を かいし ます か。//	探索連接、協定與角色	物理接続、プロトコル、開始側を分けて記録し、対応可否は確認後に回答します。	false	12_DISCOVERY_QUESTIONS.md	discovery,protocol,roles
+Q057	discovery	success_criteria	2	評価を成功と判断するために、必ず動作すべき三つの項目は何ですか。	ひょうか を せいこう と はんだん する ため に、/ かならず どうさ すべき みっつ の こうもく は / なん です か。//	探索驗收標準	三つの必須項目、測定方法、合格条件を文書で確認します。	false	12_DISCOVERY_QUESTIONS.md	discovery,success,acceptance
+Q058	discovery	next_step	1	次回までに、お互いの担当者、成果物、期限を確認してもよろしいでしょうか。	じかい まで に、/ おたがい の たんとうしゃ、せいかぶつ、きげん を / かくにん しても よろしい でしょう か。//	確認雙方下一步	担当者、成果物、期限を復唱し、会議後に文書で共有します。	false	12_DISCOVERY_QUESTIONS.md	discovery,next_step,owner_date
+Q059	listening	positioning_variant	1	一言で言うと？	ひとこと で いう と？//	辨識省略式的一句定位要求	製品の一言説明をご希望ですね。EDT HMI Studioは、組み込みHMI向けのビジュアル開発環境です。	false	23_LISTENING_REPAIR_AND_VARIANTS.md	listening,short_question,positioning
+Q060	listening	pricing_variant	2	で、いくらですか。	で、/ いくら です か。//	辨識主管短問價格	価格についてですね。承認済み条件を確認し、担当部門から書面で回答します。	true	23_LISTENING_REPAIR_AND_VARIANTS.md	listening,short_question,pricing,confirm
+Q061	listening	support_variant	2	誰が面倒を見るのですか。	だれ が / めんどう を みる の です か。//	辨識口語化的支援責任問題	サポート体制についてですね。責任範囲、応答時間、エスカレーションは正式確認が必要です。	true	23_LISTENING_REPAIR_AND_VARIANTS.md	listening,short_question,support,confirm
+Q062	listening	roadmap_variant	2	次は何が出るのですか。	つぎ は / なに が でる の です か。//	辨識roadmap短問	開発計画についてですね。承認済みの範囲だけを共有し、未確定項目は現在機能として約束しません。	true	23_LISTENING_REPAIR_AND_VARIANTS.md	listening,roadmap,confirm
+Q063	listening	repair	1	少し早すぎましたか。	すこし / はやすぎました か。//	練習請對方慢速重說	恐れ入ります。もう一度、少しゆっくりお願いできますか。	false	23_LISTENING_REPAIR_AND_VARIANTS.md	listening,repair,rescue
+Q064	listening	multi_part	3	価格と教育の担当、それから開始時期はどうなりますか。	かかく と きょういく の たんとう、/ それから かいし じき は / どう なります か。//	辨識並拆解三段問題	ご質問は三点あると理解しております。価格、教育の担当、開始時期の順にお答えします。	true	23_LISTENING_REPAIR_AND_VARIANTS.md	listening,multi_part,confirm

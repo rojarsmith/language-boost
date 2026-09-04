@@ -1,0 +1,2 @@
+date,day,recording,scenario,error_type,heard_or_said,target_japanese,target_reading,why_it_matters,correction_drill,three_clean_repetitions_yes_no,next_review_date,resolved_date
+YYYY-MM-DD,1,recordings/file-name.m4a,pronunciation,sound,,,ほしい よみかた,affects_intelligibility,echo_then_cold_recall,no,YYYY-MM-DD,

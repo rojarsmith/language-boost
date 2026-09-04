@@ -1,0 +1,52 @@
+id	japanese	reading_kana	english	traditional_chinese	caution
+G001	組み込み	くみこみ	embedded	嵌入式	み不拉長
+G002	HMI	エイチ・エム・アイ	HMI	人機介面	三段分開念
+G003	ビジュアル開発環境	ビジュアル かいはつ かんきょう	visual development environment	視覺化開發環境	產品定位
+G004	画面設計	がめん せっけい	screen design	畫面設計	せっ促音
+G005	動作定義	どうさ ていぎ	behavior definition	動作定義	どう長音
+G006	機器通信	きき つうしん	device communication	機器通訊	つう長音
+G007	検証	けんしょう	validation	驗證	しょう長音
+G008	実機	じっき	target hardware	實機	促音
+G009	展開	てんかい	deployment	展開部署	不用誇張為任意硬體
+G010	書き込み	かきこみ	flashing	燒錄寫入	與build分開
+G011	対応範囲	たいおう はんい	supported scope	支援範圍	no-code護欄
+G012	生成コード	せいせい コード	generated code	生成程式碼	兩個長音
+G013	ファームウェア	ファームウェア	firmware	韌體	ファー長音
+G014	エミュレーター	エミュレーター	emulator	生成程式模擬器	不等於實機
+G015	統合	とうごう	integration	整合	長音
+G016	受け渡し	うけわたし	handoff	交接	不要虛構量化成果
+G017	手戻り	てもどり	rework	返工	ROI題
+G018	実装済み	じっそうずみ	implemented	已實作	不等於GA
+G019	開発版	かいはつばん	development build	開發版	AI與release邊界
+G020	コンポーネント	コンポーネント	component	元件	ポー長音
+G021	ウィジェット	ウィジェット	widget	控制項	促音
+G022	複数画面	ふくすう がめん	multiple screens	多畫面	すう長音
+G023	名前付きタグ	なまえつき タグ	named tag	具名標籤值	核心術語
+G024	更新周期	こうしん しゅうき	update interval	更新週期	兩處長音
+G025	接続口	せつぞくぐち	connector	連接埠	與protocol分開問
+G026	通信方式	つうしん ほうしき	protocol	通訊方式	問清具體協定
+G027	通信経路	つうしん けいろ	communication path	通訊路徑	說implemented path
+G028	問い合わせる側	といあわせる がわ	client initiator	發起端	角色詞
+G029	応答する側	おうとう する がわ	server responder	回應端	角色詞
+G030	レジスターマップ	レジスター マップ	register map	暫存器對照表	促音
+G031	ポーリング	ポーリング	polling	輪詢	長音
+G032	帯域	たいいき	bandwidth	頻寬	Link Budget
+G033	物理バス	ぶつり バス	physical bus	實體匯流排	Emulator不保證
+G034	解像度	かいぞうど	resolution	解析度	數字放慢
+G035	商務条件	しょうむ じょうけん	commercial terms	商務條件	通常CONFIRM
+G036	未承認	みしょうにん	unapproved	未核准	不給數字
+G037	担当部門	たんとう ぶもん	responsible team	負責部門	未知題owner
+G038	期限	きげん	deadline	期限	未知題date
+G039	評価	ひょうか	evaluation	評估	安全的pilot用語
+G040	成功条件	せいこう じょうけん	success criteria	成功條件	下一步核心
+G041	適合性	てきごうせい	fit	適用性	先驗證
+G042	対象構成	たいしょう こうせい	target configuration	目標配置	硬體邊界
+G043	意思決定者	いし けっていしゃ	decision maker	決策者	促音
+G044	契約主体	けいやく しゅたい	contracting entity	簽約主體	需公司確認
+G045	地域独占	ちいき どくせん	territory exclusivity	區域獨家	永遠CONFIRM
+G046	値引き権限	ねびき けんげん	discount authority	折扣權限	不即席承諾
+G047	一次切り分け	いちじ きりわけ	first-line triage	第一線問題切分	support用
+G048	応答時間	おうとう じかん	response time	回覆時間	不等於解決時間
+G049	脆弱性	ぜいじゃくせい	vulnerability	漏洞	ぜい長音
+G050	量産	りょうさん	mass production	量產	りょう長音
+G051	次のステップ	つぎ の ステップ	next step	下一步	促音

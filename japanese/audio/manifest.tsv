@@ -1,0 +1,13 @@
+clip_id	speed	sapi_rate	output_file	japanese	source_doc
+pitch_30s	slow	-3	pitch_30s_slow.wav	本日はお時間をいただき、ありがとうございます。EDT HMI Studioは、組み込みHMIの設計、通信、検証、展開を、一つのプロジェクトでつなぐビジュアル開発環境です。画面とロジックを設計し、機器の値をタグでつなぎ、生成したアプリケーションをエミュレーターで確認してから、対応ハードウェアへ展開します。本日は、御社の用途に合うかを一緒に確認できればと思います。	03_PITCH_30_SECONDS.md
+pitch_30s	normal	0	pitch_30s_normal.wav	本日はお時間をいただき、ありがとうございます。EDT HMI Studioは、組み込みHMIの設計、通信、検証、展開を、一つのプロジェクトでつなぐビジュアル開発環境です。画面とロジックを設計し、機器の値をタグでつなぎ、生成したアプリケーションをエミュレーターで確認してから、対応ハードウェアへ展開します。本日は、御社の用途に合うかを一緒に確認できればと思います。	03_PITCH_30_SECONDS.md
+workflow	slow	-3	workflow_slow.wav	流れは五つです。まず、画面を設計します。次に、イベントとロジックを設定します。その後、機器通信とタグを設定します。次に、エミュレーターで生成したアプリケーションを確認します。最後に、対応するハードウェア向けにビルドして書き込みます。	05_PITCH_5_MINUTES.md
+workflow	normal	0	workflow_normal.wav	流れは五つです。まず、画面を設計します。次に、イベントとロジックを設定します。その後、機器通信とタグを設定します。次に、エミュレーターで生成したアプリケーションを確認します。最後に、対応するハードウェア向けにビルドして書き込みます。	05_PITCH_5_MINUTES.md
+rescue_phrases	slow	-3	rescue_phrases_slow.wav	すみません、もう一度、少しゆっくりお願いできますか。ご質問は、技術面についてでしょうか、それとも商務条件についてでしょうか。正確な情報が手元にありませんので、確認してから回答します。では、先ほどのポイントに戻ります。	02_SURVIVAL_JAPANESE.md
+rescue_phrases	normal	0	rescue_phrases_normal.wav	すみません、もう一度、少しゆっくりお願いできますか。ご質問は、技術面についてでしょうか、それとも商務条件についてでしょうか。正確な情報が手元にありませんので、確認してから回答します。では、先ほどのポイントに戻ります。	02_SURVIVAL_JAPANESE.md
+scope_control	slow	-3	scope_control_slow.wav	現行版で確認できる範囲と、構成ごとの確認が必要な範囲を分けてご説明します。未確認の商務条件については、ここで非公式な回答をせず、社内で確認して正式にご連絡します。	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md
+scope_control	normal	0	scope_control_normal.wav	現行版で確認できる範囲と、構成ごとの確認が必要な範囲を分けてご説明します。未確認の商務条件については、ここで非公式な回答をせず、社内で確認して正式にご連絡します。	11_HARD_QUESTIONS_AND_SAFE_ANSWERS.md
+meeting_open_close	slow	-3	meeting_open_close_slow.wav	本日はお時間をいただき、ありがとうございます。まず製品の概要をご説明し、次に短いデモをご覧いただきます。その後、御社の用途とご質問について意見交換できればと思います。次のステップとして、対象機器、ボード、通信方式、成功条件を確認し、検証内容を一緒に整理させてください。本日の未回答項目は、担当者と回答予定日をまとめてご連絡します。	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md
+meeting_open_close	normal	0	meeting_open_close_normal.wav	本日はお時間をいただき、ありがとうございます。まず製品の概要をご説明し、次に短いデモをご覧いただきます。その後、御社の用途とご質問について意見交換できればと思います。次のステップとして、対象機器、ボード、通信方式、成功条件を確認し、検証内容を一緒に整理させてください。本日の未回答項目は、担当者と回答予定日をまとめてご連絡します。	17_MEETING_OPEN_CLOSE_AND_FOLLOWUP.md
+dining_small_talk	slow	-3	dining_small_talk_slow.wav	今日はお招きいただき、ありがとうございます。こちらのお料理は初めてです。おすすめはありますか。台湾にはいらしたことがありますか。そうなんですね。特にどの点が印象に残りましたか。今日はとても楽しかったです。ありがとうございました。	24_DINING_SMALL_TALK.md
+dining_small_talk	normal	0	dining_small_talk_normal.wav	今日はお招きいただき、ありがとうございます。こちらのお料理は初めてです。おすすめはありますか。台湾にはいらしたことがありますか。そうなんですね。特にどの点が印象に残りましたか。今日はとても楽しかったです。ありがとうございました。	24_DINING_SMALL_TALK.md

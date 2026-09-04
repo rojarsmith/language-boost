@@ -1,0 +1,6806 @@
+{
+ "version": "1.0.0",
+ "name": "EVK043027B Coffee Bar",
+ "description": "Five-screen self-serve coffee bar for the EDT EVK043027B at 480x272: a nav rail and drink cards built as reusable containers, a QR payment screen whose code arrives over Modbus, and a countdown in logic.",
+ "createdAt": 0,
+ "updatedAt": 0,
+ "canvasSize": {
+  "width": 480,
+  "height": 272
+ },
+ "screens": [
+  {
+   "id": "screen_home",
+   "name": "Home",
+   "groupId": "sg_customer",
+   "isEntry": true,
+   "backgroundColor": "#100D0C",
+   "components": [
+    {
+     "id": "home_bg",
+     "type": "rectangle",
+     "name": "home_bg",
+     "x": 0,
+     "y": 0,
+     "width": 480,
+     "height": 272,
+     "children": [],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#100D0C",
+       "bgGradColor": "#1A1411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "home_rail",
+     "type": "container-instance",
+     "name": "home_rail",
+     "x": 0,
+     "y": 0,
+     "width": 56,
+     "height": 272,
+     "children": [],
+     "props": {
+      "definitionId": "def_rail",
+      "slots": {}
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "home_marker",
+     "type": "rectangle",
+     "name": "home_marker",
+     "x": 0,
+     "y": 77,
+     "width": 3,
+     "height": 22,
+     "children": [],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#F0A94C",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 2,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "home_brand",
+     "type": "label",
+     "name": "home_brand",
+     "x": 72,
+     "y": 16,
+     "width": 150,
+     "height": 14,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#7C6E62",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_brand",
+     "textId": "txt_brand",
+     "textProp": "text"
+    },
+    {
+     "id": "home_pill_water",
+     "type": "rectangle",
+     "name": "home_pill_water",
+     "x": 228,
+     "y": 12,
+     "width": 80,
+     "height": 24,
+     "children": [],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#1B1614",
+       "borderColor": "#2A211B",
+       "borderWidth": 1,
+       "borderRadius": 12,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "home_pill_water_txt",
+     "type": "label",
+     "name": "home_pill_water_txt",
+     "x": 228,
+     "y": 18,
+     "width": 80,
+     "height": 12,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#B9AA9A",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_caption_c",
+     "textId": "txt_water_level",
+     "textProp": "text"
+    },
+    {
+     "id": "home_pill_beans",
+     "type": "rectangle",
+     "name": "home_pill_beans",
+     "x": 312,
+     "y": 12,
+     "width": 80,
+     "height": 24,
+     "children": [],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#1B1614",
+       "borderColor": "#2A211B",
+       "borderWidth": 1,
+       "borderRadius": 12,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "home_pill_beans_txt",
+     "type": "label",
+     "name": "home_pill_beans_txt",
+     "x": 312,
+     "y": 18,
+     "width": 80,
+     "height": 12,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#B9AA9A",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_caption_c",
+     "textId": "txt_bean_level",
+     "textProp": "text"
+    },
+    {
+     "id": "home_clock",
+     "type": "label",
+     "name": "home_clock",
+     "x": 396,
+     "y": 17,
+     "width": 68,
+     "height": 14,
+     "children": [],
+     "props": {
+      "text": "07:41"
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#7C6E62",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_caption_r"
+    },
+    {
+     "id": "home_greeting",
+     "type": "label",
+     "name": "home_greeting",
+     "x": 72,
+     "y": 46,
+     "width": 280,
+     "height": 32,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#F4EDE4",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_display",
+     "textId": "txt_good_morning",
+     "textProp": "text"
+    },
+    {
+     "id": "home_sub",
+     "type": "label",
+     "name": "home_sub",
+     "x": 72,
+     "y": 80,
+     "width": 300,
+     "height": 16,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#B9AA9A",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_caption",
+     "textId": "txt_usual_ready",
+     "textProp": "text"
+    },
+    {
+     "id": "home_hero",
+     "type": "obj",
+     "name": "home_hero",
+     "x": 72,
+     "y": 104,
+     "width": 224,
+     "height": 150,
+     "children": [
+      {
+       "id": "home_hero_tag",
+       "type": "label",
+       "name": "home_hero_tag",
+       "x": 16,
+       "y": 14,
+       "width": 120,
+       "height": 12,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#7C6E62",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "home_hero",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_micro",
+       "textId": "txt_your_usual",
+       "textProp": "text"
+      },
+      {
+       "id": "home_hero_name",
+       "type": "label",
+       "name": "home_hero_name",
+       "x": 16,
+       "y": 30,
+       "width": 150,
+       "height": 26,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#F4EDE4",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "home_hero",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_title",
+       "textId": "txt_flat_white",
+       "textProp": "text"
+      },
+      {
+       "id": "home_hero_meta",
+       "type": "label",
+       "name": "home_hero_meta",
+       "x": 16,
+       "y": 58,
+       "width": 150,
+       "height": 14,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "home_hero",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_flat_white_meta",
+       "textProp": "text"
+      },
+      {
+       "id": "home_hero_price",
+       "type": "label",
+       "name": "home_hero_price",
+       "x": 16,
+       "y": 78,
+       "width": 120,
+       "height": 22,
+       "children": [],
+       "props": {
+        "text": "NT$ 65"
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#F0A94C",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "home_hero",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_numeric_l",
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_price_flatwhite",
+        "property": "text",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      },
+      {
+       "id": "home_hero_btn",
+       "type": "btn",
+       "name": "home_hero_btn",
+       "x": 16,
+       "y": 104,
+       "width": 132,
+       "height": 34,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#F0A94C",
+         "bgGradColor": "#E08C2E",
+         "bgGradDir": "ver",
+         "bgGradStop": 255,
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 17,
+         "textColor": "#1A120A",
+         "padding": 0
+        }
+       },
+       "events": [
+        {
+         "id": "evt-006",
+         "eventType": "LV_EVENT_CLICKED",
+         "handlerType": "builtin",
+         "action": {
+          "type": "navigate",
+          "targetScreen": "Pay",
+          "transition": "cover",
+          "transitionDirection": "up",
+          "transitionDuration": 320
+         }
+        }
+       ],
+       "animations": [],
+       "parentId": "home_hero",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_heading_c",
+       "textId": "txt_order_now",
+       "textProp": "text",
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_order_start",
+        "property": "value",
+        "writeBehavior": "set",
+        "writeValue": 1
+       }
+      },
+      {
+       "id": "home_cup",
+       "type": "obj",
+       "name": "home_cup",
+       "x": 154,
+       "y": 28,
+       "width": 58,
+       "height": 58,
+       "children": [
+        {
+         "id": "home_cup_saucer",
+         "type": "circle",
+         "name": "home_cup_saucer",
+         "x": 0,
+         "y": 0,
+         "width": 58,
+         "height": 58,
+         "children": [],
+         "props": {
+          "shape": "circle",
+          "startAngle": 0,
+          "endAngle": 270,
+          "thickness": 0
+         },
+         "styles": {
+          "default": {
+           "bgColor": "#2A211B",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 9999,
+           "padding": 0
+          }
+         },
+         "events": [],
+         "animations": [],
+         "parentId": "home_cup",
+         "locked": false,
+         "visible": true
+        },
+        {
+         "id": "home_cup_rim",
+         "type": "circle",
+         "name": "home_cup_rim",
+         "x": 6,
+         "y": 6,
+         "width": 46,
+         "height": 46,
+         "children": [],
+         "props": {
+          "shape": "circle",
+          "startAngle": 0,
+          "endAngle": 270,
+          "thickness": 0
+         },
+         "styles": {
+          "default": {
+           "bgColor": "#3A2E24",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 9999,
+           "padding": 0
+          }
+         },
+         "events": [],
+         "animations": [],
+         "parentId": "home_cup",
+         "locked": false,
+         "visible": true
+        },
+        {
+         "id": "home_cup_body",
+         "type": "circle",
+         "name": "home_cup_body",
+         "x": 12,
+         "y": 12,
+         "width": 34,
+         "height": 34,
+         "children": [],
+         "props": {
+          "shape": "circle",
+          "startAngle": 0,
+          "endAngle": 270,
+          "thickness": 0
+         },
+         "styles": {
+          "default": {
+           "bgColor": "#4A3A2C",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 9999,
+           "padding": 0
+          }
+         },
+         "events": [],
+         "animations": [],
+         "parentId": "home_cup",
+         "locked": false,
+         "visible": true
+        },
+        {
+         "id": "home_cup_coffee",
+         "type": "circle",
+         "name": "home_cup_coffee",
+         "x": 17,
+         "y": 17,
+         "width": 24,
+         "height": 24,
+         "children": [],
+         "props": {
+          "shape": "circle",
+          "startAngle": 0,
+          "endAngle": 270,
+          "thickness": 0
+         },
+         "styles": {
+          "default": {
+           "bgColor": "#E08C2E",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 9999,
+           "padding": 0
+          }
+         },
+         "events": [],
+         "animations": [],
+         "parentId": "home_cup",
+         "locked": false,
+         "visible": true
+        },
+        {
+         "id": "home_cup_crema",
+         "type": "circle",
+         "name": "home_cup_crema",
+         "x": 21,
+         "y": 21,
+         "width": 16,
+         "height": 16,
+         "children": [],
+         "props": {
+          "shape": "circle",
+          "startAngle": 0,
+          "endAngle": 270,
+          "thickness": 0
+         },
+         "styles": {
+          "default": {
+           "bgColor": "#F0A94C",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 9999,
+           "padding": 0
+          }
+         },
+         "events": [],
+         "animations": [],
+         "parentId": "home_cup",
+         "locked": false,
+         "visible": true
+        }
+       ],
+       "props": {},
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "home_hero",
+       "locked": false,
+       "visible": true,
+       "flags": {
+        "clickable": false,
+        "scrollable": false
+       }
+      }
+     ],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#221B17",
+       "bgGradColor": "#191411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "#33291F",
+       "borderWidth": 1,
+       "borderRadius": 18,
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-005",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "navigate",
+        "targetScreen": "Pay",
+        "transition": "cover",
+        "transitionDirection": "up",
+        "transitionDuration": 320
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": true,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "home_status",
+     "type": "obj",
+     "name": "home_status",
+     "x": 308,
+     "y": 104,
+     "width": 156,
+     "height": 150,
+     "children": [
+      {
+       "id": "home_arc",
+       "type": "arc",
+       "name": "home_arc",
+       "x": 34,
+       "y": 10,
+       "width": 88,
+       "height": 88,
+       "children": [],
+       "props": {
+        "startAngle": 135,
+        "endAngle": 45,
+        "value": 92
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#2A211B",
+         "borderColor": "#F0A94C",
+         "borderWidth": 8,
+         "borderRadius": 0,
+         "padding": 0
+        },
+        "parts": {
+         "indicator": {
+          "default": {
+           "bgColor": "#F0A94C",
+           "borderWidth": 8
+          }
+         },
+         "knob": {
+          "default": {
+           "bgColor": "transparent",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "padding": 0
+          }
+         }
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "home_status",
+       "locked": false,
+       "visible": true,
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_boiler_temp",
+        "property": "value",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      },
+      {
+       "id": "home_temp",
+       "type": "label",
+       "name": "home_temp",
+       "x": 14,
+       "y": 40,
+       "width": 128,
+       "height": 28,
+       "children": [],
+       "props": {
+        "text": "92°"
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#F4EDE4",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "home_status",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_numeric",
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_boiler_temp",
+        "property": "text",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      },
+      {
+       "id": "home_state",
+       "type": "label",
+       "name": "home_state",
+       "x": 12,
+       "y": 110,
+       "width": 132,
+       "height": 20,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#5BC49A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "home_status",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_heading_c",
+       "textId": "txt_ready",
+       "textProp": "text"
+      },
+      {
+       "id": "home_note",
+       "type": "label",
+       "name": "home_note",
+       "x": 12,
+       "y": 130,
+       "width": 132,
+       "height": 12,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#7C6E62",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "home_status",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption_c",
+       "textId": "txt_ready_note",
+       "textProp": "text"
+      }
+     ],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#221B17",
+       "bgGradColor": "#191411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "#33291F",
+       "borderWidth": 1,
+       "borderRadius": 18,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    }
+   ],
+   "events": [
+    {
+     "id": "evt-007",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_home_greeting"
+     }
+    },
+    {
+     "id": "evt-008",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_home_sub"
+     }
+    },
+    {
+     "id": "evt-009",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_home_hero"
+     }
+    },
+    {
+     "id": "evt-010",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_home_status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "screen_drinks",
+   "name": "Drinks",
+   "groupId": "sg_customer",
+   "backgroundColor": "#100D0C",
+   "components": [
+    {
+     "id": "drinks_bg",
+     "type": "rectangle",
+     "name": "drinks_bg",
+     "x": 0,
+     "y": 0,
+     "width": 480,
+     "height": 272,
+     "children": [],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#100D0C",
+       "bgGradColor": "#1A1411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "drinks_rail",
+     "type": "container-instance",
+     "name": "drinks_rail",
+     "x": 0,
+     "y": 0,
+     "width": 56,
+     "height": 272,
+     "children": [],
+     "props": {
+      "definitionId": "def_rail",
+      "slots": {}
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "drinks_marker",
+     "type": "rectangle",
+     "name": "drinks_marker",
+     "x": 0,
+     "y": 125,
+     "width": 3,
+     "height": 22,
+     "children": [],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#F0A94C",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 2,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "drinks_title",
+     "type": "label",
+     "name": "drinks_title",
+     "x": 72,
+     "y": 14,
+     "width": 200,
+     "height": 28,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#F4EDE4",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_title",
+     "textId": "txt_choose_drink",
+     "textProp": "text"
+    },
+    {
+     "id": "drinks_seg",
+     "type": "obj",
+     "name": "drinks_seg",
+     "x": 316,
+     "y": 12,
+     "width": 148,
+     "height": 30,
+     "children": [
+      {
+       "id": "seg_pill",
+       "type": "rectangle",
+       "name": "seg_pill",
+       "x": 3,
+       "y": 3,
+       "width": 46,
+       "height": 24,
+       "children": [],
+       "props": {},
+       "styles": {
+        "default": {
+         "bgColor": "#3A2E24",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 12,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "drinks_seg",
+       "locked": false,
+       "visible": true
+      },
+      {
+       "id": "seg_hot",
+       "type": "btn",
+       "name": "seg_hot",
+       "x": 3,
+       "y": 3,
+       "width": 46,
+       "height": 24,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 12,
+         "textColor": "#F4EDE4",
+         "padding": 0
+        }
+       },
+       "events": [
+        {
+         "id": "evt-011",
+         "eventType": "LV_EVENT_CLICKED",
+         "handlerType": "builtin",
+         "action": {
+          "type": "setProperty",
+          "targetComponent": "seg_pill",
+          "property": "x",
+          "value": 3
+         }
+        }
+       ],
+       "animations": [],
+       "parentId": "drinks_seg",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption_c",
+       "textId": "txt_seg_hot",
+       "textProp": "text"
+      },
+      {
+       "id": "seg_iced",
+       "type": "btn",
+       "name": "seg_iced",
+       "x": 51,
+       "y": 3,
+       "width": 46,
+       "height": 24,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 12,
+         "textColor": "#F4EDE4",
+         "padding": 0
+        }
+       },
+       "events": [
+        {
+         "id": "evt-012",
+         "eventType": "LV_EVENT_CLICKED",
+         "handlerType": "builtin",
+         "action": {
+          "type": "setProperty",
+          "targetComponent": "seg_pill",
+          "property": "x",
+          "value": 51
+         }
+        }
+       ],
+       "animations": [],
+       "parentId": "drinks_seg",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption_c",
+       "textId": "txt_seg_iced",
+       "textProp": "text"
+      },
+      {
+       "id": "seg_milk",
+       "type": "btn",
+       "name": "seg_milk",
+       "x": 99,
+       "y": 3,
+       "width": 46,
+       "height": 24,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 12,
+         "textColor": "#F4EDE4",
+         "padding": 0
+        }
+       },
+       "events": [
+        {
+         "id": "evt-013",
+         "eventType": "LV_EVENT_CLICKED",
+         "handlerType": "builtin",
+         "action": {
+          "type": "setProperty",
+          "targetComponent": "seg_pill",
+          "property": "x",
+          "value": 99
+         }
+        }
+       ],
+       "animations": [],
+       "parentId": "drinks_seg",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption_c",
+       "textId": "txt_seg_milk",
+       "textProp": "text"
+      }
+     ],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#1B1614",
+       "borderColor": "#2A211B",
+       "borderWidth": 1,
+       "borderRadius": 15,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "drink_espresso",
+     "type": "container-instance",
+     "name": "drink_espresso",
+     "x": 72,
+     "y": 52,
+     "width": 125,
+     "height": 100,
+     "children": [],
+     "props": {
+      "definitionId": "def_drink_card",
+      "slots": {
+       "sl_name": "Espresso",
+       "sl_meta": "40 ml · 25 s",
+       "sl_priced": "NT$ 45",
+       "sl_price": "tag_price_espresso"
+      }
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 14,
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-014",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "navigate",
+        "targetScreen": "Pay",
+        "transition": "cover",
+        "transitionDirection": "up",
+        "transitionDuration": 300
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": true,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "drink_americano",
+     "type": "container-instance",
+     "name": "drink_americano",
+     "x": 205,
+     "y": 52,
+     "width": 125,
+     "height": 100,
+     "children": [],
+     "props": {
+      "definitionId": "def_drink_card",
+      "slots": {
+       "sl_name": "Americano",
+       "sl_meta": "160 ml · 30 s",
+       "sl_priced": "NT$ 50",
+       "sl_price": "tag_price_americano"
+      }
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 14,
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-015",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "navigate",
+        "targetScreen": "Pay",
+        "transition": "cover",
+        "transitionDirection": "up",
+        "transitionDuration": 300
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": true,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "drink_cappuccino",
+     "type": "container-instance",
+     "name": "drink_cappuccino",
+     "x": 338,
+     "y": 52,
+     "width": 125,
+     "height": 100,
+     "children": [],
+     "props": {
+      "definitionId": "def_drink_card",
+      "slots": {
+       "sl_name": "Cappuccino",
+       "sl_meta": "180 ml · 35 s",
+       "sl_priced": "NT$ 60",
+       "sl_price": "tag_price_cappuccino"
+      }
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 14,
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-016",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "navigate",
+        "targetScreen": "Pay",
+        "transition": "cover",
+        "transitionDirection": "up",
+        "transitionDuration": 300
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": true,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "drink_flatwhite",
+     "type": "container-instance",
+     "name": "drink_flatwhite",
+     "x": 72,
+     "y": 160,
+     "width": 125,
+     "height": 100,
+     "children": [],
+     "props": {
+      "definitionId": "def_drink_card",
+      "slots": {
+       "sl_name": "Flat White",
+       "sl_meta": "180 ml · 30 s",
+       "sl_priced": "NT$ 65",
+       "sl_price": "tag_price_flatwhite"
+      }
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 14,
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-017",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "navigate",
+        "targetScreen": "Pay",
+        "transition": "cover",
+        "transitionDirection": "up",
+        "transitionDuration": 300
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": true,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "drink_latte",
+     "type": "container-instance",
+     "name": "drink_latte",
+     "x": 205,
+     "y": 160,
+     "width": 125,
+     "height": 100,
+     "children": [],
+     "props": {
+      "definitionId": "def_drink_card",
+      "slots": {
+       "sl_name": "Latte",
+       "sl_meta": "220 ml · 40 s",
+       "sl_priced": "NT$ 65",
+       "sl_price": "tag_price_latte"
+      }
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 14,
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-018",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "navigate",
+        "targetScreen": "Pay",
+        "transition": "cover",
+        "transitionDirection": "up",
+        "transitionDuration": 300
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": true,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "drink_mocha",
+     "type": "container-instance",
+     "name": "drink_mocha",
+     "x": 338,
+     "y": 160,
+     "width": 125,
+     "height": 100,
+     "children": [],
+     "props": {
+      "definitionId": "def_drink_card",
+      "slots": {
+       "sl_name": "Mocha",
+       "sl_meta": "220 ml · 45 s",
+       "sl_priced": "NT$ 75",
+       "sl_price": "tag_price_mocha"
+      }
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 14,
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-019",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "navigate",
+        "targetScreen": "Pay",
+        "transition": "cover",
+        "transitionDirection": "up",
+        "transitionDuration": 300
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": true,
+      "scrollable": false
+     }
+    }
+   ],
+   "events": [
+    {
+     "id": "evt-020",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_drinks_title"
+     }
+    },
+    {
+     "id": "evt-021",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_drinks_seg"
+     }
+    },
+    {
+     "id": "evt-022",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_drink_espresso"
+     }
+    },
+    {
+     "id": "evt-023",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_drink_americano"
+     }
+    },
+    {
+     "id": "evt-024",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_drink_cappuccino"
+     }
+    },
+    {
+     "id": "evt-025",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_drink_flatwhite"
+     }
+    },
+    {
+     "id": "evt-026",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_drink_latte"
+     }
+    },
+    {
+     "id": "evt-027",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_drink_mocha"
+     }
+    }
+   ]
+  },
+  {
+   "id": "screen_pay",
+   "name": "Pay",
+   "groupId": "sg_customer",
+   "backgroundColor": "#100D0C",
+   "components": [
+    {
+     "id": "pay_bg",
+     "type": "rectangle",
+     "name": "pay_bg",
+     "x": 0,
+     "y": 0,
+     "width": 480,
+     "height": 272,
+     "children": [],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#100D0C",
+       "bgGradColor": "#1A1411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "pay_rail",
+     "type": "container-instance",
+     "name": "pay_rail",
+     "x": 0,
+     "y": 0,
+     "width": 56,
+     "height": 272,
+     "children": [],
+     "props": {
+      "definitionId": "def_rail",
+      "slots": {}
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "pay_marker",
+     "type": "rectangle",
+     "name": "pay_marker",
+     "x": 0,
+     "y": 173,
+     "width": 3,
+     "height": 22,
+     "children": [],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#F0A94C",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 2,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "pay_title",
+     "type": "label",
+     "name": "pay_title",
+     "x": 72,
+     "y": 14,
+     "width": 220,
+     "height": 28,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#F4EDE4",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_title",
+     "textId": "txt_scan_to_pay",
+     "textProp": "text"
+    },
+    {
+     "id": "pay_order",
+     "type": "obj",
+     "name": "pay_order",
+     "x": 72,
+     "y": 48,
+     "width": 204,
+     "height": 172,
+     "children": [
+      {
+       "id": "pay_order_hd",
+       "type": "label",
+       "name": "pay_order_hd",
+       "x": 16,
+       "y": 14,
+       "width": 140,
+       "height": 12,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#7C6E62",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "pay_order",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_micro",
+       "textId": "txt_your_order",
+       "textProp": "text"
+      },
+      {
+       "id": "pay_drink",
+       "type": "label",
+       "name": "pay_drink",
+       "x": 16,
+       "y": 30,
+       "width": 172,
+       "height": 26,
+       "children": [],
+       "props": {
+        "text": "Flat White"
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#F4EDE4",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "pay_order",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_title",
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_order_drink",
+        "property": "text",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      },
+      {
+       "id": "pay_meta",
+       "type": "label",
+       "name": "pay_meta",
+       "x": 16,
+       "y": 60,
+       "width": 172,
+       "height": 14,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "pay_order",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_order_meta",
+       "textProp": "text"
+      },
+      {
+       "id": "pay_rule",
+       "type": "line",
+       "name": "pay_rule",
+       "x": 16,
+       "y": 86,
+       "width": 172,
+       "height": 1,
+       "children": [],
+       "props": {
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          172,
+          0
+         ]
+        ],
+        "lineWidth": 1,
+        "lineColor": "#2A211B",
+        "lineRounded": false,
+        "lineDashWidth": 0,
+        "lineDashGap": 0
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "pay_order",
+       "locked": false,
+       "visible": true
+      },
+      {
+       "id": "pay_total_lbl",
+       "type": "label",
+       "name": "pay_total_lbl",
+       "x": 16,
+       "y": 98,
+       "width": 80,
+       "height": 14,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "pay_order",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_total",
+       "textProp": "text"
+      },
+      {
+       "id": "pay_total_val",
+       "type": "label",
+       "name": "pay_total_val",
+       "x": 100,
+       "y": 94,
+       "width": 88,
+       "height": 22,
+       "children": [],
+       "props": {
+        "text": "NT$ 65"
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#F0A94C",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "pay_order",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_numeric_r",
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_order_total",
+        "property": "text",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      },
+      {
+       "id": "pay_expires",
+       "type": "label",
+       "name": "pay_expires",
+       "x": 16,
+       "y": 126,
+       "width": 172,
+       "height": 12,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#7C6E62",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "pay_order",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_code_expires",
+       "textProp": "text"
+      },
+      {
+       "id": "pay_expiry_bar",
+       "type": "bar",
+       "name": "pay_expiry_bar",
+       "x": 16,
+       "y": 146,
+       "width": 172,
+       "height": 5,
+       "children": [],
+       "props": {
+        "min": 0,
+        "max": 120,
+        "value": 96
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#2A211B",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 3,
+         "padding": 0
+        },
+        "parts": {
+         "indicator": {
+          "default": {
+           "bgColor": "#F0A94C",
+           "borderRadius": 3
+          }
+         }
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "pay_order",
+       "locked": false,
+       "visible": true
+      }
+     ],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#221B17",
+       "bgGradColor": "#191411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "#33291F",
+       "borderWidth": 1,
+       "borderRadius": 18,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "pay_qr_card",
+     "type": "obj",
+     "name": "pay_qr_card",
+     "x": 292,
+     "y": 48,
+     "width": 172,
+     "height": 172,
+     "children": [
+      {
+       "id": "pay_qr",
+       "type": "qrcode",
+       "name": "pay_qr",
+       "x": 12,
+       "y": 12,
+       "width": 148,
+       "height": 148,
+       "children": [],
+       "props": {
+        "source": "literal",
+        "literal": "https://pay.edt.tw/o/9F2K7Q3B8M",
+        "textId": "",
+        "version": 3,
+        "scale": 4,
+        "ecc": "M",
+        "quietZone": true,
+        "sampleText": "https://pay.edt.tw/o/9F2K7Q3B8M"
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#F7F3EC",
+         "textColor": "#141110",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "pay_qr_card",
+       "locked": false,
+       "visible": true,
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_pay_url",
+        "property": "text",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      }
+     ],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#F7F3EC",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 18,
+       "padding": 0,
+       "shadowColor": "#000000",
+       "shadowWidth": 18,
+       "shadowOffsetX": 0,
+       "shadowOffsetY": 6,
+       "shadowSpread": 0,
+       "shadowOpacity": 0.5
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "pay_hint",
+     "type": "label",
+     "name": "pay_hint",
+     "x": 292,
+     "y": 228,
+     "width": 172,
+     "height": 12,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#7C6E62",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_caption_c",
+     "textId": "txt_scan_hint",
+     "textProp": "text"
+    },
+    {
+     "id": "pay_cancel",
+     "type": "btn",
+     "name": "pay_cancel",
+     "x": 72,
+     "y": 228,
+     "width": 96,
+     "height": 32,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "#33291F",
+       "borderWidth": 1,
+       "borderRadius": 16,
+       "textColor": "#B9AA9A",
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-028",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "navigate",
+        "targetScreen": "Drinks",
+        "transition": "slide",
+        "transitionDirection": "right",
+        "transitionDuration": 260
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_caption_c",
+     "textId": "txt_cancel",
+     "textProp": "text"
+    },
+    {
+     "id": "pay_paid",
+     "type": "btn",
+     "name": "pay_paid",
+     "x": 176,
+     "y": 228,
+     "width": 100,
+     "height": 32,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "#5BC49A",
+       "bgGradColor": "#49A882",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 16,
+       "textColor": "#0B1F17",
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-029",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "navigate",
+        "targetScreen": "Brewing",
+        "transition": "fade",
+        "transitionDirection": "left",
+        "transitionDuration": 380
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_caption_c",
+     "textId": "txt_ive_paid",
+     "textProp": "text",
+     "binding": {
+      "enabled": true,
+      "tagId": "tag_order_start",
+      "property": "value",
+      "writeBehavior": "set",
+      "writeValue": 1
+     }
+    }
+   ],
+   "events": [
+    {
+     "id": "evt-030",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_pay_title"
+     }
+    },
+    {
+     "id": "evt-031",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_pay_order"
+     }
+    },
+    {
+     "id": "evt-032",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_pay_qr"
+     }
+    },
+    {
+     "id": "evt-033",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_pay_hint"
+     }
+    }
+   ]
+  },
+  {
+   "id": "screen_brewing",
+   "name": "Brewing",
+   "groupId": "sg_customer",
+   "backgroundColor": "#100D0C",
+   "components": [
+    {
+     "id": "brew_bg",
+     "type": "rectangle",
+     "name": "brew_bg",
+     "x": 0,
+     "y": 0,
+     "width": 480,
+     "height": 272,
+     "children": [],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#100D0C",
+       "bgGradColor": "#1A1411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "brew_rail",
+     "type": "container-instance",
+     "name": "brew_rail",
+     "x": 0,
+     "y": 0,
+     "width": 56,
+     "height": 272,
+     "children": [],
+     "props": {
+      "definitionId": "def_rail",
+      "slots": {}
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "brew_back",
+     "type": "btn",
+     "name": "brew_back",
+     "x": 72,
+     "y": 12,
+     "width": 40,
+     "height": 30,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "#33291F",
+       "borderWidth": 1,
+       "borderRadius": 15,
+       "textColor": "#B9AA9A",
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-034",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "navigate",
+        "targetScreen": "Home",
+        "transition": "cover",
+        "transitionDirection": "down",
+        "transitionDuration": 320
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_heading_c"
+    },
+    {
+     "id": "brew_spin",
+     "type": "spinner",
+     "name": "brew_spin",
+     "x": 124,
+     "y": 16,
+     "width": 22,
+     "height": 22,
+     "children": [],
+     "props": {
+      "speed": 1000
+     },
+     "styles": {
+      "default": {
+       "bgColor": "#2A211B",
+       "borderColor": "#F0A94C",
+       "borderWidth": 3,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "brew_title",
+     "type": "label",
+     "name": "brew_title",
+     "x": 154,
+     "y": 15,
+     "width": 160,
+     "height": 24,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#F4EDE4",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_title",
+     "textId": "txt_brewing",
+     "textProp": "text"
+    },
+    {
+     "id": "brew_stop",
+     "type": "btn",
+     "name": "brew_stop",
+     "x": 392,
+     "y": 12,
+     "width": 72,
+     "height": 30,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "#E2705A",
+       "bgGradColor": "#C85B47",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 15,
+       "textColor": "#2A0F0A",
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-035",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "navigate",
+        "targetScreen": "Home",
+        "transition": "cover",
+        "transitionDirection": "down",
+        "transitionDuration": 320
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_caption_c",
+     "textId": "txt_stop",
+     "textProp": "text"
+    },
+    {
+     "id": "brew_arc",
+     "type": "arc",
+     "name": "brew_arc",
+     "x": 78,
+     "y": 58,
+     "width": 140,
+     "height": 140,
+     "children": [],
+     "props": {
+      "startAngle": 135,
+      "endAngle": 45,
+      "value": 62
+     },
+     "styles": {
+      "default": {
+       "bgColor": "#2A211B",
+       "borderColor": "#F0A94C",
+       "borderWidth": 10,
+       "borderRadius": 0,
+       "padding": 0
+      },
+      "parts": {
+       "indicator": {
+        "default": {
+         "bgColor": "#F0A94C",
+         "borderWidth": 10
+        }
+       },
+       "knob": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       }
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "binding": {
+      "enabled": true,
+      "tagId": "tag_brew_progress",
+      "property": "value",
+      "writeBehavior": "widget-value",
+      "writeValue": 0
+     }
+    },
+    {
+     "id": "brew_pct",
+     "type": "label",
+     "name": "brew_pct",
+     "x": 78,
+     "y": 112,
+     "width": 140,
+     "height": 32,
+     "children": [],
+     "props": {
+      "text": "62%"
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#F4EDE4",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_numeric",
+     "binding": {
+      "enabled": true,
+      "tagId": "tag_brew_progress",
+      "property": "text",
+      "writeBehavior": "widget-value",
+      "writeValue": 0
+     }
+    },
+    {
+     "id": "brew_stage",
+     "type": "label",
+     "name": "brew_stage",
+     "x": 78,
+     "y": 148,
+     "width": 140,
+     "height": 18,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#F0A94C",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_heading_c",
+     "textId": "txt_stage_extract",
+     "textProp": "text"
+    },
+    {
+     "id": "brew_eta",
+     "type": "label",
+     "name": "brew_eta",
+     "x": 78,
+     "y": 204,
+     "width": 140,
+     "height": 12,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#7C6E62",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_caption_c",
+     "textId": "txt_eta",
+     "textProp": "text"
+    },
+    {
+     "id": "brew_stats",
+     "type": "obj",
+     "name": "brew_stats",
+     "x": 236,
+     "y": 52,
+     "width": 228,
+     "height": 200,
+     "children": [
+      {
+       "id": "brew_stats_hd",
+       "type": "label",
+       "name": "brew_stats_hd",
+       "x": 16,
+       "y": 14,
+       "width": 140,
+       "height": 12,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#7C6E62",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "brew_stats",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_micro",
+       "textId": "txt_live",
+       "textProp": "text"
+      },
+      {
+       "id": "brew_stat_pressure_lbl",
+       "type": "label",
+       "name": "brew_stat_pressure_lbl",
+       "x": 16,
+       "y": 39,
+       "width": 96,
+       "height": 14,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "brew_stats",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_pressure",
+       "textProp": "text"
+      },
+      {
+       "id": "brew_stat_pressure",
+       "type": "container-instance",
+       "name": "brew_stat_pressure",
+       "x": 16,
+       "y": 36,
+       "width": 196,
+       "height": 40,
+       "children": [],
+       "props": {
+        "definitionId": "def_stat_row",
+        "slots": {
+         "sl_reading": "9.2 bar",
+         "sl_value": "tag_pressure"
+        }
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "brew_stats",
+       "locked": false,
+       "visible": true,
+       "flags": {
+        "clickable": false,
+        "scrollable": false
+       }
+      },
+      {
+       "id": "brew_stat_temp_lbl",
+       "type": "label",
+       "name": "brew_stat_temp_lbl",
+       "x": 16,
+       "y": 89,
+       "width": 96,
+       "height": 14,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "brew_stats",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_temperature",
+       "textProp": "text"
+      },
+      {
+       "id": "brew_stat_temp",
+       "type": "container-instance",
+       "name": "brew_stat_temp",
+       "x": 16,
+       "y": 86,
+       "width": 196,
+       "height": 40,
+       "children": [],
+       "props": {
+        "definitionId": "def_stat_row",
+        "slots": {
+         "sl_reading": "93 °C",
+         "sl_value": "tag_boiler_temp"
+        }
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "brew_stats",
+       "locked": false,
+       "visible": true,
+       "flags": {
+        "clickable": false,
+        "scrollable": false
+       }
+      },
+      {
+       "id": "brew_stat_flow_lbl",
+       "type": "label",
+       "name": "brew_stat_flow_lbl",
+       "x": 16,
+       "y": 139,
+       "width": 96,
+       "height": 14,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "brew_stats",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_flow",
+       "textProp": "text"
+      },
+      {
+       "id": "brew_stat_flow",
+       "type": "container-instance",
+       "name": "brew_stat_flow",
+       "x": 16,
+       "y": 136,
+       "width": 196,
+       "height": 40,
+       "children": [],
+       "props": {
+        "definitionId": "def_stat_row",
+        "slots": {
+         "sl_reading": "3.1 ml/s",
+         "sl_value": "tag_flow"
+        }
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "brew_stats",
+       "locked": false,
+       "visible": true,
+       "flags": {
+        "clickable": false,
+        "scrollable": false
+       }
+      }
+     ],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#221B17",
+       "bgGradColor": "#191411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "#33291F",
+       "borderWidth": 1,
+       "borderRadius": 18,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    }
+   ],
+   "events": [
+    {
+     "id": "evt-036",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_brew_title"
+     }
+    },
+    {
+     "id": "evt-037",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_brew_arc"
+     }
+    },
+    {
+     "id": "evt-038",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_brew_stats"
+     }
+    }
+   ]
+  },
+  {
+   "id": "screen_settings",
+   "name": "Settings",
+   "groupId": "sg_service",
+   "backgroundColor": "#100D0C",
+   "components": [
+    {
+     "id": "set_bg",
+     "type": "rectangle",
+     "name": "set_bg",
+     "x": 0,
+     "y": 0,
+     "width": 480,
+     "height": 272,
+     "children": [],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#100D0C",
+       "bgGradColor": "#1A1411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "set_rail",
+     "type": "container-instance",
+     "name": "set_rail",
+     "x": 0,
+     "y": 0,
+     "width": 56,
+     "height": 272,
+     "children": [],
+     "props": {
+      "definitionId": "def_rail",
+      "slots": {}
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "set_marker",
+     "type": "rectangle",
+     "name": "set_marker",
+     "x": 0,
+     "y": 221,
+     "width": 3,
+     "height": 22,
+     "children": [],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#F0A94C",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 2,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true
+    },
+    {
+     "id": "set_title",
+     "type": "label",
+     "name": "set_title",
+     "x": 72,
+     "y": 14,
+     "width": 200,
+     "height": 28,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#F4EDE4",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_title",
+     "textId": "txt_settings",
+     "textProp": "text"
+    },
+    {
+     "id": "set_language",
+     "type": "btn",
+     "name": "set_language",
+     "x": 356,
+     "y": 12,
+     "width": 108,
+     "height": 30,
+     "children": [],
+     "props": {
+      "text": ""
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "borderColor": "#33291F",
+       "borderWidth": 1,
+       "borderRadius": 15,
+       "textColor": "#B9AA9A",
+       "padding": 0
+      }
+     },
+     "events": [
+      {
+       "id": "evt-039",
+       "eventType": "LV_EVENT_CLICKED",
+       "handlerType": "builtin",
+       "action": {
+        "type": "setLanguage",
+        "language": "__next__"
+       }
+      }
+     ],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_caption_c",
+     "textId": "txt_language",
+     "textProp": "text"
+    },
+    {
+     "id": "set_brew",
+     "type": "obj",
+     "name": "set_brew",
+     "x": 72,
+     "y": 52,
+     "width": 196,
+     "height": 200,
+     "children": [
+      {
+       "id": "set_brew_hd",
+       "type": "label",
+       "name": "set_brew_hd",
+       "x": 16,
+       "y": 14,
+       "width": 140,
+       "height": 12,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#7C6E62",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_brew",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_micro",
+       "textId": "txt_brew_hd",
+       "textProp": "text"
+      },
+      {
+       "id": "set_strength_lbl",
+       "type": "label",
+       "name": "set_strength_lbl",
+       "x": 16,
+       "y": 34,
+       "width": 96,
+       "height": 14,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_brew",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_strength",
+       "textProp": "text"
+      },
+      {
+       "id": "set_strength_val",
+       "type": "label",
+       "name": "set_strength_val",
+       "x": 112,
+       "y": 32,
+       "width": 68,
+       "height": 16,
+       "children": [],
+       "props": {
+        "text": "3"
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#F0A94C",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_brew",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_heading_r"
+      },
+      {
+       "id": "set_strength",
+       "type": "slider",
+       "name": "set_strength",
+       "x": 16,
+       "y": 56,
+       "width": 164,
+       "height": 14,
+       "children": [],
+       "props": {
+        "min": 1,
+        "max": 5,
+        "value": 3
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#2A211B",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 7,
+         "padding": 0
+        },
+        "parts": {
+         "indicator": {
+          "default": {
+           "bgColor": "#F0A94C",
+           "borderRadius": 7
+          }
+         },
+         "knob": {
+          "default": {
+           "bgColor": "#F4EDE4",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 9999,
+           "padding": 3
+          }
+         }
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_brew",
+       "locked": false,
+       "visible": true,
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_strength",
+        "property": "value",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      },
+      {
+       "id": "set_temp_lbl",
+       "type": "label",
+       "name": "set_temp_lbl",
+       "x": 16,
+       "y": 84,
+       "width": 96,
+       "height": 14,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_brew",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_temperature",
+       "textProp": "text"
+      },
+      {
+       "id": "set_temp_val",
+       "type": "label",
+       "name": "set_temp_val",
+       "x": 112,
+       "y": 82,
+       "width": 68,
+       "height": 16,
+       "children": [],
+       "props": {
+        "text": "93°"
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#F0A94C",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_brew",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_heading_r"
+      },
+      {
+       "id": "set_temp",
+       "type": "slider",
+       "name": "set_temp",
+       "x": 16,
+       "y": 106,
+       "width": 164,
+       "height": 14,
+       "children": [],
+       "props": {
+        "min": 85,
+        "max": 96,
+        "value": 93
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#2A211B",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 7,
+         "padding": 0
+        },
+        "parts": {
+         "indicator": {
+          "default": {
+           "bgColor": "#F0A94C",
+           "borderRadius": 7
+          }
+         },
+         "knob": {
+          "default": {
+           "bgColor": "#F4EDE4",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 9999,
+           "padding": 3
+          }
+         }
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_brew",
+       "locked": false,
+       "visible": true,
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_target_temp",
+        "property": "value",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      },
+      {
+       "id": "set_cup_lbl",
+       "type": "label",
+       "name": "set_cup_lbl",
+       "x": 16,
+       "y": 134,
+       "width": 96,
+       "height": 14,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_brew",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_cup_size",
+       "textProp": "text"
+      },
+      {
+       "id": "set_cup_val",
+       "type": "label",
+       "name": "set_cup_val",
+       "x": 112,
+       "y": 132,
+       "width": 68,
+       "height": 16,
+       "children": [],
+       "props": {
+        "text": "180 ml"
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#F0A94C",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_brew",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_heading_r"
+      },
+      {
+       "id": "set_cup",
+       "type": "slider",
+       "name": "set_cup",
+       "x": 16,
+       "y": 156,
+       "width": 164,
+       "height": 14,
+       "children": [],
+       "props": {
+        "min": 60,
+        "max": 260,
+        "value": 180
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#2A211B",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 7,
+         "padding": 0
+        },
+        "parts": {
+         "indicator": {
+          "default": {
+           "bgColor": "#F0A94C",
+           "borderRadius": 7
+          }
+         },
+         "knob": {
+          "default": {
+           "bgColor": "#F4EDE4",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 9999,
+           "padding": 3
+          }
+         }
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_brew",
+       "locked": false,
+       "visible": true,
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_cup_size",
+        "property": "value",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      }
+     ],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#221B17",
+       "bgGradColor": "#191411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "#33291F",
+       "borderWidth": 1,
+       "borderRadius": 18,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    },
+    {
+     "id": "set_machine",
+     "type": "obj",
+     "name": "set_machine",
+     "x": 280,
+     "y": 52,
+     "width": 184,
+     "height": 200,
+     "children": [
+      {
+       "id": "set_machine_hd",
+       "type": "label",
+       "name": "set_machine_hd",
+       "x": 16,
+       "y": 14,
+       "width": 140,
+       "height": 12,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#7C6E62",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_machine",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_micro",
+       "textId": "txt_machine_hd",
+       "textProp": "text"
+      },
+      {
+       "id": "set_rinse_lbl",
+       "type": "label",
+       "name": "set_rinse_lbl",
+       "x": 16,
+       "y": 38,
+       "width": 100,
+       "height": 16,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_machine",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_auto_rinse",
+       "textProp": "text"
+      },
+      {
+       "id": "set_rinse",
+       "type": "switch",
+       "name": "set_rinse",
+       "x": 122,
+       "y": 36,
+       "width": 44,
+       "height": 22,
+       "children": [],
+       "props": {
+        "checked": true
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#2A211B",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 11,
+         "padding": 0
+        },
+        "parts": {
+         "indicator": {
+          "checked": {
+           "bgColor": "#F0A94C",
+           "borderRadius": 11
+          }
+         },
+         "knob": {
+          "default": {
+           "bgColor": "#F4EDE4",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 9999
+          }
+         }
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_machine",
+       "locked": false,
+       "visible": true,
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_auto_rinse",
+        "property": "checked",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      },
+      {
+       "id": "set_rinse_rule",
+       "type": "line",
+       "name": "set_rinse_rule",
+       "x": 16,
+       "y": 68,
+       "width": 152,
+       "height": 1,
+       "children": [],
+       "props": {
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          152,
+          0
+         ]
+        ],
+        "lineWidth": 1,
+        "lineColor": "#2A211B",
+        "lineRounded": false,
+        "lineDashWidth": 0,
+        "lineDashGap": 0
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_machine",
+       "locked": false,
+       "visible": true
+      },
+      {
+       "id": "set_warmer_lbl",
+       "type": "label",
+       "name": "set_warmer_lbl",
+       "x": 16,
+       "y": 80,
+       "width": 100,
+       "height": 16,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_machine",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_cup_warmer",
+       "textProp": "text"
+      },
+      {
+       "id": "set_warmer",
+       "type": "switch",
+       "name": "set_warmer",
+       "x": 122,
+       "y": 78,
+       "width": 44,
+       "height": 22,
+       "children": [],
+       "props": {
+        "checked": false
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#2A211B",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 11,
+         "padding": 0
+        },
+        "parts": {
+         "indicator": {
+          "checked": {
+           "bgColor": "#F0A94C",
+           "borderRadius": 11
+          }
+         },
+         "knob": {
+          "default": {
+           "bgColor": "#F4EDE4",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 9999
+          }
+         }
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_machine",
+       "locked": false,
+       "visible": true,
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_cup_warmer",
+        "property": "checked",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      },
+      {
+       "id": "set_warmer_rule",
+       "type": "line",
+       "name": "set_warmer_rule",
+       "x": 16,
+       "y": 110,
+       "width": 152,
+       "height": 1,
+       "children": [],
+       "props": {
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          152,
+          0
+         ]
+        ],
+        "lineWidth": 1,
+        "lineColor": "#2A211B",
+        "lineRounded": false,
+        "lineDashWidth": 0,
+        "lineDashGap": 0
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_machine",
+       "locked": false,
+       "visible": true
+      },
+      {
+       "id": "set_eco_lbl",
+       "type": "label",
+       "name": "set_eco_lbl",
+       "x": 16,
+       "y": 122,
+       "width": 100,
+       "height": 16,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#B9AA9A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_machine",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_eco_mode",
+       "textProp": "text"
+      },
+      {
+       "id": "set_eco",
+       "type": "switch",
+       "name": "set_eco",
+       "x": 122,
+       "y": 120,
+       "width": 44,
+       "height": 22,
+       "children": [],
+       "props": {
+        "checked": true
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#2A211B",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 11,
+         "padding": 0
+        },
+        "parts": {
+         "indicator": {
+          "checked": {
+           "bgColor": "#F0A94C",
+           "borderRadius": 11
+          }
+         },
+         "knob": {
+          "default": {
+           "bgColor": "#F4EDE4",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 9999
+          }
+         }
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_machine",
+       "locked": false,
+       "visible": true,
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_eco_mode",
+        "property": "checked",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      },
+      {
+       "id": "set_descale",
+       "type": "checkbox",
+       "name": "set_descale",
+       "x": 16,
+       "y": 158,
+       "width": 152,
+       "height": 20,
+       "children": [],
+       "props": {
+        "text": "Descale due in 40 L",
+        "checked": false
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "#33291F",
+         "borderWidth": 1,
+         "borderRadius": 4,
+         "textColor": "#B9AA9A",
+         "padding": 6
+        },
+        "parts": {
+         "indicator": {
+          "checked": {
+           "bgColor": "#F0A94C",
+           "borderColor": "#F0A94C",
+           "borderRadius": 4
+          }
+         }
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "set_machine",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "textId": "txt_descale",
+       "textProp": "text",
+       "binding": {
+        "enabled": true,
+        "tagId": "tag_descale",
+        "property": "checked",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       }
+      }
+     ],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#221B17",
+       "bgGradColor": "#191411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "#33291F",
+       "borderWidth": 1,
+       "borderRadius": 18,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    }
+   ],
+   "events": [
+    {
+     "id": "evt-040",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_set_title"
+     }
+    },
+    {
+     "id": "evt-041",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_set_brew"
+     }
+    },
+    {
+     "id": "evt-042",
+     "eventType": "LV_EVENT_SCREEN_LOADED",
+     "handlerType": "builtin",
+     "action": {
+      "type": "playAnimation",
+      "animationId": "anim_set_machine"
+     }
+    }
+   ]
+  }
+ ],
+ "screenGroups": [
+  {
+   "id": "sg_customer",
+   "name": "Customer",
+   "parentId": null
+  },
+  {
+   "id": "sg_service",
+   "name": "Service",
+   "parentId": null
+  }
+ ],
+ "resources": {
+  "images": [],
+  "fonts": []
+ },
+ "containers": [
+  {
+   "id": "def_rail",
+   "name": "NavRail",
+   "width": 56,
+   "height": 272,
+   "components": [
+    {
+     "id": "rail_panel",
+     "type": "obj",
+     "name": "rail_panel",
+     "x": 0,
+     "y": 0,
+     "width": 56,
+     "height": 272,
+     "children": [
+      {
+       "id": "rail_mark",
+       "type": "circle",
+       "name": "rail_mark",
+       "x": 15,
+       "y": 16,
+       "width": 26,
+       "height": 26,
+       "children": [],
+       "props": {
+        "shape": "circle",
+        "startAngle": 0,
+        "endAngle": 270,
+        "thickness": 0
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#F0A94C",
+         "bgGradColor": "#E08C2E",
+         "bgGradDir": "ver",
+         "bgGradStop": 255,
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 9999,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "rail_panel",
+       "locked": false,
+       "visible": true
+      },
+      {
+       "id": "rail_mark_in",
+       "type": "circle",
+       "name": "rail_mark_in",
+       "x": 23,
+       "y": 24,
+       "width": 10,
+       "height": 10,
+       "children": [],
+       "props": {
+        "shape": "circle",
+        "startAngle": 0,
+        "endAngle": 270,
+        "thickness": 0
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#1A120A",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 9999,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "rail_panel",
+       "locked": false,
+       "visible": true
+      },
+      {
+       "id": "rail_home",
+       "type": "btn",
+       "name": "rail_home",
+       "x": 6,
+       "y": 66,
+       "width": 44,
+       "height": 44,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 14,
+         "textColor": "#7C6E62",
+         "padding": 0
+        },
+        "pressed": {
+         "bgColor": "#2A211B",
+         "textColor": "#F4EDE4"
+        }
+       },
+       "events": [
+        {
+         "id": "evt-001",
+         "eventType": "LV_EVENT_CLICKED",
+         "handlerType": "builtin",
+         "action": {
+          "type": "navigate",
+          "targetScreen": "Home",
+          "transition": "wipe",
+          "transitionDirection": "right",
+          "transitionDuration": 280
+         }
+        }
+       ],
+       "animations": [],
+       "parentId": "rail_panel",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_symbol"
+      },
+      {
+       "id": "rail_drinks",
+       "type": "btn",
+       "name": "rail_drinks",
+       "x": 6,
+       "y": 114,
+       "width": 44,
+       "height": 44,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 14,
+         "textColor": "#7C6E62",
+         "padding": 0
+        },
+        "pressed": {
+         "bgColor": "#2A211B",
+         "textColor": "#F4EDE4"
+        }
+       },
+       "events": [
+        {
+         "id": "evt-002",
+         "eventType": "LV_EVENT_CLICKED",
+         "handlerType": "builtin",
+         "action": {
+          "type": "navigate",
+          "targetScreen": "Drinks",
+          "transition": "slide",
+          "transitionDirection": "left",
+          "transitionDuration": 260
+         }
+        }
+       ],
+       "animations": [],
+       "parentId": "rail_panel",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_symbol"
+      },
+      {
+       "id": "rail_pay",
+       "type": "btn",
+       "name": "rail_pay",
+       "x": 6,
+       "y": 162,
+       "width": 44,
+       "height": 44,
+       "children": [
+        {
+         "id": "rail_qr_f1",
+         "type": "rectangle",
+         "name": "rail_qr_f1",
+         "x": 10,
+         "y": 10,
+         "width": 9,
+         "height": 9,
+         "children": [],
+         "props": {},
+         "styles": {
+          "default": {
+           "bgColor": "transparent",
+           "borderColor": "#7C6E62",
+           "borderWidth": 2,
+           "borderRadius": 1,
+           "padding": 0
+          }
+         },
+         "events": [],
+         "animations": [],
+         "parentId": "rail_pay",
+         "locked": false,
+         "visible": true
+        },
+        {
+         "id": "rail_qr_f2",
+         "type": "rectangle",
+         "name": "rail_qr_f2",
+         "x": 25,
+         "y": 10,
+         "width": 9,
+         "height": 9,
+         "children": [],
+         "props": {},
+         "styles": {
+          "default": {
+           "bgColor": "transparent",
+           "borderColor": "#7C6E62",
+           "borderWidth": 2,
+           "borderRadius": 1,
+           "padding": 0
+          }
+         },
+         "events": [],
+         "animations": [],
+         "parentId": "rail_pay",
+         "locked": false,
+         "visible": true
+        },
+        {
+         "id": "rail_qr_f3",
+         "type": "rectangle",
+         "name": "rail_qr_f3",
+         "x": 10,
+         "y": 25,
+         "width": 9,
+         "height": 9,
+         "children": [],
+         "props": {},
+         "styles": {
+          "default": {
+           "bgColor": "transparent",
+           "borderColor": "#7C6E62",
+           "borderWidth": 2,
+           "borderRadius": 1,
+           "padding": 0
+          }
+         },
+         "events": [],
+         "animations": [],
+         "parentId": "rail_pay",
+         "locked": false,
+         "visible": true
+        },
+        {
+         "id": "rail_qr_d1",
+         "type": "rectangle",
+         "name": "rail_qr_d1",
+         "x": 25,
+         "y": 25,
+         "width": 4,
+         "height": 4,
+         "children": [],
+         "props": {},
+         "styles": {
+          "default": {
+           "bgColor": "#7C6E62",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 0,
+           "padding": 0
+          }
+         },
+         "events": [],
+         "animations": [],
+         "parentId": "rail_pay",
+         "locked": false,
+         "visible": true
+        },
+        {
+         "id": "rail_qr_d2",
+         "type": "rectangle",
+         "name": "rail_qr_d2",
+         "x": 31,
+         "y": 31,
+         "width": 3,
+         "height": 3,
+         "children": [],
+         "props": {},
+         "styles": {
+          "default": {
+           "bgColor": "#7C6E62",
+           "borderColor": "transparent",
+           "borderWidth": 0,
+           "borderRadius": 0,
+           "padding": 0
+          }
+         },
+         "events": [],
+         "animations": [],
+         "parentId": "rail_pay",
+         "locked": false,
+         "visible": true
+        }
+       ],
+       "props": {},
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 14,
+         "textColor": "#7C6E62",
+         "padding": 0
+        },
+        "pressed": {
+         "bgColor": "#2A211B",
+         "textColor": "#F4EDE4"
+        }
+       },
+       "events": [
+        {
+         "id": "evt-003",
+         "eventType": "LV_EVENT_CLICKED",
+         "handlerType": "builtin",
+         "action": {
+          "type": "navigate",
+          "targetScreen": "Pay",
+          "transition": "slide",
+          "transitionDirection": "left",
+          "transitionDuration": 260
+         }
+        }
+       ],
+       "animations": [],
+       "parentId": "rail_panel",
+       "locked": false,
+       "visible": true
+      },
+      {
+       "id": "rail_settings",
+       "type": "btn",
+       "name": "rail_settings",
+       "x": 6,
+       "y": 210,
+       "width": 44,
+       "height": 44,
+       "children": [],
+       "props": {
+        "text": ""
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 14,
+         "textColor": "#7C6E62",
+         "padding": 0
+        },
+        "pressed": {
+         "bgColor": "#2A211B",
+         "textColor": "#F4EDE4"
+        }
+       },
+       "events": [
+        {
+         "id": "evt-004",
+         "eventType": "LV_EVENT_CLICKED",
+         "handlerType": "builtin",
+         "action": {
+          "type": "navigate",
+          "targetScreen": "Settings",
+          "transition": "wipe",
+          "transitionDirection": "left",
+          "transitionDuration": 280
+         }
+        }
+       ],
+       "animations": [],
+       "parentId": "rail_panel",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_symbol"
+      }
+     ],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#1B1614",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "def_drink_card",
+   "name": "DrinkCard",
+   "width": 125,
+   "height": 100,
+   "slots": [
+    {
+     "id": "sl_name",
+     "name": "name",
+     "kind": "text"
+    },
+    {
+     "id": "sl_meta",
+     "name": "meta",
+     "kind": "text"
+    },
+    {
+     "id": "sl_priced",
+     "name": "priced",
+     "kind": "text"
+    },
+    {
+     "id": "sl_price",
+     "name": "price",
+     "kind": "tag"
+    }
+   ],
+   "components": [
+    {
+     "id": "card_frame",
+     "type": "obj",
+     "name": "card_frame",
+     "x": 0,
+     "y": 0,
+     "width": 125,
+     "height": 100,
+     "children": [
+      {
+       "id": "card_dot",
+       "type": "circle",
+       "name": "card_dot",
+       "x": 12,
+       "y": 12,
+       "width": 24,
+       "height": 24,
+       "children": [],
+       "props": {
+        "shape": "circle",
+        "startAngle": 0,
+        "endAngle": 270,
+        "thickness": 0
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#3A2E24",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 9999,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "card_frame",
+       "locked": false,
+       "visible": true
+      },
+      {
+       "id": "card_pip",
+       "type": "circle",
+       "name": "card_pip",
+       "x": 18,
+       "y": 18,
+       "width": 12,
+       "height": 12,
+       "children": [],
+       "props": {
+        "shape": "circle",
+        "startAngle": 0,
+        "endAngle": 270,
+        "thickness": 0
+       },
+       "styles": {
+        "default": {
+         "bgColor": "#F0A94C",
+         "borderColor": "transparent",
+         "borderWidth": 0,
+         "borderRadius": 9999,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "card_frame",
+       "locked": false,
+       "visible": true
+      },
+      {
+       "id": "card_name",
+       "type": "label",
+       "name": "card_name",
+       "x": 12,
+       "y": 42,
+       "width": 100,
+       "height": 20,
+       "children": [],
+       "props": {
+        "text": "Drink"
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#F4EDE4",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "card_frame",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_heading",
+       "slotRefs": {
+        "text": "sl_name"
+       }
+      },
+      {
+       "id": "card_meta",
+       "type": "label",
+       "name": "card_meta",
+       "x": 12,
+       "y": 63,
+       "width": 100,
+       "height": 14,
+       "children": [],
+       "props": {
+        "text": "0 ml"
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#7C6E62",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "card_frame",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "slotRefs": {
+        "text": "sl_meta"
+       }
+      },
+      {
+       "id": "card_price",
+       "type": "label",
+       "name": "card_price",
+       "x": 12,
+       "y": 79,
+       "width": 84,
+       "height": 14,
+       "children": [],
+       "props": {
+        "text": "NT$ 0"
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "textColor": "#F0A94C",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "card_frame",
+       "locked": false,
+       "visible": true,
+       "typographyId": "ty_caption",
+       "binding": {
+        "enabled": true,
+        "tagId": "",
+        "property": "text",
+        "writeBehavior": "widget-value",
+        "writeValue": 0
+       },
+       "slotRefs": {
+        "text": "sl_priced",
+        "tag": "sl_price"
+       }
+      },
+      {
+       "id": "card_go",
+       "type": "polygon",
+       "name": "card_go",
+       "x": 104,
+       "y": 20,
+       "width": 7,
+       "height": 12,
+       "children": [],
+       "props": {
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          7,
+          6
+         ],
+         [
+          0,
+          12
+         ]
+        ],
+        "lineWidth": 2,
+        "lineColor": "#7C6E62",
+        "lineRounded": true
+       },
+       "styles": {
+        "default": {
+         "bgColor": "transparent",
+         "borderWidth": 0,
+         "padding": 0
+        }
+       },
+       "events": [],
+       "animations": [],
+       "parentId": "card_frame",
+       "locked": false,
+       "visible": true
+      }
+     ],
+     "props": {},
+     "styles": {
+      "default": {
+       "bgColor": "#221B17",
+       "bgGradColor": "#191411",
+       "bgGradDir": "ver",
+       "bgGradStop": 255,
+       "borderColor": "#33291F",
+       "borderWidth": 1,
+       "borderRadius": 14,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "flags": {
+      "clickable": false,
+      "scrollable": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "def_stat_row",
+   "name": "StatRow",
+   "width": 196,
+   "height": 40,
+   "slots": [
+    {
+     "id": "sl_reading",
+     "name": "reading",
+     "kind": "text"
+    },
+    {
+     "id": "sl_value",
+     "name": "value",
+     "kind": "tag"
+    }
+   ],
+   "components": [
+    {
+     "id": "row_val",
+     "type": "label",
+     "name": "row_val",
+     "x": 100,
+     "y": 0,
+     "width": 96,
+     "height": 20,
+     "children": [],
+     "props": {
+      "text": "--"
+     },
+     "styles": {
+      "default": {
+       "bgColor": "transparent",
+       "textColor": "#F4EDE4",
+       "borderWidth": 0,
+       "padding": 0
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "typographyId": "ty_heading_r",
+     "binding": {
+      "enabled": true,
+      "tagId": "",
+      "property": "text",
+      "writeBehavior": "widget-value",
+      "writeValue": 0
+     },
+     "slotRefs": {
+      "text": "sl_reading",
+      "tag": "sl_value"
+     }
+    },
+    {
+     "id": "row_bar",
+     "type": "bar",
+     "name": "row_bar",
+     "x": 0,
+     "y": 26,
+     "width": 196,
+     "height": 5,
+     "children": [],
+     "props": {
+      "min": 0,
+      "max": 100,
+      "value": 62
+     },
+     "styles": {
+      "default": {
+       "bgColor": "#2A211B",
+       "borderColor": "transparent",
+       "borderWidth": 0,
+       "borderRadius": 3,
+       "padding": 0
+      },
+      "parts": {
+       "indicator": {
+        "default": {
+         "bgColor": "#F0A94C",
+         "borderRadius": 3
+        }
+       }
+      }
+     },
+     "events": [],
+     "animations": [],
+     "parentId": null,
+     "locked": false,
+     "visible": true,
+     "binding": {
+      "enabled": true,
+      "tagId": "",
+      "property": "value",
+      "writeBehavior": "widget-value",
+      "writeValue": 0
+     },
+     "slotRefs": {
+      "tag": "sl_value"
+     }
+    }
+   ]
+  }
+ ],
+ "typographies": [
+  {
+   "id": "ty_brand",
+   "name": "Brand",
+   "groupId": "tg_headings",
+   "fontResource": "montserrat_12",
+   "fontSize": 12,
+   "align": "left",
+   "letterSpace": 3,
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 12
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 12
+    }
+   }
+  },
+  {
+   "id": "ty_display",
+   "name": "Display",
+   "groupId": "tg_headings",
+   "fontResource": "montserrat_28",
+   "fontSize": 28,
+   "align": "left",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 24
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 24
+    }
+   }
+  },
+  {
+   "id": "ty_title",
+   "name": "Title",
+   "groupId": "tg_headings",
+   "fontResource": "montserrat_20",
+   "fontSize": 20,
+   "align": "left",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 20
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 16
+    }
+   }
+  },
+  {
+   "id": "ty_title_c",
+   "name": "TitleCenter",
+   "groupId": "tg_headings",
+   "fontResource": "montserrat_20",
+   "fontSize": 20,
+   "align": "center",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 20
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 20
+    }
+   }
+  },
+  {
+   "id": "ty_heading",
+   "name": "Heading",
+   "groupId": "tg_headings",
+   "fontResource": "montserrat_16",
+   "fontSize": 16,
+   "align": "left",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 16
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 16
+    }
+   }
+  },
+  {
+   "id": "ty_heading_c",
+   "name": "HeadingCenter",
+   "groupId": "tg_headings",
+   "fontResource": "montserrat_16",
+   "fontSize": 16,
+   "align": "center",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 16
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 16
+    }
+   }
+  },
+  {
+   "id": "ty_heading_r",
+   "name": "HeadingRight",
+   "groupId": "tg_headings",
+   "fontResource": "montserrat_16",
+   "fontSize": 16,
+   "align": "right",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 16
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 16
+    }
+   }
+  },
+  {
+   "id": "ty_numeric",
+   "name": "Numeric",
+   "groupId": "tg_headings",
+   "fontResource": "montserrat_28",
+   "fontSize": 28,
+   "align": "center",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 24
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 24
+    }
+   }
+  },
+  {
+   "id": "ty_numeric_l",
+   "name": "NumericLeft",
+   "groupId": "tg_headings",
+   "fontResource": "montserrat_20",
+   "fontSize": 20,
+   "align": "left",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 20
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 20
+    }
+   }
+  },
+  {
+   "id": "ty_numeric_r",
+   "name": "NumericRight",
+   "groupId": "tg_headings",
+   "fontResource": "montserrat_20",
+   "fontSize": 20,
+   "align": "right",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 20
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 20
+    }
+   }
+  },
+  {
+   "id": "ty_body",
+   "name": "Body",
+   "groupId": "tg_body",
+   "fontResource": "montserrat_14",
+   "fontSize": 14,
+   "align": "left",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 14
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 14
+    }
+   }
+  },
+  {
+   "id": "ty_caption",
+   "name": "Caption",
+   "groupId": "tg_body",
+   "fontResource": "montserrat_12",
+   "fontSize": 12,
+   "align": "left",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 12
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 12
+    }
+   }
+  },
+  {
+   "id": "ty_caption_c",
+   "name": "CaptionCenter",
+   "groupId": "tg_body",
+   "fontResource": "montserrat_12",
+   "fontSize": 12,
+   "align": "center",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 12
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 12
+    }
+   }
+  },
+  {
+   "id": "ty_caption_r",
+   "name": "CaptionRight",
+   "groupId": "tg_body",
+   "fontResource": "montserrat_12",
+   "fontSize": 12,
+   "align": "right",
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 12
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 12
+    }
+   }
+  },
+  {
+   "id": "ty_micro",
+   "name": "Micro",
+   "groupId": "tg_body",
+   "fontResource": "montserrat_12",
+   "fontSize": 12,
+   "align": "left",
+   "letterSpace": 2,
+   "languages": {
+    "zh-TW": {
+     "fontResource": "ui_font_noto_sans_tc",
+     "fontSize": 12
+    },
+    "ja": {
+     "fontResource": "ui_font_noto_sans_jp",
+     "fontSize": 12
+    }
+   }
+  },
+  {
+   "id": "ty_symbol",
+   "name": "Symbol",
+   "groupId": "tg_body",
+   "fontResource": "montserrat_20",
+   "fontSize": 20,
+   "align": "center"
+  }
+ ],
+ "typographyGroups": [
+  {
+   "id": "tg_headings",
+   "name": "Headings",
+   "parentId": null
+  },
+  {
+   "id": "tg_body",
+   "name": "Body",
+   "parentId": null
+  }
+ ],
+ "languages": [
+  {
+   "code": "en",
+   "name": "English"
+  },
+  {
+   "code": "zh-TW",
+   "name": "繁體中文"
+  },
+  {
+   "code": "ja",
+   "name": "日本語"
+  }
+ ],
+ "texts": [
+  {
+   "id": "txt_brand",
+   "key": "brand",
+   "groupId": null,
+   "values": {
+    "en": "EDT COFFEE BAR",
+    "zh-TW": "EDT 咖啡吧",
+    "ja": "EDT コーヒーバー"
+   }
+  },
+  {
+   "id": "txt_water_level",
+   "key": "water_level",
+   "groupId": null,
+   "values": {
+    "en": "WATER 82%",
+    "zh-TW": "水量 82%",
+    "ja": "給水 82%"
+   }
+  },
+  {
+   "id": "txt_bean_level",
+   "key": "bean_level",
+   "groupId": null,
+   "values": {
+    "en": "BEANS 64%",
+    "zh-TW": "豆量 64%",
+    "ja": "豆 64%"
+   }
+  },
+  {
+   "id": "txt_good_morning",
+   "key": "good_morning",
+   "groupId": null,
+   "values": {
+    "en": "Good morning",
+    "zh-TW": "早安",
+    "ja": "おはようございます"
+   }
+  },
+  {
+   "id": "txt_usual_ready",
+   "key": "usual_ready",
+   "groupId": null,
+   "values": {
+    "en": "Your usual is one tap away",
+    "zh-TW": "您的常點，一鍵沖煮",
+    "ja": "いつもの一杯をワンタップで"
+   }
+  },
+  {
+   "id": "txt_your_usual",
+   "key": "your_usual",
+   "groupId": null,
+   "values": {
+    "en": "YOUR USUAL",
+    "zh-TW": "您的常點",
+    "ja": "いつもの一杯"
+   }
+  },
+  {
+   "id": "txt_flat_white",
+   "key": "flat_white",
+   "groupId": null,
+   "values": {
+    "en": "Flat White",
+    "zh-TW": "平白咖啡",
+    "ja": "フラットホワイト"
+   }
+  },
+  {
+   "id": "txt_flat_white_meta",
+   "key": "flat_white_meta",
+   "groupId": null,
+   "values": {
+    "en": "180 ml · medium",
+    "zh-TW": "180 ml · 中焙",
+    "ja": "180 ml · ミディアム"
+   }
+  },
+  {
+   "id": "txt_order_now",
+   "key": "order_now",
+   "groupId": null,
+   "values": {
+    "en": "Order",
+    "zh-TW": "點餐",
+    "ja": "注文する"
+   }
+  },
+  {
+   "id": "txt_ready",
+   "key": "ready",
+   "groupId": null,
+   "values": {
+    "en": "Ready",
+    "zh-TW": "待機中",
+    "ja": "準備完了"
+   }
+  },
+  {
+   "id": "txt_ready_note",
+   "key": "ready_note",
+   "groupId": null,
+   "values": {
+    "en": "Steam up · idle 2 min",
+    "zh-TW": "蒸氣備妥 · 閒置 2 分",
+    "ja": "予熱完了 · 待機 2 分"
+   }
+  },
+  {
+   "id": "txt_choose_drink",
+   "key": "choose_drink",
+   "groupId": null,
+   "values": {
+    "en": "Choose a drink",
+    "zh-TW": "選擇飲品",
+    "ja": "ドリンクを選ぶ"
+   }
+  },
+  {
+   "id": "txt_seg_hot",
+   "key": "seg_hot",
+   "groupId": null,
+   "values": {
+    "en": "Hot",
+    "zh-TW": "熱飲",
+    "ja": "ホット"
+   }
+  },
+  {
+   "id": "txt_seg_iced",
+   "key": "seg_iced",
+   "groupId": null,
+   "values": {
+    "en": "Iced",
+    "zh-TW": "冰飲",
+    "ja": "アイス"
+   }
+  },
+  {
+   "id": "txt_seg_milk",
+   "key": "seg_milk",
+   "groupId": null,
+   "values": {
+    "en": "Milk",
+    "zh-TW": "奶類",
+    "ja": "ミルク"
+   }
+  },
+  {
+   "id": "txt_scan_to_pay",
+   "key": "scan_to_pay",
+   "groupId": null,
+   "values": {
+    "en": "Scan to pay",
+    "zh-TW": "掃碼付款",
+    "ja": "スキャンして支払う"
+   }
+  },
+  {
+   "id": "txt_your_order",
+   "key": "your_order",
+   "groupId": null,
+   "values": {
+    "en": "YOUR ORDER",
+    "zh-TW": "您的訂單",
+    "ja": "ご注文"
+   }
+  },
+  {
+   "id": "txt_order_meta",
+   "key": "order_meta",
+   "groupId": null,
+   "values": {
+    "en": "180 ml · medium · oat",
+    "zh-TW": "180 ml · 中焙 · 燕麥奶",
+    "ja": "180 ml · ミディアム · オーツ"
+   }
+  },
+  {
+   "id": "txt_total",
+   "key": "total",
+   "groupId": null,
+   "values": {
+    "en": "Total",
+    "zh-TW": "總計",
+    "ja": "合計"
+   }
+  },
+  {
+   "id": "txt_code_expires",
+   "key": "code_expires",
+   "groupId": null,
+   "values": {
+    "en": "Payment code expires",
+    "zh-TW": "付款碼有效時間",
+    "ja": "支払いコードの有効期限"
+   }
+  },
+  {
+   "id": "txt_scan_hint",
+   "key": "scan_hint",
+   "groupId": null,
+   "values": {
+    "en": "Any wallet app · EDT Pay",
+    "zh-TW": "支援各家錢包 · EDT Pay",
+    "ja": "ウォレット対応 · EDT Pay"
+   }
+  },
+  {
+   "id": "txt_cancel",
+   "key": "cancel",
+   "groupId": null,
+   "values": {
+    "en": "Cancel",
+    "zh-TW": "取消",
+    "ja": "キャンセル"
+   }
+  },
+  {
+   "id": "txt_ive_paid",
+   "key": "ive_paid",
+   "groupId": null,
+   "values": {
+    "en": "Paid",
+    "zh-TW": "已付款",
+    "ja": "支払い済み"
+   }
+  },
+  {
+   "id": "txt_brewing",
+   "key": "brewing",
+   "groupId": null,
+   "values": {
+    "en": "Brewing",
+    "zh-TW": "沖煮中",
+    "ja": "抽出中"
+   }
+  },
+  {
+   "id": "txt_stop",
+   "key": "stop",
+   "groupId": null,
+   "values": {
+    "en": "Stop",
+    "zh-TW": "停止",
+    "ja": "停止"
+   }
+  },
+  {
+   "id": "txt_live",
+   "key": "live",
+   "groupId": null,
+   "values": {
+    "en": "LIVE",
+    "zh-TW": "即時",
+    "ja": "ライブ"
+   }
+  },
+  {
+   "id": "txt_stage_extract",
+   "key": "stage_extract",
+   "groupId": null,
+   "values": {
+    "en": "Pouring",
+    "zh-TW": "注液中",
+    "ja": "注湯中"
+   }
+  },
+  {
+   "id": "txt_eta",
+   "key": "eta",
+   "groupId": null,
+   "values": {
+    "en": "about 12 s left",
+    "zh-TW": "約剩 12 秒",
+    "ja": "残り約 12 秒"
+   }
+  },
+  {
+   "id": "txt_settings",
+   "key": "settings",
+   "groupId": null,
+   "values": {
+    "en": "Settings",
+    "zh-TW": "設定",
+    "ja": "設定"
+   }
+  },
+  {
+   "id": "txt_language",
+   "key": "language",
+   "groupId": null,
+   "values": {
+    "en": "Language",
+    "zh-TW": "語言",
+    "ja": "言語"
+   }
+  },
+  {
+   "id": "txt_brew_hd",
+   "key": "brew_hd",
+   "groupId": null,
+   "values": {
+    "en": "Brew",
+    "zh-TW": "沖煮",
+    "ja": "抽出"
+   }
+  },
+  {
+   "id": "txt_machine_hd",
+   "key": "machine_hd",
+   "groupId": null,
+   "values": {
+    "en": "Machine",
+    "zh-TW": "機器",
+    "ja": "マシン"
+   }
+  },
+  {
+   "id": "txt_strength",
+   "key": "strength",
+   "groupId": null,
+   "values": {
+    "en": "Strength",
+    "zh-TW": "濃度",
+    "ja": "濃さ"
+   }
+  },
+  {
+   "id": "txt_temperature",
+   "key": "temperature",
+   "groupId": null,
+   "values": {
+    "en": "Temperature",
+    "zh-TW": "溫度",
+    "ja": "温度"
+   }
+  },
+  {
+   "id": "txt_pressure",
+   "key": "pressure",
+   "groupId": null,
+   "values": {
+    "en": "Pressure",
+    "zh-TW": "壓力",
+    "ja": "圧力"
+   }
+  },
+  {
+   "id": "txt_flow",
+   "key": "flow",
+   "groupId": null,
+   "values": {
+    "en": "Flow",
+    "zh-TW": "流量",
+    "ja": "流量"
+   }
+  },
+  {
+   "id": "txt_cup_size",
+   "key": "cup_size",
+   "groupId": null,
+   "values": {
+    "en": "Cup size",
+    "zh-TW": "杯量",
+    "ja": "カップサイズ"
+   }
+  },
+  {
+   "id": "txt_auto_rinse",
+   "key": "auto_rinse",
+   "groupId": null,
+   "values": {
+    "en": "Auto rinse",
+    "zh-TW": "自動沖洗",
+    "ja": "自動リンス"
+   }
+  },
+  {
+   "id": "txt_cup_warmer",
+   "key": "cup_warmer",
+   "groupId": null,
+   "values": {
+    "en": "Cup warmer",
+    "zh-TW": "杯溫盤",
+    "ja": "カップ保温"
+   }
+  },
+  {
+   "id": "txt_eco_mode",
+   "key": "eco_mode",
+   "groupId": null,
+   "values": {
+    "en": "Eco mode",
+    "zh-TW": "節能模式",
+    "ja": "エコモード"
+   }
+  },
+  {
+   "id": "txt_descale",
+   "key": "descale",
+   "groupId": null,
+   "values": {
+    "en": "Descale due in 40 L",
+    "zh-TW": "40 公升後需除垢",
+    "ja": "あと 40 L で除石灰"
+   }
+  }
+ ],
+ "textGroups": [],
+ "animations": [
+  {
+   "id": "anim_home_greeting",
+   "name": "HomeGreetingIn",
+   "targetComponentId": "home_greeting",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 40,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_home_greeting-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 64,
+     "endValue": 46
+    },
+    {
+     "id": "anim_home_greeting-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_home_sub",
+   "name": "HomeSubIn",
+   "targetComponentId": "home_sub",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 100,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_home_sub-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 98,
+     "endValue": 80
+    },
+    {
+     "id": "anim_home_sub-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_home_hero",
+   "name": "HomeHeroIn",
+   "targetComponentId": "home_hero",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 160,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_home_hero-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 122,
+     "endValue": 104
+    },
+    {
+     "id": "anim_home_hero-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_home_status",
+   "name": "HomeStatusIn",
+   "targetComponentId": "home_status",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 220,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_home_status-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 122,
+     "endValue": 104
+    },
+    {
+     "id": "anim_home_status-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_drink_espresso",
+   "name": "EspressoIn",
+   "targetComponentId": "drink_espresso",
+   "easing": "ease_out",
+   "duration": 320,
+   "delay": 140,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_drink_espresso-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 66,
+     "endValue": 52
+    },
+    {
+     "id": "anim_drink_espresso-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_drink_americano",
+   "name": "AmericanoIn",
+   "targetComponentId": "drink_americano",
+   "easing": "ease_out",
+   "duration": 320,
+   "delay": 185,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_drink_americano-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 66,
+     "endValue": 52
+    },
+    {
+     "id": "anim_drink_americano-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_drink_cappuccino",
+   "name": "CappuccinoIn",
+   "targetComponentId": "drink_cappuccino",
+   "easing": "ease_out",
+   "duration": 320,
+   "delay": 230,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_drink_cappuccino-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 66,
+     "endValue": 52
+    },
+    {
+     "id": "anim_drink_cappuccino-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_drink_flatwhite",
+   "name": "FlatWhiteIn",
+   "targetComponentId": "drink_flatwhite",
+   "easing": "ease_out",
+   "duration": 320,
+   "delay": 275,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_drink_flatwhite-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 174,
+     "endValue": 160
+    },
+    {
+     "id": "anim_drink_flatwhite-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_drink_latte",
+   "name": "LatteIn",
+   "targetComponentId": "drink_latte",
+   "easing": "ease_out",
+   "duration": 320,
+   "delay": 320,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_drink_latte-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 174,
+     "endValue": 160
+    },
+    {
+     "id": "anim_drink_latte-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_drink_mocha",
+   "name": "MochaIn",
+   "targetComponentId": "drink_mocha",
+   "easing": "ease_out",
+   "duration": 320,
+   "delay": 365,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_drink_mocha-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 174,
+     "endValue": 160
+    },
+    {
+     "id": "anim_drink_mocha-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_drinks_title",
+   "name": "DrinksTitleIn",
+   "targetComponentId": "drinks_title",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 40,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_drinks_title-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 32,
+     "endValue": 14
+    },
+    {
+     "id": "anim_drinks_title-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_drinks_seg",
+   "name": "DrinksSegIn",
+   "targetComponentId": "drinks_seg",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 90,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_drinks_seg-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 30,
+     "endValue": 12
+    },
+    {
+     "id": "anim_drinks_seg-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_pay_title",
+   "name": "PayTitleIn",
+   "targetComponentId": "pay_title",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 40,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_pay_title-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 32,
+     "endValue": 14
+    },
+    {
+     "id": "anim_pay_title-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_pay_order",
+   "name": "PayOrderIn",
+   "targetComponentId": "pay_order",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 110,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_pay_order-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 66,
+     "endValue": 48
+    },
+    {
+     "id": "anim_pay_order-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_pay_qr",
+   "name": "PayCodeIn",
+   "targetComponentId": "pay_qr_card",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 180,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_pay_qr-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 66,
+     "endValue": 48
+    },
+    {
+     "id": "anim_pay_qr-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_pay_hint",
+   "name": "PayHintIn",
+   "targetComponentId": "pay_hint",
+   "easing": "ease_out",
+   "duration": 340,
+   "delay": 300,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_pay_hint-t1",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_brew_title",
+   "name": "BrewTitleIn",
+   "targetComponentId": "brew_title",
+   "easing": "ease_out",
+   "duration": 340,
+   "delay": 40,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_brew_title-t1",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_brew_arc",
+   "name": "BrewRingIn",
+   "targetComponentId": "brew_arc",
+   "easing": "ease_out",
+   "duration": 420,
+   "delay": 90,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_brew_arc-t1",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_brew_stats",
+   "name": "BrewStatsIn",
+   "targetComponentId": "brew_stats",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 160,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_brew_stats-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 70,
+     "endValue": 52
+    },
+    {
+     "id": "anim_brew_stats-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_set_title",
+   "name": "SettingsTitleIn",
+   "targetComponentId": "set_title",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 40,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_set_title-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 32,
+     "endValue": 14
+    },
+    {
+     "id": "anim_set_title-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_set_brew",
+   "name": "SettingsBrewIn",
+   "targetComponentId": "set_brew",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 120,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_set_brew-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 70,
+     "endValue": 52
+    },
+    {
+     "id": "anim_set_brew-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  },
+  {
+   "id": "anim_set_machine",
+   "name": "SettingsMachineIn",
+   "targetComponentId": "set_machine",
+   "easing": "ease_out",
+   "duration": 380,
+   "delay": 190,
+   "repeat": 0,
+   "tracks": [
+    {
+     "id": "anim_set_machine-t1",
+     "property": "y",
+     "valueMode": "absolute",
+     "startValue": 70,
+     "endValue": 52
+    },
+    {
+     "id": "anim_set_machine-t2",
+     "property": "opa",
+     "valueMode": "absolute",
+     "startValue": 0,
+     "endValue": 255
+    }
+   ]
+  }
+ ],
+ "variables": [],
+ "logicGraphs": [
+  {
+   "id": "graph_pay_countdown",
+   "name": "pay countdown",
+   "description": "Once a second: PaySecs − 1, and the expiry bar follows it. Below 1 it starts again at 120, so the code on screen is always one with time left on it.",
+   "enabled": true,
+   "variables": [
+    {
+     "id": "v_pay_secs",
+     "name": "PaySecs",
+     "type": "int",
+     "defaultValue": 120,
+     "description": "Seconds left on the payment code."
+    }
+   ],
+   "nodes": [
+    {
+     "id": "n_timer",
+     "type": "trigger",
+     "subType": "timer_trigger",
+     "label": "Timer Trigger",
+     "position": {
+      "x": 60,
+      "y": 120
+     },
+     "params": {
+      "mode": "interval",
+      "duration": 1000
+     },
+     "inputs": [
+      {
+       "name": "Start",
+       "type": "execution",
+       "id": "n_timer-in-0"
+      }
+     ],
+     "outputs": [
+      {
+       "name": "Execute",
+       "type": "execution",
+       "id": "n_timer-out-0"
+      },
+      {
+       "name": "Count",
+       "type": "int",
+       "id": "n_timer-out-1"
+      }
+     ]
+    },
+    {
+     "id": "n_read",
+     "type": "data",
+     "subType": "var_read",
+     "label": "Read Variable",
+     "position": {
+      "x": 60,
+      "y": 320
+     },
+     "params": {
+      "variableId": "v_pay_secs",
+      "variableName": "PaySecs"
+     },
+     "inputs": [],
+     "outputs": [
+      {
+       "name": "Value",
+       "type": "any",
+       "id": "n_read-out-0"
+      }
+     ]
+    },
+    {
+     "id": "n_sub",
+     "type": "data",
+     "subType": "math_op",
+     "label": "Math Operation",
+     "position": {
+      "x": 300,
+      "y": 320
+     },
+     "params": {
+      "operator": "-"
+     },
+     "inputs": [
+      {
+       "name": "A",
+       "type": "float",
+       "id": "n_sub-in-0"
+      },
+      {
+       "name": "B",
+       "type": "float",
+       "id": "n_sub-in-1",
+       "defaultValue": 1
+      }
+     ],
+     "outputs": [
+      {
+       "name": "Result",
+       "type": "float",
+       "id": "n_sub-out-0"
+      }
+     ]
+    },
+    {
+     "id": "n_cmp",
+     "type": "data",
+     "subType": "compare",
+     "label": "Compare",
+     "position": {
+      "x": 540,
+      "y": 320
+     },
+     "params": {
+      "operator": "<"
+     },
+     "inputs": [
+      {
+       "name": "A",
+       "type": "any",
+       "id": "n_cmp-in-0"
+      },
+      {
+       "name": "B",
+       "type": "any",
+       "id": "n_cmp-in-1",
+       "defaultValue": 1
+      }
+     ],
+     "outputs": [
+      {
+       "name": "Result",
+       "type": "bool",
+       "id": "n_cmp-out-0"
+      }
+     ]
+    },
+    {
+     "id": "n_branch",
+     "type": "flow",
+     "subType": "if_else",
+     "label": "If/Else",
+     "position": {
+      "x": 540,
+      "y": 120
+     },
+     "params": {},
+     "inputs": [
+      {
+       "name": "Execute",
+       "type": "execution",
+       "id": "n_branch-in-0"
+      },
+      {
+       "name": "Condition",
+       "type": "bool",
+       "id": "n_branch-in-1"
+      }
+     ],
+     "outputs": [
+      {
+       "name": "True",
+       "type": "execution",
+       "id": "n_branch-out-0"
+      },
+      {
+       "name": "False",
+       "type": "execution",
+       "id": "n_branch-out-1"
+      }
+     ]
+    },
+    {
+     "id": "n_restart",
+     "type": "data",
+     "subType": "var_write",
+     "label": "Write Variable",
+     "position": {
+      "x": 800,
+      "y": 40
+     },
+     "params": {
+      "variableId": "v_pay_secs",
+      "variableName": "PaySecs"
+     },
+     "inputs": [
+      {
+       "name": "Execute",
+       "type": "execution",
+       "id": "n_restart-in-0"
+      },
+      {
+       "name": "Value",
+       "type": "any",
+       "id": "n_restart-in-1",
+       "defaultValue": 120
+      }
+     ],
+     "outputs": [
+      {
+       "name": "Done",
+       "type": "execution",
+       "id": "n_restart-out-0"
+      }
+     ]
+    },
+    {
+     "id": "n_full",
+     "type": "screen",
+     "subType": "set_value",
+     "label": "Set Value",
+     "position": {
+      "x": 1040,
+      "y": 40
+     },
+     "params": {
+      "targetComponent": "pay_expiry_bar",
+      "componentType": "bar"
+     },
+     "inputs": [
+      {
+       "name": "Execute",
+       "type": "execution",
+       "id": "n_full-in-0"
+      },
+      {
+       "name": "Number",
+       "type": "int",
+       "id": "n_full-in-1",
+       "defaultValue": 120
+      }
+     ],
+     "outputs": [
+      {
+       "name": "Done",
+       "type": "execution",
+       "id": "n_full-out-0"
+      }
+     ]
+    },
+    {
+     "id": "n_keep",
+     "type": "data",
+     "subType": "var_write",
+     "label": "Write Variable",
+     "position": {
+      "x": 800,
+      "y": 200
+     },
+     "params": {
+      "variableId": "v_pay_secs",
+      "variableName": "PaySecs"
+     },
+     "inputs": [
+      {
+       "name": "Execute",
+       "type": "execution",
+       "id": "n_keep-in-0"
+      },
+      {
+       "name": "Value",
+       "type": "any",
+       "id": "n_keep-in-1"
+      }
+     ],
+     "outputs": [
+      {
+       "name": "Done",
+       "type": "execution",
+       "id": "n_keep-out-0"
+      }
+     ]
+    },
+    {
+     "id": "n_apply",
+     "type": "screen",
+     "subType": "set_value",
+     "label": "Set Value",
+     "position": {
+      "x": 1040,
+      "y": 200
+     },
+     "params": {
+      "targetComponent": "pay_expiry_bar",
+      "componentType": "bar"
+     },
+     "inputs": [
+      {
+       "name": "Execute",
+       "type": "execution",
+       "id": "n_apply-in-0"
+      },
+      {
+       "name": "Number",
+       "type": "int",
+       "id": "n_apply-in-1"
+      }
+     ],
+     "outputs": [
+      {
+       "name": "Done",
+       "type": "execution",
+       "id": "n_apply-out-0"
+      }
+     ]
+    }
+   ],
+   "connections": [
+    {
+     "id": "cn_tick",
+     "sourceNode": "n_timer",
+     "sourceOutput": "n_timer-out-0",
+     "targetNode": "n_branch",
+     "targetInput": "n_branch-in-0",
+     "type": "execution"
+    },
+    {
+     "id": "cn_read",
+     "sourceNode": "n_read",
+     "sourceOutput": "n_read-out-0",
+     "targetNode": "n_sub",
+     "targetInput": "n_sub-in-0",
+     "type": "data"
+    },
+    {
+     "id": "cn_cmp",
+     "sourceNode": "n_sub",
+     "sourceOutput": "n_sub-out-0",
+     "targetNode": "n_cmp",
+     "targetInput": "n_cmp-in-0",
+     "type": "data"
+    },
+    {
+     "id": "cn_cond",
+     "sourceNode": "n_cmp",
+     "sourceOutput": "n_cmp-out-0",
+     "targetNode": "n_branch",
+     "targetInput": "n_branch-in-1",
+     "type": "data"
+    },
+    {
+     "id": "cn_restart",
+     "sourceNode": "n_branch",
+     "sourceOutput": "n_branch-out-0",
+     "targetNode": "n_restart",
+     "targetInput": "n_restart-in-0",
+     "type": "execution"
+    },
+    {
+     "id": "cn_full",
+     "sourceNode": "n_restart",
+     "sourceOutput": "n_restart-out-0",
+     "targetNode": "n_full",
+     "targetInput": "n_full-in-0",
+     "type": "execution"
+    },
+    {
+     "id": "cn_keep",
+     "sourceNode": "n_branch",
+     "sourceOutput": "n_branch-out-1",
+     "targetNode": "n_keep",
+     "targetInput": "n_keep-in-0",
+     "type": "execution"
+    },
+    {
+     "id": "cn_keepval",
+     "sourceNode": "n_sub",
+     "sourceOutput": "n_sub-out-0",
+     "targetNode": "n_keep",
+     "targetInput": "n_keep-in-1",
+     "type": "data"
+    },
+    {
+     "id": "cn_apply",
+     "sourceNode": "n_keep",
+     "sourceOutput": "n_keep-out-0",
+     "targetNode": "n_apply",
+     "targetInput": "n_apply-in-0",
+     "type": "execution"
+    },
+    {
+     "id": "cn_applyval",
+     "sourceNode": "n_sub",
+     "sourceOutput": "n_sub-out-0",
+     "targetNode": "n_apply",
+     "targetInput": "n_apply-in-1",
+     "type": "data"
+    }
+   ]
+  }
+ ],
+ "codeGenOptions": {
+  "outputFormat": "single-file",
+  "includeComments": true,
+  "useStaticAllocation": true,
+  "prefix": "ui",
+  "indentSize": 4,
+  "indentStyle": "spaces"
+ },
+ "boardId": "edt-evk043027b",
+ "links": [
+  {
+   "id": "link-usb",
+   "name": "USB-C virtual COM port",
+   "connectorId": "usb-c",
+   "kind": "serial",
+   "serial": {
+    "port": "",
+    "baudRate": 115200,
+    "parity": "none",
+    "dataBits": 8,
+    "stopBits": 1,
+    "lineEnding": "crlf",
+    "gapMs": 5
+   }
+  }
+ ],
+ "devices": [
+  {
+   "id": "device-1",
+   "name": "Coffee machine controller",
+   "linkId": "link-usb",
+   "protocol": "modbus-rtu",
+   "role": "asks",
+   "enabled": true,
+   "timeoutMs": 1000,
+   "retries": 2,
+   "pollIntervalMs": 250,
+   "modbus": {
+    "unitId": 1
+   }
+  }
+ ],
+ "tags": [
+  {
+   "id": "tag_boiler_temp",
+   "name": "BoilerTemp",
+   "deviceId": "device-1",
+   "area": "input-register",
+   "address": 0,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 500
+  },
+  {
+   "id": "tag_pressure",
+   "name": "GroupPressure",
+   "deviceId": "device-1",
+   "area": "input-register",
+   "address": 1,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 0.1,
+   "offset": 0,
+   "pollIntervalMs": 250
+  },
+  {
+   "id": "tag_flow",
+   "name": "FlowRate",
+   "deviceId": "device-1",
+   "area": "input-register",
+   "address": 2,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 0.1,
+   "offset": 0,
+   "pollIntervalMs": 250
+  },
+  {
+   "id": "tag_water_level",
+   "name": "WaterLevel",
+   "deviceId": "device-1",
+   "area": "input-register",
+   "address": 3,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 1000
+  },
+  {
+   "id": "tag_bean_level",
+   "name": "BeanLevel",
+   "deviceId": "device-1",
+   "area": "input-register",
+   "address": 4,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 1000
+  },
+  {
+   "id": "tag_brew_progress",
+   "name": "BrewProgress",
+   "deviceId": "device-1",
+   "area": "input-register",
+   "address": 5,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 200
+  },
+  {
+   "id": "tag_price_espresso",
+   "name": "PriceEspresso",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 0,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 2000
+  },
+  {
+   "id": "tag_price_americano",
+   "name": "PriceAmericano",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 1,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 2000
+  },
+  {
+   "id": "tag_price_cappuccino",
+   "name": "PriceCappuccino",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 2,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 2000
+  },
+  {
+   "id": "tag_price_flatwhite",
+   "name": "PriceFlatWhite",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 3,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 2000
+  },
+  {
+   "id": "tag_price_latte",
+   "name": "PriceLatte",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 4,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 2000
+  },
+  {
+   "id": "tag_price_mocha",
+   "name": "PriceMocha",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 5,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 2000
+  },
+  {
+   "id": "tag_order_total",
+   "name": "OrderTotal",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 6,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 500
+  },
+  {
+   "id": "tag_strength",
+   "name": "Strength",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 8,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "readwrite",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 250
+  },
+  {
+   "id": "tag_target_temp",
+   "name": "TargetTemp",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 9,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "readwrite",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 250
+  },
+  {
+   "id": "tag_cup_size",
+   "name": "CupSize",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 10,
+   "dataType": "uint",
+   "registers": 1,
+   "access": "readwrite",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 250
+  },
+  {
+   "id": "tag_order_start",
+   "name": "OrderStart",
+   "deviceId": "device-1",
+   "area": "coil",
+   "address": 0,
+   "dataType": "bool",
+   "registers": 1,
+   "access": "readwrite",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 250
+  },
+  {
+   "id": "tag_auto_rinse",
+   "name": "AutoRinse",
+   "deviceId": "device-1",
+   "area": "coil",
+   "address": 1,
+   "dataType": "bool",
+   "registers": 1,
+   "access": "readwrite",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 250
+  },
+  {
+   "id": "tag_cup_warmer",
+   "name": "CupWarmer",
+   "deviceId": "device-1",
+   "area": "coil",
+   "address": 2,
+   "dataType": "bool",
+   "registers": 1,
+   "access": "readwrite",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 250
+  },
+  {
+   "id": "tag_eco_mode",
+   "name": "EcoMode",
+   "deviceId": "device-1",
+   "area": "coil",
+   "address": 3,
+   "dataType": "bool",
+   "registers": 1,
+   "access": "readwrite",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 250
+  },
+  {
+   "id": "tag_descale",
+   "name": "DescaleDue",
+   "deviceId": "device-1",
+   "area": "coil",
+   "address": 4,
+   "dataType": "bool",
+   "registers": 1,
+   "access": "readwrite",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 250
+  },
+  {
+   "id": "tag_order_drink",
+   "name": "OrderDrink",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 16,
+   "dataType": "string",
+   "registers": 8,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 500
+  },
+  {
+   "id": "tag_pay_url",
+   "name": "PayUrl",
+   "deviceId": "device-1",
+   "area": "holding-register",
+   "address": 24,
+   "dataType": "string",
+   "registers": 21,
+   "access": "read",
+   "scale": 1,
+   "offset": 0,
+   "pollIntervalMs": 500
+  }
+ ],
+ "signals": [],
+ "display": {
+  "width": 480,
+  "height": 272,
+  "colorDepth": 32,
+  "orientation": "landscape"
+ },
+ "lvglConfig": {
+  "version": "9",
+  "colorFormat": "ARGB8888",
+  "fontLarge": true,
+  "defaultFont": "montserrat_14",
+  "defaultFontSize": 14,
+  "useBuiltinSymbols": true,
+  "symbolFont": "montserrat_20",
+  "memSize": 1024
+ }
+}

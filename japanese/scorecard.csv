@@ -1,0 +1,2 @@
+date,recording,scenario,attempt,duration_seconds,gate,fact_accuracy_0_3,directness_0_3,listening_0_3,pronunciation_0_3,prosody_0_3,register_0_3,fluency_0_3,scope_control_0_3,next_step_0_3,total_27,critical_error_yes_no,biggest_strength,one_priority_fix,next_review_date,evaluator
+YYYY-MM-DD,recordings/file-name.m4a,pitch30,1,0,Gate1,0,0,0,0,0,0,0,0,0,0,no,,,YYYY-MM-DD,self
