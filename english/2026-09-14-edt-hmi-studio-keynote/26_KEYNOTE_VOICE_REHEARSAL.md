@@ -208,7 +208,19 @@ Pass condition:
 
 ### Opening
 
-> Coach Slides 1 and 2. Make me use silence and eye contact. Stop me if I rush the words “moment of truth” or “US$200 million.” Do not let me continue until the financial caveat is clear.
+> Coach Slides 1 and 2. First practice the greeting beginning with “Hello, everyone.” Help me welcome the people in the room and our overseas colleagues and partners online, then say that I am happy to introduce this exciting new product. Practice one sentence at a time and wait for me. Keep the greeting around 35 to 40 seconds and the complete opening around two minutes. Make me use silence and eye contact, including a brief look toward the camera. Stop me if I rush the words “moment of truth” or “US$200 million.” Do not let me continue until the financial caveat is clear.
+
+開場先練這五句。每句說完停一下：
+
+| 英文與停頓 | 中文意思 |
+|---|---|
+| Hello, everyone. // | 大家好。 |
+| Welcome to everyone here in the room. / | 歡迎今天在現場的各位。 |
+| And a warm welcome to our colleagues and partners / joining us online from around the world. // | 也熱烈歡迎從世界各地上線參與的同事與夥伴。 |
+| I'm very happy to have this opportunity / to introduce this exciting new product to you. // | 我很高興有這個機會，向各位介紹這個令人興奮的新產品。 |
+| Thank you all for joining us today. // | 感謝各位今天參與。 |
+
+發音先抓三個重點：oppor-**TU**-ni-ty、intro-**DUCE**、ex-**CIT**-ing。語氣溫暖，說 “exciting new product” 時稍微加重。採用 “Hello” 可涵蓋海外不同時區；“colleagues and partners” 同時照顧子公司同事與通路合作夥伴。最後停一下，再接 “Every embedded product has a moment of truth.”
 
 ### Product reveal
 
@@ -236,7 +248,7 @@ Fallback line:
 
 ## Full-run prompt
 
-> Host a complete 30-minute rehearsal using the script and storyboard. Announce each slide number but do not read my lines. Start a timer when I say “Good morning.” Do not interrupt unless I make an unsafe product or financial claim. At Slide 6, give me a Demo cue. At Slide 19, check the US$200M caveat. After Slide 23, ask five executive questions, one at a time. At the end, report total time, the longest unplanned pause, every factual risk, three sentences that were hard to understand, and only one priority for tomorrow.
+> Host a complete 30-minute rehearsal using the script and storyboard. Announce each slide number but do not read my lines. Start a timer when I say “Hello, everyone.” Include the welcome in the 30-minute total. Do not interrupt unless I make an unsafe product or financial claim. At Slide 6, give me a Demo cue. At Slide 19, check the US$200M caveat. After Slide 23, ask five executive questions, one at a time. At the end, report total time, the longest unplanned pause, every factual risk, three sentences that were hard to understand, and only one priority for tomorrow.
 
 ## Executive-pressure prompt
 

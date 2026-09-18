@@ -2,7 +2,21 @@
 
 Print one card per half page or copy each card to a presenter-note page. Look at the card only between sections. The bold line is the sentence you must say exactly.
 
-## Card 1: Moment of truth
+## Card 1: Welcome and moment of truth
+
+Opening lines:
+
+> Hello, everyone. //
+>
+> Welcome to everyone here in the room. /
+>
+> And a warm welcome to our colleagues and partners / joining us online from around the world. //
+>
+> I'm very happy to have this opportunity / to introduce this exciting new product to you. //
+>
+> Thank you all for joining us today. //
+
+Then begin the product story:
 
 **Every embedded product has a moment of truth.**
 
@@ -15,7 +29,9 @@ Print one card per half page or copy each card to a presenter-note page. Look at
 Stage:
 
 - Stand still
-- Look up for first sentence
+- Smile and greet the room
+- Look briefly toward the camera when welcoming online colleagues and partners
+- Pause after “today,” then return to the room for the product story
 - Pause after “one thing”
 
 ## Card 2: Old workflow

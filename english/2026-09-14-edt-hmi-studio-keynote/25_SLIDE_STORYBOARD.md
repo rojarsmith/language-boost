@@ -21,8 +21,8 @@ This is a content and visual brief, not a finished deck. It matches [the 30-minu
 
 | # | Time | Title | On-screen copy | Visual and reveal | Speaker job |
 |---:|---|---|---|---|---|
-| 1 | 00:00 | One screen | One screen | Full-bleed polished HMI from assets/hero-vivid.png; start with no subtitle | Establish the customer's moment of truth |
-| 2 | 01:00 | Embedded HMI development | Design / Code / Protocol / Hardware / Rework | One editable horizontal process with the last step returning to the first | Make the old workflow feel costly and familiar |
+| 1 | 00:00 | One screen | One screen | Full-bleed polished HMI from assets/hero-vivid.png; start with no subtitle | Welcome the room and overseas online colleagues and partners, express excitement about introducing the product, then establish the customer's moment of truth |
+| 2 | 02:00 | Embedded HMI development | Design / Code / Protocol / Hardware / Rework | One editable horizontal process with the last step returning to the first | Make the old workflow feel costly and familiar |
 | 3 | 05:00 | EDT HMI Studio | EDT HMI Studio | Black field, centered logo from assets/logo-horizontal-green.svg; reveal after two seconds of black | Name the product and pause |
 | 4 | 06:00 | One project | Design, logic, communication, validation, deployment | Product screenshot from assets/latest/design.png with only five small edge labels | Explain continuity, not a feature inventory |
 | 5 | 07:00 | Built for AI to operate | Built for AI to operate | assets/latest/assistant-panel.png; keep public-page phrase verbatim | Define the assistant's role |
@@ -50,6 +50,7 @@ This is a content and visual brief, not a finished deck. It matches [the 30-minu
 ### Slides 1 to 3
 
 - Slide 1 contains no agenda and no presenter biography.
+- The spoken welcome takes about 35 to 40 seconds within the existing two-minute opening. Look briefly toward the camera when greeting the overseas audience.
 - Slide 2 uses plain words. Keep the loop visually obvious.
 - Slide 3 remains on screen for the first product definition. Avoid extra taglines.
 

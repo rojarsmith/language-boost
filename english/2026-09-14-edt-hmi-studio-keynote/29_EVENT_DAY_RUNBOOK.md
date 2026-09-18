@@ -81,9 +81,12 @@ One person may hold more than one role, but every responsibility must have an ow
 ## Opening checklist
 
 - [ ] Stand still before the first sentence
-- [ ] Look at the audience
-- [ ] Say “Good morning”
-- [ ] Pause
+- [ ] Smile, look at the audience, and say “Hello, everyone”
+- [ ] Welcome everyone in the room
+- [ ] Look briefly toward the camera and welcome colleagues and partners joining online from around the world
+- [ ] Say you are happy to have the opportunity to introduce this exciting new product
+- [ ] Thank everyone, pause, and begin the product story
+- [ ] Include the 35 to 40 second welcome in the two-minute opening
 - [ ] Do not explain the agenda before the opening image
 - [ ] Qualify US$200M in the opening
 

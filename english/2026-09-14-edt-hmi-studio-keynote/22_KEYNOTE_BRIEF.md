@@ -13,6 +13,7 @@ By the end of 30 minutes, an overseas subsidiary leader, distributor executive, 
 
 - General managers and vice presidents at overseas subsidiaries
 - Owners and senior managers at distributors
+- Managers attending in the room and colleagues and partners joining online across time zones
 - Product, sales, FAE, engineering, finance, and strategy leaders
 - Mixed English proficiency and mixed technical depth
 
@@ -59,7 +60,7 @@ The desired launch energy comes from pacing, contrast, proof, and silence. Do no
 
 | Time | Section |
 |---|---|
-| 00:00–02:00 | Opening problem and promise |
+| 00:00–02:00 | Welcome to the room and overseas online audience, then opening problem and promise |
 | 02:00–05:00 | Fragmented HMI development |
 | 05:00–07:00 | Product reveal |
 | 07:00–11:00 | AI-assisted creation and editing |

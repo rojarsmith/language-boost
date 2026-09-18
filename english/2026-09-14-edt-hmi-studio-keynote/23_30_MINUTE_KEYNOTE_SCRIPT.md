@@ -27,21 +27,27 @@ Use exactly one version:
 
 ### Slide 1: One screen
 
-[Walk to the center. Stop. Look at the audience. Do not touch the clicker.]
+[Walk to the center. Stop. Smile and look at the audience. Do not touch the clicker.]
 
-Good morning. //
+Hello, everyone. //
+
+Welcome to everyone here in the room. /
+
+[Look briefly toward the camera as you welcome the online audience.]
+
+And a warm welcome to our colleagues and partners / joining us online from around the world. //
+
+I'm very happy to have this opportunity / to introduce this exciting new product to you. //
+
+Thank you all for joining us today. //
+
+[Pause. Return your gaze to the room and begin the product story.]
 
 Every embedded product has a moment of truth.
 
 The customer touches the screen.
 
-In that moment, the customer does not see our panel specification.
-
-The customer does not see the MCU.
-
-The customer does not see the firmware architecture.
-
-The customer sees one thing. /
+In that moment, the customer wants to know one thing. /
 
 Does the product feel clear, fast, and trustworthy? //
 
@@ -51,15 +57,7 @@ This screen may look simple.
 
 The work behind it is often very complicated.
 
-A designer creates the visual layout.
-
-An engineer writes the interaction.
-
-Another engineer connects the protocol.
-
-The team waits for hardware.
-
-Then integration begins.
+Behind it are screen design, application logic, device communication, and hardware testing.
 
 And when a problem appears late, every team pays for it. /
 
@@ -71,9 +69,7 @@ More risk.
 
 [Pause. Take one step forward.]
 
-Today, I want to show you a different workflow.
-
-Then I want to show you a larger business opportunity for EDT.
+Today, we will explore the product / and its business opportunity for EDT.
 
 The first chapter is the product.
 
