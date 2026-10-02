@@ -1,133 +1,106 @@
-# 產品、公開狀態與營收說法來源對照
+# 最新產品資料與教材來源對照
 
-來源根目錄：C:\my\build\github\edt-hmi-studio
+來源根目錄：`C:\my\build\github\edt-hmi-studio`。查核日期：2026-10-02，Asia/Taipei。
 
-查核時間：2026-09-18，Asia/Taipei  
-HEAD：80cf1e4080bb564c2736ede44be1c7cd71ea6d32  
-版本：0.8.8-dev，最近 release 為 0.8.7
+| 版本層 | 證據 |
+|---|---|
+| 公開網頁 | [EDT HMI Studio](https://edthmistudio.bitdove.net/) 於本次讀取得 HTTP 200；0.8.5 Alpha，released 2026-09-10 |
+| 最近 release tag | 0.8.9；CHANGELOG 日期 2026-09-25 |
+| 已提交開發快照 | branch display-input-phase-1；HEAD `2df2b5dccca9774c53b11c9a7d4a4321028c1b78`；describe `0.8.9-180-g2df2b5dc`；package `0.9.0-dev` |
+| 本地 main | `a627b94a`；不是目前工作分支 |
+| 未提交工作 | Label Scroll round 模式與相關提醒等；不能歸入本次固定 HEAD 或 release |
 
-## 來源優先順序
+## 如何閱讀證據
 
-1. Current code、tests、board definitions 與 release notes：判斷技術現況。
-2. 公開 Alpha／Beta 網頁：判斷可公開下載版本與外部 roadmap。
-3. 公司核准的 Product、Finance、IR、Legal 文件：判斷商業條件與財務說法。
-4. 法說會與行銷草稿：只作提案背景，不視為已核准事實。
-5. 本教材：訓練用途，不能反過來成為產品證據。
+程式實作、tests 與文件的最新完成段落用於查核功能；同一份設計文件可能保留早期計畫，不把舊的 pending 當作現況，也不把後續 proposal 當作完成。公開頁面只支持公開 availability。原始碼不是公司核准的財測、獨立測評或合規認證。
 
-## 版本與公開狀態
+本次沒有執行整套產品 tests、build、AI request 或實體燒錄；只查閱實作、範例與工程記錄。本次未寫入來源專案。來源在查核期間由其他工作持續更新，本教材固定到 2026-10-02 18:46:45 的 2df2b5dc；Reading Distance 已納入該 commit，後續未提交 Scroll round 修改僅記錄為進行中。
 
-| 說法 | 主要來源 | 使用方式 |
+## 產品與元件
+
+以下相對路徑都位於來源根目錄。
+
+| 教材事實 | 直接來源 | 範圍 |
 |---|---|---|
-| Source branch is 0.8.8-dev after release 0.8.7 | package.json、git describe、CHANGELOG.md | 內部技術快照 |
-| Public evaluation page shows 0.8.5 Alpha | [EDT HMI Studio public page](https://edthmistudio.bitdove.net/) | 對外 availability 基準 |
-| Alpha is for key stakeholders and should not be passed downstream | public page | 對外必須保留限制 |
-| Public page roadmap shows Beta in Oct 2026 and general release in Dec 2026 | public page | 活動前重查；不是不可變更承諾 |
+| 視覺設計、logic、protocol、preview、deploy | `src/App.tsx`、`src/codegen/generator.ts` | 目前 source |
+| 21 normal／27 Factory palette entries，28 definitions | `src/utils/componentDefinitions.ts` 的 `componentDefinitions`、`paletteOffers`；`src/components/ComponentPanel` | 6 factory-only，1 never-offered Page；不是舊 Alpha 數字 |
+| Pages 及 page 子項 | `docs/components/pager.md`、component definitions、`docs/container-family.md` 完成記錄 | Unreleased development |
+| Show when／Selected when | `src/codegen/showWhen.ts`、`src/codegen/selectedWhen.ts`、`docs/container-family.md` | Unreleased development |
+| Words 由數值選擇翻譯文字 | `src/types/hmi.ts`、`src/components/PropertyEditor/WordsEditor.tsx`、`docs/components/label.md` §13 | 目前 Phase 1 已提交 |
+| 約 9 mm 新 Input 與小於 7 mm 提醒 | `src/utils/componentDefinitions.ts`、`src/store/problems.ts`、`docs/display-input-family.md` I24 | 已提交；不自動改舊 widgets |
+| 外觀風險提醒 | `src/store/lookProblems.ts`、`src/utils/colourArithmetic.ts` | 已提交基礎功能；工作目錄另有 Scroll round 相關修改 |
+| Reading Distance、字體可讀性、16-bit banding | `src/utils/readingDistance.ts`、`src/store/glassProblems.ts`、`src/components/ProjectSettings/ProjectSettings.tsx`、`git show 2df2b5dc` | 已提交至 2df2b5dc；仍屬 Unreleased development |
 
-## 產品定位與 AI
+## 測試與交付
 
-| 說法 | 來源 |
-|---|---|
-| Visual embedded HMI editor、events、logic、C codegen | README.md、README.zh-TW.md、src/App.tsx |
-| AI creates projects, converts visual references, edits in place, and answers questions | docs/landing/0.8.5-vercel/index.html、current AI assistant source |
-| AI uses the editor path and groups an applied change into one undo step | public landing copy、assistant integration |
-| OpenRouter and Ollama providers | public landing copy、AI settings source |
-| OpenRouter is external; Ollama is local only when configured to a local host | provider configuration and public copy |
-| AI never operates hardware directly | public landing copy and assistant action scope |
-
-## UI、workflow 與 components
-
-| 說法 | 來源 |
-|---|---|
-| Design、Image、Text、Logic、Protocol、Preview／Emulator、Deploy | src/App.tsx |
-| 25 current palette components | src/utils/componentDefinitions.ts |
-| Screens、events、animations、resources and multilingual text | src types、editors、codegen and examples |
-| Logic node definitions and categories | src/components/LogicEditor/nodeDefinitions.ts |
-| Board-aware project validation | Deploy panel、server/hmi/validation.ts |
-| Customer Demo can be exported as a self-contained HTML／zip evaluation artifact | Customer Demo implementation and release notes |
-
-## Emulator 與 generated code
-
-| 說法 | 來源 |
-|---|---|
-| Emulator compiles generated C with real LVGL | docs/preview-ladder.md、src/components/Emulator、server/emulator |
-| Firmware and Emulator paths target LVGL 9.5 | docs/lvgl-version.md、tools/bootstrap-emulator.mjs |
-| Emulator runs events, logic, tags and simulated communication | Emulator runtime and protocol simulator source |
-| Emulator does not replace hardware performance and bus validation | docs/preview-ladder.md and product limitations |
-| Problems pane、diagnostics and report dump in 0.8.7 | CHANGELOG.md and diagnostics source |
-
-## Protocols、tags 與 roles
-
-| 說法 | 來源 |
-|---|---|
-| Link, device and tag model | src/types/connections.ts、docs/protocol-connections.md |
-| Modbus RTU and configurable serial commands | src/types/hmi.ts、protocol runtime、examples |
-| Initiator and responder roles | CHANGELOG.md、docs/protocol-connections.md |
-| Tag types, access rules, scaling, offset and polling | connection types and Protocol UI |
-| Modbus host interface CSV、C header and printable register map | src/codegen/hostInterface.ts and responder workflow |
-| CAN types exist but current runtime and widget binding remain incomplete | current types、board definitions、CAN research notes |
-
-## Board profiles
-
-| 說法 | 來源 |
-|---|---|
-| STM32F746G-DISCO、STM32H747I-DISCO、EDT EVK043027B profiles | src/types/hmi.ts and board source |
-| F746 VCP with current serial protocols | board definitions and example projects |
-| F746 software JPEG up to 320 × 176 at 15 fps with PCM 44.1 kHz stereo | docs/video-playback.md、board capability model、0.8.7 notes |
-| H747 hardware JPEG up to 800 × 480 at 24 fps without audio | docs/video-playback.md and board capability model |
-| H747 USB HS and Ethernet hardware exist but stacks are outside current build | board definitions and hardware notes |
-| H747 CAN FD has controller／loopback research and needs an external transceiver for a bus | CAN research and board notes |
-| EDT EVK USB-C serial path is ready; RS-485 and CAN software status need qualification | board definition and EVK notes |
-
-## Current examples and visual evidence
-
-| Material | Source |
-|---|---|
-| EVK Coffee Bar | examples directory |
-| H747 Coffee Machine | examples/h747-coffee-machine.json |
-| Multiple washing-machine examples | examples directory |
-| Responder and brightness examples | examples directory |
-| Latest Design、Logic、Protocol、Preferences and AI screenshots | docs/landing/0.8.5-vercel/assets, copied to assets/latest |
-| Investor-conference figures and deck | docs/investor-conference-2026-09, copied to assets/source-investor-conference |
-
-## 商業與財務材料
-
-| 說法 | 來源 | 狀態 |
+| 教材事實 | 直接來源 | 範圍 |
 |---|---|---|
-| Software may be free with EDT-manufactured compatible LCM hardware | assets/source-investor-conference/research.md | Internal draft, approval required |
-| Customer-funded OpenRouter usage or EDT-managed AI usage | same research file | Internal draft, approval required |
-| Licensing to HMI／IC vendors | same research file | Future option, approval required |
-| Draft LCM revenue scenarios of TWD0.3B, 0.8B, 1.4B and 2.0B for 2027–2030 | same research file and deck source | Internal draft, Finance／IR approval required |
-| US$200M repeatable annual revenue engine | User-requested keynote objective and 24_USD_200M_REVENUE_MODEL.md | Scenario only, not company guidance |
+| Generated C 在 real LVGL Emulator 執行 | `docs/preview-ladder.md`、`src/components/Emulator`、`server/emulator` | 不是物理板卡性能證明 |
+| Firmware／Emulator／prebuilt Simulator 都為 LVGL 9.5 | `docs/lvgl-version.md` §1.2；Simulator 2026-09-29 重建記錄 | Simulator 仍不執行 generated application code |
+| Checks 記錄與重播，screens／tags／variables 比對 | `src/emulator/checks.ts`、`checkRunner.ts`、`docs/logic-debug-graph.md` §18 | 0.8.8 release note；不是 screenshot comparison |
+| Problems 與 Checks 不同 | `docs/bottom-dock-panel.md` §18、`src/store/problems.ts`、`checkStore.ts` | 前者檢查 project，後者重跑作者情境 |
+| Logic trace、Tag Trigger、HMI memory 起始值 | `CHANGELOG.md` 0.8.8、`docs/logic-debug-graph.md`、`docs/hmi-memory-and-retention.md` | 0.8.8 release 記錄 |
+| 增量 build 與預備工具鏈 | `docs/incremental-builds.md`、`CHANGELOG.md` 0.8.9 | 不把範例測速當 SLA |
+| PC demo package 離線核心、外部 Links／Videos 例外 | `docs/demo-package.md` §2、§9.6、§9.7、§11；`src/standalone/demoPackage.ts` | 製作端仍需工具鏈；recipient 不需 |
+| Video package 無影片音軌；遵守 board 限制 | `docs/demo-package.md` §11；`src/store/videoBlockers.ts` | 媒體 bytes 必須存在；一般音效與影片音軌不同 |
 
-## 外部市場背景
+## Hardware 與 protocols
 
-這些資料只能用來說明市場尺度，不能證明 EDT 會取得該營收。
-
-| 外部說法 | 來源 | 使用限制 |
+| 教材事實 | 直接來源 | 範圍 |
 |---|---|---|
-| Global HMI market projected at US$11.60B in 2030, CAGR 10.4% for 2023–2030 | [Grand View Research, Human Machine Interface Market](https://www.grandviewresearch.com/industry-analysis/human-machine-interface-market) | 第三方市場估計；活動前確認頁面日期與定義 |
-| AI in manufacturing projected from US$34.18B in 2025 to US$155.04B in 2030, CAGR 35.3% | [MarketsandMarkets, AI in Manufacturing Market](https://www.marketsandmarkets.com/Market-Reports/artificial-intelligence-manufacturing-market-72679105.html) | 第三方市場估計；不要把整個市場視為 EDT addressable revenue |
+| 三個 physical board profiles | `src/types/hmi.ts` 的 `SUPPORTED_BOARDS` | F746／H747／EVK；各自能力不同 |
+| Virtual Model、budget、規格 HTML／JSON | `src/types/boardOf.ts`、`src/budget`、`docs/virtual-model.md` §16 | 規格與估計；沒有 board firmware 可 Program |
+| F746 VCP、16 MB QSPI、video／WAV sound | `src/types/hmi.ts`、`docs/images-external-flash.md` §7、`docs/video-playback.md`、0.8.8／0.8.9 notes | JPEG 320×176 @15fps；正確 NOR part／loader |
+| H747 VCP／hardware JPEG | `src/types/hmi.ts`、`docs/video-playback.md` | 800×480 @24fps，video 無 audio |
+| H747 USB HS／Ethernet 未編入、CAN 需 transceiver | `src/types/hmi.ts` connector status | Controller loopback 不等於完整 production CAN |
+| EVK USB-C ready、RS-485 fitted-unbound、CAN not-compiled | `src/types/hmi.ts` connector status | 無 video／audio；不由硬體存在推論 software ready |
+| 一條 active link 與一個 device | `src/types/connections.ts` cap | Virtual Model 多 ports 描述不解除 cap |
+| Modbus RTU／Serial Commands、雙向 roles | `src/types/hmi.ts`、`src/types/connections.ts`、`docs/protocol-connections.md` | Line-oriented command；不是任意 binary protocol |
+| Modbus 與 command host-interface 三種匯出 | `src/codegen/hostInterface.ts` 的 `HOST_INTERFACE_FILES`／`generateHostInterface` | Command CSV、hmi_commands.h、HTML 已有實作 |
 
-US$200M 約等於 US$11.60B 的 1.7%。這只是算術尺度，不是 EDT 2030 market-share forecast。
+## 專案與 AI
 
-## 已知衝突與處理
-
-| 衝突 | 處理規則 |
+| 教材事實 | 直接來源 |
 |---|---|
-| Source 0.8.8-dev，public page 0.8.5 Alpha | 技術現況與公開 availability 分開說 |
-| 舊行銷材料寫 November 2026，public page 現寫 December 2026 general release | 使用活動前最後核准的公開文字 |
-| 舊 README feature count 18，current palette count 25 | 目前教材使用 25，並說 current source |
-| 舊教材寫 video only on H747，0.8.7 已增加 F746 software video and sound | 使用 board-specific 新表格 |
-| Source 有 CAN schema／研究，runtime path 未完成 | 一律說 roadmap or research |
-| EVK RS-485 的硬體與軟體描述不完全一致 | release build 實機確認前不承諾 |
-| Internal draft 2030 hardware scenario is TWD2.0B，keynote North Star is US$200M | 不換算、不混用；Finance／IR 先統一 scope and timing |
-| Public Alpha warns against downstream distribution | 不把 download link 當作一般客戶公開銷售版本 |
+| Windows .ehsp、Load Project、Auto Save、Revert | `docs/ehsp-format.md` §10–11、0.8.9 CHANGELOG |
+| Save As、Recent、Explorer open、crash recovery | `docs/ehsp-format.md` §11.12–11.24、Unreleased CHANGELOG |
+| Assistant 使用 editor controls、一次 undo、不操作 hardware | `docs/ai-assistant.md` §2、§6；public page |
+| OpenRouter／Ollama 與資料流 | `docs/ai-assistant.md`、`src/legal/legalText.ts` privacy notice、provider settings |
+| Assistant 可處理 Pages、條件、Words | `docs/ai-assistant.md` §6.2；assistant tools／snapshot source |
+| H747 Coffee 實際內容 | `examples/h747-coffee-machine.json`：4 screens、46 top-level components、28 animations、13 tags、3 languages、0 logic graphs |
+| 1280×480 Virtual Smart Washer | `examples/virtual-1280x480-washing-machine-uc.json`、`docs/virtual-washer-1280x480.md` | 
+| Voice washer 為外部 voice unit 合約示範 | 同上 §1；無麥克風可操作，不是內建 speech recognition |
 
-## 每次更新教材的流程
+## 授權與公司聲明
 
-1. 檢查 source Git status、HEAD、package version、CHANGELOG 與 release tag。
-2. 檢查公開頁面的 title、version、release date、audience、roadmap 與 download terms。
-3. 重新驗證 board、protocol、AI provider、video 與 demo capability。
-4. 先更新 00_PRODUCT_TRUTH.md。
-5. 再更新 keynote、Q&A、Voice prompts、flashcards 與提示卡。
-6. 所有商業與財務數字由 Product、Finance、IR、Legal 與管理階層簽核。
+| 來源 | 可以支持 | 不能支持 |
+|---|---|---|
+| `src/legal/legalText.ts`，edition 1.0／2026-09-23；`docs/license-agreement.md` | 新版 source 有 proprietary、EDT hardware 範圍的免費授權文字，first-start acceptance 與 Help viewer | 不能由教材推定舊 installer 適用版本或個別 ST kit 商用權利 |
+| README 的 MIT badge／段落 | README 尚有矛盾文字 | 不能據此稱產品為 MIT open source |
+| In-app privacy／CRA notice | 廠商寫有資料流、telemetry、SBOM、vulnerability response 與 updates 聲明 | 不等於獨立合規稽核、客戶 SLA 或已交付完整 SBOM 的證據 |
+| `docs/investor-conference-2026-09`，教材 assets 的來源草稿 | 歷史商業提案與 TWD0.3B／0.8B／1.4B／2.0B 情境 | 不是 US$200M 已核准預測；本次比對 baseline 至 HEAD 無檔案差異 |
+| [US$200M scenario](24_USD_200M_REVENUE_MODEL.md) | 使用者指定的目標與教材示意算式 | 不是 repo 證明的 revenue、pipeline、ARR 或客戶付費意願 |
+
+## 視覺與外部背景
+
+`assets/latest/` 名稱保留，但內容仍是 0.8.5 landing 的歷史截圖，不是 0.9.0-dev UI capture。`assets/source-investor-conference/`、舊 PPTX、DOCX、WAV 皆保留作來源／備援，不自動成為最新版發布材料。
+
+下列市場數字沿用 2026-09-18 教材查核，**本次未重新研究或更新**。它們不是產品 repo 的證據；正式再次上台前須確認日期、定義與相關性。
+
+| 歷史背景 | 原來源 |
+|---|---|
+| HMI market US$11.60B in 2030，CAGR 10.4% 2023–2030 | [Grand View Research](https://www.grandviewresearch.com/industry-analysis/human-machine-interface-market) |
+| AI manufacturing US$34.18B in 2025 至 US$155.04B in 2030 | [MarketsandMarkets](https://www.marketsandmarkets.com/Market-Reports/artificial-intelligence-manufacturing-market-72679105.html) |
+
+US$200M ÷ US$11.60B 約為 1.7%，只作尺度示意；兩者範圍未必相同，不是 EDT market-share forecast。
+
+## 這次修正的舊說法
+
+- 25 個正常元件 → 21 normal／27 Factory，並說明計數方式。
+- Simulator LVGL 9.2 → 目前 prebuilt 9.5，仍不等同 Emulator。
+- Command-list export pending → CSV、C header、HTML 已有實作。
+- Projects only JSON → Windows .ehsp 與新版 file workflow。
+- Only H747 external image flash → F746 0.8.9 亦使用外部 QSPI。
+- 全包 demo 永遠不需網路 → 核心 offline，外部 Videos／Links 例外。
+- 沒有完整產品 license 文字 → 已有 in-app terms，但 README 衝突仍需釐清。
+- 所有 commercial models 只是草稿 → source 已寫 EDT-display 免費使用條款；付費服務與 US$200M 仍是未驗證情境。

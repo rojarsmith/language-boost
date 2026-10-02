@@ -1,22 +1,24 @@
 # English presentation archive
 
-This directory collects English presentation and rehearsal packages by event date.
+English presentation and rehearsal materials, refreshed from the local product source on **2026-10-02**.
 
-## 2026-09-14 — EDT HMI Studio keynote
+## EDT HMI Studio keynote
 
-The [2026-09-14 EDT HMI Studio keynote package](2026-09-14-edt-hmi-studio-keynote/README.md) is a 30-minute, two-chapter English presentation:
+The [keynote package](2026-09-14-edt-hmi-studio-keynote/README.md) preserves the original event folder, `2026-09-14-edt-hmi-studio-keynote`. That is an archive label, not a newly scheduled event.
+
+The 30-minute talk still has two chapters:
 
 1. Introducing EDT HMI Studio.
-2. Showing a conditional path toward a US$200 million repeatable annual revenue engine for EDT.
+2. A conditional scenario for US$200M in repeatable annual revenue for EDT.
 
-The package uses the `edt-hmi-studio` source tree at commit `80cf1e4` (2026-09-14), version `0.8.8-dev`, immediately after the `0.8.7` release. It includes the full keynote script, slide story, Voice rehearsal plan, executive Q&A, claim-approval gate, source evidence, reusable pitch training, offline audio, and visual assets.
+This update uses source branch `display-input-phase-1`, commit `2df2b5dc`, package `0.9.0-dev`, after release tag `0.8.9`. Additional uncommitted work is labeled separately. The public page still shows `0.8.5 Alpha`; new development features are not automatically available in that installer.
 
-Start here:
+Start with:
 
-- [Event package overview](2026-09-14-edt-hmi-studio-keynote/README.md)
+- [Latest changes and a short Voice practice session](2026-09-14-edt-hmi-studio-keynote/31_LATEST_UPDATE_AND_PRACTICE.md)
+- [Product facts and version boundaries](2026-09-14-edt-hmi-studio-keynote/00_PRODUCT_TRUTH.md)
 - [30-minute keynote script](2026-09-14-edt-hmi-studio-keynote/23_30_MINUTE_KEYNOTE_SCRIPT.md)
-- [US$200M revenue model](2026-09-14-edt-hmi-studio-keynote/24_USD_200M_REVENUE_MODEL.md)
 - [ChatGPT Voice rehearsal](2026-09-14-edt-hmi-studio-keynote/26_KEYNOTE_VOICE_REHEARSAL.md)
-- [External-claim approval gate](2026-09-14-edt-hmi-studio-keynote/28_EXTERNAL_CLAIM_APPROVAL_GATE.md)
+- [Source map](2026-09-14-edt-hmi-studio-keynote/20_SOURCE_MAP.md)
 
-> The US$200M figure is a user-specified strategic North Star and a scenario model, not a repository-backed forecast or approved public guidance. Do not present it externally as a promise until EDT Finance, Investor Relations, Legal, Product, and executive management approve the assumptions, timing, terminology, and disclosure.
+ChatGPT Voice remains the main English coach. Historical WAVs and screenshots are fallback material, not updated product evidence. US$200M remains an illustrative scenario, not approved guidance or software ARR.

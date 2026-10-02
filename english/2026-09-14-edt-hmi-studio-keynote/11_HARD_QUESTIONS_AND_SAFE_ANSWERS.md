@@ -31,7 +31,7 @@
 
 ### 5. You say MIT, but where is the license?
 
-> The README contains an MIT statement, but the repository snapshot does not contain the referenced root license file. I will not treat that as a complete legal grant. We need the approved product license and third-party notices before commercial release.
+> The README still says MIT, but the newer in-app agreement says proprietary, closed-source and limited to EDT-supplied hardware. That conflict must be resolved. I would not describe the product as MIT-licensed or promise non-EDT hardware rights from the README.
 
 ### 6. Why not use TouchGFX, SquareLine Studio, or another existing tool?
 
@@ -69,7 +69,7 @@
 
 ### 14. Is the product secure?
 
-> The current architecture is local-first, but the source package does not define a complete product-security program. The serial protocols themselves do not add encryption or authentication. Secure boot, signed updates, SBOM, telemetry, vulnerability response, and network hardening need a separate approved security statement.
+> The current source includes privacy and security notices, including vendor statements about SBOM and vulnerability handling. A notice is not a completed security audit. The serial protocols do not add encryption or authentication, and we still need release-specific evidence for a customer's security requirements.
 
 ### 15. Your live demo just failed. Why should we trust the product?
 

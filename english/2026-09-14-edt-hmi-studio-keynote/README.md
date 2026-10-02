@@ -7,6 +7,8 @@
 
 整場採用產品發表會式節奏：先讓觀眾感受到舊流程的摩擦，再揭曉產品、現場證明價值，最後揭曉商業飛輪與 US$200M North Star。語句刻意短、停頓刻意多，方便英文口說初學者掌握。
 
+最新內容已於 **2026-10-02** 同步。目錄名稱保留原訂 2026-09-14 活動作為歸檔識別，不代表重新排定日期。先用 [新版重點與 15 分鐘練習](31_LATEST_UPDATE_AND_PRACTICE.md) 更新口說，不必重背全套。
+
 ## 先看這四份
 
 1. [完整 30 分鐘逐字稿](23_30_MINUTE_KEYNOTE_SCRIPT.md)
@@ -19,11 +21,12 @@
 ## 資料基準
 
 - 來源專案：C:\my\build\github\edt-hmi-studio
-- 最新檢查：2026-09-18，Asia/Taipei
-- Git commit：80cf1e4080bb564c2736ede44be1c7cd71ea6d32
-- Git describe：0.8.7-1-g80cf1e4
-- package version：0.8.8-dev
-- 最近 release：0.8.7，2026-09-14
+- 最新檢查：2026-10-02，Asia/Taipei
+- 分支：display-input-phase-1；工作目錄有未提交修改，與已提交功能分開標示
+- Git commit：2df2b5dccca9774c53b11c9a7d4a4321028c1b78
+- Git describe：0.8.9-180-g2df2b5dc
+- package version：0.9.0-dev
+- 最近 release tag：0.8.9，CHANGELOG 日期 2026-09-25
 - 公開網站：[EDT HMI Studio Alpha](https://edthmistudio.bitdove.net/)
 - 網頁在本次檢查時仍標示 0.8.5 Alpha，released 2026-09-10，限 key stakeholders evaluation
 
@@ -41,6 +44,15 @@
 
 不要因為預期 Beta 會在活動前出現，就提前說已經發布。
 
+## 這次產品內容更新
+
+- Virtual Model：硬體尚未存在時先設計、模擬、匯出規格，不是第四個可燒錄板卡。
+- Checks 與 live logic trace：重播情境、觀察結果，區分 Problems 靜態檢查與實機驗證。
+- Pages、Show when、Selected when、Words：新版開發分支的狀態式畫面。
+- 正常 palette 21 個、Factory Mode 27 個；Simulator 現為 LVGL 9.5。
+- Serial-command host export 已實作；F746 支援外部 QSPI assets；Windows .ehsp 儲存流程已更新。
+- 新版 in-app license 與 README 的 MIT 說法衝突已標記；US$200M 仍是情境，不因新增功能變成財測。
+
 ## 30 分鐘時間配置
 
 | 時間 | 內容 | 目的 |
@@ -51,7 +63,7 @@
 | 16:00–28:30 | Chapter 2: US$200M engine | 說明硬體 design-in、軟體服務與策略授權的飛輪 |
 | 28:30–30:00 | Closing | 重述 North Star 與下一個可驗證行動 |
 
-逐字稿約 2,560 個英文口說字。整場口說平均以每分鐘約 95 字為目標，重要 reveal 可降到 85，說明段可到 100 至 105；再加上停頓與 Demo 操作，總長接近 30 分鐘。逐字稿的時間是排練目標，不是要求每次一字不差。
+逐字稿約 2,550 個英文口說字。整場口說平均以每分鐘約 95 字為目標，重要 reveal 可降到 85，說明段可到 100 至 105；再加上停頓與 Demo 操作，總長接近 30 分鐘。逐字稿的時間是排練目標，不是要求每次一字不差。
 
 ## US$200M 的法律與財務定位
 
@@ -104,10 +116,10 @@ US$200M 是使用者指定的 **strategic North Star and scenario model**。它�
 
 ## 素材
 
-- [assets/latest](assets/latest/)：從目前來源專案整理的最新產品畫面
+- [assets/latest](assets/latest/)：0.8.5 landing 歷史畫面，非 0.9.0-dev 截圖
 - [assets/source-investor-conference](assets/source-investor-conference/)：法說會草稿、研究與生成素材
 - [assets/README.md](assets/README.md)：所有圖像、舊簡報與使用界線
-- [audio](audio/)：Voice 無法使用時的離線 WAV 備援
+- [audio](audio/)：歷史 WAV 發音備援；產品內容以新版文字為準
 
 ## 三條舞台鐵則
 

@@ -12,12 +12,13 @@
 
 ## Demo 前 30 分鐘檢查
 
-- 已匯入 Coffee Machine 專案。
+- 記下實際安裝 build 的版本與 commit；本稿按 2026-10-02 的 0.9.0-dev 更新，不假設公開 Alpha 具有所有新功能。
+- 在 Examples 選 H747 Coffee Machine，以 Use Example 建立自己的 .ehsp；若已有檔案，使用 Windows 的 Load Project。
 - 四個 screens 都能開：Home、Drinks、Brewing、Settings。
 - 確認 800×480 landscape、STM32H747I-DISCO。
 - Emulator toolchain 已 setup，且至少成功 run 過一次。
 - 模擬 device/controller 有可操作的 values。
-- Protocol Monitor 已清空。
+- Protocol Packet 已清空。
 - AI provider 已登入或 local Ollama host 已啟動；測試 prompt 已成功三次。
 - 已準備 AI 修改完成後的 project 與截圖，網路慢時立即切換。
 - Deploy 頁能讀到 local service；不要在正式會議第一次 build。
@@ -36,7 +37,7 @@
 
 > The assistant uses the same editor controls that a person uses. I will ask for one visible, low-risk change: make the main action button green, while keeping the text and layout unchanged.
 
-動作：送出已測試 prompt；等待時不要說話；套用後展示，再 undo 一次。
+動作：送出已測試 prompt；等待時不要說話；等 editor 內的修改完成後檢查並展示，再 undo 一次。不另找不存在的 Apply 按鈕。
 
 > The result remains normal project content. I can inspect it, refine it by hand, and undo the applied AI change as one step. The assistant does not flash or operate the target hardware.
 
@@ -96,9 +97,9 @@
 
 > The Coffee Machine project has named values such as Boiler Temperature, Brew Progress, and Brew Start. Each tag carries its type, access, address, scale, offset, and update timing. Widgets and logic refer to the tag by name instead of copying the wire definition.
 
-動作：指 link budget 或 Monitor。
+動作：指 link budget 或 Packet。
 
-> The link budget warns when requested polling cannot fit on the serial link, and the Monitor translates exchanges into the names used by the project.
+> The link budget warns when requested polling cannot fit on the serial link, and the Packet translates exchanges into the names used by the project.
 
 ### 4:30–5:45 — Emulator
 
@@ -106,13 +107,13 @@
 
 > This is the most important validation step. The Emulator compiles the generated C with real LVGL. It runs the events, logic, and the HMI communication runtime.
 
-動作：在 simulated device 改一個可讀 tag，等畫面更新；再操作一個 bound control，指出 simulated device 端的 write 或 Monitor row。
+動作：在 simulated device 改一個可讀 tag，等畫面更新；再操作一個 bound control，指出 simulated device 端的 write 或 Packet row。
 
 > I can change a value on the simulated device and see the generated HMI read it. I can also touch the HMI and see the write on the other side. This is not only a visual mock-up; it exercises the generated application before hardware is required.
 
-動作：顯示 Monitor 一列。
+動作：顯示 Packet 一列。
 
-> The Monitor shows the direction, bytes, tag name, and interpreted value, which makes a communication problem easier to explain and reproduce.
+> The Packet shows the direction, bytes, tag name, and interpreted value, which makes a communication problem easier to explain and reproduce.
 
 ### 5:45–6:30 — Deploy
 
@@ -124,7 +125,7 @@
 
 在時間允許時補一句 Customer Demo：
 
-> The Customer Demo can also package an interactive evaluation that works without a board, cable, toolchain, or network connection. It proves the interaction, while hardware performance still requires the target board.
+> The Emulator card can build a demo package. Its core interaction works offline without a board, cable, or toolchain on the recipient's PC. External videos and links still need the network. Hardware performance still needs the target board.
 
 ### 6:30–7:00 — 商業收尾
 
@@ -140,7 +141,7 @@
 
 ### Emulator build 太久
 
-> The first build prepares and caches the runtime, so it takes longer than later runs. I will use the prepared screenshot while it continues in the background.
+> This build is taking longer than expected. Studio can reuse unchanged build work, but timing depends on the computer and project. I will continue with the prepared demo package.
 
 ### Emulator 起不來
 
@@ -156,13 +157,48 @@
 
 ### 畫面不更新
 
-> Let me separate the UI from the communication path. The interface is running; I will use the Monitor to check whether this value was exchanged.
+> Let me separate the UI from the communication path. The interface is running; I will use the Packet to check whether this value was exchanged.
 
 ### 程式當掉
 
 > The live session has stopped, so I will switch to the prepared screenshots and keep the discussion on the workflow. We will reproduce the failure after the meeting and send the result.
 
 永遠不要說 `It worked yesterday.`
+
+## 新功能替換 Demo
+
+這些是替換段，不要全加進原本 7 分鐘或 30 分鐘 keynote。先說：
+
+> Today, I am showing a development build. Some features are not in the public Alpha.
+
+### Virtual Model 60 秒
+
+用內建 `Virtual 1280×480 Smart Washer Voice Serial Command`，另開已保存的專案。替換 Screens, text, and animation 段與部分 Design 解說。
+
+1. 展示 1280×480 畫面和 Virtual Model 規格。
+2. 用已準備好的 Emulator 互動。
+3. 展示 Deploy 的 Export specification 與事先匯出的 HTML／JSON。
+4. 不點 Program；它不是實體板卡。
+
+> This display does not need to exist yet. We can design it, test the interaction, and share a specification. The memory figures include estimates. A real board still needs engineering and hardware tests.
+
+Voice washer 的狀態由外部 voice unit 合約／模擬值驅動；不要宣稱是 Studio 內建語音辨識。
+
+### Checks 45 秒
+
+用已排練的簡單錄製：Start → 操作 bound control → Save as Check → 檢查選定的 expectations → Run。可替換一部分手動 read／write 操作，不臨場製作長情境。
+
+> I can save this test and run it again after a change. Checks compares the selected results in the Emulator. A passing Check does not replace testing the real machine.
+
+如果失敗，先看是產品改變、期望過時還是環境問題；不要為了綠燈直接 Accept current。
+
+### Pages 與 Words 45 秒
+
+使用最新 washing-machine example，展示 category page 與跟 tag 改變的狀態字。只在已驗證的開發 build 展示，替換原 Logic 段。
+
+> One value can choose the page, the selected look, and the words on screen. We can keep that behavior together instead of repeating it in several graphs.
+
+Reading Distance 與新的 glass reminders 已提交至本次開發快照，但不是公開 Alpha 能力。未提交的 Scroll round 不安排為主舞台必成功步驟。
 
 ## 技術主管加問時才展示
 

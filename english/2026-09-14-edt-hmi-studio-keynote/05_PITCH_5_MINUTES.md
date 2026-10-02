@@ -30,15 +30,15 @@
 
 > The next step is not just a visual preview. The Emulator compiles the generated C with real LVGL. It runs the event handlers, logic graphs, and the HMI communication runtime. A simulated device or controller appears next to the screen, so the user can change a device value and see the HMI respond, or touch the HMI and see the write on the other side.
 >
-> This matters because it tests the product's actual output. It can reveal a code-generation problem, a missing binding, a protocol mismatch, or a missing font glyph before the team reaches the hardware bench.
+> We can also save an interaction as a Check and replay it after a change. This tests selected results from the generated application. It helps us find integration issues earlier, but it does not replace hardware testing.
 >
 > When the project is ready, the same workflow builds the target firmware and flashes supported hardware. The tool also checks board-specific limits, such as display orientation, protocol implementation, and video capability, before the build proceeds.
 
 ### 3:15–4:05 — 目前證據與範圍
 
-> In the current source snapshot, the design palette contains 25 components. The product includes three board profiles: the STM32F746G Discovery Kit, the STM32H747I Discovery Kit, and the EDT EVK043027B Evaluation Kit.
+> The development build has three physical profiles: F746, H747 and EDT EVK043027B. Virtual Model adds a way to design and emulate a proposed display before its board exists. It does not make arbitrary hardware ready to program.
 >
-> The implemented serial protocol paths include Modbus RTU and configurable serial commands. For supported roles, the panel can ask a device for values, or a host can drive the panel. The project also supports multiple screens, visual logic, animations, multilingual text, CJK fonts, images, and generated host-interface information for the implemented Modbus responder path.
+> The implemented serial protocol paths include Modbus RTU and configurable serial commands. For supported roles, the panel can ask a device for values, or a host can drive the panel. The project also supports multiple screens, visual logic, animations, multilingual text, CJK fonts, images, and host-interface exports for both Modbus and serial-command responder paths.
 >
 > The public 0.8.5 Alpha is available for evaluation by key stakeholders. It is evaluation software and should not be passed to downstream customers under the current public terms.
 >
@@ -66,7 +66,7 @@
 
 ## 高階版不要做的事
 
-- 不要逐一念 25 個元件。
+- 不要逐一念元件清單；若被問數量，本次開發版為 21 normal／27 Factory。
 - 不要解釋 CRC、MBAP、DMA2D 或 linker address，除非被問。
 - 不要說「比所有競品好」。
 - 不要使用未核准的上市、價格、免費或獨家說法。

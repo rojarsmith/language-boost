@@ -116,3 +116,7 @@ Final Gate：
 - Week 6：在壓力下仍然短、穩、準。
 
 不要每天同時修文法、口音、手勢、內容與速度。那會讓嘴巴再次鎖住。
+
+## 已在練習的人如何接上新版
+
+不重置已完成天數，也不清除 practice_log.csv 或 scorecard.csv。下次開始先做 [新版 15 分鐘練習](31_LATEST_UPDATE_AND_PRACTICE.md)，接下來三次各加一道版本、Virtual Model、Checks 問答。原訂活動日期已過，本計畫改以你的下一次實際發表日倒推，不在教材中自行設定新日期。

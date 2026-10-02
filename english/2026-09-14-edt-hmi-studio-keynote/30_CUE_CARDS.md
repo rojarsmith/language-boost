@@ -57,6 +57,8 @@ Stage:
 - Design, logic, communication, emulation, build, flash
 - Supported workflows can reach firmware without application code
 - Engineers keep control
+- Development build, not a new public release
+- Virtual Model: design before the board exists
 
 Stage:
 
@@ -93,7 +95,7 @@ Sequence:
 
 - Submit
 - Silence
-- Apply
+- Wait for the edit
 - Inspect
 - Undo
 
@@ -109,8 +111,10 @@ Fallback:
 - Logic
 - Protocol
 - Real-LVGL Emulator
-- Customer Demo
-- Supported build and flash
+- Pages and Words: value-driven screens
+- Checks: save and replay an Emulator test
+- Demo package: core offline, external links need network
+- Supported physical-board build and flash
 
 Proof:
 
@@ -123,7 +127,9 @@ Proof:
 
 - Use approved Alpha or Beta line
 - Public evaluation build
-- Three board profiles
+- Three physical board profiles plus Virtual Model
+- Virtual Model cannot flash a real board
+- New features may not exist in the public Alpha
 - Modbus RTU and serial commands
 - Board capabilities differ
 - CAN and Ethernet outside current production path

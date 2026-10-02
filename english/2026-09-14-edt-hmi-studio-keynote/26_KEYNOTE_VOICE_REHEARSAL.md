@@ -236,7 +236,7 @@ Fallback line:
 
 ### Current scope
 
-> Coach Slide 12. Ask me what is public, what is in the current source, and what remains roadmap work. Stop me if I announce Beta early or present CAN or Ethernet as production support.
+> Coach Slide 12. Ask me what is public, what is committed development work, and what is uncommitted. Stop me if I announce Beta early, call Virtual Model a programmable board, or present CAN or Ethernet as production support.
 
 ### Revenue reveal
 
@@ -314,3 +314,13 @@ Voice transcripts may not be verbatim. Use your own stage recording when exact w
 3. Score it with the table above.
 4. Mark one sentence for the next Voice session.
 5. Continue the plan. Do not lose a practice day because a service is unavailable.
+
+## 2026-10-02 新版內容練習
+
+先讀 [新版短句與 15 分鐘練習](31_LATEST_UPDATE_AND_PRACTICE.md)，再回到原本的分段彩排。開場歡迎詞不變，仍含在兩分鐘內。
+
+給教練的補充指令：
+
+> Use the updated product truth and latest-update files. Ask me one question at a time about the public Alpha versus the development build, Virtual Model, Checks, Pages and Words. Keep each answer under 25 seconds. Explain one correction in Traditional Chinese, then wait for me to repeat it. Distinguish committed Reading Distance work from uncommitted Scroll round work; do not describe either as a public-Alpha release. Keep the existing welcome and 30-minute structure.
+
+版本辨識題回答連續三題正確後，再練新功能；不用一次背元件數、Flash 容量與所有檔名。

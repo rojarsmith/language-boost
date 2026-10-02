@@ -233,3 +233,11 @@ Do not convert TWD2.0B into US dollars on stage and imply that the result suppor
 - Eighty customers are already committed.
 - The free software guarantees hardware conversion.
 - Beta will deliver this business model.
+
+## Product evidence update on 2026-10-02
+
+The source now adds Virtual Model and specification export, replayable Checks, richer state-driven screens and improved project files. These are tools for the evaluation and validation process, not measurements of conversion, savings or revenue. The original 80 / 2,000 / 10 scenario inputs are unchanged.
+
+The newer in-app license text describes proprietary software with free use tied to EDT-supplied display modules. This is stronger evidence of the intended base-software terms than the old investor draft, but it does not establish enterprise-service prices, AI resale margins, OEM licensing revenue, or unrestricted rights on other hardware. The source README still says MIT; confirm the applicable agreement instead of resolving that conflict by assumption.
+
+The source investor-conference files have no change from the previous baseline to this HEAD. Their TWD figures remain separate from this US-dollar scenario. External market figures retain their earlier check date of 2026-09-18; they were not refreshed in this product-source update.

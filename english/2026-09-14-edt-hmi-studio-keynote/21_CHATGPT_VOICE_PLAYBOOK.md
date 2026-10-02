@@ -189,3 +189,7 @@ Voice 講太多：
 2. 用手機錄完整版本。
 3. 依 `scorecard.csv` 自評。
 4. Voice 恢復後，先把昨天最卡的一句拿來糾正，不必重做整天。
+
+## 本輪新版產品練習
+
+產品資料已同步至 2026-10-02。沿用本手冊的 Voice 操作方法，先讀 [31_LATEST_UPDATE_AND_PRACTICE.md](31_LATEST_UPDATE_AND_PRACTICE.md) 的八句新版短句。這裡只更新練習內容，不代表 ChatGPT 的介面、方案或使用額度有任何變更。

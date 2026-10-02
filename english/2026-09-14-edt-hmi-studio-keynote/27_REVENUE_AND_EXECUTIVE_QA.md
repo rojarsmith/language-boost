@@ -54,7 +54,7 @@ Beta answer, only after official release and approval:
 
 ### 9. Which boards are supported?
 
-> The current source contains profiles for STM32F746G-DISCO, STM32H747I-DISCO, and EDT EVK043027B. Their capabilities differ, so we validate the exact board, protocol, memory, and media requirement before making a commitment.
+> There are three physical profiles: STM32F746G-DISCO, STM32H747I-DISCO and EDT EVK043027B. Virtual Model adds design, emulation and specification before hardware exists. It cannot program a physical board. We validate each real board's protocol, memory and media limits.
 
 ### 10. Does it support CAN or Ethernet?
 
@@ -126,7 +126,7 @@ Beta answer, only after official release and approval:
 
 ### 26. Will Studio be free?
 
-> We are evaluating models that can accelerate EDT hardware adoption, including a possible offer linked to compatible EDT-manufactured displays. The final free conditions, license, and regional terms require executive, Finance, Legal, and channel approval.
+> The newer in-app terms describe free use for EDT-supplied displays, with proprietary software and hardware restrictions. That is not unrestricted free software. We must confirm the applicable build and agreement; it does not establish a paid AI-service or OEM-license business.
 
 ### 27. How will EDT make money from AI?
 

@@ -6,7 +6,7 @@
 
 ### 1. What is the underlying graphics framework?
 
-> The firmware and Emulator target LVGL 9.5. The lighter prebuilt Simulator artifacts are still based on LVGL 9.2, so we treat the Emulator and hardware paths as the primary generated-application validation paths.
+> Firmware, Emulator, and the prebuilt Simulator now use LVGL 9.5. The Simulator was rebuilt on September 29, 2026. It still renders a UI description, not the generated application; use the Emulator and the real board for application validation.
 
 ### 2. What code does the tool generate?
 
@@ -28,7 +28,7 @@
 
 ### 6. How many widgets are supported?
 
-> The current design palette contains 25 components across basic controls, inputs, shapes, containers, displays, image, and video. Older README counts are stale, so we use the current component-definition table as the source.
+> In this development snapshot, the normal palette offers 21 widgets. Factory Mode offers 27. There are 28 definitions in the code, but a Page is a child of Pages, not a separate palette item. These are not counts for the public Alpha.
 
 ### 7. Does it support multiple screens?
 
@@ -36,11 +36,11 @@
 
 ### 8. What event model is available?
 
-> Components can bind LVGL events such as click, long press, value change, and focus. Screens also expose load and unload lifecycle events. Built-in actions include navigation, property or value changes, show/hide, language switching, and animation control, with custom C available in Factory Dev Mode.
+> The Events tab offers only events that the selected widget can receive in the current mode. For example, a Label or Image does not receive taps, while Dropdown has List opened and List closed. Screens have load and unload events. Actions include navigation, property changes, language switching and animation; custom C is factory-only.
 
 ### 9. What can the visual logic graph do?
 
-> The current palette includes event and timer triggers; If/Else, Switch, and Delay; screen actions such as Set Property, Navigate, Show/Hide, Set Text, and Set Value; data operations for variables, comparison, logic, math, strings, and properties; and device Read Tag and Write Tag nodes. Custom calls and C blocks are factory-only.
+> The current palette includes event, timer, and tag-change triggers; If/Else, Switch, and Delay; screen actions such as Set Property, Navigate, Show/Hide, Set Text, and Set Value; data operations for variables, comparison, logic, math, strings, and properties; and device Read Tag and Write Tag nodes. Custom calls and C blocks are factory-only.
 
 ### 10. How are animations modeled?
 
@@ -98,7 +98,7 @@
 
 ### 23. How is polling controlled?
 
-> Device tags can carry their own poll interval, with a device default. The link-budget view estimates whether the configured exchanges fit at the selected serial framing and baud rate. Panel-memory and write-only tags do not consume polling time.
+> Device tags can carry their own poll interval, with a device default. The link-budget view estimates whether the configured exchanges fit at the selected serial framing and baud rate. HMI-memory and write-only tags do not consume polling time.
 
 ### 24. Can several widgets share one tag?
 
@@ -110,25 +110,25 @@
 
 ### 26. Can values exist only inside the HMI?
 
-> Yes. Panel-memory tags have no external device address. Widgets and logic can read and write them, which is useful for local state, setpoints, or communication between screens.
+> Yes. HMI-memory tags have no external device address. They can have a starting value, and widgets and logic can share them across screens. A local value does not automatically mean a value retained after power loss.
 
 ### 27. How do you debug the protocol?
 
-> The Monitor shows time, direction, bytes, device, tag meaning, engineering value, refusals, timeouts, and invalid frames. The Test action can open a serial link through Web Serial and exchange a real frame on supported paths. The Command Composer previews line endings and bytes before flashing.
+> The Packet pane, formerly called Monitor, shows time, direction, bytes, device, tag meaning, engineering value, refusals, timeouts, and invalid frames. The Test action can open a serial link through Web Serial and exchange a real frame on supported paths. The Command Composer previews line endings and bytes before flashing.
 
 ### 28. Can the tool export the interface for the host developer?
 
-> For the Modbus responder path, the source records CSV, a generated `hmi_map.h`, and a printable register-map page. The command-list export is still shown as pending in the progress notes, so it should not be promised until verified in the release build.
+> Yes. The Modbus responder exports register-map.csv, hmi_map.h, and printable HTML. The serial-command responder also exports command-list.csv, hmi_commands.h, and printable HTML. Both are implemented in the current source; the older note saying command export was pending is obsolete.
 
 ## Hardware, resources, and deployment
 
 ### 29. Which boards are currently modeled?
 
-> STM32F746G-DISCO at 480 by 272 RGB565, STM32H747I-DISCO at 800 by 480 ARGB8888, and EDT EVK043027B at 480 by 272 ARGB8888.
+> Three physical profiles: STM32F746G-DISCO at 480 by 272 RGB565, STM32H747I-DISCO at 800 by 480 ARGB8888, and EDT EVK043027B at 480 by 272 ARGB8888. Virtual Model adds a configurable specification, not another physical deployment target.
 
 ### 30. Can we add our own board?
 
-> The architecture is built around board definitions plus firmware templates and drivers, so a new board is possible. It is not only a JSON entry: display, touch, memory, build, programmer, connectors, and optional peripherals must be integrated and validated.
+> Virtual Model lets us design, emulate, and export a specification before a board exists. It cannot build or program physical hardware. A real new target still needs display, touch, memory, drivers, build and programming integration, plus hardware validation.
 
 ### 31. Does it support portrait orientation?
 
@@ -136,7 +136,7 @@
 
 ### 32. How are images handled?
 
-> Images are managed as project resources and converted for the target color format. On H747, large image data can be linked into external QSPI flash; other boards use their configured internal-memory path. The Deploy diagnostics can read actual placement from the linker map in Factory Dev Mode.
+> Images are converted for the target format. H747 uses external QSPI for assets; since 0.8.9, F746 also places images and converted fonts in its 16 MB QSPI flash, with a loader selected for the actual flash part. EVK external flash is fitted but not used for these assets in the current profile. Deployment diagnostics can inspect the linker map.
 
 ### 33. How are fonts and CJK handled?
 
@@ -156,11 +156,11 @@
 
 ### 37. Can it run offline?
 
-> The current architecture stores projects locally and uses a local build service and local toolchains. However, the final distribution, update, telemetry, license-activation, and cloud policies are not documented in this source package, so I would not make an absolute offline claim yet.
+> Local editing and prepared toolchains do not require cloud AI. The PC demo package's core interaction can also run offline. OpenRouter, external videos and links, and missing dependency downloads require a connection. The source now contains a privacy notice; check the exact build, provider and media before promising an offline workflow.
 
 ### 38. How are projects stored?
 
-> Projects can be saved and imported as JSON, with local persistence and autosave in the current application. Resources and project data are normalized when older shapes are opened to preserve backward compatibility.
+> On Windows, .ehsp is the project file. Load Project opens it in place, and Auto Save can write changes back. The current unreleased branch also adds Save As, Recent and crash-recovery workflows. Web and Linux paths still differ; legacy JSON support does not mean the Windows user workflow is JSON-only.
 
 ### 39. How do you protect against flashing the wrong board?
 
@@ -176,7 +176,7 @@
 
 ### 42. Is the firmware secure?
 
-> The current serial protocols focus on local industrial communication and do not provide encryption or authentication by themselves. The source package does not define secure boot, signed updates, SBOM policy, vulnerability response, or network-hardening commitments. Those require a separate product-security answer.
+> The serial paths do not provide encryption or authentication by themselves. The source now contains vendor notices about privacy, SBOM, vulnerability response and security updates. Those notices are not evidence of secure boot, signed firmware, a completed compliance audit or a customer SLA. Ask for the release-specific security evidence.
 
 ### 43. How do you handle backward compatibility?
 
@@ -185,6 +185,32 @@
 ### 44. What happens if the build fails?
 
 > Long-running operations appear in the Work pane with user-facing phases, progress when available, and cancellability for safe operations. Detailed build and flash logs remain in separate dock panes, and a build can be stopped while flashing cannot be cancelled from the UI.
+
+## 新版功能追問
+
+### 45. What is a Virtual Model?
+
+> It describes the display, memory and connections of a proposed HMI. We can design it, run it in the Emulator and export HTML and JSON specifications. It is not firmware for an arbitrary board, and its memory budget includes estimates.
+
+### 46. What is the difference between Problems and Checks?
+
+> Problems inspects the project and lists issues. Checks replays a recorded Emulator scenario and compares selected results. A passing Check is not a hardware qualification or a pixel-by-pixel visual test.
+
+### 47. What are Pages, Show when, and Words?
+
+> Pages puts several pages inside one area. Show when controls visibility from a tag. Selected when controls the selected look. Words lets one Label show translated text chosen by a value. These are development-build features, not claims about the public Alpha.
+
+### 48. Does the new usability checking certify the design?
+
+> No. The development branch can flag small touch targets and confusing visual states. Reading Distance and additional readability checks are committed in this development snapshot, but are not established as public-Alpha features. These are design reminders, not certification or a substitute for user testing.
+
+### 49. Does the washer demo include speech recognition?
+
+> It demonstrates an interface to an external voice unit. We can drive its voice-state tags without a microphone. That does not establish built-in speech recognition in Studio.
+
+### 50. Does the demo package include sound and video?
+
+> It can carry eligible HMI video files when the project has their bytes. Video playback in the demo has no video soundtrack and follows board limits. Standalone Play Sound is a separate path. External web videos and links need a network connection.
 
 ## 技術問題答不深時
 

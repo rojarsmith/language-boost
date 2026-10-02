@@ -101,3 +101,12 @@
 
 這句會讓你的英文聽起來比背很多單字更專業。
 
+## 新版先確認
+
+- > Are we validating an existing board or a proposed display?
+- > Which exact build will your team evaluate?
+- > Which interaction should we save and replay as a Check?
+- > What must still be tested on the physical machine?
+- > Will the demo need external web videos or links?
+
+Virtual Model 可協助硬體尚未存在的需求討論；不能因此略過最終 board、protocol 與授權範圍。

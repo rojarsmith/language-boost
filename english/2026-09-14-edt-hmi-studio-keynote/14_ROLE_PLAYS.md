@@ -152,3 +152,23 @@ Emulator 沒起來，總經理直接問「產品是不是不穩」。
 | Unknowns | 假裝知道 | 只說不知道 | owner + item + date |
 
 連續三次 10 分以上才算過關。
+
+## 新版情境
+
+**海外總經理:** Can we start before the customer's board exists?
+
+> Yes. Virtual Model lets us design and test the interaction first. We can export a specification, but real hardware still needs integration and testing.
+
+**工程主管:** If a Check passes, is the product production-ready?
+
+> No. It checks selected results in the Emulator. It does not prove physical timing, memory use or product safety.
+
+**通路副總:** Can I download these new features from the website today?
+
+> The public page still shows 0.8.5 Alpha. This demo uses a newer development build. I will confirm which build we can provide.
+
+**總經理:** Does this prove the revenue target?
+
+> No. It helps us test the workflow. Revenue still needs customer adoption, production orders and evidence for the assumptions.
+
+每題先用 20 秒回答。教練只追問一個版本或硬體邊界，再讓你重答。

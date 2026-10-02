@@ -24,15 +24,15 @@ This is a content and visual brief, not a finished deck. It matches [the 30-minu
 | 1 | 00:00 | One screen | One screen | Full-bleed polished HMI from assets/hero-vivid.png; start with no subtitle | Welcome the room and overseas online colleagues and partners, express excitement about introducing the product, then establish the customer's moment of truth |
 | 2 | 02:00 | Embedded HMI development | Design / Code / Protocol / Hardware / Rework | One editable horizontal process with the last step returning to the first | Make the old workflow feel costly and familiar |
 | 3 | 05:00 | EDT HMI Studio | EDT HMI Studio | Black field, centered logo from assets/logo-horizontal-green.svg; reveal after two seconds of black | Name the product and pause |
-| 4 | 06:00 | One project | Design, logic, communication, validation, deployment | Product screenshot from assets/latest/design.png with only five small edge labels | Explain continuity, not a feature inventory |
+| 4 | 06:00 | One project | Design before the board exists | Tested development build: Virtual Model screen and its specification; use an actual capture | Explain early design and hardware handoff; label Development build |
 | 5 | 07:00 | Built for AI to operate | Built for AI to operate | assets/latest/assistant-panel.png; keep public-page phrase verbatim | Define the assistant's role |
 | 6 | 08:30 | AI edit in place | A visible change. One undo step. | Before and after crop from assets/latest/ai-edit-in-place.png; reveal after the live edit | Prove control and editability |
 | 7 | 10:00 | Visual reference to interface | Sketch / Working screen | assets/latest/ai-draws-an-asset.png; one simple divider | Expand the product vision |
-| 8 | 11:00 | Design | Screens, components, assets, languages | assets/shot-design.png | Explain visual creation |
-| 9 | 11:40 | Logic | Events and visual graphs | assets/latest/logic.png | Explain behavior |
+| 8 | 11:00 | Design | Pages and Words | Actual development-build capture of the prepared washer project; old Design image only for generic context | Explain pages and value-driven translated text |
+| 9 | 11:40 | Logic | See the behavior run | Tested live trace or a recording from the same build | Explain which steps ran and which values changed |
 | 10 | 12:20 | Protocol | Modbus RTU and serial commands | assets/latest/protocol.png | Explain named device data and current protocol scope |
-| 11 | 13:00 | Validate and deploy | Generated C running with real LVGL | assets/shot-preview.png or the live Emulator; no second screenshot | Prove interactivity before hardware |
-| 12 | 14:00 | Current scope | Alpha evaluation / 3 board profiles / Clear limits | Fresh capture of the official public page plus three plain board names | Build trust through precise scope |
+| 11 | 13:00 | Validate and deploy | Run it. Check it again. | Prepared Emulator read/write interaction; briefly point to a saved Check, no extra long recording | Explain generated C, repeatable checks and demo handoff |
+| 12 | 14:00 | Current scope | Public Alpha / Development build / 3 physical profiles + Virtual Model | Fresh public-page capture and plain profile names; Virtual Model visually separate | Explain availability, no virtual-board flashing and real-hardware testing |
 | 13 | 15:30 | Business system | Product / Operating model | Black field with one small EDT display image | Shift from product to business |
 | 14 | 16:00 | Design-in flywheel | Customer idea, Studio project, EDT profile, production, next product | One editable circular diagram; no decorative icons | Connect Studio adoption to repeat hardware orders |
 | 15 | 18:00 | Regional operating model | Customer / Channel / FAE / Product team | Four names around a shared Studio project; one connecting line | Explain repeatable execution across regions |
@@ -56,7 +56,8 @@ This is a content and visual brief, not a finished deck. It matches [the 30-minu
 
 ### Slides 4 to 7
 
-- Use the latest source screenshots. Do not use mock UI.
+- The folder named assets/latest contains 0.8.5 landing-page images, not fresh 0.9.0-dev captures. Preserve them as historical references.
+- New-feature slides need a live tested build or matching captures before presentation. This update does not fabricate current UI screenshots.
 - Crop images to protect readable product detail.
 - Slide 6 must match the exact live Demo or recorded fallback.
 - Put AI limits in speaker notes and say them aloud. Do not crowd the slide.
@@ -65,7 +66,8 @@ This is a content and visual brief, not a finished deck. It matches [the 30-minu
 
 - Use one screenshot per slide.
 - Slide 10 must say Modbus RTU and serial commands. Do not add CAN or Ethernet logos.
-- Slide 11 uses the Emulator or Customer Demo live when reliable.
+- Slide 11 uses the Emulator or demo package live when reliable. Explain Checks within the existing slot; a full replay replaces another interaction rather than extending the talk.
+- If only public Alpha is available, omit Virtual Model, Pages, Words, live trace and Checks proof; use the generic five-step workflow and say that new features are development work.
 - Slide 12 must be refreshed within 24 hours of the event. Replace Alpha with Beta only after the official page changes and the claim is approved.
 
 ### Slides 13 to 15
@@ -80,7 +82,7 @@ This is a content and visual brief, not a finished deck. It matches [the 30-minu
 - Label Slides 16 to 19 with “Illustrative scenario” in a visible footer.
 - On Slide 19, show the qualification no later than the second spoken sentence.
 - Slide 20 source notes:
-  - Grand View Research, Human Machine Interface Market, current page accessed 2026-09-18.
+  - Grand View Research, Human Machine Interface Market, historical check on 2026-09-18; not rechecked in this source update.
   - Calculation: US$200M ÷ US$11.60B = 1.72%.
 - Do not place the AI-in-manufacturing market number on a slide unless Marketing and IR approve its relevance. It may stay in speaker notes.
 

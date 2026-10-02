@@ -50,7 +50,7 @@
 | integration | 整合 | Making several parts work together. |
 | runtime | 執行期系統 | The software operating while the application runs. |
 | log | 紀錄 | Text that explains what a process did. |
-| Monitor | 通訊監看 | A view of device exchanges and their meaning. |
+| Monitor | 舊通訊窗格名稱 | The older name for the Packet pane. |
 | proof of concept / POC | 概念驗證 | A small project that proves a defined use case. |
 | acceptance criteria | 驗收條件 | The tests that decide whether the POC succeeded. |
 | root cause | 根本原因 | The real reason a problem happened. |
@@ -150,3 +150,22 @@
 | revenue attribution | 營收歸屬 | The rule for assigning revenue to a region, team, or channel. |
 | assumption | 假設 | An input that still needs evidence. |
 | sensitivity | 敏感度 | How the result changes when an assumption changes. |
+
+## 新版產品詞彙
+
+| Term | 中文 | Simple English |
+|---|---|---|
+| development build | 開發版本 | A build that may contain features not in the public download. |
+| Virtual Model | 虛擬機型規格 | A proposed HMI described before its physical board exists. |
+| specification | 規格 | The display, memory and connection requirements. |
+| memory budget | 記憶體預算 | A comparison with available memory; it may include estimates. |
+| Checks | 情境重播檢查 | Saved Emulator scenarios run again after a change. |
+| Problems | 專案問題列表 | Issues found by inspecting the project. |
+| Pages | 區域內分頁容器 | Several pages in one box, one shown at a time. |
+| Words | 數值對應文字 | Translated label text selected by a tag value. |
+| Selected when | 條件選取外觀 | A selected look controlled by a tag condition. |
+| Packet | 封包窗格 | The communication pane previously called Monitor. |
+| .ehsp | Studio 專案檔 | The current Windows project-file format. |
+| uncommitted change | 尚未提交修改 | Local work not included in the recorded Git commit. |
+
+**Voice 的三種不同意思：** ChatGPT Voice 是本教材的口說教練；Studio AI assistant 是 editor 的協作功能；washer voice demo 展示外部 voice unit 與 HMI 的通訊合約，三者不能互相當作能力證據。

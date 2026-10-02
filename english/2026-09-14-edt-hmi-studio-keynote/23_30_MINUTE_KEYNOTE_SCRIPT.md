@@ -9,6 +9,8 @@
 - Demo time and silence are part of the 30 minutes.
 - Memorize the opening, the US$200M qualification, and the closing. Use cue cards for the rest.
 
+Source update: 2026-10-02. This script describes the 0.9.0-dev development snapshot, not a new public release. Keep the original event folder date as an archive label. Use a tested development build for the new-feature Demo; if presenting only public 0.8.5, use the older-feature route in [07_LIVE_DEMO_SCRIPT.md](07_LIVE_DEMO_SCRIPT.md) and omit unverified new features.
+
 ## Release-status switch
 
 Use exactly one version:
@@ -193,15 +195,17 @@ They run the generated application here.
 
 When the target is ready, they build and flash supported hardware from the same project.
 
-The current source has 25 components in the design palette.
+Today, I am showing a development build.
 
-It supports multiple screens, animation, images, fonts, typography, and multilingual text.
+It includes Virtual Model.
 
-The number of components will change.
+We can design a proposed display before its board exists.
 
-The important point is the continuity of the work.
+We can test the interaction and share a specification.
 
-One project connects the visual idea to the embedded target.
+A real board still needs engineering.
+
+The project connects the idea to that next step.
 
 ---
 
@@ -259,7 +263,7 @@ The result is visible.
 
 And the rest of the project remains editable.
 
-[Apply. Show the change. Pause.]
+[Wait for the edit to appear. Show the change. Pause.]
 
 Now I can inspect it.
 
@@ -319,9 +323,11 @@ First, Design.
 
 The team builds the interface visually.
 
-They arrange components, screens, text, images, and animation.
+They arrange screens, pictures, text, and animation.
 
-They can manage languages and typography inside the project.
+Pages puts several views inside one area.
+
+Words lets a value choose translated text.
 
 ### Slide 9: Logic
 
@@ -333,7 +339,7 @@ A screen needs behavior.
 
 Events and visual graphs connect a user action to a project value or another screen.
 
-The team can see the behavior instead of hiding every decision inside handwritten code.
+The running graph can show which steps ran and what the values became.
 
 ### Slide 10: Protocol
 
@@ -375,9 +381,11 @@ Here, the user touches the HMI.
 
 The simulated device receives the write.
 
-The Customer Demo path can also package an interactive project for evaluation.
+Checks can save this test and replay it after a change.
 
-The recipient does not need a board, a cable, a toolchain, or a network connection.
+A demo package lets another person try the interaction offline.
+
+External videos and links still need the network.
 
 When the target is ready, the same project can build firmware and flash a supported board.
 
@@ -405,11 +413,13 @@ Let me be precise about the current scope.
 
 [Use the approved Alpha or Beta line.]
 
-The public evaluation build is for key stakeholders.
+The public download remains the 0.8.5 Alpha.
 
-The Alpha page tells users to expect rough edges and not to pass the build to downstream customers.
+It is for key stakeholders, not downstream distribution.
 
-The current source includes profiles for three boards:
+Some features shown today are only in the development build.
+
+There are three physical board profiles:
 
 STM32F746G-DISCO.
 
@@ -417,36 +427,33 @@ STM32H747I-DISCO.
 
 And EDT EVK043027B.
 
-The capabilities are different on each board.
+Virtual Model is a specification, not a fourth board.
 
-For example, the F746 has a constrained software-video path with sound.
+It cannot program real hardware.
 
-The H747 uses hardware JPEG for higher-resolution video, without audio on that path.
+Each physical board has different capabilities.
+
+F746 supports smaller video with sound.
+
+H747 supports higher-resolution video, without sound on that path.
 
 CAN and Ethernet are not current production paths.
 
-We will not hide those boundaries.
+[Pause.]
 
-Clear scope creates trust.
+A working Demo is valuable evidence.
 
-It also tells us exactly what to validate next.
-
-[Look at the audience.]
+It is not a substitute for testing the real machine.
 
 So, what have we built?
 
-A customer can move from an idea to an interactive embedded HMI project.
+A way to create and edit the interface.
 
-AI can help create and edit it.
+A way to connect behavior and device data.
 
-The team can connect behavior and device data.
+A way to test generated code, repeat a test, and prepare the hardware handoff.
 
-The team can test generated C before final hardware.
-
-And the project can continue toward supported EDT hardware.
-
-[Pause.]
-
+[Look at the audience.]
 That completes Chapter One.
 
 Now let us ask the business question.
@@ -607,9 +614,11 @@ We must measure all of them.
 
 The second engine is paid software and service value.
 
-The base Studio offer may support the hardware strategy.
+Current in-app terms link free Studio use to EDT-supplied displays.
 
-Large teams may still pay for capabilities that reduce operational risk.
+Paid services would be a separate offer.
+
+We still need evidence that customers will pay.
 
 For example:
 
@@ -849,7 +858,7 @@ And the next product can begin from work the customer already trusts.
 
 [Pause. Move to center.]
 
-Chapter One showed what EDT HMI Studio can do today.
+Chapter One showed the development workflow and its boundaries.
 
 Chapter Two showed the business system we can test.
 

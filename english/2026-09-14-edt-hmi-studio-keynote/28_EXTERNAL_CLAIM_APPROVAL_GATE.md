@@ -30,12 +30,12 @@ A verbal approval is not enough for a red claim. Record:
 |---|---|---|---|---|
 | GREEN | Product identity | EDT HMI Studio is a visual development environment for embedded touch interfaces. | Current source and public page | Product owner |
 | GREEN | AI role | The assistant can create or edit project content through the editor. | Public page and current source | Product owner |
-| GREEN | Public Alpha | The 0.8.5 Alpha is available for evaluation by key stakeholders. | Official page checked 2026-09-18 | Product／Marketing |
+| GREEN | Public Alpha | The 0.8.5 Alpha is available for evaluation by key stakeholders. | Official page checked 2026-10-02 | Product／Marketing |
 | YELLOW | Beta availability | The Beta is now available for evaluation. | Official page must show Beta | Product／QA／Legal／Marketing |
 | YELLOW | GA month | General release is planned for [month]. | Official page currently says Dec 2026 | CEO／Product／Legal／Marketing |
 | YELLOW | Windows support | The public Alpha page lists Windows 10/11 64-bit. | Official page | Product／QA |
 | RED | macOS and Linux production support | [No approved wording] | Old marketing and build paths are insufficient | Product／QA／Support |
-| GREEN | Three source board profiles | The current source includes three board profiles. | Current board definitions | Engineering／Product |
+| GREEN | Physical profiles and Virtual Model | Three physical board profiles, plus a Virtual Model for design and specification, not flashing. | Current definitions and virtual-model.md | Engineering／Product |
 | YELLOW | Production-ready board support | [Name exact board and tested release] | Release test report required | QA／Engineering／Product |
 | GREEN | Current serial protocols | Modbus RTU and configurable serial commands are implemented. | Current source and examples | Engineering／Product |
 | RED | Production CAN or Ethernet | [Do not claim] | Runtime path incomplete | Engineering／Product／QA |
@@ -58,7 +58,7 @@ A verbal approval is not enough for a red claim. Record:
 
 | Status | Claim | Current safe wording | Required approval |
 |---|---|---|---|
-| RED | Studio is free with EDT hardware | We are evaluating a model linked to compatible EDT-manufactured displays. | CEO／Finance／Legal／Sales／Channel |
+| YELLOW | In-app license scope | Newer source terms describe proprietary software, free to use for EDT-supplied displays; verify the applicable build and resolve the README MIT conflict. | Product／Legal／Sales／Channel |
 | RED | Subscription price or perpetual license | I will confirm the approved pricing in writing. | Finance／Product／Legal |
 | RED | AI reseller or managed usage price | We are evaluating provider and managed-service options. | Finance／Security／Legal／Product |
 | RED | Distributor margin and discount | I will confirm the approved channel terms. | Channel／Finance／Legal |
@@ -121,3 +121,7 @@ A verbal approval is not enough for a red claim. Record:
 - [ ] Follow-up owner and date available for unanswered questions
 
 If any red claim remains on an external slide without written approval, remove the claim. Do not soften the label and leave the number.
+
+## Version evidence for this update
+
+Checked on 2026-10-02: public 0.8.5 Alpha; latest release tag 0.8.9; current branch 0.9.0-dev at 2df2b5dc with additional uncommitted work. A GREEN technical fact describes its identified source scope, not every available installer. Reading Distance and glass reminders are committed development features; Scroll round changes are uncommitted. A vendor legal or privacy notice is not independent proof of compliance.

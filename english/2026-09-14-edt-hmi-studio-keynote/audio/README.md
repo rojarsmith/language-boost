@@ -36,3 +36,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\generate_audio.ps1
 ```
 
 The default voice is `Microsoft Zira Desktop`. To use another installed SAPI voice, pass `-Voice "voice name"`.
+
+## Content version
+
+The WAV files and their generation script are preserved from the earlier training kit. They were not regenerated for the 2026-10-02 source update. Use them for pronunciation and rhythm, not current release or feature facts. In ChatGPT Voice, practice the updated text, especially 00_PRODUCT_TRUTH.md and 31_LATEST_UPDATE_AND_PRACTICE.md.

@@ -24,8 +24,6 @@
 
 The AI assistant can create a project, turn a visual reference into screens, or make a focused edit through the same editor controls. The result remains ordinary project content that a person can inspect, edit, and undo.
 
-The AI assistant can create a project, turn a visual reference into screens, or make a focused edit through the same editor controls. The result remains ordinary project content that a person can inspect, edit, and undo.
-
 ### 商業結果
 
 不要亂講百分比。使用方向性語言：
@@ -36,14 +34,13 @@ The AI assistant can create a project, turn a visual reference into screens, or 
 
 AI 是建立與修改內容的加速器，下面三個支柱仍是產品能否走向 embedded deployment 的核心。不要把 AI 單獨講成產品全部。
 
-AI 是建立與修改內容的加速器，下面三個支柱仍是產品能否走向 embedded deployment 的核心。不要把 AI 單獨講成產品全部。
-
 ### 1. Faster creation — 更快做出介面
 
-- 25 個目前可見的 palette components。
+- 本次開發版正常 palette 有 21 個 widgets；Factory Mode 27 個。不要把開發版數字套用到公開 Alpha。
 - 拖拉、巢狀、多選、對齊、層級、undo/redo。
 - 多畫面、事件、五種轉場、動畫。
-- Text / language / typography / image / font 資源管理。
+- Asset 內的 text／language／typography／image／font／audio 資源管理。
+- 開發版 Pages、Show when、Selected when、Words，把狀態顯示集中設定。
 
 一句英文：
 
@@ -53,7 +50,8 @@ AI 是建立與修改內容的加速器，下面三個支柱仍是產品能否�
 
 - Emulator 使用真實 LVGL 加上產生的 C。
 - 事件、logic graphs、tag runtime 與模擬設備可一起跑。
-- Protocol Monitor、link budget、真實 serial test。
+- Packet pane、link budget、真實 serial test。
+- Problems 說明專案問題；Checks 重播作者保存的 Emulator 情境。
 - 缺少 tag、硬體能力或 build prerequisite 時明確說明。
 
 一句英文：
@@ -62,6 +60,8 @@ AI 是建立與修改內容的加速器，下面三個支柱仍是產品能否�
 
 ### 3. Hardware-aware delivery — 從設計到支援硬體
 
+- 三個實體 board profiles，另有可先定義規格的 Virtual Model。
+- Virtual Model 可先驗證互動、匯出規格；不能直接燒錄任意硬體。
 - 板卡決定解析度、色深、方向、記憶體與 connector 能力。
 - 同一份專案產生 UI、event、logic 與 communication C。
 - 可在產品內建置、下載 firmware、透過 SWD flash/reset。

@@ -98,7 +98,7 @@ Preferred live proof:
 
 1. Open a prepared project.
 2. Ask the assistant for one visible, low-risk change.
-3. Apply it and show one-step undo.
+3. Inspect the completed edit and show one-step undo.
 4. Run the result in Emulator or Customer Demo.
 
 Avoid generating a full project live unless the exact prompt, model, network, latency, and fallback have been tested on the event machine.
@@ -121,3 +121,11 @@ The presentation succeeds when:
 - Do not claim production CAN, Ethernet, or universal board support.
 - Do not promise pricing, exclusivity, SLA, privacy terms, or a release date without approval.
 - Do not turn third-party market forecasts into EDT revenue forecasts.
+
+## 2026-10-02 content update
+
+The product chapter now explains Virtual Model, Pages and Words, live logic trace and replayable Checks within the original time slots. It does not add a third chapter or lengthen the welcome.
+
+State the build at the start: public 0.8.5 Alpha differs from the 0.9.0-dev source. Reading Distance and additional glass reminders are committed development features; Scroll round is still uncommitted work. Neither is a required live proof. Virtual Model is for design, emulation and specification, not physical programming.
+
+The business connection is a hypothesis: earlier specification and repeatable checks may improve qualification and handoff. They do not establish design-win conversion, paid-service demand or US$200M revenue.

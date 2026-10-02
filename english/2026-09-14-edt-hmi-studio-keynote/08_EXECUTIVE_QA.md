@@ -90,7 +90,7 @@
 
 ### 17. How reliable is the generated result?
 
-> The generated application is compiled and exercised in the Emulator, and the repository includes automated compile tests and hardware-verification records for key H747 communication paths. Final product reliability still requires validation on the customer's exact hardware and configuration.
+> The Emulator runs the generated application, and Checks can replay a saved scenario after a change. This gives us repeatable software evidence. Final reliability still needs testing on the customer's exact hardware; a passing Check is not a production certification.
 
 ### 18. Do you have certifications or production customer references? `[CONFIRM]`
 
@@ -104,7 +104,7 @@
 
 ### 20. Is it free, subscription-based, or perpetual? `[CONFIRM]`
 
-> The current public download is a restricted Alpha evaluation, not an approved free-trial policy. The production license, free conditions, duration, and limits still require approval.
+> The public download remains a restricted Alpha. Newer in-app terms describe a proprietary tool, free to use for EDT-supplied display modules. That is not unrestricted free software. We will provide the terms for your exact build and hardware, and discuss any paid service separately.
 
 ### 21. How will this generate revenue? `[CONFIRM]`
 
@@ -112,7 +112,7 @@
 
 ### 22. What is the market size? `[CONFIRM]`
 
-> We have not presented a validated market-size number in this product package. I would rather define the target segment and available customer base first, then use an approved market analysis instead of guessing.
+> The keynote includes third-party estimates as market context, not a validated addressable market for EDT. Their definitions may differ from our hardware-and-services scenario. We need a target segment and customer evidence before estimating the opportunity.
 
 ### 23. Will you offer custom board support?
 
@@ -120,11 +120,11 @@
 
 ### 24. What support will customers receive? `[CONFIRM]`
 
-> The product includes diagnostics such as the Work pane, build logs, protocol Monitor, and board-aware checks. The human support model, SLA, escalation path, and regional responsibilities still need an approved commercial answer.
+> The product includes diagnostics such as the Work pane, build logs, Packet pane, and board-aware checks. The human support model, SLA, escalation path, and regional responsibilities still need an approved commercial answer.
 
 ### 25. Who owns the generated code? `[CONFIRM]`
 
-> The tool generates and exports C source, but legal ownership and license rights are commercial and legal questions. The README's license statement is not enough for me to promise terms, so I will provide the approved license document.
+> The current in-app terms say your created project content remains yours, while included runtime code and libraries are limited to EDT hardware. Third-party components have their own terms. The README still conflicts with those terms, so we will confirm the document that applies to your build.
 
 ## 採用與執行
 
@@ -155,6 +155,20 @@
 ### 32. What is the best next step?
 
 > Select one regional customer or internal reference project with a supported board and serial protocol. We can then validate the workflow, document the gaps, and use real evidence to decide the commercial rollout.
+
+## 最新版本常見追問
+
+### 33. What is new since the early Alpha?
+
+> The development line adds Virtual Model, replayable Checks, improved project-file handling and simpler state-driven screens. These can support earlier evaluation and repeatable testing. They do not mean the public Alpha has already been updated.
+
+### 34. Can we start before the customer's board is ready?
+
+> Yes, with a Virtual Model. We can agree on the screen and behavior first, then hand over a project and specification. Real board integration and hardware testing remain separate milestones.
+
+### 35. Do these new features prove the US$200M target?
+
+> No. They provide tools for testing the business assumptions. We still need customer adoption, design-in conversion, repeat orders, costs and willingness-to-pay evidence.
 
 ## 高階問答的結尾句
 

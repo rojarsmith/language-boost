@@ -159,3 +159,14 @@ North Star 句：
 - 問答：第一句比簡報再慢 10%。
 
 錄音時不追求快。若聽起來像在背密碼，就再慢 15%。
+
+## 新版只加四個詞
+
+| 詞 | 重音提示 | 練習短句 |
+|---|---|---|
+| virtual | **VIR**-tu-al | We can start with a virtual model. |
+| specification | speci-fi-**CA**-tion | We can share a specification. |
+| replay | re-**PLAY** | We can replay this test. |
+| development | de-**VEL**-op-ment | This is a development build. |
+
+先把整句說清楚，不追求口音。每句跟讀兩次，再看中文自己說一次。說 specification 卡住時可先練三個音節，再接回整詞，不臨場硬加其他技術名詞。

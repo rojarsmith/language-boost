@@ -29,8 +29,8 @@
 ## 目前範圍
 
 > Public 0.8.5 Alpha for key-stakeholder evaluation.  
-> Three board profiles.  
-> 25 current palette components.  
+> Three physical board profiles, plus Virtual Model.  
+> Development build: 21 normal-palette widgets; 27 in Factory Mode.  
 > Modbus RTU and configurable serial commands on implemented serial paths.  
 > Multi-screen UI, animations, multilingual text, fonts, images, and board-aware deployment.
 
@@ -85,3 +85,15 @@
 ## 收尾
 
 > The best next step is to select one target board, one protocol, and one customer use case, and validate the complete workflow together.
+
+## 新版必背
+
+> We can design before the board exists.
+>
+> We can save a Check and run it again.
+>
+> Virtual Model cannot program a real board.
+>
+> The public Alpha and this development build are different.
+
+截至 2026-10-02：0.8.9 是最近 release tag，0.9.0-dev 是本地開發版，公開頁仍是 0.8.5 Alpha。Reading Distance 已在開發分支；Scroll round 尚有未提交工作，兩者都不可說成公開 Alpha 已發布。

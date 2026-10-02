@@ -26,7 +26,7 @@
 
 ### 6. What proof points can we use?
 
-> The current source includes three board profiles, 25 design-palette components, implemented Modbus RTU and serial-command paths, a real-LVGL generated-code Emulator, and a multilingual Coffee Machine example. Do not turn those into performance limits or commercial commitments.
+> The development snapshot has three physical board profiles plus Virtual Model, 21 normal-palette widgets, serial protocol paths, and replayable Checks. Lead with a working example. Identify the build and explain that the public download remains 0.8.5 Alpha.
 
 ### 7. Can we bundle it with EDT display hardware? `[CONFIRM]`
 
@@ -34,7 +34,7 @@
 
 ### 8. Can we use it to sell custom displays?
 
-> It can support the evaluation and HMI-development conversation, but a custom display or board still needs an explicit hardware profile and firmware integration. We should scope that engineering work before promising a delivery date.
+> Virtual Model lets us demonstrate a proposed display before its board exists and export its specification. That helps qualification; it does not make a new board deployable. Scope the hardware, firmware, licensing and validation work separately.
 
 ## 價格、區域與通路政策
 

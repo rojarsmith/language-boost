@@ -34,11 +34,11 @@
 
 ### 5. 目前範圍
 
-> The current source includes three board profiles and supports Modbus RTU and configurable serial command protocols on the implemented serial paths. It also includes multi-screen design, animations, multilingual text, images, fonts, and board-aware deployment checks.
+> The development build has three physical board profiles, plus Virtual Model for work before hardware exists. It supports Modbus RTU and serial commands on implemented paths. Checks can replay a saved test in the Emulator.
 >
 > The public 0.8.5 Alpha is available for evaluation by key stakeholders. It is evaluation software, so we use the official page for the current release scope and terms.
 
-中文提示：三板、兩種目前 serial protocol 路徑、多畫面／動畫／多語。
+中文提示：三個實體 profiles，另有 Virtual Model；Checks 可重播。開發版不等於公開 Alpha。
 
 ### 6. 商業價值與結尾
 
@@ -70,7 +70,7 @@
 
 ## 忘詞時的 60 秒備援版
 
-> EDT HMI Studio is a no-code environment for embedded touch interfaces. It brings screen design, visual logic, device communication, emulation, and deployment into one project. The key difference is that the Emulator compiles and runs the generated C with real LVGL, including events, logic, and simulated device values. The current source supports three board profiles and implemented serial paths for Modbus RTU and configurable serial commands. The goal is to find integration problems earlier and make HMI projects easier to build and support. The next step is to validate one target board, one protocol, and one customer use case together.
+> EDT HMI Studio is a no-code environment for embedded touch interfaces. It brings screen design, visual logic, device communication, emulation, and deployment into one project. The key difference is that the Emulator compiles and runs the generated C with real LVGL, including events, logic, and simulated device values. The development build has three physical board profiles plus Virtual Model, and implemented serial paths for Modbus RTU and configurable serial commands. The goal is to find integration problems earlier and make HMI projects easier to build and support. The next step is to validate one target board, one protocol, and one customer use case together.
 
 ## 常見追問的第一句
 
@@ -78,7 +78,7 @@
 |---|---|
 | What makes it different? | The key difference is the continuity from design to generated-code emulation and hardware deployment. |
 | Is it really no-code? | For supported workflows, yes; advanced teams can still extend the result when needed. |
-| What hardware do you support? | The current source includes three explicit board profiles, with different capability levels. |
+| What hardware do you support? | Three physical profiles, with different capabilities; Virtual Model is for design and emulation, not flashing. |
 | Which protocols? | The current implemented serial paths are Modbus RTU and configurable serial commands. |
 | Is it available now? | The public 0.8.5 Alpha is available for evaluation by key stakeholders; it is not a downstream customer release. |
 

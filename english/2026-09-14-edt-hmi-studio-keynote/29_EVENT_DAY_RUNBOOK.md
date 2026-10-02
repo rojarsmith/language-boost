@@ -39,12 +39,15 @@ One person may hold more than one role, but every responsibility must have an ow
 
 ### Source and Demo
 
-- Confirm the exact source commit and package used for the Demo.
+- Confirm the exact installed build, source commit and any working-tree changes used for the Demo. Do not label 0.9.0-dev as the public Alpha.
+- Select either a tested development-feature route or a public-Alpha route. Do not switch build assumptions mid-demo.
 - Build and open the prepared project.
 - Test the AI prompt three times with the selected provider.
 - Measure normal and worst-case response time.
 - Test one-step undo.
-- Test Emulator or Customer Demo interaction.
+- Test Emulator or demo-package interaction. If showing Checks, verify the saved expectations and replay; if showing Virtual Model, use specification export, never physical Program.
+- Old assets/latest images are 0.8.5 references. New-feature captures must match the tested build.
+- Test the PC demo offline. External videos and links need the network; do not rely on a video soundtrack.
 - Disconnect the network and verify the fallback.
 
 ### Financial controls
@@ -97,7 +100,7 @@ One person may hold more than one role, but every responsibility must have an ow
 3. Read the tested edit prompt.
 4. Submit.
 5. Stay silent while it processes.
-6. Apply the change.
+6. Wait for the assistant's edit to appear, then inspect it.
 7. Show the result.
 8. Undo once.
 9. Move to Emulator or Customer Demo.

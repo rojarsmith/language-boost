@@ -45,3 +45,7 @@
 ## 結束每場練習
 
 > 請停止角色扮演。用繁體中文給我：一個做得好的地方、一個明天最優先修正的地方、五個 0 到 2 分的分數，依序是事實正確、容易聽懂、發音、速度停頓、回答直接。不要再增加其他建議。
+
+## 新版產品更新
+
+> Read the latest product truth and 31_LATEST_UPDATE_AND_PRACTICE.md. Coach one short sentence at a time. Then ask about public release status, Virtual Model and Checks. Wait for my answer. Correct only the most important fact and one pronunciation point. Never turn a development feature into a public-release claim.
