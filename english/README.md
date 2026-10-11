@@ -1,4 +1,17 @@
-# English presentation archive
+# English learning and presentation materials
+
+## Beginner speaking and listening sprint
+
+Start with the [7-day speaking and listening plan](2026-10-11-speaking-listening-sprint/README.md) for a beginner rebuilding English grammar. It includes software engineer and engineering manager interview tracks, everyday conversations, business meetings, listening drills, and a day-seven mock interview. Optional 14-day and 30-day extensions are included.
+
+- [Start today](2026-10-11-speaking-listening-sprint/00_START_TODAY.md)
+- [Daily training schedule](2026-10-11-speaking-listening-sprint/01_TRAINING_PLAN.md)
+- [Interview practice](2026-10-11-speaking-listening-sprint/04_TECH_INTERVIEW.md)
+- [Mock interview and coaching instructions](2026-10-11-speaking-listening-sprint/06_COACH_AND_MOCK_INTERVIEW.md)
+
+The sprint focuses on practical communication. Seven days cannot guarantee fluency or interview success.
+
+## Presentation archive
 
 English presentation and rehearsal materials, refreshed from the local product source on **2026-10-02**.
 
