@@ -1,6 +1,6 @@
 # 日文版產品簡報逐頁講稿
 
-搭配 `assets/EDT-HMI-Studio-Japanese-Executive-Briefing.pptx`。投影片只放觀眾需要看的日文；本檔才放動作、讀法、中文意圖與產品邊界。
+搭配 `../assets/EDT-HMI-Studio-Japanese-Executive-Briefing.pptx`。投影片只放觀眾需要看的日文；本檔才放動作、讀法、中文意圖與產品邊界。
 
 ## Slide 1　組み込みHMI開発を、一つの流れに
 

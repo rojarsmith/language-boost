@@ -1,10 +1,10 @@
 # 日文訓練包素材
 
-此目錄讓 `japanese/` 可獨立進行簡報與 Demo 備援，不必依賴 `english/`。
+此目錄讓 `japanese/edt-hmi-studio/` 可獨立進行簡報與 Demo 備援，不必依賴 `english/`。
 
 ## 內容
 
-- `EDT-HMI-Studio-Japanese-Executive-Briefing.pptx`：七頁日文高階簡報，逐頁講稿見 [06_PRESENTATION_TALK_TRACK.md](../06_PRESENTATION_TALK_TRACK.md)。
+- `EDT-HMI-Studio-Japanese-Executive-Briefing.pptx`：七頁日文高階簡報，逐頁講稿見 [06_PRESENTATION_TALK_TRACK.md](../docs/06_PRESENTATION_TALK_TRACK.md)。
 - `hero-vivid.png`：簡報首頁插畫。
 - `logo-horizontal-green.svg`：來源產品的綠色橫式 Logo。
 - `screenshots/shot-*.png`：既有行銷畫面，適合 Demo 故障時備援。

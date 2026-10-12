@@ -1,6 +1,6 @@
 # 日語音訊練習
 
-主要練法是 [ChatGPT Voice 陪練](../21_VOICE_PLAYBOOK.md)；本目錄的腳本只是在網路不穩或需要固定重複素材時，產生離線 WAV 備援。
+主要練法是 [ChatGPT Voice 陪練](../docs/21_VOICE_PLAYBOOK.md)；本目錄的腳本只是在網路不穩或需要固定重複素材時，產生離線 WAV 備援。
 
 本機在教材建立時只偵測到英文與繁中 SAPI voice，沒有真正的 `ja-JP` voice，所以沒有用錯誤語音硬做日文檔。`generate_audio.ps1` 會先檢查語系；若找不到日語 voice，會列出現有語音並停止，不會拿中文或英文聲音冒充。
 
@@ -24,7 +24,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\generate_audio.ps1 -Vo
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\generate_audio.ps1 -Speed Slow
 ```
 
-產生內容與來源列在 [manifest.tsv](manifest.tsv)。每段有 `slow`（SAPI rate -3）與 `normal`（rate 0）兩版。
+產生內容與來源列在 [manifest.tsv](manifest.tsv)；`source_doc` 以本目錄為基準，指向 `../docs/` 內的教材。每段有 `slow`（SAPI rate -3）與 `normal`（rate 0）兩版。
 
 ## 建議順序
 

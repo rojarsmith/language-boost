@@ -21,7 +21,7 @@ Voice 適合示範、逐句跟讀、隨機追問、打斷與角色扮演。產�
 
 直接用繁體中文對 Voice 說：
 
-> 請把我當成只會五十音、幾乎不會日文口說的初學者。先讀取這個 workspace 的 japanese/00_PRODUCT_TRUTH.md、japanese/02_SURVIVAL_JAPANESE.md、japanese/13_PRONUNCIATION.md，以及我今天指定的教材。產品事實只能使用 00_PRODUCT_TRUTH.md 和有來源標記的內容；不知道時不准替公司發明答案。練習主要使用日文，教學和糾錯使用繁體中文。一次只示範一句或問一題，說完一定要停下來等我。我說「終わりました」之前不要搶答。先讓我完成，再糾正。每輪最多修一個最影響理解的發音問題，以及一個產品事實或回答結構問題。不要一次教很多文法。第一次提示只給繁中意圖，第二次只給日文前兩個語塊，連續兩次仍說不出來才顯示全假名。每場讓我說話至少占六成。結束時只給一個優點、一個最高優先修正項目，以及 scorecard.csv 需要的分數。
+> 請把我當成只會五十音、幾乎不會日文口說的初學者。先讀取這個 workspace 的 japanese/edt-hmi-studio/docs/00_PRODUCT_TRUTH.md、japanese/edt-hmi-studio/docs/02_SURVIVAL_JAPANESE.md、japanese/edt-hmi-studio/docs/13_PRONUNCIATION.md，以及我今天指定的教材。產品事實只能使用 japanese/edt-hmi-studio/docs/00_PRODUCT_TRUTH.md 和有來源標記的內容；不知道時不准替公司發明答案。練習主要使用日文，教學和糾錯使用繁體中文。一次只示範一句或問一題，說完一定要停下來等我。我說「終わりました」之前不要搶答。先讓我完成，再糾正。每輪最多修一個最影響理解的發音問題，以及一個產品事實或回答結構問題。不要一次教很多文法。第一次提示只給繁中意圖，第二次只給日文前兩個語塊，連續兩次仍說不出來才顯示全假名。每場讓我說話至少占六成。結束時只給一個優點、一個最高優先修正項目，以及 japanese/edt-hmi-studio/data/scorecard.csv 需要的分數。
 
 若 Voice 沒有讀到檔案，說：
 
@@ -102,7 +102,7 @@ Voice 適合示範、逐句跟讀、隨機追問、打斷與角色扮演。產�
 
 > 角色扮演結束。請用繁體中文告訴我一個做得好的地方和一個明天最優先修正的地方。再以零到三分評估：容易聽懂、發音節拍、敬語一致、不中斷、未知事項控制。不要增加其他建議。
 
-將結果填入 **practice_log.csv** 與 **scorecard.csv**。
+將結果填入 **../data/practice_log.csv** 與 **../data/scorecard.csv**。
 
 ## 隨時可用的中文控制指令
 
@@ -156,11 +156,11 @@ Voice 一直顯示答案：
 
 ### 發音與 mora
 
-> 請讀 japanese/13_PRONUNCIATION.md 和 pronunciation_terms.tsv。從今天的稿選五個詞。每個詞先按 mora 慢念，再放回原句以自然速度念。等我重複後，只修長短音、促音、拗音、撥音或會改變理解的片假名錯誤。不要先教 pitch accent 理論。
+> 請讀 japanese/edt-hmi-studio/docs/13_PRONUNCIATION.md 和 japanese/edt-hmi-studio/data/pronunciation_terms.tsv。從今天的稿選五個詞。每個詞先按 mora 慢念，再放回原句以自然速度念。等我重複後，只修長短音、促音、拗音、撥音或會改變理解的片假名錯誤。不要先教 pitch accent 理論。
 
 ### 30 秒產品介紹
 
-> 請讀 japanese/00_PRODUCT_TRUTH.md 和 japanese/03_PITCH_30_SECONDS.md。先只給我每段的繁中訊息卡，讓我完整講一次，不要中途糾正。結束後只指出一個事實或範圍問題，以及一個最影響理解的發音問題，再叫我重講。
+> 請讀 japanese/edt-hmi-studio/docs/00_PRODUCT_TRUTH.md 和 japanese/edt-hmi-studio/docs/03_PITCH_30_SECONDS.md。先只給我每段的繁中訊息卡，讓我完整講一次，不要中途糾正。結束後只指出一個事實或範圍問題，以及一個最影響理解的發音問題，再叫我重講。
 
 ### 兩分鐘與五分鐘簡報
 
@@ -168,23 +168,23 @@ Voice 一直顯示答案：
 
 ### 高階主管 Q&A
 
-> 請讀 00_PRODUCT_TRUTH.md 和 08_EXECUTIVE_QA.md。扮演時間有限、持懷疑態度的海外子公司總經理。一次只用自然日文問一題，等我說「終わりました」。每題檢查：有沒有先回答、事實是否安全、是否在三十五秒內、是否有下一步。改良答案也必須控制在二十五秒內。
+> 請讀 japanese/edt-hmi-studio/docs/00_PRODUCT_TRUTH.md 和 japanese/edt-hmi-studio/docs/08_EXECUTIVE_QA.md。扮演時間有限、持懷疑態度的海外子公司總經理。一次只用自然日文問一題，等我說「終わりました」。每題檢查：有沒有先回答、事實是否安全、是否在三十五秒內、是否有下一步。改良答案也必須控制在二十五秒內。
 
 ### 通路商壓力
 
-> 請讀 00_PRODUCT_TRUTH.md 和 09_CHANNEL_PARTNER_QA.md。扮演大型販売代理店的副總，依序質疑目標客戶、價格、margin、獨家、培訓、支援、SLA 和 account ownership。一次只談一個條件。如果我做出未核准承諾，立即停止角色扮演，用繁體中文指出風險，再讓我用「理解需求＋需要核准＋負責人＋日期」重答。
+> 請讀 japanese/edt-hmi-studio/docs/00_PRODUCT_TRUTH.md 和 japanese/edt-hmi-studio/docs/09_CHANNEL_PARTNER_QA.md。扮演大型販売代理店的副總，依序質疑目標客戶、價格、margin、獨家、培訓、支援、SLA 和 account ownership。一次只談一個條件。如果我做出未核准承諾，立即停止角色扮演，用繁體中文指出風險，再讓我用「理解需求＋需要核准＋負責人＋日期」重答。
 
 ### 技術主管 Q&A
 
-> 請讀 00_PRODUCT_TRUTH.md 和 10_TECHNICAL_QA.md。扮演日本 embedded systems 技術主管。先從架構、Emulator 和目前支援範圍問起；連續三題正確才增加難度。若我把 roadmap 說成現行功能，立即停止並糾正。每個示範答案不超過三十秒。
+> 請讀 japanese/edt-hmi-studio/docs/00_PRODUCT_TRUTH.md 和 japanese/edt-hmi-studio/docs/10_TECHNICAL_QA.md。扮演日本 embedded systems 技術主管。先從架構、Emulator 和目前支援範圍問起；連續三題正確才增加難度。若我把 roadmap 說成現行功能，立即停止並糾正。每個示範答案不超過三十秒。
 
 ### 聽不懂與改寫
 
-> 請讀 23_LISTENING_REPAIR_AND_VARIANTS.md。從同一問題的完整、自然、短問三種版本隨機選一個，不顯示文字。我會先說出主題或用日文確認。不要因為我沒聽懂就改用中文；請依我的日文要求重說、放慢或拆題。
+> 請讀 japanese/edt-hmi-studio/docs/23_LISTENING_REPAIR_AND_VARIANTS.md。從同一問題的完整、自然、短問三種版本隨機選一個，不顯示文字。我會先說出主題或用日文確認。不要因為我沒聽懂就改用中文；請依我的日文要求重說、放慢或拆題。
 
 ### Demo 旁白
 
-> 請讀 07_LIVE_DEMO_SCRIPT.md。一次提示一個要顯示的畫面。我說完日文旁白後，只檢查三件事：是否說明這個畫面證明什麼、是否與動作同步、是否有超出產品事實。每個畫面四十秒內。
+> 請讀 japanese/edt-hmi-studio/docs/07_LIVE_DEMO_SCRIPT.md。一次提示一個要顯示的畫面。我說完日文旁白後，只檢查三件事：是否說明這個畫面證明什麼、是否與動作同步、是否有超出產品事實。每個畫面四十秒內。
 
 ### Demo 失敗
 
@@ -196,7 +196,7 @@ Voice 一直顯示答案：
 
 ### 完整正式彩排
 
-> 請讀 00_PRODUCT_TRUTH.md、14_ROLE_PLAYS.md、27_EVENT_DAY_RUNBOOK.md 和今天使用的 pitch、Demo、Q&A 教材。主持一場完整模擬：五分鐘產品介紹、七分鐘 Demo、二十分鐘混合問答、十分鐘餐敘片段、三分鐘收尾。全程主要使用日文，一次只問一題。除非有危險承諾，否則不中途教學。最後依 scorecard.csv 評分，只給三個最高優先項目。
+> 請讀 japanese/edt-hmi-studio/docs/00_PRODUCT_TRUTH.md、japanese/edt-hmi-studio/docs/14_ROLE_PLAYS.md、japanese/edt-hmi-studio/docs/27_EVENT_DAY_RUNBOOK.md 和今天使用的 pitch、Demo、Q&A 教材。主持一場完整模擬：五分鐘產品介紹、七分鐘 Demo、二十分鐘混合問答、十分鐘餐敘片段、三分鐘收尾。全程主要使用日文，一次只問一題。除非有危險承諾，否則不中途教學。最後依 japanese/edt-hmi-studio/data/scorecard.csv 評分，只給三個最高優先項目。
 
 ## 被打斷後接回
 
@@ -218,10 +218,10 @@ Voice 一直顯示答案：
 
 ## Voice 不可用時
 
-1. 使用 **audio/** 的慢速與自然速度檔做 echo。
+1. 使用 **../audio/** 的慢速與自然速度檔做 echo。
 2. 用手機錄完整版本，不剪接。
-3. 依 **scorecard.csv** 自評。
-4. 把一個問題記入 **error_log.csv**。
+3. 依 **../data/scorecard.csv** 自評。
+4. 把一個問題記入 **../data/error_log.csv**。
 5. Voice 恢復後先修昨天的一個錯誤，不必重做整天。
 
 如果無法啟動 Voice，依官方說明先檢查方案與工作區是否可用、麥克風權限，以及其他視窗是否已有一場進行中的 Voice。介面與可用性可能更新；以本文所連結的官方說明為準。
@@ -230,5 +230,5 @@ Voice 一直顯示答案：
 
 - 不要在角色扮演中說出不必要的客戶姓名、未公開價格或機密 roadmap。
 - Voice 可以幫忙建立肌肉記憶，但不能核准產品主張或商務條件。
-- 自動語音對片假名技術詞可能有誤；正式上台前依 **pronunciation_terms.tsv** 的審核欄位完成確認。
+- 自動語音對片假名技術詞可能有誤；正式上台前依 **../data/pronunciation_terms.tsv** 的審核欄位完成確認。
 - 最終 Gate 要用未看過的問題改寫；只會回答固定題序，不算真正的任務型流利。

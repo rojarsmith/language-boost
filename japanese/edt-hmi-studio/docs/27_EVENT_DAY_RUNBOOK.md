@@ -47,7 +47,7 @@
 - [ ] 由陪練者隨機打斷至少兩次。
 - [ ] 至少一次使用備援 Demo。
 - [ ] 問答題序與平常不同，且包含一題完全未知問題。
-- [ ] 依 **scorecard.csv** 評分，critical error 為 no。
+- [ ] 依 **../data/scorecard.csv** 評分，critical error 為 no。
 - [ ] 只修三個最高風險項目，不重寫整份講稿。
 
 若 D-3 仍有下列情況，立即縮短範圍：

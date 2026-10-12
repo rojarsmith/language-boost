@@ -600,11 +600,11 @@
 
 ## 8. 來源與當次驗證
 
-- [Shizuku product note](../../edt-hmi-studio/docs/f746-washing-machine.md)
-- [Focused pin test](../../edt-hmi-studio/src/demos/__tests__/washingMachine.test.ts)
-- [F746 tracked example](../../edt-hmi-studio/examples/f746-washing-machine.json)
-- [EVK043027B tracked example](../../edt-hmi-studio/examples/evk043027b-washing-machine.json)
-- [Gallery entries](../../edt-hmi-studio/src/demos/index.ts)
-- [Authoring and emulator record](../../edt-hmi-studio/docs/f746-washing-machine/making-of.md)
+- [Shizuku product note](../../../../edt-hmi-studio/docs/f746-washing-machine.md)
+- [Focused pin test](../../../../edt-hmi-studio/src/demos/__tests__/washingMachine.test.ts)
+- [F746 tracked example](../../../../edt-hmi-studio/examples/f746-washing-machine.json)
+- [EVK043027B tracked example](../../../../edt-hmi-studio/examples/evk043027b-washing-machine.json)
+- [Gallery entries](../../../../edt-hmi-studio/src/demos/index.ts)
+- [Authoring and emulator record](../../../../edt-hmi-studio/docs/f746-washing-machine/making-of.md)
 
 本稿製作時重新執行 focused test，結果為 1 test file passed、23 tests passed。這不等於重新執行整個產品 test suite，也不替代板上驗證。
