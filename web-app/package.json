@@ -1,0 +1,12 @@
+{
+  "name": "context-lab-poc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check frontend/app.js && node --check frontend/practice.js && node scripts/check.mjs"
+  },
+  "engines": {"node": ">=22"}
+}

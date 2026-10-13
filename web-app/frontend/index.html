@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1d5144">
+  <meta name="description" content="以英語練英語、以日語練日語。為海外科技求職與生活設計的情境聽講工作室。">
+  <title>語境 Context Lab — 把語言用起來</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23245c49'/%3E%3Cpath d='M8 10h16v3H8zm0 5h10v3H8zm0 5h16v3H8z' fill='%23d4ee98'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要內容</a>
+  <aside class="sidebar">
+    <a class="brand" href="#today"><span class="brand-mark">語</span><span>語境<small>CONTEXT LAB</small></span></a>
+    <div class="sidebar-label">YOUR PRACTICE SPACE</div>
+    <nav aria-label="主要導覽">
+      <a href="#today" data-page="today"><span>◉</span> 今日練習</a>
+      <a href="#missions" data-page="missions"><span>▦</span> 情境任務</a>
+      <a href="#reviews" data-page="reviews"><span>↺</span> 再用一次 <b id="review-count">0</b></a>
+      <a href="#progress" data-page="progress"><span>▥</span> 我的軌跡</a>
+      <a href="#evidence" data-page="evidence"><span>⌕</span> 方法與資源</a>
+    </nav>
+    <div class="sidebar-note"><span class="tiny-label">THE IDEA</span><p>從「我知道這個字」<br>到「我能用它說清楚」。</p><div class="mini-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <a class="settings-link" href="#settings">⚙ 個人設定與資料</a>
+    <button id="account-button" class="account"><span class="avatar">L</span><span id="account-label">訪客試練<small>紀錄只在這部裝置</small></span><span>↗</span></button>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span id="breadcrumb">你的語言工作室</span><div class="topbar-actions"><span id="connection" class="connection">POC · 本機紀錄</span><a class="mobile-settings" href="#settings">設定</a><label class="language-label"><span class="sr-only">練習語言</span><select id="language"><option value="en">EN · English</option><option value="ja">JP · 日本語</option></select></label></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer>語境 Context Lab <span>學習靠實際溝通累積。任務自評不等於語言檢定或錄取標準。</span></footer>
+  </div>
+  <dialog id="practice" aria-labelledby="practice-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

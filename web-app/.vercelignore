@@ -1,0 +1,8 @@
+.venv
+.tmp
+tests
+docs
+.git
+.vercel
+node_modules
+README.md
