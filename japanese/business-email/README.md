@@ -10,6 +10,7 @@
 | --- | --- | --- |
 | 2026-10-12 | AI 功能在 Host MCU／Client MCU 的配置與成本說明 | [信件、讀音與用語](2026-10-12-ai-host-client-mcu.md) |
 | 2026-10-16 | 客戶拜訪安排與臨時改期 | [真實往返信件、單字與文法](2026-10-16-customer-visit-rescheduling.md) |
+| 未提供（整理於 2026-10-22） | 專案失單檢討與後續市場開發 | [內部報告、讀音與文法](undated-sharp-opportunity-review.md) |
 
 ## 新增信件
 
