@@ -73,6 +73,42 @@ const fs=require('node:fs/promises');
     data=await page.evaluate(()=>JSON.parse(localStorage.getItem('context-lab-poc-v1')));assert.equal(data.attempts.filter(a=>a.language==='ja').length,1);
     await page.getByRole('link',{name:'設定',exact:true}).click();
     await page.locator('[name="name"]').fill('Learner');await page.getByRole('button',{name:'儲存偏好'}).click();
+    // Exercise the actual download/upload path, cancellation, validation and storage rollback.
+    const downloadEvent=page.waitForEvent('download');
+    await page.locator('#export-data').click();
+    const download=await downloadEvent;
+    const backup=JSON.parse(await fs.readFile(await download.path(),'utf8'));
+    assert.equal(backup.curriculum_version,1);
+    const upload=async value=>page.locator('#import-file').setInputFiles({name:'backup.json',mimeType:'application/json',buffer:Buffer.from(typeof value==='string'?value:JSON.stringify(value))});
+    const readStored=()=>page.evaluate(()=>JSON.parse(localStorage.getItem('context-lab-poc-v1')));
+    const original=await readStored();
+    await upload('{broken'); await page.locator('#import-form button').click();
+    await page.getByText('無法讀取 JSON，請選擇由本網站匯出的備份。',{exact:true}).waitFor();
+    assert.deepEqual(await readStored(),original);
+    await upload(backup); page.once('dialog',d=>d.dismiss());
+    await page.locator('#import-form button').click();
+    await page.waitForFunction(()=>!document.querySelector('#import-form button').disabled);
+    assert.deepEqual(await readStored(),original);
+    const restored={...backup,preferences:{...backup.preferences,name:'Restored'}};
+    await page.evaluate(()=>{window.originalSetItem=Storage.prototype.setItem;Storage.prototype.setItem=function(){throw new DOMException('Full','QuotaExceededError');};});
+    await upload(restored); page.once('dialog',d=>d.accept()); await page.locator('#import-form button').click();
+    await page.getByText('瀏覽器無法保存紀錄。請允許網站儲存空間，或先匯出資料。',{exact:true}).waitFor();
+    assert.deepEqual(await readStored(),original);
+    await page.evaluate(()=>{Storage.prototype.setItem=window.originalSetItem;});
+    // Export checks the in-memory state was rolled back too.
+    const rollbackEvent=page.waitForEvent('download'); await page.locator('#export-data').click();
+    const rollbackDownload=await rollbackEvent;
+    assert.equal(JSON.parse(await fs.readFile(await rollbackDownload.path(),'utf8')).preferences.name,'Learner');
+    for(let i=0;i<2;i++){
+      await upload(restored); page.once('dialog',d=>d.accept()); await page.locator('#import-form button').click();
+      await page.waitForFunction(()=>document.querySelector('[name="name"]').value==='Restored' && !document.querySelector('#import-file').files.length);
+      assert.equal((await readStored()).attempts.length,original.attempts.length);
+    }
+    await page.reload(); await page.locator('#import-file').waitFor();
+    assert.equal(await page.locator('[name="name"]').inputValue(),'Restored');
+    await page.setViewportSize({width:390,height:844});
+    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+    await page.screenshot({path:'.tmp/poc-qa/mobile-import.png',fullPage:true});
     const fresh=await browser.newContext();const p2=await fresh.newPage();await p2.goto(process.env.POC_URL||'http://localhost:8000');await p2.getByRole('heading',{name:'今天，把語言用起來。'}).waitFor();assert.equal(await p2.evaluate(()=>localStorage.getItem('context-lab-poc-v1')),null);await fresh.close();
     await page.setViewportSize({width:390,height:844});await page.getByRole('link',{name:'今日練習'}).click();
     await page.getByRole('button',{name:'開始今天的情境'}).waitFor();
@@ -85,7 +121,7 @@ const fs=require('node:fs/promises');
     assert(widths.dialog[0]<=widths.dialog[1]);
     await page.locator('#close-practice').click();
     assert.deepEqual(errors,[]);
-    console.log('PASS: complete session, required answer, quiz, prompts, local persistence, review schedule, language separation, settings, HTML escaping, mobile layout, no browser errors.');
+    console.log('PASS: complete session, required answer, quiz, prompts, local persistence, review schedule, language separation, settings, backup restore/cancel/rollback, HTML escaping, mobile layout, no browser errors.');
     console.log('Audio hardware, actual TTS quality and external speech-recognition services require manual device validation.');
   }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

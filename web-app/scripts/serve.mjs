@@ -2,7 +2,7 @@ import {createServer} from 'node:http';
 import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../frontend/',import.meta.url));
-const allowed=new Set(['index.html','styles.css','app.js','practice.js','curriculum.json']);
+const allowed=new Set(['index.html','styles.css','app.js','backup.js','practice.js','curriculum.json']);
 const mime={html:'text/html; charset=utf-8',css:'text/css; charset=utf-8',js:'text/javascript; charset=utf-8',json:'application/json; charset=utf-8'};
 const port=Number(process.env.PORT||8000);
 createServer(async(req,res)=>{

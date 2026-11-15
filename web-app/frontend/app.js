@@ -1,4 +1,6 @@
 import { openPractice, stopMedia } from './practice.js';
+import { parseBackup, MAX_BACKUP_BYTES } from './backup.js';
+let curriculumVersion;
 
 export const defaults = {name:'Learner',language:'en',minutes:90,role:'product',support:true,level:'starter',rate:0.85,timezone:'Asia/Taipei'};
 const guestKey = 'context-lab-poc-v1';
@@ -48,7 +50,7 @@ const resources=[
   ['工具限制','MDN · SpeechRecognition','瀏覽器辨識支援有限，有些實作會把音訊送到外部服務；逐字稿不是發音評分。','https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition']
 ];
 function evidence(){return `${heading('快速，從選對練法開始。','縮小情境、每天開口、得到回饋，再測試陌生問法。','METHOD & EVIDENCE')}<section class="panel"><h3>一次練習的六個環節</h3><div class="flow"><span>① 先聽</span><span>② 留意用法</span><span>③ 換成自己</span><span>④ 回應追問</span><span>⑤ 陌生情境</span><span>⑥ 反思與重用</span></div><p>以目標語言解釋片語與文法；繁中提示是可逐步撤掉的支架。聽力先關文字，跟讀後改說真實內容，再由新情境檢查是否只記住範本。</p><p>「速成」以能完成特定任務為目標。7／14／30 天可作為訓練階段，不承諾從零變流利或保證录取。完整面試還需要職能、作品與實際互動。</p><p>文化練習要推測對方的目的與限制，再提問確認。國籍不是固定性格；公司、角色、場合與個人偏好都會影響溝通。</p></section><div class="resources">${resources.map(r=>`<a class="resource" href="${r[3]}" target="_blank" rel="noopener noreferrer"><span class="eyebrow">${r[0]}</span><h3>${r[1]}</h3><p>${r[2]}</p><small>閱讀原始來源 ↗</small></a>`).join('')}</div><div class="note">來源查核：2026-10-13。網站內情境皆為原創練習，人物、金額與結果為示例。合成語音適合起步；請用真人音訊、不同口音及真人對話驗證遷移能力。</div>`;}
-function settings(){return `${heading('讓練習配合你。','第一階段先驗證練習流程；偏好與紀錄保存在目前瀏覽器。','POC / PERSONAL SETTINGS')}<form id="settings-form" class="panel"><div class="form-grid"><label class="form-field"><span>稱呼</span><input name="name" maxlength="50" required value="${escape(state.prefs.name)}"></label><label class="form-field"><span>主要情境</span><select name="role">${Object.entries(roleNames).map(([k,v])=>`<option value="${k}" ${state.prefs.role===k?'selected':''}>${v}</option>`).join('')}</select></label><label class="form-field"><span>每天練習目標</span><select name="minutes">${[30,60,90,120].map(v=>`<option value="${v}" ${state.prefs.minutes===v?'selected':''}>${v} 分鐘</option>`).join('')}</select></label><label class="form-field"><span>句子支援程度</span><select name="level"><option value="starter" ${state.prefs.level==='starter'?'selected':''}>起步：短句先行</option><option value="stretch" ${state.prefs.level==='stretch'?'selected':''}>延伸：完整情境</option></select></label><label class="form-field"><span>合成語音速度</span><select name="rate">${[0.65,0.85,1,1.15].map(v=>`<option value="${v}" ${state.prefs.rate===v?'selected':''}>${v===1?'一般速度':v+' 倍'}</option>`).join('')}</select></label><label class="form-field"><span>紀錄時區</span><select name="timezone">${['Asia/Taipei','Asia/Tokyo','America/Los_Angeles','America/New_York','Europe/London','UTC'].map(v=>`<option value="${v}" ${state.prefs.timezone===v?'selected':''}>${v}</option>`).join('')}</select></label></div><label class="check-field"><input name="support" type="checkbox" ${state.prefs.support?'checked':''}> 顯示繁中提示（熟悉後可以關閉）</label><button class="primary" type="submit">儲存偏好</button><div class="error" id="settings-error" role="alert"></div></form><section class="panel"><h3>POC 資料與隱私</h3><p>這是純前端試用版，沒有伺服器帳號或跨裝置同步。紀錄、文字回答與設定只存在這個瀏覽器的 localStorage。同一瀏覽器的其他使用者可能看到資料，請勿填寫公司機密或敏感內容。</p><p>錄音只供本次回聽，不會上傳或永久保存。若另行啟用瀏覽器語音辨識，音訊可能由瀏覽器送往外部服務；這不是發音評分。</p><div class="form-actions"><button class="secondary" id="export-data">匯出練習資料 JSON</button><button class="secondary danger" id="clear-guest">清除本機紀錄</button></div></section><section class="panel"><h3>計畫式升級</h3><p><strong>01 · 現在：Vercel POC</strong><br>驗證聽、講、換情境與複習是否能持續使用。</p><p><strong>02 · 驗證後：Ubuntu 後端</strong><br>加入正式帳號、多使用者資料隔離、跨裝置同步與備份。</p><p><strong>03 · 再根據卡點升級</strong><br>先評估真人音訊或 AI 追問的價值；付費模型、發音分析與複雜推薦另行驗證。</p><p>第二、三階段是規劃，尚未實作。每階段先通過驗收，再增加功能。</p></section>`;}
+function settings(){return `${heading('讓練習配合你。','第一階段先驗證練習流程；偏好與紀錄保存在目前瀏覽器。','POC / PERSONAL SETTINGS')}<form id="settings-form" class="panel"><div class="form-grid"><label class="form-field"><span>稱呼</span><input name="name" maxlength="50" required value="${escape(state.prefs.name)}"></label><label class="form-field"><span>主要情境</span><select name="role">${Object.entries(roleNames).map(([k,v])=>`<option value="${k}" ${state.prefs.role===k?'selected':''}>${v}</option>`).join('')}</select></label><label class="form-field"><span>每天練習目標</span><select name="minutes">${[30,60,90,120].map(v=>`<option value="${v}" ${state.prefs.minutes===v?'selected':''}>${v} 分鐘</option>`).join('')}</select></label><label class="form-field"><span>句子支援程度</span><select name="level"><option value="starter" ${state.prefs.level==='starter'?'selected':''}>起步：短句先行</option><option value="stretch" ${state.prefs.level==='stretch'?'selected':''}>延伸：完整情境</option></select></label><label class="form-field"><span>合成語音速度</span><select name="rate">${[0.65,0.85,1,1.15].map(v=>`<option value="${v}" ${state.prefs.rate===v?'selected':''}>${v===1?'一般速度':v+' 倍'}</option>`).join('')}</select></label><label class="form-field"><span>紀錄時區</span><select name="timezone">${['Asia/Taipei','Asia/Tokyo','America/Los_Angeles','America/New_York','Europe/London','UTC'].map(v=>`<option value="${v}" ${state.prefs.timezone===v?'selected':''}>${v}</option>`).join('')}</select></label></div><label class="check-field"><input name="support" type="checkbox" ${state.prefs.support?'checked':''}> 顯示繁中提示（熟悉後可以關閉）</label><button class="primary" type="submit">儲存偏好</button><div class="error" id="settings-error" role="alert"></div></form><section class="panel"><h3>POC 資料與隱私</h3><p>這是純前端試用版，沒有伺服器帳號或跨裝置同步。紀錄、文字回答與設定只存在這個瀏覽器的 localStorage。同一瀏覽器的其他使用者可能看到資料，請勿填寫公司機密或敏感內容。</p><p>錄音只供本次回聽，不會上傳或永久保存。若另行啟用瀏覽器語音辨識，音訊可能由瀏覽器送往外部服務；這不是發音評分。</p><div class="form-actions"><button class="secondary" id="export-data">匯出練習資料 JSON</button><button class="secondary danger" id="clear-guest">清除本機紀錄</button></div></section><form id="import-form" class="panel" aria-labelledby="import-title"><h3 id="import-title">還原 JSON 備份</h3><p id="import-help">選擇本網站匯出的 JSON（上限 5 MiB）。確認後會以備份取代所有本機練習、複習與偏好，不會合併。建議先匯出目前資料；錄音不在備份中。檔案只在此瀏覽器讀取。</p><div class="form-field"><label for="import-file">備份檔案（必填）</label><input id="import-file" name="backup" type="file" accept=".json,application/json" required aria-describedby="import-help import-error"></div><button class="secondary" type="submit">檢查並還原備份</button><div class="error" id="import-error" role="alert" tabindex="-1"></div></form><section class="panel"><h3>計畫式升級</h3><p><strong>01 · 現在：Vercel POC</strong><br>驗證聽、講、換情境與複習是否能持續使用。</p><p><strong>02 · 驗證後：Ubuntu 後端</strong><br>加入正式帳號、多使用者資料隔離、跨裝置同步與備份。</p><p><strong>03 · 再根據卡點升級</strong><br>先評估真人音訊或 AI 追問的價值；付費模型、發音分析與複雜推薦另行驗證。</p><p>第二、三階段是規劃，尚未實作。每階段先通過驗收，再增加功能。</p></section>`;}
 export function render(){
   const requested=location.hash.slice(1)||'today'; state.page=['today','missions','reviews','progress','settings','evidence'].includes(requested)?requested:'today';
   const pages={today,missions,reviews,progress,settings,evidence}; $('#main').innerHTML=pages[state.page]();
@@ -66,7 +68,39 @@ async function savePrefs(prefs,name=state.prefs.name){
 function download(data){const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`context-lab-${localDate()}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 function bindSettings(){
   $('#settings-form').onsubmit=async e=>{e.preventDefault();const form=e.currentTarget;const button=form.querySelector('button');button.disabled=true;const f=new FormData(form);const prefs={...state.prefs,role:f.get('role'),minutes:Number(f.get('minutes')),level:f.get('level'),rate:Number(f.get('rate')),timezone:f.get('timezone'),support:f.has('support')};try{await savePrefs(prefs,String(f.get('name')).trim()||'Learner');toast('偏好已儲存。');}catch(err){$('#settings-error').textContent=err.message;button.disabled=false;}};
-  $('#export-data').onclick=()=>download({version:1,exported_at:new Date().toISOString(),preferences:state.prefs,attempts:state.attempts,reviews:state.reviews});
+  $('#export-data').onclick=()=>download({version:1,curriculum_version:curriculumVersion,exported_at:new Date().toISOString(),preferences:state.prefs,attempts:state.attempts,reviews:state.reviews});
+  const importForm = $('#import-form');
+  const input = $('#import-file');
+  const errorBox = $('#import-error');
+  input.onchange = () => { input.removeAttribute('aria-invalid'); errorBox.textContent = ''; };
+  importForm.onsubmit = async event => {
+    event.preventDefault();
+    const file = input.files[0];
+    if (!file) return;
+    const button = importForm.querySelector('button');
+    button.disabled = true;
+    errorBox.textContent = '';
+    input.removeAttribute('aria-invalid');
+    try {
+      if (file.size > MAX_BACKUP_BYTES) throw new Error('檔案超過 5 MiB，請選擇較小的備份。');
+      const restored = parseBackup(await file.text(), state.lessons, curriculumVersion);
+      // Navigation or another render while reading cancels this pending import.
+      if (!importForm.isConnected) return;
+      if (!confirm(`備份含 ${restored.attempts.length} 筆練習、${restored.reviews.length} 筆複習排程。\n將取代目前 ${state.attempts.length} 筆練習、${state.reviews.length} 筆複習及偏好。確定還原？`)) return;
+      const previous = {prefs:state.prefs, attempts:state.attempts, reviews:state.reviews};
+      Object.assign(state, restored);
+      try { persistGuest(); } catch (error) { Object.assign(state, previous); throw error; }
+      render();
+      $('#import-file').focus();
+      toast('備份已還原，原有資料已由備份取代。');
+    } catch (error) {
+      if (importForm.isConnected) {
+        errorBox.textContent = error.message;
+        input.setAttribute('aria-invalid', 'true');
+        errorBox.focus();
+      }
+    } finally { button.disabled = false; }
+  };
   $('#clear-guest').onclick=()=>{if(confirm('清除這個瀏覽器的所有練習紀錄？無法復原。')){const old={attempts:state.attempts,reviews:state.reviews};state.attempts=[];state.reviews=[];try{persistGuest();render();toast('本機紀錄已清除，偏好設定保留。');}catch(error){Object.assign(state,old);toast(error.message);}}};
 }
 document.addEventListener('click',e=>{const lesson=e.target.closest('[data-lesson]');if(lesson)openPractice(state.lessons.find(l=>l.id===lesson.dataset.lesson));const filter=e.target.closest('[data-filter]');if(filter){state.filter=filter.dataset.filter;render();}});
@@ -76,6 +110,6 @@ window.addEventListener('hashchange',()=>{if(state.lessons.length)render();});
 window.addEventListener('pagehide',stopMedia);
 $('#main').innerHTML='<p class="loading">正在準備你的情境…</p>';
 try{
-  const response=await fetch('curriculum.json');if(!response.ok)throw new Error('教材未載入');state.lessons=(await response.json()).lessons;
+  const response=await fetch('curriculum.json');if(!response.ok)throw new Error('教材未載入');const curriculum=await response.json();state.lessons=curriculum.lessons;curriculumVersion=curriculum.version;
   render();
 }catch(error){$('#main').innerHTML='<div class="empty"><h2>教材暫時無法載入</h2><p>請確認網站檔案完整，並重新整理。</p></div>';}
