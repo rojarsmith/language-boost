@@ -11,9 +11,9 @@
       "vocab": [{"term":"contribution","definition":"Something you do that helps a team reach a goal.","example":"My contribution was to clarify the user problem."},{"term":"prioritize","definition":"Decide what matters most and should happen first.","example":"We prioritized the problem users faced every day."}],
       "grammar": {"rule":"Use present tense for your current work. Use past tense for a finished project.","example":"I work with customers. Last month, I interviewed five customers."},
       "culture": {"insight":"An interviewer needs evidence they can discuss with the hiring team. A short, specific example helps more than a list of adjectives.","action":"Describe your part clearly. Do not claim the whole team's work as your own."},
-      "followups": ["What did you personally do?", "How did you know the problem mattered?", "What would your teammates say about your contribution?"],
-      "transfer": "You meet a hiring manager at a meetup. Introduce yourself without using the sample's product or action.",
-      "feedback": "Check your answer: did you explain your current work, one real action, and your goal? Replace broad claims like 'hard-working' with an example."
+      "followups": ["What did you personally do?", "How did you know the problem mattered?", "What would your teammates say about your contribution?", "We only have time for two sentences. What do you do now, and what experience would you bring to this role?", "Pick one term from your introduction. How would you explain it to a teammate who is new to your field?"],
+      "transfer": "You are meeting an interviewer from another department. Introduce yourself in two sentences. They ask what your part looked like in practice. Give one example from work or school in everyday words.",
+      "feedback": "Could the listener name your role and one thing you did yourself? When they asked for detail, did you explain that same example in words they could use?"
     },
     {
       "id":"en-story", "language":"en", "track":"interview", "icon":"◎", "title":"用真實故事回答面試", "goal":"Explain a difficult project using situation, task, action, and result.",
@@ -137,9 +137,9 @@
       "vocab":[{"term":"receipt","definition":"A record of what you bought and paid.","example":"Could I have a receipt, please?"},{"term":"total","definition":"The full amount to pay.","example":"What is the total?"}],
       "grammar":{"rule":"I'd like + noun is a polite way to order.","example":"I'd like a small coffee, please."},
       "culture":{"insight":"Service customs, tipping, and payment methods differ by location. Ask when you are unsure rather than guessing.","action":"Confirm the amount and ask about the payment method."},
-      "followups":["What would you say if the item is sold out?","How would you ask whether a fee is included?","How would you ask for the price again?"],
-      "transfer":"The café is out of your first choice. Ask for another option and confirm a different price.",
-      "feedback":"Check that your request names the size or option. Repeat an unclear amount before paying."
+      "followups":["What would you say if the item is sold out?","How would you ask whether a fee is included?","How would you ask for the price again?", "You ordered a six-dollar sandwich and one two-dollar tea. I read back two teas and a total of ten dollars. What would you correct, and what should the total be?", "Your sandwich is six dollars. I have one large tea at four dollars, but you wanted the regular tea at two dollars. How would you change the size and check the total?"],
+      "transfer":"Order a six-dollar sandwich and two teas at two dollars each. Then change one tea to a four-dollar large tea. Prices include tax. Say the final order and ask the cashier to confirm the total.",
+      "feedback":"Check both the number of drinks and their sizes. In the two correction questions the final total is eight dollars. When sizes differ, add each drink at its own price."
     },
     {
       "id":"ja-intro", "language":"ja", "track":"interview", "icon":"↗", "title":"日文自介：工作與貢獻", "goal":"仕事と、自分がしたことを短く話す。",
@@ -151,9 +151,9 @@
       "vocab":[{"term":"担当する（たんとうする）","definition":"ある仕事を受け持つこと。","example":"製品の企画を担当しています。"},{"term":"優先順位（ゆうせんじゅんい）","definition":"何を先にするかという順番。","example":"チームで優先順位を決めました。"}],
       "grammar":{"rule":"今の仕事は「〜ています」。終わった仕事は「〜ました」。","example":"企画を担当しています。昨日、利用者に話を聞きました。"},
       "culture":{"insight":"面接では、チームの成果と、自分の行動を分けると、役割が伝わりやすくなります。会社によって期待は違います。","action":"自分が何をしたか、一つの例で説明しましょう。"},
-      "followups":["具体的に、どんな仕事をしましたか。","なぜ、その仕事がしたいですか。","チームでは、どんな役割でしたか。"],
-      "transfer":"交流会で、初めて会った人に仕事を紹介してください。例とは違う仕事を話してください。",
-      "feedback":"今の仕事、自分がしたこと、これからしたいことが伝わるか確認しましょう。実際の経験だけを話しましょう。"
+      "followups":["具体的に、どんな仕事をしましたか。","なぜ、その仕事がしたいですか。","チームでは、どんな役割でしたか。", "二文で自己紹介をお願いします。今していることと、この仕事に生かしたい経験を教えてください。", "自己紹介で使った専門用語を一つ選んでください。初めて聞く人には、どう説明しますか。"],
+      "transfer":"別の部署の面接官に、二文で自己紹介をしてください。面接官に「具体的には何をしましたか」と聞かれました。仕事や学校で自分がしたことを、普段使う言葉で説明してください。",
+      "feedback":"今していることと、応募した仕事に生かしたい経験が伝わりましたか。聞き手があなたの担当を説明できるよう、具体的な行動を一つ話しましょう。"
     },
     {
       "id":"ja-story", "language":"ja", "track":"interview", "icon":"◎", "title":"日文面試：說明困難經驗", "goal":"問題、自分の行動、結果を説明する。",
@@ -277,9 +277,9 @@
       "vocab":[{"term":"全部で（ぜんぶで）","definition":"すべてを合わせると。","example":"全部でいくらですか。"},{"term":"払う（はらう）","definition":"品物やサービスのためにお金を出すこと。","example":"カードで払えますか。"}],
       "grammar":{"rule":"「〜をください」で、欲しいものを頼みます。「〜で」で方法を話します。","example":"コーヒーをください。カードで払います。"},
       "culture":{"insight":"支払い方法や店のルールは、店によって違います。分からないときは確認して大丈夫です。","action":"聞き取れない金額は、もう一度聞いてから払いましょう。"},
-      "followups":["売り切れの場合、何と聞きますか。","別のサイズを頼むとき、何と言いますか。","金額をもう一度聞くとき、何と言いますか。"],
-      "transfer":"欲しい品物がありません。別のものを頼み、違う金額を確認してください。",
-      "feedback":"品物、数、金額を確認しましょう。分からない金額を、分かったふりで進めないようにしましょう。"
+      "followups":["売り切れの場合、何と聞きますか。","別のサイズを頼むとき、何と言いますか。","金額をもう一度聞くとき、何と言いますか。", "六百円のサンドイッチと二百円の紅茶一杯を注文しました。店員は「紅茶が二杯で、サンドイッチと合わせて千円です」と言いました。数を直して、合計を確認してください。", "サンドイッチは六百円です。店員は四百円の大きい紅茶を入れました。二百円の普通サイズに変えて、合計を確認してください。"],
+      "transfer":"六百円のサンドイッチを一つと、二百円の紅茶を二杯注文します。そのうち一杯を四百円の大きいサイズに変えてください。値段は税込みです。最後に注文の内容と合計を確認してください。",
+      "feedback":"紅茶の数とサイズを聞き取れましたか。二つの訂正問題では、直した後は八百円です。サイズが違うときは、一杯ずつ値段を確認しましょう。"
     }
   ]
 }

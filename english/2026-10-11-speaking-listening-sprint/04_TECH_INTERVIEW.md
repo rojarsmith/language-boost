@@ -39,6 +39,17 @@ Microsoft 的官方技術面試指引要求先釐清問題、提出計畫，並�
 
 **追問：** What was your exact role? / What are you working on now? / Why this team? 每一題都只回答該題，不要重新背整段自介。
 
+## 面試自介｜時間縮短時，哪一句值得留下？
+
+面試官說 “We only have a moment. Could you introduce yourself in two sentences?” 先寫三個關鍵詞：你現在做什麼、你親手做過的一件事、這份職缺需要什麼。只看關鍵詞說兩句，請夥伴從你的用字挑一處追問。
+
+| 面試官 | 應徵者示範（虛構情境） |
+| --- | --- |
+| “Could you introduce yourself in two sentences?” | “I'm a software engineer working on a booking system. I wrote the tests for cancellations, and I'd like to do more testing work in this role.” |
+| “When you say cancellations, what did you actually check?” | “I checked that a seat became available again when someone canceled a booking.” |
+
+**換題。** 請夥伴改問 “How would you explain your work to someone who doesn't write software?” 用平常話重說同一件事。可從 “When someone cancels, I check that another person can book the seat.” 開始。再換成自己做過的事；在學或轉職者也可以選課堂作業。聽者應能說出你做過哪一步，以及它和應徵職務有什麼關係。
+
 ## 真實專案的六個欄位
 
 先用中文填，再改成簡單英文：

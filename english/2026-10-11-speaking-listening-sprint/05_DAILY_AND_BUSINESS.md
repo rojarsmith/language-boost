@@ -19,6 +19,17 @@
 
 **額外選項：** Could I have it without sugar?（可以不要糖嗎？）／Could I get the receipt?（可以給我收據嗎？）
 
+## 點餐與金額確認｜多算了一杯，還是點成大杯？
+
+**你的訂單。** 一份六美元的三明治和一杯兩美元的茶，菜單價格已含稅。先用英文點餐，再問 “Could you read my order back to me?” 請夥伴暗選一張店員卡。兩張卡的總額相同，聽清楚品項、數量和單價再回應。
+
+| 店員回讀 | 你可以怎麼接 |
+| --- | --- |
+| A · “One sandwich, two teas. That's ten dollars.” | “I ordered just one tea. Could you take the second one off? That makes eight dollars, right?” |
+| B · “One sandwich and one large tea. The large tea is four dollars. That's ten dollars.” | “Could I have the two-dollar regular tea instead? So it's eight dollars altogether?” |
+
+**換一筆自己算。** 三明治仍是六美元，改點兩杯原價各兩美元的茶，其中一杯換成四美元的大杯。先聽夥伴回讀，再核對：一份三明治、一杯普通茶和一杯大杯茶，共十二美元。若只聽清總額，問 “How much is each tea?” 再付款。
+
 ## 問路與交通
 
 **你的目標：** 找車站，確認步行時間。
