@@ -47,6 +47,17 @@
 
 **變更：** 櫃檯說 **Someone can come in thirty minutes.**，你要確認 **Thirty minutes, correct?**；若你要開會，補 **I have a meeting soon. Is there another place with Wi-Fi?**。
 
+## 租屋條件確認｜每月要付多少？哪筆只付一次？
+
+你在看房，想在下個月三日入住，也需要網路。夥伴扮帶看人員，逐輪念出左欄的虛構條件。先遮住右欄，用自己的話核對。
+
+| 你聽到的條件 | 可以怎麼確認 |
+| --- | --- |
+| “Internet is twenty dollars a month. There's also a thirty-dollar setup fee.” | “So internet is twenty dollars each month, and I pay thirty dollars just once to set it up. Is that right?” |
+| “You can move in on the third, but the internet won't be ready until the sixth.” | “I can move in on the third. Did you say I can start using the internet on the sixth? Could you email me those dates and charges?” |
+
+**換一個條件。** 對方看過預約表後補充 “Actually, the sixth is the first day you can book a visit. We don't have an installation date yet.” 請說出三日和六日各能做什麼，再問何時能確認安裝日。聽者核對：你的回覆有沒有把 *book a visit*（預約到訪）誤說成 *go online*（開始上網）？
+
 ## 購物與退款詢問
 
 **你的目標：** 買轉接器，確認是否能退。
@@ -72,6 +83,17 @@
 | 你 | Where are you going? | 要去哪？ |
 
 **變更：** 對方提你不懂的活動，說 **I'm not familiar with that. What is it?**（我不熟，那是什麼？）不要沒聽懂就一直 yes。
+
+## 同事閒聊｜接住話題，也聽出對方要離開
+
+茶水間裡，同事說 “I took a different route to work today.” 你可以接 “Oh, how was it?” 接著請夥伴任選一張卡，只念同事的話；你聽完再決定要問還是收尾。
+
+| 同事回覆卡 | 自然的接話示例 |
+| --- | --- |
+| A · “It takes a little longer, but I get to walk by the river.” | “That sounds nice. I usually take the bus. Is the path quiet in the morning?” |
+| B · “It was fine. I'd better get going. My meeting starts in a minute.” | “Sure. See you later!” |
+
+**交換角色。** 這次你是趕時間的人。聽到 “Want to grab a coffee?” 時，用 “Thanks, but I've got a meeting in a minute.” 拒絕邀請。夥伴用一句話回應。回聽時核對：有空聊的那一輪，問題是否接到對方提起的細節？要離開的那一輪，對方能否直接走？
 
 ## 尋求協助
 
@@ -178,3 +200,47 @@
 ## 五分鐘角色扮演規則
 
 第一分鐘說明中文目的；接著兩分鐘英文對話；第四分鐘伙伴增加一個條件；最後一分鐘你重述結果和下一步。伙伴評估事情有沒有完成，不以每句文法是否完美當唯一標準。
+
+## 延伸練習｜期限相同，交付內容改變
+
+**第一輪，遮住回覆。** 請夥伴念客戶的話：“We still need something on Friday. A sample is fine. We can wait until Tuesday for the full report.” 寫下兩個交付項目和各自的期限，再以負責人的身分口頭確認。
+
+**參考回覆。** “I'll send a sample on Friday and the full report on Tuesday. Is that right?” 留意 *on Friday* 指週五當天，*by Friday* 則容許更早交付。
+
+**第二輪，只改一個條件。** 客戶接著說：“Actually, our review starts at nine on Friday. Could you send the sample the day before?” 你需要同事核對樣本，週四中午才知道能否提早。請先回應客戶，再約下一次更新。
+
+**核對。** 客戶想在週四拿到樣本，完整報告仍是週二交。週四中午是你能回覆的時間。可答：“You need the sample on Thursday. I'll check with my teammate and get back to you by noon on Thursday. I'll still send the full report on Tuesday.” 遮住答案，把客戶的會議改為週四早上，再練一次。
+
+## 需求訪談｜客戶說「每次改單都通知我」
+
+兩人各選一個角色。訪談者只看開場，每次只問一題；客戶等對方問到再透露細節。自己練時，逐行遮住客戶的下一句，先錄下你的追問。
+
+| 客戶逐步透露的線索 | 訪談者可以怎麼接 |
+| --- | --- |
+| “Can you send us an email every time an order changes?” | “Could you tell me about the last time you needed that email?” 請對方回想一次具體經驗。 |
+| “Yesterday a customer changed the delivery address after we printed the label.” | “Who needed the new address? How did they find out?” 找出誰需要資訊、現在怎麼得知。 |
+| “The packing team found out when the driver arrived. If the label hasn't been printed yet, we just update the order.” | “So the packing team needs to hear about address changes after the label is printed. Have I got that right?” 重述觸發條件，讓對方修正。 |
+
+**換條件再訪一次。** 客戶改說 “The packing team shares one computer. They only check email at lunch.” 訪談者問一句，釐清最晚何時需要知道。核對錄音：聽者能否說出誰需要消息、何時才需要，以及通知方式還有哪些事待確認？
+
+## 異議處理｜客戶說「這套工具太貴了」
+
+夥伴只念開場 “This is too expensive for us.” 你先問 “Which cost worries you most?” 夥伴任選一張回覆卡，不先告知你是哪張。聽完再決定下一步。
+
+| 客戶回覆卡 | 可用的回應 |
+| --- | --- |
+| A · “The fee is fine. Training would take both people off the help desk at once.” | “Someone needs to stay on the desk. Would separate sessions work for you? I can check whether our trainer can offer them.” |
+| B · “Our budget is fixed for this year. Even a small trial would cost too much.” | “I understand. Let's leave it here for now. Would you like me to get in touch when you plan next year's budget?” |
+
+**再聽一輪。** 若 B 卡客戶回答 “Thanks, but we'd rather contact you ourselves,” 用一句話收尾，再讓客戶重述雙方約定。可答 “Of course. I'll leave that with you.” 自評時留意：A 卡的分梯訓練仍待確認；B 卡已由客戶決定何時聯絡。
+
+## 產品價值說明｜同一個畫面，兩種聽眾
+
+**情境卡。** 假設排班工具把待補班次集中顯示。示範時，你看見一位組長在同一頁找到兩個缺班。現場尚未計時，也沒有統計最後補了幾班。請夥伴任選一個角色提問，先遮住參考回覆，用兩三句回答。
+
+| 對方在意的事 | 參考回覆 |
+| --- | --- |
+| 組長問 “When I start my shift, how do I know which shifts still need someone?” | “Open the list of unfilled shifts. You can see which shifts need people on one page. You still choose whom to call.” |
+| 營運主管問 “Will we fill more shifts this way?” | “In the demo, one team lead found two open shifts on one page. We haven't checked how many get filled. Could we count the shifts still open at closing time before and during a trial?” |
+
+**換你說。** *Find an open shift* 是找出缺班，*fill a shift* 才是找到人來上班。若主管追問 “Did either shift get filled?”，請直接回答這次示範能證明到哪一步。換一個你用過的工具再說一次，讓夥伴分別指出「使用者現在能做什麼」和「還需要量什麼」。

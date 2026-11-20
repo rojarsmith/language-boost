@@ -106,3 +106,14 @@ British Council 的 A1 區提供初階聽力活動；VOA 的 Let's Learn English
 ## 跟讀之後一定要回答
 
 跟讀三次後，關掉文字，回答 **What is the problem? / What will you do next? / Why?**。如果能跟讀卻無法回答，回到理解與句型；如果理解正確但伙伴聽不懂你的回答，才集中修發音。最後換新片段測試，熟悉腳本的高分不等於新內容也聽得懂。
+
+## 澄清接力｜聽到日期，漏了動作
+
+夥伴念 “About the draft, could you … by Thursday?”，省略動作。你只知道文件和期限，請用一句話問出缺少的資訊。可以從 “I caught ‘the draft’ and ‘Thursday.’ What would you like me to do with it?” 開始。
+
+| 夥伴暗選一張卡，用正常速度回覆 | 你怎麼確認 |
+| --- | --- |
+| A · “Just send it to me. I'll review it.” | “So I'll send you the draft by Thursday, and you'll review it. Is that right?” |
+| B · “Review it and send me your comments.” | “So you'll need my comments on the draft by Thursday. Have I got that right?” |
+
+**聽第二次還是卡住時**，指出是哪個詞：“Could you give me an example of a comment?” 如果卡在聲音，可以請對方拼字或寫下動詞。最後關掉文字，請夥伴更正 “Actually, Friday morning.” 重述新的期限和原來的動作。請夥伴核對你交的是草稿還是意見，以及何時要交。

@@ -239,3 +239,19 @@ STAR 代表 Situation 情境、Task 任務、Action 行動、Result 結果。它
 - **What are the next steps in the interview process?** 接下來的面試步驟？
 
 聽完再用一句話確認：**So the main challenge is [what you heard], correct?**，練習有來有往。
+
+## 延伸練習｜面試官追問「你怎麼知道有效？」
+
+請夥伴扮面試官。先用 30 秒說一段自己的專案經驗，再讓對方從第二句開始追問。以下為虛構示範。
+
+| 角色 | 英文 |
+| --- | --- |
+| Applicant | People kept asking where to find the test steps. I put the steps on one page. |
+| Interviewer | How do you know the page helped? |
+| Applicant | I watched a new teammate use it. She finished the test on her own. |
+| Interviewer | How much time did it save? |
+| Applicant | I didn't measure the time. I can say she finished without asking me for help. |
+
+**換成你的經驗。** 先寫三個關鍵詞：「我做的事／我看到的結果／我沒量的事」。遮住對話，請夥伴先問數字，再問結果。如果連結果也還沒看到，可答 “I don't know yet. I'll check with [person] after [event].”
+
+**自評。** 請對方用中文重述你的個人貢獻和結果。如果對方聽成「整個團隊都變快」，重錄最後兩句，把誰、做完哪件事說清楚。
