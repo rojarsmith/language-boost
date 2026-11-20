@@ -151,6 +151,17 @@
 
 換成自己手上的工作，錄一段二十秒回報。請聽者寫下已完成的範圍、還缺什麼，以及下一步由誰做。
 
+### 進階情境｜原本說週五，現在怎麼更正？
+
+**你的筆記。** 昨天估週五交報告。今天發現部分訂單重複計入。圖表已完成，總數要重查。若中午前取得原始檔，估計週一能交；兩點會再回報。先遮住筆記，對已經把週五排進行事曆的同事說明變動。
+
+| 同事追問 | 你可以怎麼接 |
+| --- | --- |
+| “What changed since yesterday?” | “I found some orders in the total twice. The charts are ready, but I need the original file to check the total.” |
+| “So should I promise the customer Monday?” | “Monday is my estimate if the file arrives by noon. Could you wait for my two o'clock update before you confirm a date?” |
+
+**逆轉條件。** 中午過了，檔案還沒到。兩點時請夥伴再問一次交期。先說哪部分仍可交給對方看，再指出原估計所需的條件已過期。聽者應能復述眼前可用的成果，以及誰要再找誰核對什麼。
+
 ## 會議時間與時區
 
 | 角色 | 英文 | 中文 |
@@ -228,6 +239,14 @@
 **同事的更正。** “I'll review the comments, but Pat will collect them.” 先釐清哪一步換人，再重述：“Thanks, Kim. Pat will collect the comments by Friday, and you'll review them. When can you finish the review?” 週五是收件期限，審閱何時完成仍需詢問。
 
 **檢查。** 請同事改問 “So are we launching on Friday?” 用一句話說明週五要完成的事，再說上線日何時決定，或坦白仍未約定。
+
+### 進階情境｜中午沒收到確認，週五怎麼開會？
+
+週五的會議有兩套安排。請主持人看卡片收尾，另一人只聽，記下自己週五該去哪裡。**決議卡：** 若週四中午前收到場地確認，就到現場；否則改線上。Rae 在中午查回覆，主持人最晚一點通知全員。
+
+**主持人示範。** “If the venue confirms by noon on Thursday, we'll meet there on Friday. Otherwise we'll meet online. Rae, could you check at noon? I'll send everyone the final details by one. Does that match your notes?”
+
+**夥伴抽一題。** A：「Venue confirmed at eleven fifty. Where do I go?」 B：「It's twelve ten. The venue just confirmed. Are we switching back?」請按原決議回答。A 到現場；B 維持線上，因確認晚於截止時間。交換角色，把截止時間改成十一點半，兩題再答一次。
 
 ## 五分鐘角色扮演規則
 
