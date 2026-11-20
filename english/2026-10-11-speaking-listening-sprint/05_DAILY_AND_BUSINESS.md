@@ -138,6 +138,19 @@
 
 **經理回報版本：** The team finished [work]. Our main risk is [risk]. We need a decision on [scope or resources] by [date].（團隊完成什麼、主要風險、何時需要什麼決策。）
 
+### 三點到了，卡點還在
+
+**情境卡。** 三份表單已測完兩份，剩下一份需要測試帳號。你請 Jo 提供帳號，並約好三點更新。夥伴問 “Will everything be ready at three?” 先說三點能交代什麼，再確認誰能幫忙。短句起步：“I can give you an update at three. I still need the account to test the last form.”
+
+**三點的第二輪。** 夥伴任選一句，你聽完再回報。
+
+| 夥伴說 | 參考回應 |
+| --- | --- |
+| “I've sent you the login details.” | “Thanks. I'll test the last form now and send you the result when I'm done.” |
+| “Jo is out today.” | “Two forms are ready to show. I'm still waiting for the account for the last one. Who else can set one up?” |
+
+換成自己手上的工作，錄一段二十秒回報。請聽者寫下已完成的範圍、還缺什麼，以及下一步由誰做。
+
 ## 會議時間與時區
 
 | 角色 | 英文 | 中文 |
@@ -207,6 +220,14 @@
 > Please let me know if I missed anything.
 
 先口頭說出摘要，再寫下來。這讓書面確認成為聽說練習的延伸，不必先追求長篇商務信件。
+
+### 最後一刻有人更正分工
+
+**主持人筆記。** 一個團隊先試用新表單；你週二寄草稿，Kim 週五前收回意見，全面上線日待定。遮住筆記，用三到四句英文收尾，最後問 “Does that match your notes?”
+
+**同事的更正。** “I'll review the comments, but Pat will collect them.” 先釐清哪一步換人，再重述：“Thanks, Kim. Pat will collect the comments by Friday, and you'll review them. When can you finish the review?” 週五是收件期限，審閱何時完成仍需詢問。
+
+**檢查。** 請同事改問 “So are we launching on Friday?” 用一句話說明週五要完成的事，再說上線日何時決定，或坦白仍未約定。
 
 ## 五分鐘角色扮演規則
 

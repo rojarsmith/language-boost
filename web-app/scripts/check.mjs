@@ -9,6 +9,6 @@ for(const lesson of curriculum.lessons){
   assert(lesson.choices[lesson.correct]);assert.equal(lesson.choices.length,3);assert(lesson.followups.length>=3);assert(lesson.vocab.length>=2);
   assert(lesson.grammar.rule && lesson.grammar.example && lesson.culture.insight && lesson.culture.action);
 }
-assert.equal(curriculum.lessons.filter(l=>l.language==='en').length,10);
-assert.equal(curriculum.lessons.filter(l=>l.language==='ja').length,10);
-console.log('Curriculum checked: 20 complete, unique scenarios.');
+assert.equal(curriculum.lessons.filter(l=>l.language==='en').length,12);
+assert.equal(curriculum.lessons.filter(l=>l.language==='ja').length,12);
+console.log(`Curriculum checked: ${ids.size} complete, unique scenarios.`);
