@@ -274,6 +274,17 @@
 
 **換條件再訪一次。** 客戶改說 “The packing team shares one computer. They only check email at lunch.” 訪談者問一句，釐清最晚何時需要知道。核對錄音：聽者能否說出誰需要消息、何時才需要，以及通知方式還有哪些事待確認？
 
+### 進階情境｜同一批椅子，為什麼兩個部門報出不同數字？
+
+開場由業務說 “The screen said eight chairs were available, so I offered eight. The warehouse told me I could only sell two.” 訪談者先遮住下表，把上次接單的過程問清楚。夥伴輪流扮兩個角色，被問到才透露自己的線索。
+
+| 對象 | 訪談者可以問 | 角色線索 |
+| --- | --- | --- |
+| 業務 | “What decision were you making when you looked at the eight?” | “I needed to tell the customer how many we could promise today.” |
+| 倉庫 | “When you counted eight, did that include chairs set aside for other orders?” | “Yes. All eight were on the shelf. Six were reserved. I need the full count for the evening check.” |
+
+**收尾。** 分別對兩人重述：“Eight are on hand, and two are free to sell. Sales needs the second number before promising delivery. The warehouse needs the first for its count. Have I understood both of you?” 換條件：客戶說一筆預訂剛取消。先問那筆有幾張椅子，以及庫存紀錄是否已更新，再報新數字。
+
 ## 異議處理｜客戶說「這套工具太貴了」
 
 夥伴只念開場 “This is too expensive for us.” 你先問 “Which cost worries you most?” 夥伴任選一張回覆卡，不先告知你是哪張。聽完再決定下一步。
@@ -284,6 +295,17 @@
 | B · “Our budget is fixed for this year. Even a small trial would cost too much.” | “I understand. Let's leave it here for now. Would you like me to get in touch when you plan next year's budget?” |
 
 **再聽一輪。** 若 B 卡客戶回答 “Thanks, but we'd rather contact you ourselves,” 用一句話收尾，再讓客戶重述雙方約定。可答 “Of course. I'll leave that with you.” 自評時留意：A 卡的分梯訓練仍待確認；B 卡已由客戶決定何時聯絡。
+
+### 進階情境｜試用後每筆訂單反而慢了四分鐘
+
+客戶說 “We normally take eight minutes per order. In the trial it took twelve. Why should we give this more time?” 你知道當天做過初次設定，但沒有人分開計時。先用一句話承認觀察到的差距，再問客戶還能投入多少時間。
+
+| 客戶選一張回覆卡 | 可用的回應 |
+| --- | --- |
+| A · “One morning. We'll stop if the total time per order is still over eight minutes.” | “Let's compare similar orders and include setup in the total. We'll also record setup separately so we can see where the time goes. If we're still over eight minutes per order, we'll stop. Does that work for you?” |
+| B · “Actually, nobody can spare another morning.” | “Understood. Let's end the trial here. I'll send a short note with the timings we observed and the question we couldn't answer.” |
+
+**交換角色。** 客戶追問 “So was setup the reason?” 回答時用一個數字說明結果，再說哪個時間沒量。夥伴核對：你是否保留了客戶用來決定停試的總時間，包括準備耗時？
 
 ## 產品價值說明｜同一個畫面，兩種聽眾
 
