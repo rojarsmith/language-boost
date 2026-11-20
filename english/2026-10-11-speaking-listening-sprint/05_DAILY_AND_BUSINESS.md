@@ -317,3 +317,14 @@
 | 營運主管問 “Will we fill more shifts this way?” | “In the demo, one team lead found two open shifts on one page. We haven't checked how many get filled. Could we count the shifts still open at closing time before and during a trial?” |
 
 **換你說。** *Find an open shift* 是找出缺班，*fill a shift* 才是找到人來上班。若主管追問 “Did either shift get filled?”，請直接回答這次示範能證明到哪一步。換一個你用過的工具再說一次，讓夥伴分別指出「使用者現在能做什麼」和「還需要量什麼」。
+
+### 進階情境｜輸入快了，整筆訂單省多少時間？
+
+**練習資料。** 用同一筆範例訂單各試一次。舊表單輸入花 10 分鐘，複核花 2 分鐘；新表單分別花 6 和 5 分鐘。只有這兩個步驟。夥伴先扮輸入人員，再扮主管。遮住右欄，每次用兩句話回答。
+
+| 聽者追問 | 可用的說法 |
+| --- | --- |
+| “What would change for me when I enter an order?” | “On the order we tried, entry went from ten minutes to six. You spent four minutes less typing.” |
+| “Can I tell the team we save four minutes on every order?” | “Review took three minutes longer. Across both steps, we went from twelve minutes to eleven on this one order.” |
+
+**換條件。** 主管想把數字寫進給所有分店的簡報。請用一句英文標明樣本，再問 “Could we time both steps on a few typical orders from each branch?” 自評時請夥伴重述四分鐘與一分鐘各描述哪一段工作。

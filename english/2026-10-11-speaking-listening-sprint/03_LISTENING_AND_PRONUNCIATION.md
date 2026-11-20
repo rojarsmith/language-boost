@@ -117,3 +117,15 @@ British Council 的 A1 區提供初階聽力活動；VOA 的 Let's Learn English
 | B · “Review it and send me your comments.” | “So you'll need my comments on the draft by Thursday. Have I got that right?” |
 
 **聽第二次還是卡住時**，指出是哪個詞：“Could you give me an example of a comment?” 如果卡在聲音，可以請對方拼字或寫下動詞。最後關掉文字，請夥伴更正 “Actually, Friday morning.” 重述新的期限和原來的動作。請夥伴核對你交的是草稿還是意見，以及何時要交。
+
+### 進階情境｜聽懂時間，卻不知道 it 和 them 指什麼
+
+桌上有價目表和配送時程表。同事說 “Could you send it to them after lunch?” 你已聽懂時間。請夥伴扮同事，每次只念一行，等你問到才提供下一條線索。
+
+| 同事說 | 你的任務 |
+| --- | --- |
+| “Could you send it to them after lunch?” | 先確認時間，只問文件：“After lunch, sure. Do you mean the price list or the delivery schedule?” |
+| “The delivery schedule.” | 問還缺的資訊：“Who should I send it to?” |
+| “The store managers. Actually, just the north store manager.” | 用具體名稱收尾：“I'll send the delivery schedule to the north store manager after lunch. Is that right?” |
+
+**盲測。** 夥伴只改時間：“Sorry, before lunch.” 關掉文字，重述動作、文件、收件人與新時間。若同事還得問你 “Which file?”，再試一次，把 it 換成文件名稱。
