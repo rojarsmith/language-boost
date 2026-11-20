@@ -27,9 +27,11 @@ function stats() {
 }
 function recommendation() {
   const lang=state.prefs.language; const due=dueReviews().map(r=>state.lessons.find(l=>l.id===r.lesson_id));
-  const priorities=state.prefs.role==='sales'?['clarify','value','objection','intro','discovery','timeline','recap','progress','story','order','housing','social','revise-estimate','conditional-recap','discovery-handoff','objection-pilot','value-tradeoff','clarify-reference']:state.prefs.role==='project'?['clarify','timeline','progress','recap','story','intro','discovery','objection','value','order','housing','social','revise-estimate','conditional-recap','discovery-handoff','objection-pilot','value-tradeoff','clarify-reference']:['clarify','intro','discovery','value','story','timeline','progress','recap','objection','order','housing','social','revise-estimate','conditional-recap','discovery-handoff','objection-pilot','value-tradeoff','clarify-reference'];
+  const priorities=state.prefs.role==='sales'?['clarify','value','objection','intro','discovery','timeline','recap','progress','story','order','housing','social']:state.prefs.role==='project'?['clarify','timeline','progress','recap','story','intro','discovery','objection','value','order','housing','social']:['clarify','intro','discovery','value','story','timeline','progress','recap','objection','order','housing','social'];
   const used=new Set(languageAttempts().map(a=>a.lesson_id));
-  const ordered=priorities.map(id=>state.lessons.find(l=>l.id===`${lang}-${id}`));
+  const catalog=state.lessons.filter(lesson=>lesson.language===lang);
+  const preferred=priorities.map(id=>catalog.find(lesson=>lesson.id===`${lang}-${id}`)).filter(Boolean);
+  const ordered=[...new Set([...preferred,...catalog])];
   return [...new Set([...due,...ordered.filter(l=>!used.has(l.id)),...ordered])].filter(Boolean).slice(0,3);
 }
 function card(lesson, extra='') {return `<button class="mission" data-lesson="${escape(lesson.id)}"><span class="mission-icon" aria-hidden="true">${escape(lesson.icon)}</span><span class="mission-body"><span class="tag">${trackNames[lesson.track]} · ${lesson.language==='en'?'ENGLISH':'日本語'} ${escape(extra)}</span><h3>${escape(lesson.title)}</h3><p>${escape(lesson.goal)}</p></span><span class="arrow" aria-hidden="true">↗</span></button>`;}

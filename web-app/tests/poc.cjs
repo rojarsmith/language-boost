@@ -65,8 +65,21 @@ const fs=require('node:fs/promises');
     await page.getByRole('link',{name:'今日練習'}).click();
     await page.locator('h1').filter({hasText:'<img'}).waitFor();
     assert.equal(await page.locator('h1 img').count(),0);assert((await page.locator('h1').innerText()).includes('<img'));
-    await page.locator('#language').selectOption('ja');await page.getByRole('link',{name:'情境任務'}).click();
-    await page.locator('[data-filter="life"]').click();assert.equal(await page.locator('#main .mission').count(),3);
+    await page.getByRole('link',{name:'情境任務'}).click();
+    for(const language of ['en','ja']){
+      await page.locator('#language').selectOption(language);
+      await page.locator('[data-filter="life"]').click();
+      assert.equal(await page.locator('#main .mission').count(),5);
+      for(const topic of ['housing-handover','social-group']){
+        await page.locator(`[data-lesson="${language}-${topic}"]`).click();
+        assert.equal(await page.locator('#practice [name="quiz"]').count(),3);
+        await page.locator('[data-step="3"]').click();
+        const first=await page.locator('.script').innerText();
+        await page.locator('#next-question').click();
+        assert.notEqual(await page.locator('.script').innerText(),first);
+        await page.locator('#close-practice').click();
+      }
+    }
     await page.locator('[data-lesson="ja-order"]').click();assert.equal(await page.locator('.support').count(),0);
     await page.locator('[data-step="4"]').click();await page.locator('#transfer').fill('別のサイズはありますか。全部でいくらですか。');
     await page.locator('[data-step="5"]').click();await page.locator('#save-attempt').click();await page.locator('#finish-session').click();

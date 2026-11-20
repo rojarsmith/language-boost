@@ -69,6 +69,18 @@
 
 **換一個條件。** 對方看過預約表後補充 “Actually, the sixth is the first day you can book a visit. We don't have an installation date yet.” 請說出三日和六日各能做什麼，再問何時能確認安裝日。聽者核對：你的回覆有沒有把 *book a visit*（預約到訪）誤說成 *go online*（開始上網）？
 
+### 進階情境｜清單寫兩把鑰匙，手上只有一把
+
+**房客卡。** 入住時，點交清單的「已交付鑰匙」欄寫著兩把。你打開信封，裡面只有一把。先描述差異，請對方一起核對。夥伴扮管理員，只念左欄；房客遮住右欄回答。
+
+| 管理員說 | 房客可以怎麼接 |
+| --- | --- |
+| “Could you check the keys against the list?” | “The list says two keys were handed over. There's one in the envelope. Could we check that together?” |
+| “You're right. I'll change the list to one and email you a copy today.” | “Thanks. What happens with the second key?” |
+| “I'll check with the office and let you know by noon tomorrow.” | “So I'll get the corrected list today, and you'll let me know about the second key by noon tomorrow. Have I got that right?” |
+
+**換條件。** 管理員改口說 “I found the second key. Here it is.” 這次你確實接到第二把。請重新數鑰匙，再說清楚清單上現在該記幾把。第一輪的聽者應能指出哪個時間是回覆期限、哪件事仍待確認。
+
 ## 購物與退款詢問
 
 **你的目標：** 買轉接器，確認是否能退。
@@ -105,6 +117,20 @@
 | B · “It was fine. I'd better get going. My meeting starts in a minute.” | “Sure. See you later!” |
 
 **交換角色。** 這次你是趕時間的人。聽到 “Want to grab a coffee?” 時，用 “Thanks, but I've got a meeting in a minute.” 拒絕邀請。夥伴用一句話回應。回聽時核對：有空聊的那一輪，問題是否接到對方提起的細節？要離開的那一輪，對方能否直接走？
+
+### 進階情境｜錯過閒聊的開頭，怎麼加入三人對話？
+
+午休時，你走近兩位同事，只聽到 Maya 說 “They've moved it inside.” 等她說完再加入。請一位夥伴扮 Maya，另一位扮 Jo；只有兩人練習時，夥伴可以兼任兩角。
+
+1. 先問話題：“I missed the start. What moved inside?” Maya 回 “The Friday market. I found a great tea stall there.” 接住她剛說的細節：“A tea stall? What did you try?”
+2. Jo 說 “I went last week, too.” 順著這句邀他加入：“Oh, did anything catch your eye?” 接著停一下，讓 Jo 自己決定要說多少。
+
+| Jo 任選一句 | 你可以怎麼接 |
+| --- | --- |
+| “They had mint tea. I bought some.” | “Mint tea sounds good. How was it?” |
+| “I'll just listen for now. Maya, you were saying?” | “Sure. Maya, what was the tea like?” |
+
+**換題再試。** 把市場換成週末書展，請夥伴只念 “They've moved it upstairs.” 遮住示範，用自己的話問清楚哪個活動移到樓上。自評時，找出你哪一句接到上一位說的細節，以及同事想旁聽時，你怎麼把話題交還給原來的人。
 
 ## 尋求協助
 
