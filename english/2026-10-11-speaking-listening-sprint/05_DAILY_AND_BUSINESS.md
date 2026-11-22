@@ -348,6 +348,14 @@
 
 **收尾。** 分別對兩人重述：“Eight are on hand, and two are free to sell. Sales needs the second number before promising delivery. The warehouse needs the first for its count. Have I understood both of you?” 換條件：客戶說一筆預訂剛取消。先問那筆有幾張椅子，以及庫存紀錄是否已更新，再報新數字。
 
+### 進階情境｜週一開門前，哪些條件一定要有？
+
+**客戶開場。** “We need a color seating chart by Monday.” 訪談者先問 “What happened the last time your team seated guests?” 夥伴等問到上次的情況，才透露 “The network went down. We couldn't look up anyone's seat.”
+
+**拿掉一個條件再問。** “If you had a black-and-white list of names and seat numbers at the door, could you still seat people?” 客戶說 “Yes. Color just helps us find the rows faster.” 用一句話核對週一的必要條件，請客戶指出哪項偏好可以稍後處理。
+
+**換條件。** 客戶補充 “Sometimes a seat changes after we print the list.” 此時紙本是否夠用又成了待確認事項。試問 “Who learns about the change first, and how does the usher get the new number?” 請聽者指出你問到了哪個工作環節。
+
 ## 異議處理｜客戶說「這套工具太貴了」
 
 夥伴只念開場 “This is too expensive for us.” 你先問 “Which cost worries you most?” 夥伴任選一張回覆卡，不先告知你是哪張。聽完再決定下一步。
@@ -369,6 +377,14 @@
 | B · “Actually, nobody can spare another morning.” | “Understood. Let's end the trial here. I'll send a short note with the timings we observed and the question we couldn't answer.” |
 
 **交換角色。** 客戶追問 “So was setup the reason?” 回答時用一個數字說明結果，再說哪個時間沒量。夥伴核對：你是否保留了客戶用來決定停試的總時間，包括準備耗時？
+
+### 進階情境｜舊紀錄能打開，附件也跟過來了嗎？
+
+**客戶卡。** “That old ticket opened in your demo, but it had no attachment. When someone questions a delivery, we need the signed slip.” 回應者先說出這個顧慮會影響哪項工作，再邀客戶定義驗收動作。
+
+> “You need to find the signed slip for a particular shipment. We checked that the ticket opens. Could your clerk try opening a test slip from its ticket and check the order number?”
+
+**客戶選一種結果。** A：“The file opens, but it's for another order.” 請說明要暫緩哪項決定，以及重測時要核對什麼。B：“This sample worked. Does that cover our older attachments?” 先限定這次能確認的範圍，再問客戶想用哪種舊格式做下一次測試。讓客戶重述何時才願意決定切換。
 
 ## 產品價值說明｜同一個畫面，兩種聽眾
 
