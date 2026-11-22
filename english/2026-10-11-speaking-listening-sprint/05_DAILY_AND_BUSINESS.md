@@ -30,6 +30,27 @@
 
 **換一筆自己算。** 三明治仍是六美元，改點兩杯原價各兩美元的茶，其中一杯換成四美元的大杯。先聽夥伴回讀，再核對：一份三明治、一杯普通茶和一杯大杯茶，共十二美元。若只聽清總額，問 “How much is each tea?” 再付款。
 
+### 進階情境｜共點的餐點怎麼分帳？
+
+兩人用餐，以下為最終價格。你點六美元的湯，朋友點十美元的義大利麵，兩人分享四美元的沙拉。先點餐，再跟店員確認如何分帳。
+
+**開場示範。** “I'll have the soup, and my friend will have the pasta. We'd also like a salad to share. Could we pay separately?”
+
+**追問與回應。** “Shall I split the whole bill in half?” → “Just the salad, please. That's two dollars each for the salad, so eight for me and twelve for my friend. Is that right?”
+
+**換條件。** 朋友改說 “I'll get the salad.” 遮住示範重算：你付六美元，朋友付十四美元。請夥伴核對兩人合計仍是二十美元。
+
+### 進階情境｜套餐已含飲料，帳單怎麼核對？
+
+菜單上的午餐套餐是十二美元，含一杯小杯茶，升級大杯加一美元，標價均為最終價格。先說 “I'll have the lunch set with the small tea, please.” 再和夥伴練以下兩輪。
+
+| 店員說 | 你要確認的事 |
+| --- | --- |
+| “That's twelve for the set and three for the tea.” | “I had just the small tea that comes with the set. Could you check the three-dollar charge?” 若店員取消單點茶費，確認 “So it's twelve altogether?” |
+| 換條件：這次你點大杯。“There's a dollar extra for the large tea.” | “That's the upgrade charge, right? So the total is thirteen dollars?” |
+
+**盲測。** 請夥伴只念其中一種明細。先問額外費用涵蓋什麼，再依自己點的杯型報總額。
+
 ## 問路與交通
 
 **你的目標：** 找車站，確認步行時間。

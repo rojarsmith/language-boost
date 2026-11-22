@@ -50,6 +50,26 @@ Microsoft 的官方技術面試指引要求先釐清問題、提出計畫，並�
 
 **換題。** 請夥伴改問 “How would you explain your work to someone who doesn't write software?” 用平常話重說同一件事。可從 “When someone cancels, I check that another person can book the seat.” 開始。再換成自己做過的事；在學或轉職者也可以選課堂作業。聽者應能說出你做過哪一步，以及它和應徵職務有什麼關係。
 
+### 進階情境｜轉職自介如何說清楚經驗範圍
+
+面試官想知道客服經驗怎麼用在測試工作。先用兩句話介紹自己，再讓夥伴打斷，改問一項你還在學的技能。
+
+**開場示範。** “I work in customer support. When someone reports a booking error, I repeat their steps and record exactly where the problem occurs.”
+
+**追問與回應。** “Have you written automated tests at work?” → “I've practiced on a personal project. At work, my experience is in reproducing errors and documenting the steps.”
+
+**換條件。** 把預約錯誤換成自己處理過的一件事。請聽者說出你能立即做的工作，以及哪項技能仍在練習。
+
+### 進階情境｜團隊推出服務，你負責哪一步？
+
+**角色卡。** 團隊推出預約服務。你觀察三人試填，發現他們都在日期欄停下來，於是改寫欄位名稱。另一位設計師畫畫面，工程師實作。先用兩句介紹自己和團隊成果，再讓面試官打斷。
+
+> “I'm a designer on the team that launched our booking service. My part was to watch people use the form and improve the wording.”
+>
+> “So you designed all the screens?” — “My colleague designed the screens. I changed the date label after I saw three people pause at that field.”
+
+**交換角色。** 換成自己的共同專案。聽者問 “Which decision was yours?” 並在聽完後說出一項團隊成果和一項你能親自解釋的決定。
+
 ## 真實專案的六個欄位
 
 先用中文填，再改成簡單英文：
