@@ -399,6 +399,14 @@
 
 **換條件。** 客戶補充 “Sometimes a seat changes after we print the list.” 此時紙本是否夠用又成了待確認事項。試問 “Who learns about the change first, and how does the usher get the new number?” 請聽者指出你問到了哪個工作環節。
 
+### 進階情境｜到貨就結案，少一箱也一樣嗎？
+
+**客戶開場。** “We close the order when the delivery arrives.” 訪談者問 “Can you walk me through the last delivery that didn't go as planned?” 客戶才透露昨天十箱只到九箱。接著一次問一件事：“What did the clerk record?” → “Who followed up on the missing box?” → “What has to happen before you can close the order?”
+
+**客戶角色卡。** 收貨員登記九箱，保留訂單；採購負責聯絡供應商。最後一箱到貨，或採購確認取消，才可結案。訪談者遮住卡片重述：“So recording nine boxes and closing the order are separate steps. The buyer checks on the tenth. Have I got that right?”
+
+**條件更動。** 供應商說 “We might cancel the last box.” 用一句話向客戶確認「可能取消」是否足以結案，以及誰能給最終確認。
+
 ## 異議處理｜客戶說「這套工具太貴了」
 
 夥伴只念開場 “This is too expensive for us.” 你先問 “Which cost worries you most?” 夥伴任選一張回覆卡，不先告知你是哪張。聽完再決定下一步。
@@ -428,6 +436,14 @@
 > “You need to find the signed slip for a particular shipment. We checked that the ticket opens. Could your clerk try opening a test slip from its ticket and check the order number?”
 
 **客戶選一種結果。** A：“The file opens, but it's for another order.” 請說明要暫緩哪項決定，以及重測時要核對什麼。B：“This sample worked. Does that cover our older attachments?” 先限定這次能確認的範圍，再問客戶想用哪種舊格式做下一次測試。讓客戶重述何時才願意決定切換。
+
+### 進階情境｜現有試算表就夠用，換工具值得嗎？
+
+**客戶卡。** “Our shared sheet handles shift swaps just fine. Why change?” 先問 “What would you want to keep about the way it works today?” 客戶說一般換班只要輸入一次。追問最近一次例外，才得知勤務表印出後，有一次臨時換班沒傳到值班主管。
+
+**一起設計比較。** “Could we replay that same late swap with the sheet and with the new tool? In each case, let's check whether the lead sees the change before the shift starts and count how many times someone has to enter it.” 一次用同一筆換班走完一種流程；每種流程各自計次。
+
+**讓客戶決定。** 若兩邊都及時看到變更，但新工具需要輸入兩次，請練習收尾：“On this example your sheet meets both conditions. Would you prefer to keep using it?” 交換角色，改成只有新工具及時通知且只需輸入一次，再問客戶還想確認什麼。
 
 ## 產品價值說明｜同一個畫面，兩種聽眾
 
