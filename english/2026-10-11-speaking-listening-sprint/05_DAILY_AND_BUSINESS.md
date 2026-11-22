@@ -121,6 +121,16 @@
 
 **換條件。** 司機只能在週五五點半到。先說明自己的抵達時間，再問 “Would Saturday morning work instead?” 讓管理員決定能否更改，最後重述雙方確定的地點與時間。
 
+### 進階情境｜照片裡的家具，入住時哪些會留下？
+
+**看房卡。** 照片裡有冰箱、書桌與窗簾。你要在預約搬家車前決定要帶哪些物品。請夥伴扮仲介，只在你問到時透露：冰箱附在屋內，現房客會搬走書桌，窗簾要再問屋主。
+
+> “I saw the desk in the photo. Will it still be here when I move in?” — “The current tenant is taking it. The fridge stays, though.”
+>
+> “Thanks. Could you check about the curtains and email me the list?” — “Sure. I'll get back to you on Tuesday.”
+
+**換條件。** 週二夥伴念 “The owner says the curtains are staying after all.” 不看前面的清單，說出現在要自己準備什麼。若夥伴改說 “I'm still waiting to hear about the curtains,” 先確認書桌安排，再問下次何時更新。
+
 ## 購物與退款詢問
 
 **你的目標：** 買轉接器，確認是否能退。
@@ -179,6 +189,14 @@
 > “I'd love to go. I'm not sure about Friday yet, though. Could we hold off on booking? I'll let you know on Thursday afternoon.”
 
 **同事選一張卡。** A：“Sure, text me on Thursday.” 用一句話確認由誰回覆。B：“They need the numbers today.” 若你仍不能確定，可說 “Go ahead without me this time. Thanks for checking!” 交換角色，讓聽者分辨你答應了哪件事，以及現在要不要替你留位。
+
+### 進階情境｜聽說有人要轉組，怎麼接話？
+
+午休時，同事問 “Is Lee moving to our team? I heard it's been decided.” 你沒有從 Lee 那裡聽到消息。這位同事剛提過自己早上主持了工作坊。先用一句話回答，再接回他親身經歷的事。
+
+> “I haven't heard anything from Lee about that. I'll leave it to Lee to share. How did your workshop go this morning?”
+
+**分岔練習。** A：對方說 “Should I ask in the group chat?” 回 “I'd give Lee space to share it. You mentioned a game at the workshop. How did it go?” B：對方直接聊起遊戲，請接住細節問 “What did people enjoy most?” 聽者核對：回答有沒有意外把「我沒聽說」變成「他一定不會轉組」？
 
 ## 尋求協助
 
