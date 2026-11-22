@@ -474,3 +474,11 @@
 **第一輪。** 試答 “Of the six orders flagged, two still needed a reply. The team followed up on those two. Staff also had to open four orders that were already answered.” 請聽者分別重述哪個數字代表行動、哪個數字代表額外工作。
 
 **第二輪。** 主管問 “So we didn't miss any overdue replies?” 回答 “We only checked the flagged orders. Could we review a sample of the others next week?” 若換成值班人員問 “How much time will those checks take?”，請提出計時方式，並問他每天能撥出多少時間。
+
+### 進階情境｜回頭客少填一步，第一次來的人呢？
+
+**試用卡。** 八人試用再訂購按鈕。五人是回頭客，其中四人沿用舊地址，一人搬家而重填；另三人是新客，照常填地址。試用只記錄是否重用地址，沒有計時。夥伴當店長問 “Who actually got to skip a step?”
+
+> “Four of the five returning customers reused their saved address. That's four of the eight people we observed. The customer who moved and the three first-time buyers entered an address.”
+
+**換聽眾。** 店長問 “Most of our customers are visiting for the first time. Would you put this at the top of our list?” 先說功能在哪個條件下有用，再問 “How often do customers reorder to the same address here?” 若店長追問省幾分鐘，請說明下次要計時的步驟。核對時，聽者應能指出四人占哪一群人的比例，而不把這個比例當成省下的時間。

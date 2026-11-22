@@ -140,3 +140,14 @@ British Council 的 A1 區提供初階聽力活動；VOA 的 Let's Learn English
 | “Let's keep it to an hour.” | “So it's Thursday, one thirty to two thirty. Is that right?” |
 
 **換條件。** 把原時段改為週二上午十點到十一點，改成延後十五分鐘開始，房間仍只借到十一點。遮住表格，問清楚後讀回星期與兩個時刻。核對答案是週二上午十點十五分到十一點。
+
+### 進階情境｜「先別寄」有一份例外，是哪份？
+
+桌上有開放日地圖和兩張海報。夥伴先念 “Don't send anything to the printer yet, except …” 並在檔名處故意停住。保留聽懂的部分，只問漏掉的例外：“I heard we should hold the files. Which one can I send now?”
+
+| 夥伴回覆 | 你可以怎麼讀回 |
+| --- | --- |
+| “Just the map today. Hold both posters until I've approved the dates.” | “I'll send the map today. I'll wait for your approval on the dates before sending either poster. Is that right?” |
+| 接著改口：“Actually, the map needs a new entrance label too. Hold all three until I confirm.” | “So I'll hold the map as well as both posters until I hear from you.” |
+
+**換題。** 把文件換成入口、大廳、舞台三張照片；讓夥伴自己選一張作為例外。聽者說出現在寄哪張，並詢問剩餘兩張的放行條件。
