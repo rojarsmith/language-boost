@@ -209,6 +209,14 @@
 
 **逆轉條件。** 中午過了，檔案還沒到。兩點時請夥伴再問一次交期。先說哪部分仍可交給對方看，再指出原估計所需的條件已過期。聽者應能復述眼前可用的成果，以及誰要再找誰核對什麼。
 
+### 進階情境｜交班時還有一筆訂單沒出貨
+
+**交班卡。** 十筆訂單已寄出九筆。四十號已包裝，客戶的新地址待確認。你已寄信詢問，現在要下班。先遮住示範，讓下一班知道打開系統後第一件事要做什麼。
+
+> “Nine orders have shipped. Order forty is packed. I've emailed the customer about the address. Could you watch for their reply?”
+
+**接班人抽一題。** A：“They confirmed the new address at three. Can I send the parcel now?” 先提醒 “Update the label first.” B：“It's four and there's still no reply.” 回答 “Keep it packed and tell the shift lead we're waiting for the address.” 請接班人回述訂單編號與下一步；核對他有沒有又寄一次同樣的信。
+
 ## 會議時間與時區
 
 | 角色 | 英文 | 中文 |
@@ -294,6 +302,14 @@
 **主持人示範。** “If the venue confirms by noon on Thursday, we'll meet there on Friday. Otherwise we'll meet online. Rae, could you check at noon? I'll send everyone the final details by one. Does that match your notes?”
 
 **夥伴抽一題。** A：「Venue confirmed at eleven fifty. Where do I go?」 B：「It's twelve ten. The venue just confirmed. Are we switching back?」請按原決議回答。A 到現場；B 維持線上，因確認晚於截止時間。交換角色，把截止時間改成十一點半，兩題再答一次。
+
+### 進階情境｜有決策權的人缺席，怎麼寫結論？
+
+**主持人卡。** 你今天寄議程草案給講者，這件事已定。加開工作坊需要 Dana 批准預算，但她缺席。Sam 週四前去問她，核准前先不上官網。用三到四句話收尾。
+
+> “I'll send the draft agenda to the speakers today. The extra workshop still needs Dana's approval. Sam, could you ask her by Thursday? Until she approves it, we'll keep it off the public program.”
+
+**同事讀回筆記。** “I've written: Sam approved the workshop. We'll announce it on Thursday.” 請直接改寫這兩句，例如 “Sam will ask Dana to decide. We haven't set an announcement date.” 若週四仍沒回覆，請主持人說明如何更新紀錄。聽者應能分清誰去問、誰決定、哪件事今天可先做。
 
 ## 五分鐘角色扮演規則
 
