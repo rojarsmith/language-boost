@@ -62,6 +62,14 @@
 
 **盲測。** 夥伴只說 “It's two dollars more.” 先問 “Two dollars more than the original rice bowl?” 確認後才重算整筆。聽者最後要能記下你保留了哪些品項，以及應付金額。
 
+### 進階情境｜優惠是主餐八折，還是整單八折？
+
+**點餐卡。** 午餐義大利麵十美元、果汁三美元，標價已含稅。菜單寫 “Twenty percent off lunch mains.” 先點餐，再問 “Does the discount apply to the juice too?” 店員答 “Just the pasta.”
+
+> “So it's eight dollars for the pasta and three for the juice. Eleven dollars altogether, right?”
+
+**改單盲測。** 夥伴只念一種變化：A，“Skip the juice.” B，“Swap the juice for a four-dollar dessert. Desserts are full price.” 先說明折扣套在哪一項，再報訂單。核對：A 只付八美元；B 是八加四，共十二美元。
+
 ## 問路與交通
 
 **你的目標：** 找車站，確認步行時間。

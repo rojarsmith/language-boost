@@ -78,6 +78,14 @@ Microsoft 的官方技術面試指引要求先釐清問題、提出計畫，並�
 
 **追問。** 面試官問 “Was that for a client?” 試答 “It was a personal project. I wanted to check what happens to an order when the payment is canceled.” 換成自己的時間線再練；若沒有離開職場的經歷，可以用虛構角色卡。請聽者寫下哪項是以前的工作、哪項是近期能展示的成果。
 
+### 進階情境｜兩段經歷，先說哪一段？
+
+**應徵者卡。** 你修過結帳錯誤，也帶過新人。你曾用三筆真實客服案件寫成教學指南，也曾重現付款失敗的問題。面試官先說 “This role is mainly about helping new hires answer tickets on their own.” 請在二十秒內自介，選一件對方值得追問的事。
+
+> “I work in support, where I fix checkout bugs and train new colleagues. Since your team helps new hires handle tickets independently, I'd start with the guide I wrote using three real cases.”
+
+**換職缺。** 夥伴改說 “Our priority is finding out why checkout fails.” 保留兩段經歷，換成排查問題的例子開場。請聽者說出是哪個職缺線索讓你改選例子。
+
 ## 真實專案的六個欄位
 
 先用中文填，再改成簡單英文：
