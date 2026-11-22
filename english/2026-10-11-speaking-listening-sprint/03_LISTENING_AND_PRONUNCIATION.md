@@ -129,3 +129,14 @@ British Council 的 A1 區提供初階聽力活動；VOA 的 Let's Learn English
 | “The store managers. Actually, just the north store manager.” | 用具體名稱收尾：“I'll send the delivery schedule to the north store manager after lunch. Is that right?” |
 
 **盲測。** 夥伴只改時間：“Sorry, before lunch.” 關掉文字，重述動作、文件、收件人與新時間。若同事還得問你 “Which file?”，再試一次，把 it 換成文件名稱。
+
+### 進階情境｜提前半小時，結束時間也改嗎？
+
+你要更新週四下午兩點到三點的會議邀請。同事說 “Can we start half an hour earlier?” 如果只漏聽數字，先問 “I heard ‘earlier.’ How much earlier?” 確認開始時間後，再問 “So we start at one thirty. Do we still finish at three?”
+
+| 同事暗選一句 | 你要讀回的時段 |
+| --- | --- |
+| “Yes. We need more time for questions.” | “Thursday, one thirty to three. I'll update the invite.” |
+| “Let's keep it to an hour.” | “So it's Thursday, one thirty to two thirty. Is that right?” |
+
+**換條件。** 把原時段改為週二上午十點到十一點，改成延後十五分鐘開始，房間仍只借到十一點。遮住表格，問清楚後讀回星期與兩個時刻。核對答案是週二上午十點十五分到十一點。

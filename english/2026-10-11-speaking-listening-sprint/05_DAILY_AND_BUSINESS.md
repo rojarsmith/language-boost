@@ -407,3 +407,11 @@
 | “Can I tell the team we save four minutes on every order?” | “Review took three minutes longer. Across both steps, we went from twelve minutes to eleven on this one order.” |
 
 **換條件。** 主管想把數字寫進給所有分店的簡報。請用一句英文標明樣本，再問 “Could we time both steps on a few typical orders from each branch?” 自評時請夥伴重述四分鐘與一分鐘各描述哪一段工作。
+
+### 進階情境｜六次提醒，哪幾次值得看到？
+
+**試用卡。** 一週內工具標出六筆訂單。兩筆確實還在等回覆，團隊因此跟進；其餘四筆早已收到回覆，人員得逐筆打開才能清掉提醒。未被標出的訂單尚未抽查。請夥伴當客服主管問 “What did the reminders actually help us do?”
+
+**第一輪。** 試答 “Of the six orders flagged, two still needed a reply. The team followed up on those two. Staff also had to open four orders that were already answered.” 請聽者分別重述哪個數字代表行動、哪個數字代表額外工作。
+
+**第二輪。** 主管問 “So we didn't miss any overdue replies?” 回答 “We only checked the flagged orders. Could we review a sample of the others next week?” 若換成值班人員問 “How much time will those checks take?”，請提出計時方式，並問他每天能撥出多少時間。
