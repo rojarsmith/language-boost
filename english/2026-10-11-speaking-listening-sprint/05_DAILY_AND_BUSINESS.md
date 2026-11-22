@@ -102,6 +102,14 @@
 
 **換條件。** 管理員改口說 “I found the second key. Here it is.” 這次你確實接到第二把。請重新數鑰匙，再說清楚清單上現在該記幾把。第一輪的聽者應能指出哪個時間是回覆期限、哪件事仍待確認。
 
+### 進階情境｜能先放箱子，也能先入住嗎？
+
+**房客卡。** 你週六入住，但搬家車週五會到。管理員說 “We can store two boxes for you on Friday.” 先問 “Where should the driver take them? Is there a charge?” 夥伴回 “To our office, before five. It's free. The apartment will still be cleaned on Friday.”
+
+**讀回安排。** “So I can leave two boxes at the office before five on Friday, and pick up the keys on Saturday morning. Have I got that right?” 請管理員核對拿鑰匙的時間，房客再決定要不要預約搬家車。
+
+**換條件。** 司機只能在週五五點半到。先說明自己的抵達時間，再問 “Would Saturday morning work instead?” 讓管理員決定能否更改，最後重述雙方確定的地點與時間。
+
 ## 購物與退款詢問
 
 **你的目標：** 買轉接器，確認是否能退。
@@ -152,6 +160,14 @@
 | “I'll just listen for now. Maya, you were saying?” | “Sure. Maya, what was the tea like?” |
 
 **換題再試。** 把市場換成週末書展，請夥伴只念 “They've moved it upstairs.” 遮住示範，用自己的話問清楚哪個活動移到樓上。自評時，找出你哪一句接到上一位說的細節，以及同事想旁聽時，你怎麼把話題交還給原來的人。
+
+### 進階情境｜隨口說下次去，算約好週五了嗎？
+
+午休時你說 “We should try that noodle shop sometime.” 同事拿起手機說 “Great, I'll book us a table for Friday.” 你想一起吃，但要等週四下午才知道週五是否有空。先遮住示範，在同事訂位前接話。
+
+> “I'd love to go. I'm not sure about Friday yet, though. Could we hold off on booking? I'll let you know on Thursday afternoon.”
+
+**同事選一張卡。** A：“Sure, text me on Thursday.” 用一句話確認由誰回覆。B：“They need the numbers today.” 若你仍不能確定，可說 “Go ahead without me this time. Thanks for checking!” 交換角色，讓聽者分辨你答應了哪件事，以及現在要不要替你留位。
 
 ## 尋求協助
 
