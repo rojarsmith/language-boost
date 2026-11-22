@@ -278,6 +278,14 @@
 
 **同事抽一題。** A：“Did two more requests come in?” 說明總數仍是十件。B：“I already sent that slide to another group.” 商量兩條通知路徑，例如 “I'll correct the morning report for its readers. Could you send your group the updated slide?” 聽者核對早報收件人與簡報收件人各由誰通知。
 
+### 進階情境｜抽查六筆都對，可以說整批都對嗎？
+
+**回報卡。** 三十筆費用申請中，你抽查上午收到的六筆，金額都與收據相符。六筆中沒有退款案件。夥伴問 “Can I tell the team the whole batch is fine?” 用三句話交代已查範圍、未查範圍與下一步。
+
+> “All six claims I checked matched their receipts. The other twenty-four haven't been checked yet. I'll look at claims with refunds next and update you at four.”
+
+**更新一輪。** 夥伴說 “You've now checked two more. One matched and one didn't.” 先遮住答案重報。聽者核對：三十筆中已查八筆，七筆吻合、一筆金額不同，另有二十二筆待查。請再用一句話向主管說明四點能得到哪種更新。
+
 ## 會議時間與時區
 
 | 角色 | 英文 | 中文 |
@@ -379,6 +387,14 @@
 > “Only the morning shift will try the checklist. If even one required check is missed, the shift lead will stop the trial and switch back to the old list. Otherwise it ends on Friday. We'll review the notes next Monday.”
 
 **修正會議紀錄。** 夥伴念 “Both shifts will keep using it unless we decide to stop on Monday.” 請指出哪個班別參與、什麼狀況當天就要停。接著換問 “If Friday goes well, what happens next?” 聽者應能分開說出週五結束試行、下週一檢討兩個動作。
+
+### 進階情境｜兩份會議筆記都寫週五，收件人卻不同
+
+**請夥伴先只念兩份筆記。** Jo 寫 “Send the draft to customers on Friday.” Ben 寫 “Send it to support for review on Friday.” 你負責寄件和寫紀錄，先找出兩份筆記一致的地方，再向主持人問清楚真正有分歧的部分。
+
+> “We both have Friday. Could we check who gets the draft that day and what we want them to do with it?”
+
+**主持人回覆。** “Send it only to support for review. We'll decide when to email customers after support comments.” 示範收尾：“I'll send the draft to support on Friday for review. The customer mailing date is still open. Does that match everyone's notes?” 交換角色；讓同事問「那客戶的日曆要填哪天？」練習保留未定事項。
 
 ## 五分鐘角色扮演規則
 
