@@ -69,7 +69,7 @@ const fs=require('node:fs/promises');
     for(const language of ['en','ja']){
       await page.locator('#language').selectOption(language);
       await page.locator('[data-filter="life"]').click();
-      assert.equal(await page.locator('#main .mission').count(),9);
+      assert.equal(await page.locator('#main .mission').count(),10);
       for(const topic of ['housing-handover','social-group','housing-early-access','social-tentative']){
         await page.locator(`[data-lesson="${language}-${topic}"]`).click();
         assert.equal(await page.locator('#practice [name="quiz"]').count(),3);

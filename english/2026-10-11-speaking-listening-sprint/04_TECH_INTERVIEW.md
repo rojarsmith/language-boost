@@ -70,6 +70,14 @@ Microsoft 的官方技術面試指引要求先釐清問題、提出計畫，並�
 
 **交換角色。** 換成自己的共同專案。聽者問 “Which decision was yours?” 並在聽完後說出一項團隊成果和一項你能親自解釋的決定。
 
+### 進階情境｜重返職場，怎麼介紹最近做過的事？
+
+**應徵者卡。** 以前測試訂單系統，之後離開職場一年。上個月你在家做了一個結帳畫面，為取消付款寫了測試。用三句話交代以前的工作、這段時間與近期作品，讓面試官有一個具體細節可以追問。
+
+> “I used to test ordering systems. After a year away from paid work, I built a checkout demo at home last month. I wrote a test for canceled payments that I'd be happy to show you.”
+
+**追問。** 面試官問 “Was that for a client?” 試答 “It was a personal project. I wanted to check what happens to an order when the payment is canceled.” 換成自己的時間線再練；若沒有離開職場的經歷，可以用虛構角色卡。請聽者寫下哪項是以前的工作、哪項是近期能展示的成果。
+
 ## 真實專案的六個欄位
 
 先用中文填，再改成簡單英文：

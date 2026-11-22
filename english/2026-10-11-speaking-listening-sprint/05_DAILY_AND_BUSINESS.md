@@ -51,6 +51,17 @@
 
 **盲測。** 請夥伴只念其中一種明細。先問額外費用涵蓋什麼，再依自己點的杯型報總額。
 
+### 進階情境｜主餐售罄，換菜後還在預算內嗎？
+
+你的午餐預算是十二美元，原本點九美元的飯和兩美元的茶。以下價格已含所有費用。店員說 “The rice bowl is sold out. Would you like the noodles instead?” 先問替代餐點多少錢，再決定是否留茶。
+
+| 店員暗選一張卡 | 你可以怎麼接 |
+| --- | --- |
+| “The noodles are eleven dollars. The tea is still two.” | “That would be thirteen with tea, right? I'll skip the tea. Just the noodles for eleven, please.” |
+| “We also have soup for ten dollars.” | “With the tea, would that be twelve altogether? Then I'll have the soup and tea.” |
+
+**盲測。** 夥伴只說 “It's two dollars more.” 先問 “Two dollars more than the original rice bowl?” 確認後才重算整筆。聽者最後要能記下你保留了哪些品項，以及應付金額。
+
 ## 問路與交通
 
 **你的目標：** 找車站，確認步行時間。
