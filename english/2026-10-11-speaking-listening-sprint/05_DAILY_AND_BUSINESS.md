@@ -244,6 +244,14 @@
 
 **接班人抽一題。** A：“They confirmed the new address at three. Can I send the parcel now?” 先提醒 “Update the label first.” B：“It's four and there's still no reply.” 回答 “Keep it packed and tell the shift lead we're waiting for the address.” 請接班人回述訂單編號與下一步；核對他有沒有又寄一次同樣的信。
 
+### 進階情境｜早報已寄出，怎麼更正完成件數？
+
+**回報卡。** 早報寫十件中八件完成。和 Mia 核對後，發現八件裡有兩件只是草稿，仍在等審閱。你已改好共用看板，但同事正拿著早報準備簡報。先用兩句話更正數字與原因，再請對方採取行動。
+
+> “I need to correct this morning's figure. Six of the ten requests are complete. I counted two drafts before they were reviewed. Could you change the slide to six complete and four open?”
+
+**同事抽一題。** A：“Did two more requests come in?” 說明總數仍是十件。B：“I already sent that slide to another group.” 商量兩條通知路徑，例如 “I'll correct the morning report for its readers. Could you send your group the updated slide?” 聽者核對早報收件人與簡報收件人各由誰通知。
+
 ## 會議時間與時區
 
 | 角色 | 英文 | 中文 |
@@ -337,6 +345,14 @@
 > “I'll send the draft agenda to the speakers today. The extra workshop still needs Dana's approval. Sam, could you ask her by Thursday? Until she approves it, we'll keep it off the public program.”
 
 **同事讀回筆記。** “I've written: Sam approved the workshop. We'll announce it on Thursday.” 請直接改寫這兩句，例如 “Sam will ask Dana to decide. We haven't set an announcement date.” 若週四仍沒回覆，請主持人說明如何更新紀錄。聽者應能分清誰去問、誰決定、哪件事今天可先做。
+
+### 進階情境｜一週試行，什麼情況要提早停？
+
+**主持人卡。** 僅早班從週一到週五試用新檢查表。只要漏掉一個必查項目，早班主管立即停止試行並恢復舊表。若未觸發條件，試行週五結束；下週一看紀錄，再決定是否另開一輪。
+
+> “Only the morning shift will try the checklist. If even one required check is missed, the shift lead will stop the trial and switch back to the old list. Otherwise it ends on Friday. We'll review the notes next Monday.”
+
+**修正會議紀錄。** 夥伴念 “Both shifts will keep using it unless we decide to stop on Monday.” 請指出哪個班別參與、什麼狀況當天就要停。接著換問 “If Friday goes well, what happens next?” 聽者應能分開說出週五結束試行、下週一檢討兩個動作。
 
 ## 五分鐘角色扮演規則
 
