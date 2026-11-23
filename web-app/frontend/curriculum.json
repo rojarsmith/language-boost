@@ -4644,6 +4644,374 @@
       ],
       "transfer": "劇場では衣装を西通りの裏口で受け取ります。そこから第三楽屋へ運ぶのは劇場スタッフです。運転手とスタッフにそれぞれ行き先を伝えてください。",
       "feedback": "車の行き先、合流場所、荷物の最終目的地を伝えられましたか。"
+    },
+    {
+      "id": "en-film-lab",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "底片沖洗｜整卷掃描，哪兩張要印出來？",
+      "goal": "Order scans now and selected prints later.",
+      "scene": "We can develop the roll and send you scans of every frame. Once you’ve seen them, send us the two frame numbers you want printed. We’ll keep your negatives here for you to collect with those prints.",
+      "question": "What should the customer send after viewing the scans?",
+      "choices": [
+        "The entire roll again.",
+        "The numbers of the two frames to print.",
+        "The total number of scans."
+      ],
+      "correct": 1,
+      "simple": "I’d like scans of the whole roll. Can I choose two prints after I see them?",
+      "sample": "Please scan [range]. Once I see the scans, I’ll send [identifiers] for the prints.",
+      "chinese": "a roll 是一整卷，a frame 是其中一格。報 frame numbers 才能指定哪兩張要印。",
+      "vocab": [
+        {
+          "term": "frame",
+          "definition": "One image on a roll of film.",
+          "example": "Please print frame eight."
+        },
+        {
+          "term": "negative",
+          "definition": "The developed film from which a print can be made.",
+          "example": "I’ll pick up the negatives with the prints."
+        }
+      ],
+      "grammar": {
+        "rule": "Use once to make the order of actions clear.",
+        "example": "Once I see the scans, I’ll choose the frames."
+      },
+      "culture": {
+        "insight": "A lab may treat scanning and printing as separate requests.",
+        "action": "Confirm the selection step and what you’ll collect."
+      },
+      "followups": [
+        "What gets scanned?",
+        "How will the lab know which photos to print?",
+        "What physical items will you take home?"
+      ],
+      "transfer": "A portrait studio sends previews before making enlargements. You want one large print of image P6 and two small prints of P9. Dictate the order and ask for a read-back.",
+      "feedback": "Did you distinguish the whole roll from the selected frames and confirm the pickup items?"
+    },
+    {
+      "id": "ja-film-lab",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "底片沖洗｜整卷掃描，哪兩張要印出來？",
+      "goal": "フィルム一本のデータ化と、選んだコマのプリントを分けて頼む。",
+      "scene": "フィルムを現像し、全コマの画像データをお送りします。データをご覧になってから、プリントしたい二コマの番号をお知らせください。ネガはお預かりして、プリントと一緒に店頭でお渡しします。",
+      "question": "データを見た後、お店に何を伝えますか。",
+      "choices": [
+        "プリントしたい二コマの番号。",
+        "フィルムの総本数。",
+        "全コマの撮影日時。"
+      ],
+      "correct": 0,
+      "simple": "全コマのデータ化をお願いします。プリントする二枚は、データを見てから選べますか。",
+      "sample": "[範囲]のデータ化をお願いします。[対象]は[確認するもの]を見てから選びます。",
+      "chinese": "「全コマ」是底片上的每一格；「二コマの番号」是要印的兩格各自的編號。",
+      "vocab": [
+        {
+          "term": "現像（げんぞう）",
+          "definition": "撮影したフィルムを処理して像が見えるようにすること。",
+          "example": "フィルム一本の現像をお願いします。"
+        },
+        {
+          "term": "コマ",
+          "definition": "フィルムに写った一枚分の画像。",
+          "example": "八番のコマをプリントしてください。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜てから」で選ぶタイミングを伝えます。",
+        "example": "データを見てから番号をお知らせします。"
+      },
+      "culture": {
+        "insight": "データ化とプリントは別の注文になる場合があります。",
+        "action": "受け取るデータと店頭で受け取る物を確認しましょう。"
+      },
+      "followups": [
+        "データ化するのは何コマですか。",
+        "プリントする写真をどう指定しますか。",
+        "店頭で何を受け取りますか。"
+      ],
+      "transfer": "写真館から見本が届きました。P6を大きいサイズで一枚、P9を小さいサイズで二枚頼みます。番号、サイズ、枚数を伝え、復唱をお願いしてください。",
+      "feedback": "全コマと指定の二コマを言い分け、受け取り内容を確認できましたか。"
+    },
+    {
+      "id": "en-doubles-call",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "羽球雙打｜球落在中間，誰來接？",
+      "goal": "Agree on two short calls and practise responding to each one.",
+      "scene": "Before our doubles game, we agree that “Mine!” means the caller will take the shot. “Yours!” asks the partner to take it. A shuttle comes between us and my partner calls “Mine!” early. I leave the shot to my partner and get ready for the return.",
+      "question": "Who should play this shot?",
+      "choices": [
+        "Both players.",
+        "The player who hears the call.",
+        "The partner who called “Mine!”"
+      ],
+      "correct": 2,
+      "simple": "If I call “Mine,” I’ll take it. If I call “Yours,” can you take it?",
+      "sample": "When [situation] happens, I’ll call [word] if I’m taking the shot. What will you do?",
+      "chinese": "mine 和 yours 的指涉會隨說話者改變。聽到搭檔喊 Mine 時，是搭檔要接球。",
+      "vocab": [
+        {
+          "term": "shuttle",
+          "definition": "The object hit over the net in badminton.",
+          "example": "The shuttle is coming down the middle."
+        },
+        {
+          "term": "take the shot",
+          "definition": "Be the player who hits the incoming shuttle.",
+          "example": "I’ll take the shot."
+        }
+      ],
+      "grammar": {
+        "rule": "Use if to agree on a response to a call.",
+        "example": "If you call “Mine,” I’ll leave it to you."
+      },
+      "culture": {
+        "insight": "Partners may use different calls for the same situation.",
+        "action": "Agree on the words and try them once before play."
+      },
+      "followups": [
+        "What does “Mine!” tell your partner?",
+        "How would you ask your partner to play the next shot?",
+        "What will you do while your partner hits?"
+      ],
+      "transfer": "Two volunteers share a busy welcome desk. Agree on short phrases for taking the next visitor yourself or asking your partner to help. Swap roles for the second visitor.",
+      "feedback": "Did you make clear who acts after each call, even when the caller changes?"
+    },
+    {
+      "id": "ja-doubles-call",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "羽球雙打｜球落在中間，誰來接？",
+      "goal": "ダブルスで中央に来た球をどちらが打つか、短い声かけで伝える。",
+      "scene": "試合前に、中央に来たシャトルは「取る！」と声を出した人が打つと決めました。相手に任せるときは「お願い！」と言います。今、中央にシャトルが来て、ペアの相手が先に「取る！」と言いました。",
+      "question": "この球を打つのは誰ですか。",
+      "choices": [
+        "声を聞いた自分。",
+        "「取る！」と声を出した相手。",
+        "二人とも。"
+      ],
+      "correct": 1,
+      "simple": "自分が打つときは「取る！」、任せるときは「お願い！」でどうですか。",
+      "sample": "[場面]では、自分が[動作]するときに[合図]と言います。",
+      "chinese": "「取る！」是說話者自己接；「お願い！」則把這一球交給搭檔。交換角色再聽一次。",
+      "vocab": [
+        {
+          "term": "中央（ちゅうおう）",
+          "definition": "真ん中のあたり。",
+          "example": "シャトルが中央に来ました。"
+        },
+        {
+          "term": "任せる（まかせる）",
+          "definition": "相手にその場の対応を頼む。",
+          "example": "この球は相手に任せます。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ときは」で場面と合図を結び付けます。",
+        "example": "相手に任せるときは「お願い！」と言います。"
+      },
+      "culture": {
+        "insight": "短い合図は二人が同じ意味で使うと通じやすくなります。",
+        "action": "試合前に声を出して動きを合わせましょう。"
+      },
+      "followups": [
+        "「取る！」と言った人はどうしますか。",
+        "相手に打ってほしいときは何と言いますか。",
+        "相手が打つ間、自分はどうしますか。"
+      ],
+      "transfer": "二人でイベントの受付をします。次の来場者に自分が対応するときと、相手に頼むときの一言を決め、役割を交代して試してください。",
+      "feedback": "声を出した人が変わっても、どちらが動くか伝わりましたか。"
+    },
+    {
+      "id": "en-visitor-pass",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "訪客接待｜來賓先在哪裡等，離開時證件交給誰？",
+      "goal": "Confirm the host handoff and badge return at reception.",
+      "scene": "Here’s your visitor badge. Please wait on the blue seats in the lobby. Lina will meet you there and take you to the meeting room on floor three. When you leave, return the badge to this desk, even if Lina walks you downstairs.",
+      "question": "What should the visitor do immediately after receiving the badge?",
+      "choices": [
+        "Wait on the blue seats for Lina.",
+        "Go straight to floor three.",
+        "Give the badge to Lina before the meeting."
+      ],
+      "correct": 0,
+      "simple": "I’ll wait here for Lina. On my way out, I’ll return the badge to this desk.",
+      "sample": "Should I wait at [place] for [host]? Where do I return [item] afterwards?",
+      "chinese": "meet you there 的 there 指大廳的等候區；on your way out 說的是離開時要做的事。",
+      "vocab": [
+        {
+          "term": "host",
+          "definition": "The person receiving a visitor.",
+          "example": "My host will meet me downstairs."
+        },
+        {
+          "term": "reception desk",
+          "definition": "The counter where visitors check in.",
+          "example": "Please return the badge to the reception desk."
+        }
+      ],
+      "grammar": {
+        "rule": "Use even if for a detail that does not change an instruction.",
+        "example": "Return the badge here even if your host comes down with you."
+      },
+      "culture": {
+        "insight": "Visitor arrangements can differ between offices.",
+        "action": "Check who will meet you and who takes back the badge."
+      },
+      "followups": [
+        "Where will Lina meet you?",
+        "Who takes you to the meeting room?",
+        "What would you say if Lina offered to hold the badge as you left?"
+      ],
+      "transfer": "At a studio, wait by the red sofa for Pat to escort you in. Return the headset to the technician and the pass to reception. Confirm both handbacks before leaving.",
+      "feedback": "Did you distinguish the waiting place, the host and the return point?"
+    },
+    {
+      "id": "ja-visitor-pass",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "訪客接待｜來賓先在哪裡等，離開時證件交給誰？",
+      "goal": "受付で担当者との待ち合わせ場所と入館証の返却先を確認する。",
+      "scene": "こちらが入館証です。ロビーの青い椅子でお待ちください。林がそちらに迎えに参り、三階の会議室までご案内します。お帰りの際は、林が一階までお送りする場合も、この受付に入館証をお返しください。",
+      "question": "入館証を受け取った直後はどうしますか。",
+      "choices": [
+        "自分で三階の会議室へ行く。",
+        "すぐに林さんに入館証を渡す。",
+        "ロビーの青い椅子で林さんを待つ。"
+      ],
+      "correct": 2,
+      "simple": "ロビーで林さんをお待ちします。帰るときはこちらの受付に入館証を返せばいいですね。",
+      "sample": "[場所]で[担当者]をお待ちすればよろしいですか。[物]の返却先はどちらですか。",
+      "chinese": "「迎えに参ります」表示接待人會來接你；「お帰りの際」才是要還證的時間。",
+      "vocab": [
+        {
+          "term": "入館証（にゅうかんしょう）",
+          "definition": "建物に入るために使う証票。",
+          "example": "受付で入館証を受け取りました。"
+        },
+        {
+          "term": "返却先（へんきゃくさき）",
+          "definition": "借りた物を返す相手や場所。",
+          "example": "入館証の返却先を確認します。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜際に」で手続きを行う時点を示します。",
+        "example": "お帰りの際に受付にお寄りください。"
+      },
+      "culture": {
+        "insight": "迎えに来る人と貸出品を受け取る人が別の場合があります。",
+        "action": "待つ場所と返却先をそれぞれ復唱しましょう。"
+      },
+      "followups": [
+        "林さんとはどこで合流しますか。",
+        "会議室へは誰と行きますか。",
+        "帰りに林さんが一階まで来た場合、入館証はどうしますか。"
+      ],
+      "transfer": "スタジオでは赤いソファで担当者を待ちます。帰りはヘッドホンを技術担当者に、入館証を受付に返します。待ち合わせと二つの返却先を確認してください。",
+      "feedback": "待つ場所、案内する人、返却先を言い分けられましたか。"
+    },
+    {
+      "id": "en-runoff-vote",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "團隊票選｜兩個提案並列，第二輪還能投哪幾個？",
+      "goal": "Explain a tie and give clear instructions for a fresh vote.",
+      "scene": "For our team outing, the garden got four votes, the museum got four, and the harbour got two. Our agreed rule is a fresh vote between the options tied for first. Everyone votes again and the first-round totals do not carry over.",
+      "question": "What should voters do now?",
+      "choices": [
+        "Vote only if they picked the harbour last time.",
+        "Cast a new vote for either the garden or the museum.",
+        "Choose from all three places again."
+      ],
+      "correct": 1,
+      "simple": "The garden and the museum are tied at four each. Everyone gets one new vote between those two.",
+      "sample": "[A] and [B] are tied at [count] each. For the next round, [voters] choose between [options].",
+      "chinese": "four each 是兩案各四票；do not carry over 表示第二輪從零開始計票。",
+      "vocab": [
+        {
+          "term": "tie",
+          "definition": "A result in which options receive equal scores or votes.",
+          "example": "We have a tie for first place."
+        },
+        {
+          "term": "runoff",
+          "definition": "A further vote among the remaining candidates or options.",
+          "example": "We’ll hold a runoff between the top two."
+        }
+      ],
+      "grammar": {
+        "rule": "Use either … or for a choice between two options.",
+        "example": "Choose either the garden or the museum."
+      },
+      "culture": {
+        "insight": "Teams may settle ties in different ways.",
+        "action": "Restate the rule agreed for this vote before taking new ballots."
+      },
+      "followups": [
+        "Which options tied for first?",
+        "Can someone who voted for the harbour vote again?",
+        "How many votes does each option start the new round with?"
+      ],
+      "transfer": "Three logo designs receive five, three and five votes. Using the same rule, announce which designs remain, who votes again and how the new count starts.",
+      "feedback": "Did you name both eligible options, all eligible voters and the fresh count?"
+    },
+    {
+      "id": "ja-runoff-vote",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "團隊票選｜兩個提案並列，第二輪還能投哪幾個？",
+      "goal": "同票の結果を伝え、決選投票の対象と集計方法を説明する。",
+      "scene": "社内行事の行き先は、庭園が四票、美術館が四票、港が二票でした。今回は、一位が同票なら、その候補だけで決選投票をするという取り決めです。全員が改めて一票を投じ、一回目の票数は引き継ぎません。",
+      "question": "次はどのように投票しますか。",
+      "choices": [
+        "全員が庭園か美術館のどちらかに改めて投票する。",
+        "港に投票した人だけが選び直す。",
+        "三つの候補すべてからもう一度選ぶ。"
+      ],
+      "correct": 0,
+      "simple": "庭園と美術館が四票ずつで並びました。この二つを対象に、全員でもう一度投票します。",
+      "sample": "[候補A]と[候補B]が[票数]ずつで同票です。次は[投票者]が[対象]から一つ選びます。",
+      "chinese": "「四票ずつ」是各得四票；「改めて一票」是請每人重新投票。",
+      "vocab": [
+        {
+          "term": "同票（どうひょう）",
+          "definition": "得た票の数が同じであること。",
+          "example": "二つの候補が同票でした。"
+        },
+        {
+          "term": "決選投票（けっせんとうひょう）",
+          "definition": "残った候補に絞って行う投票。",
+          "example": "二案で決選投票を行います。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ずつ」で各候補に同じ数を割り当てます。",
+        "example": "両案に四票ずつ入りました。"
+      },
+      "culture": {
+        "insight": "同票時の扱いは会ごとの取り決めによります。",
+        "action": "次に選べる候補と数え方を投票前に伝えましょう。"
+      },
+      "followups": [
+        "一位に並んだのはどこですか。",
+        "港を選んだ人も投票できますか。",
+        "二回目は何票から数えますか。"
+      ],
+      "transfer": "ロゴ案Aは五票、Bは三票、Cは五票です。同じ取り決めで、残る候補、投票できる人、集計の始め方を案内してください。",
+      "feedback": "候補、投票者、前の票の扱いを明確にできましたか。"
     }
   ]
 }

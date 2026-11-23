@@ -928,3 +928,55 @@
 **用語提示**　meet the driver there 的 there 指卸貨處；stand fourteen 是展館內箱子的最終去處。
 
 **換情境再說一次**　A theatre accepts costumes at the rear dock on Pine Road. A runner must take them to dressing room three. Give each person the part of the route they need.
+
+## 底片沖洗｜整卷掃描，哪兩張要印出來？
+
+你帶了一卷彩色負片到相館。你想先看整卷的數位檔，再選兩張印給家人。請和店員確認下單順序，以及最後要帶走哪些東西。
+
+- **顧客**　Could you develop this roll and scan every frame?
+- **店員**　Of course. Would you like prints of all of them too?
+- **顧客**　Just two. Can I send the frame numbers after I see the scans?
+- **店員**　Yes. You can collect those prints and your negatives together.
+
+**用語提示**　a roll 是一整卷，a frame 是其中一格。報 frame numbers 才能指定哪兩張要印。
+
+**換情境再說一次**　A portrait studio sends previews before making enlargements. You want one large print of image P6 and two small prints of P9. Dictate the order and ask for a read-back.
+
+## 羽球雙打｜球落在中間，誰來接？
+
+和搭檔模擬兩球：第一球你喊要接，第二球你請對方接。先說好兩種喊法和另一人要做的動作，再用手勢走位演一次。
+
+- **球員**　What shall we call when the shuttle comes between us?
+- **搭檔**　Say “Mine!” if you’re taking it, and “Yours!” if you want me to take it.
+- **球員**　Let’s try it. Mine!
+- **搭檔**　You take that one. I’ll get ready for the next shot.
+
+**用語提示**　mine 和 yours 的指涉會隨說話者改變。聽到搭檔喊 Mine 時，是搭檔要接球。
+
+**換情境再說一次**　Two volunteers share a busy welcome desk. Agree on short phrases for taking the next visitor yourself or asking your partner to help. Swap roles for the second visitor.
+
+## 訪客接待｜來賓先在哪裡等，離開時證件交給誰？
+
+你是來訪開會的同事，夥伴當櫃檯人員。領證後先問能否自行上樓，再確認會後如何歸還來賓證。交換角色時，把接待人改成另一位同事。
+
+- **訪客**　Thanks for the badge. Shall I go up to the third floor now?
+- **櫃檯**　Please wait on the blue seats. Lina will come down for you.
+- **訪客**　Understood. Should I give her the badge when the meeting ends?
+- **櫃檯**　Please bring it back to this desk on your way out.
+
+**用語提示**　meet you there 的 there 指大廳的等候區；on your way out 說的是離開時要做的事。
+
+**換情境再說一次**　At a studio, wait by the red sofa for Pat to escort you in. Return the headset to the technician and the pass to reception. Confirm both handbacks before leaving.
+
+## 團隊票選｜兩個提案並列，第二輪還能投哪幾個？
+
+你主持團隊活動票選，夥伴當投票人。第一輪兩案同票領先，請宣讀票數、說清楚第二輪的候選項目，並回應「第一輪的票會保留嗎？」
+
+- **投票人**　I voted for the harbour. Do only the two of us who picked it vote again?
+- **主持人**　Everyone votes again. The garden and the museum tied for first.
+- **投票人**　Do they start with four votes each?
+- **主持人**　No, we count from zero. Choose either the garden or the museum this round.
+
+**用語提示**　four each 是兩案各四票；do not carry over 表示第二輪從零開始計票。
+
+**換情境再說一次**　Three logo designs receive five, three and five votes. Using the same rule, announce which designs remain, who votes again and how the new count starts.
