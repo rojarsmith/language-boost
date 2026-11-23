@@ -876,3 +876,55 @@
 **用語提示**　beside the code 是依代碼填寫；first cup 和 first row 在這份表上指不同樣品。
 
 **換情境再說一次**　You test headphones marked K and M, starting with M. The form lists K first. Tell the organiser how you’ll label both scores before seeing the model names.
+
+## 裁縫紙型｜沿哪條線剪，沿哪條線縫？
+
+一人當手作課老師，一人拿紙模比劃。學員先指出剪布線和車縫線，再問紙型是否已含縫份；老師把內外線說反一次，讓學員指出會剪掉什麼。
+
+- **學員**　Do I add a centimetre outside this solid line?
+- **老師**　It’s already included. Cut on the solid line and stitch on the dashed line.
+- **學員**　So if I cut on the dashed line, I’d lose the seam allowance?
+- **老師**　Exactly. Keep that strip of fabric.
+
+**用語提示**　cut along 和 sew along 後面各接一條線；already included 說明紙型上已留出那段寬度。
+
+**換情境再說一次**　A paper envelope template uses a solid line for cutting and a dotted line for folding. Show your partner which edge will become the flap and ask which side folds inward.
+
+## 營地報到｜哪個營位可以把車停在帳篷旁？
+
+你有兩箱裝備，想把車停在帳篷旁，也希望靠近湖邊。先向接待員問出兩個營位的差別，再說明哪個條件對你更重要。
+
+- **露營者**　Can I keep my car beside the tent at the lakeside pitch?
+- **接待員**　At six, cars stay in the main car park. At nine, you can park right by the tent overnight.
+- **露營者**　Then nine works better for us. We’ve got two heavy boxes.
+- **接待員**　All right. I’ll mark pitch nine on your map.
+
+**用語提示**　unload 是卸裝備；park overnight 是把車留到隔天。問清楚兩件事，才能決定營位。
+
+**換情境再說一次**　At a cabin site, cabin A has a view but parking is uphill. Cabin B has parking at the door. Ask about carrying luggage and choose a cabin for a guest with three large bags.
+
+## 問卷試填｜問的是常用管道，還是最常用的一個？
+
+一人設計問卷，一人試填。試填者平常用兩種管道，卻只能勾一個。先確認設計者想知道什麼，再提出能讓下一位填答者正確作答的修改。
+
+- **試填者**　I use email and chat. Is this asking for my main channel?
+- **設計者**　We need every channel you actually use.
+- **試填者**　Could we say “Select all channels you use” and let people tick both?
+- **設計者**　Yes. Try submitting those two after I change it.
+
+**用語提示**　select all that apply 是勾出所有符合的選項；most often 會把題目改為比較頻率。
+
+**換情境再說一次**　A booking form asks which day a visitor prefers most, but accepts several days. Confirm the goal and suggest an instruction and selection rule that match it.
+
+## 展場進貨｜卡車要在哪卸貨，箱子最後送到哪？
+
+夥伴是場館窗口，你要向司機和推車同事分別交代目的地。先問清楚觀眾入口、車輛卸貨處與展位，再用一句話完成交接。
+
+- **參展人員**　Should I send the driver to the glass doors on King Street?
+- **場館窗口**　Those are for visitors. Deliveries go to bay two on Mill Lane.
+- **參展人員**　I’ll meet the driver at bay two with a trolley. Where do the boxes go from there?
+- **場館窗口**　Take them to stand fourteen in the hall.
+
+**用語提示**　meet the driver there 的 there 指卸貨處；stand fourteen 是展館內箱子的最終去處。
+
+**換情境再說一次**　A theatre accepts costumes at the rear dock on Pine Road. A runner must take them to dressing room three. Give each person the part of the route they need.

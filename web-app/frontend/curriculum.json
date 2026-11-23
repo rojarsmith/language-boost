@@ -4276,6 +4276,374 @@
       ],
       "transfer": "KとMのヘッドホンをMから試します。用紙ではKが先です。機種名を聞く前に、二つの点数をどこに記入するか担当者に説明してください。",
       "feedback": "試した順、欄の番号、提出のタイミングを区別して伝えられましたか。"
+    },
+    {
+      "id": "en-sewing-pattern",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "裁縫紙型｜沿哪條線剪，沿哪條線縫？",
+      "goal": "Check which outline to cut and whether the pattern includes a seam allowance.",
+      "scene": "This pouch pattern has two outlines. Cut the fabric along the solid outer line and sew along the dashed inner line. The centimetre between them is already included as the seam allowance. There’s no need to add another centimetre.",
+      "question": "How should you cut the fabric?",
+      "choices": [
+        "Cut on the dashed line.",
+        "Cut on the solid line as printed.",
+        "Draw another line a centimetre beyond the solid line and cut there."
+      ],
+      "correct": 1,
+      "simple": "I’ll cut on the solid line and sew on the dashed one. Is the allowance already included?",
+      "sample": "Does [pattern] include [allowance], or should I add it before cutting?",
+      "chinese": "cut along 和 sew along 後面各接一條線；already included 說明紙型上已留出那段寬度。",
+      "vocab": [
+        {
+          "term": "seam allowance",
+          "definition": "Fabric between a seam and the cut edge.",
+          "example": "This pattern includes a one-centimetre seam allowance."
+        },
+        {
+          "term": "dashed",
+          "definition": "Made of short strokes with gaps.",
+          "example": "Sew along the dashed line."
+        }
+      ],
+      "grammar": {
+        "rule": "Use along to describe following a line.",
+        "example": "Cut along the outer edge."
+      },
+      "culture": {
+        "insight": "Pattern markings can vary between makers.",
+        "action": "Ask what the marks mean on this particular pattern."
+      },
+      "followups": [
+        "What does the solid line mark?",
+        "What would you lose by cutting on the dashed line?",
+        "What would you ask if a pattern showed only one line?"
+      ],
+      "transfer": "A paper envelope template uses a solid line for cutting and a dotted line for folding. Show your partner which edge will become the flap and ask which side folds inward.",
+      "feedback": "Could your partner identify both lines and tell whether extra width was needed?"
+    },
+    {
+      "id": "ja-sewing-pattern",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "裁縫紙型｜沿哪條線剪，沿哪條線縫？",
+      "goal": "型紙の線の意味と縫い代の有無を確かめる。",
+      "scene": "このポーチの型紙には線が二本あります。外側の実線に沿って布を裁ち、内側の破線に沿って縫います。二本の線の間の一センチが縫い代です。この型紙にはすでに縫い代が含まれています。",
+      "question": "布を裁つ位置はどこですか。",
+      "choices": [
+        "外側の実線の上。",
+        "内側の破線の上。",
+        "実線からさらに一センチ外側。"
+      ],
+      "correct": 0,
+      "simple": "外の実線で裁って、内側の破線で縫うんですね。縫い代はもう含まれていますか。",
+      "sample": "この[型紙]には[幅]の縫い代が含まれていますか。それとも自分で足しますか。",
+      "chinese": "「裁つ」是剪裁布料，「縫う」是縫合；「縫い代込み」表示標示的尺寸已含縫份。",
+      "vocab": [
+        {
+          "term": "型紙（かたがみ）",
+          "definition": "布を裁つ形や寸法を示す紙。",
+          "example": "布の上に型紙を置きます。"
+        },
+        {
+          "term": "縫い代（ぬいしろ）",
+          "definition": "縫い目と布の端との間に残す部分。",
+          "example": "一センチの縫い代を残します。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜に沿って」でたどる線を示します。",
+        "example": "実線に沿って裁ってください。"
+      },
+      "culture": {
+        "insight": "型紙によって線の使い分けが違う場合があります。",
+        "action": "裁つ前に、この型紙の表示を確認しましょう。"
+      },
+      "followups": [
+        "実線は何を示していますか。",
+        "破線で裁つと、どの部分がなくなりますか。",
+        "線が一本しかなければ何を尋ねますか。"
+      ],
+      "transfer": "封筒の型紙では実線が切り取り線、点線が折り線です。ふたになる部分を相手に示し、どちら側を内側に折るか尋ねてください。",
+      "feedback": "裁つ線と縫う線を区別し、縫い代を足す必要があるか確認できましたか。"
+    },
+    {
+      "id": "en-campsite",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "營地報到｜哪個營位可以把車停在帳篷旁？",
+      "goal": "Ask about campsite access and choose between two priorities.",
+      "scene": "Pitch six is beside the lake, but cars stay in the main car park. It’s a five-minute walk from there. Pitch nine is farther from the lake, but you can park beside your tent. I have two heavy boxes and want to keep the car next to the tent overnight.",
+      "question": "Which arrangement meets the camper’s main requirement?",
+      "choices": [
+        "Pitch six with the car at the lake.",
+        "Pitch nine with the car in the main car park.",
+        "Pitch nine with the car beside the tent."
+      ],
+      "correct": 2,
+      "simple": "I’d prefer the lake, but parking beside the tent matters more. I’ll take pitch nine.",
+      "sample": "Can we leave the car at [pitch] overnight, or is that spot just for unloading?",
+      "chinese": "unload 是卸裝備；park overnight 是把車留到隔天。問清楚兩件事，才能決定營位。",
+      "vocab": [
+        {
+          "term": "pitch",
+          "definition": "A designated space for a tent at a campsite.",
+          "example": "Is pitch nine available?"
+        },
+        {
+          "term": "unload",
+          "definition": "Take items out of a vehicle.",
+          "example": "Where can we unload the boxes?"
+        }
+      ],
+      "grammar": {
+        "rule": "Use would prefer … but … matters more to rank preferences.",
+        "example": "I’d prefer some shade, but a level pitch matters more."
+      },
+      "culture": {
+        "insight": "Descriptions such as lakeside tell you little about vehicle access.",
+        "action": "Ask where the car stays after unloading."
+      },
+      "followups": [
+        "What is appealing about pitch six?",
+        "Where would the car stay if you chose six?",
+        "How would you explain your final choice?"
+      ],
+      "transfer": "At a cabin site, cabin A has a view but parking is uphill. Cabin B has parking at the door. Ask about carrying luggage and choose a cabin for a guest with three large bags.",
+      "feedback": "Did you compare access, distinguish the overnight parking place and explain your priority?"
+    },
+    {
+      "id": "ja-campsite",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "營地報到｜哪個營位可以把車停在帳篷旁？",
+      "goal": "湖までの距離と駐車場所を比べ、希望に合う区画を選ぶ。",
+      "scene": "六番は湖のそばですが、車は共用駐車場に置いてください。駐車場から区画まで徒歩五分です。九番は湖から少し離れますが、テントの横に一晩駐車できます。重い箱が二つあるので、今回は車をテントの横に置けることを優先します。",
+      "question": "希望に合うのはどの利用方法ですか。",
+      "choices": [
+        "六番でテントの横に駐車する。",
+        "九番でテントの横に駐車する。",
+        "六番で共用駐車場を使う。"
+      ],
+      "correct": 1,
+      "simple": "湖のそばもいいのですが、今回は車を横に置ける九番にします。",
+      "sample": "[区画]には一晩駐車できますか。それとも[荷下ろし]の間だけですか。",
+      "chinese": "「車を横付けできる」表示能把車靠邊停；要過夜，再問「一晩置けますか」。",
+      "vocab": [
+        {
+          "term": "区画（くかく）",
+          "definition": "用途に合わせて区切った場所。",
+          "example": "九番の区画をお願いします。"
+        },
+        {
+          "term": "荷下ろし（におろし）",
+          "definition": "車などから荷物を下ろすこと。",
+          "example": "荷下ろしはどこでできますか。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜を優先します」で選ぶ基準を示します。",
+        "example": "今回は眺めより駐車のしやすさを優先します。"
+      },
+      "culture": {
+        "insight": "同じ施設でも区画によって車の扱いが異なります。",
+        "action": "荷物を下ろした後の駐車場所も聞きましょう。"
+      },
+      "followups": [
+        "六番の良い点は何ですか。",
+        "六番では車をどこに置きますか。",
+        "九番を選ぶ理由をどう伝えますか。"
+      ],
+      "transfer": "貸しコテージAは眺めが良く、駐車場は坂の上です。Bは玄関前に駐車できます。大きな荷物が三つある人のために、運び方を尋ねて一棟選んでください。",
+      "feedback": "二つの区画を比べ、夜の駐車場所と選んだ理由を言えましたか。"
+    },
+    {
+      "id": "en-survey-options",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "問卷試填｜問的是常用管道，還是最常用的一個？",
+      "goal": "Check what a survey question is meant to measure and align its response options.",
+      "scene": "The draft asks which channels staff use for updates. I use both email and chat, but the form lets me select just one. The researcher says the goal is to record every channel each person uses, even if they rarely use it.",
+      "question": "Which change matches that goal?",
+      "choices": [
+        "Allow multiple selections and say to select all channels used.",
+        "Ask only for the channel used most often.",
+        "Keep one choice and tell people to guess."
+      ],
+      "correct": 0,
+      "simple": "Do you want every channel or just the main one? If you want them all, could we let people tick more than one?",
+      "sample": "Are we asking about [all items] or [a single priority]? Could we change [instruction or control] to match?",
+      "chinese": "select all that apply 是勾出所有符合的選項；most often 會把題目改為比較頻率。",
+      "vocab": [
+        {
+          "term": "channel",
+          "definition": "A way of communicating information.",
+          "example": "Chat is one channel I use."
+        },
+        {
+          "term": "response option",
+          "definition": "A choice offered to someone answering a question.",
+          "example": "Can I pick two response options?"
+        }
+      ],
+      "grammar": {
+        "rule": "Use even if to include an unusual case.",
+        "example": "Select a channel even if you rarely use it."
+      },
+      "culture": {
+        "insight": "A tester who has two valid answers can reveal a mismatch in the form.",
+        "action": "Try submitting a response with both choices after the edit."
+      },
+      "followups": [
+        "Which two channels does the tester use?",
+        "Would a rarely used channel count?",
+        "How will you test the revised question?"
+      ],
+      "transfer": "A booking form asks which day a visitor prefers most, but accepts several days. Confirm the goal and suggest an instruction and selection rule that match it.",
+      "feedback": "Did you confirm the goal, propose matching choices and describe a test response?"
+    },
+    {
+      "id": "ja-survey-options",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "問卷試填｜問的是常用管道，還是最常用的一個？",
+      "goal": "設問の目的と選択できる回答数を照らし合わせ、修正を提案する。",
+      "scene": "社内のお知らせをどの手段で受け取るかを尋ねる設問です。私はメールもチャットも使いますが、一つしか選べません。担当者によると、たまにしか使わないものも含め、利用する手段をすべて把握したいそうです。",
+      "question": "目的に合う修正はどれですか。",
+      "choices": [
+        "最もよく使う手段だけを尋ねる。",
+        "どちらか一つを適当に選んでもらう。",
+        "複数選択できるようにし、使う手段をすべて選ぶよう明記する。"
+      ],
+      "correct": 2,
+      "simple": "知りたいのは主な手段ですか、それとも使う手段すべてですか。すべてなら複数選択にしませんか。",
+      "sample": "[調べたい範囲]を把握するのであれば、[回答方法]に変更しませんか。",
+      "chinese": "「一つしか選べない」點出介面限制；「すべて選んでください」才說清楚預期的作答方式。",
+      "vocab": [
+        {
+          "term": "設問（せつもん）",
+          "definition": "調査などで回答を求める問い。",
+          "example": "この設問の目的を確認します。"
+        },
+        {
+          "term": "複数選択（ふくすうせんたく）",
+          "definition": "二つ以上の項目を選べること。",
+          "example": "複数選択に変更しました。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜も含め」で対象の範囲を明示します。",
+        "example": "たまに使う手段も含めて選んでください。"
+      },
+      "culture": {
+        "insight": "選択肢が並んでいても、回答数の条件が伝わるとは限りません。",
+        "action": "修正後は実際に二つ選んで送信してみましょう。"
+      },
+      "followups": [
+        "試した人はどの手段を使いますか。",
+        "たまにしか使わないものも選びますか。",
+        "修正後、どんな回答で確かめますか。"
+      ],
+      "transfer": "来館予約で第一希望の日を尋ねていますが、複数の日を選べます。担当者に目的を確認し、指示文と選べる数を提案してください。",
+      "feedback": "調べたい範囲と回答方法をそろえ、試し方まで説明できましたか。"
+    },
+    {
+      "id": "en-loading-bay",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "展場進貨｜卡車要在哪卸貨，箱子最後送到哪？",
+      "goal": "Give separate destinations to a delivery driver and the colleague receiving the boxes.",
+      "scene": "Visitors enter through the glass doors on King Street. For deliveries, tell the driver to use loading bay two on Mill Lane. Your colleague should meet the driver there with a trolley, then take the boxes to stand fourteen inside the hall.",
+      "question": "Where should the colleague first meet the driver?",
+      "choices": [
+        "At stand fourteen.",
+        "At loading bay two on Mill Lane.",
+        "At the glass visitor doors."
+      ],
+      "correct": 1,
+      "simple": "I’ll send the van to bay two on Mill Lane. I’ll meet it there with the trolley and take the boxes to stand fourteen.",
+      "sample": "The driver unloads at [bay and street]. [Person] meets the driver there and takes [items] to [final destination].",
+      "chinese": "meet the driver there 的 there 指卸貨處；stand fourteen 是展館內箱子的最終去處。",
+      "vocab": [
+        {
+          "term": "loading bay",
+          "definition": "A designated place for loading or unloading goods.",
+          "example": "Meet me at loading bay two."
+        },
+        {
+          "term": "stand",
+          "definition": "An exhibitor’s space at a show.",
+          "example": "Our stand is inside the hall."
+        }
+      ],
+      "grammar": {
+        "rule": "Use then to keep the handoff in order.",
+        "example": "Meet the van at the bay, then wheel the boxes inside."
+      },
+      "culture": {
+        "insight": "A visitor address can point drivers to the wrong side of a venue.",
+        "action": "Give the street and bay together."
+      },
+      "followups": [
+        "Which entrance is for visitors?",
+        "What should the colleague bring?",
+        "What instructions will you send separately to the driver and the colleague?"
+      ],
+      "transfer": "A theatre accepts costumes at the rear dock on Pine Road. A runner must take them to dressing room three. Give each person the part of the route they need.",
+      "feedback": "Could the driver find the bay and could the receiver finish the route?"
+    },
+    {
+      "id": "ja-loading-bay",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "展場進貨｜卡車要在哪卸貨，箱子最後送到哪？",
+      "goal": "搬入車と荷物の行き先を区別し、受け渡しを手配する。",
+      "scene": "正面のガラス扉は来場者用です。搬入車には裏通りの二番搬入口を案内してください。担当者は台車を持ってそこで運転手と合流し、荷物を会場内の十四番ブースまで運びます。",
+      "question": "担当者が最初に運転手と合流するのはどこですか。",
+      "choices": [
+        "会場内の十四番ブース。",
+        "正面のガラス扉。",
+        "裏通りの二番搬入口。"
+      ],
+      "correct": 2,
+      "simple": "車は裏通りの二番搬入口ですね。そこで台車で荷物を受け取り、十四番ブースへ運びます。",
+      "sample": "運転手には[搬入口]を案内します。[担当者]がそこで受け取り、[最終目的地]へ運びます。",
+      "chinese": "「そこで合流」是在卸貨處會合；「ブースまで運ぶ」是接手之後才要走的路段。",
+      "vocab": [
+        {
+          "term": "搬入口（はんにゅうぐち）",
+          "definition": "資材や荷物を建物に運び入れるための入口。",
+          "example": "裏通りの搬入口を使います。"
+        },
+        {
+          "term": "台車（だいしゃ）",
+          "definition": "荷物を載せて押して運ぶ道具。",
+          "example": "台車を持って迎えに行きます。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜まで」で運ぶ区間の終点を示します。",
+        "example": "受け取った箱をブースまで運びます。"
+      },
+      "culture": {
+        "insight": "会場の代表住所だけでは搬入車が正面に着くことがあります。",
+        "action": "通りと搬入口の番号を一緒に伝えましょう。"
+      },
+      "followups": [
+        "ガラス扉は誰の入口ですか。",
+        "合流するとき何を持って行きますか。",
+        "運転手と会場内の担当者にそれぞれどう伝えますか。"
+      ],
+      "transfer": "劇場では衣装を西通りの裏口で受け取ります。そこから第三楽屋へ運ぶのは劇場スタッフです。運転手とスタッフにそれぞれ行き先を伝えてください。",
+      "feedback": "車の行き先、合流場所、荷物の最終目的地を伝えられましたか。"
     }
   ]
 }
