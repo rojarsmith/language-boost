@@ -668,3 +668,55 @@
 **用語提示**　come back to you 在這裡指稍後把發言機會還給對方。
 
 **換情境再說一次**　In a workshop two people volunteer at once. Invite one to demonstrate first and then explicitly invite the other to show a different method.
+
+## 合唱排練｜從副歌開始，我在哪一拍加入？
+
+一人當指揮，一人當第一次來的團員。由指揮輕敲四拍並給出手勢；團員先用一句話確認，再試著在正確的拍點開口。
+
+- **團員**　Are we starting from the first verse?
+- **指揮**　From the chorus. Listen to four piano beats first.
+- **團員**　When you raise your hand on four, do I sing then?
+- **指揮**　One beat later. Let’s count it together.
+
+**用語提示**　come in 在排練中指開始唱或奏。on the next beat 比單說 after 更精確。
+
+**換情境再說一次**　At a dance rehearsal, wait for two claps and take your first step on the third. Confirm the cue with your partner, then try it.
+
+## 幫鄰居澆花｜哪一盆要先摸土？
+
+夥伴扮演週末外出的鄰居。你看到窗邊和門邊各有一盆植物，請問清楚哪盆要檢查、土還濕時怎麼做。
+
+- **幫忙者**　Should I water both pots on Saturday?
+- **鄰居**　Just check the one by the window. Water it only if the soil feels dry.
+- **幫忙者**　And if it’s damp, I leave it. What about the one by the door?
+- **鄰居**　Leave that one alone this weekend. I watered it today.
+
+**用語提示**　check 是先檢查；water only if 表示符合條件才澆。
+
+**換情境再說一次**　A neighbour asks you to bring in the blue cushion only if it rains and to leave the covered bench alone. Repeat the plan for a dry day and a rainy day.
+
+## 採訪編輯｜這句話可以刊在哪裡、怎麼署名？
+
+一人編內部電子報，一人受訪。編輯要問清楚引用管道與署名方式，並在有人提議轉貼官網時說明下一步。
+
+- **編輯**　May we quote your comment in the staff newsletter?
+- **受訪者**　Yes. Please call me a workshop participant and leave out my name.
+- **編輯**　Got it. What if we want to use it on our website later?
+- **受訪者**　Please check with me again first.
+
+**用語提示**　credit me as 指刊登時用什麼身分介紹說話者。換刊登管道時要另外確認。
+
+**換情境再說一次**　A trainer lets you use a photo in an internal slide deck with the team name underneath. Ask what permission you would need for a conference slide.
+
+## 講者介紹｜上台前，怎麼確認姓名讀音？
+
+一人擔任活動司儀，一人當講者。請講者親口示範讀音，由司儀試念並取得確認，再向聽眾介紹。
+
+- **司儀**　How would you like me to introduce you?
+- **講者**　Just Mira Sato. It’s MEE-rah, with the stress on the first syllable.
+- **司儀**　Let me try the opening. Please welcome Mira Sato. Did I get that right?
+- **講者**　Yes, that’s exactly how I say it.
+
+**用語提示**　MEE-rah 的大寫是給司儀看的重音提示。直接聽講者示範，再當面試念一次。
+
+**換情境再說一次**　Your podcast guest is listed as Alexandra but asks to be called Sasha on air. Ask for a pronunciation model and practise your opening line with the guest.

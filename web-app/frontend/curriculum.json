@@ -2804,6 +2804,374 @@
       ],
       "transfer": "研修で二人が同時に実演を申し出ました。一人に先にお願いし、終わったらもう一人に別の方法を見せてもらいましょう。",
       "feedback": "二人に順番を伝え、待っていた人に発言を促せましたか。"
+    },
+    {
+      "id": "en-choir-cue",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "合唱排練｜從副歌開始，我在哪一拍加入？",
+      "goal": "Confirm your starting point and entrance cue at rehearsal.",
+      "scene": "Let’s start at the chorus this time. The piano plays four beats on its own. I’ll raise my hand on beat four. Come in on the next beat, together with the other singers.",
+      "question": "When should you start singing?",
+      "choices": [
+        "On the fourth piano beat.",
+        "On the beat after the raised hand.",
+        "At the start of the piano introduction."
+      ],
+      "correct": 1,
+      "simple": "From the chorus, right? I wait four beats and sing on the next one.",
+      "sample": "We start at [section]. Do I come in on [cue] or just after it?",
+      "chinese": "come in 在排練中指開始唱或奏。on the next beat 比單說 after 更精確。",
+      "vocab": [
+        {
+          "term": "chorus",
+          "definition": "The part of a song that usually repeats.",
+          "example": "Let’s practise the chorus."
+        },
+        {
+          "term": "cue",
+          "definition": "A signal to begin.",
+          "example": "Watch for my cue."
+        }
+      ],
+      "grammar": {
+        "rule": "Use on for a particular beat.",
+        "example": "Start on the first beat after the introduction."
+      },
+      "culture": {
+        "insight": "A gesture can prepare singers for a later entrance.",
+        "action": "Check which beat the gesture marks."
+      },
+      "followups": [
+        "Which part are we starting from?",
+        "Who plays the first four beats?",
+        "How would you check whether to sing on the gesture itself?"
+      ],
+      "transfer": "At a dance rehearsal, wait for two claps and take your first step on the third. Confirm the cue with your partner, then try it.",
+      "feedback": "Did you name the section and enter on the agreed beat?"
+    },
+    {
+      "id": "ja-choir-cue",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "合唱排練｜從副歌開始，我在哪一拍加入？",
+      "goal": "歌い始める箇所と合図のタイミングを確かめる。",
+      "scene": "今日はサビから合わせます。最初の四拍はピアノだけです。四拍目で私が手を上げます。その次の拍で、皆さん一緒に歌い始めてください。",
+      "question": "歌い始めるのはいつですか。",
+      "choices": [
+        "ピアノが鳴り始めたとき。",
+        "指揮者が手を上げた拍。",
+        "指揮者が手を上げた次の拍。"
+      ],
+      "correct": 2,
+      "simple": "サビからですね。四拍聴いて、その次の拍で入るんですね。",
+      "sample": "[箇所]からですね。[合図]と同時に入りますか、それとも次の拍ですか。",
+      "chinese": "排練中的「入る」指加入演唱。「四拍目」是第四拍，「その次の拍」才是此處的進拍點。",
+      "vocab": [
+        {
+          "term": "サビ",
+          "definition": "曲の中で特に印象に残る、盛り上がる部分。",
+          "example": "サビから練習しましょう。"
+        },
+        {
+          "term": "合図（あいず）",
+          "definition": "動き始めるタイミングなどを知らせるしるし。",
+          "example": "指揮者の合図を見てください。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜と同時に」で二つの動作が重なることを表します。",
+        "example": "手拍子と同時に歌い始めます。"
+      },
+      "culture": {
+        "insight": "指揮者の動きは次の拍を予告することもあります。",
+        "action": "どの拍で声を出すか確認しましょう。"
+      },
+      "followups": [
+        "どこから合わせますか。",
+        "最初の四拍は誰が演奏しますか。",
+        "手が上がった瞬間に入るかどうか、どう聞きますか。"
+      ],
+      "transfer": "ダンスの練習で、手拍子を二回聞き、三回目に一歩踏み出します。相手にタイミングを確認して、実際に動いてみましょう。",
+      "feedback": "歌う箇所と、声を出す拍を言えましたか。"
+    },
+    {
+      "id": "en-plant-sitting",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "幫鄰居澆花｜哪一盆要先摸土？",
+      "goal": "Agree on care instructions for two different pots.",
+      "scene": "While I’m away, please check the pot by the window on Saturday. Water it only if the soil feels dry. The pot by the door was watered this morning. Please leave that one alone this weekend.",
+      "question": "On Saturday the soil by the window still feels damp. What should you do?",
+      "choices": [
+        "Leave both pots alone.",
+        "Water only the pot by the door.",
+        "Water the pot by the window as scheduled."
+      ],
+      "correct": 0,
+      "simple": "I’ll check the window pot. If the soil is still damp, I won’t water either pot.",
+      "sample": "For the pot by [place], I’ll [action] only if [condition]. What about the other one?",
+      "chinese": "check 是先檢查；water only if 表示符合條件才澆。",
+      "vocab": [
+        {
+          "term": "soil",
+          "definition": "The material in which a plant grows.",
+          "example": "The soil still feels damp."
+        },
+        {
+          "term": "damp",
+          "definition": "Slightly wet.",
+          "example": "The top of the soil is damp."
+        }
+      ],
+      "grammar": {
+        "rule": "Only if makes an action depend on a condition.",
+        "example": "Add water only if the soil is dry."
+      },
+      "culture": {
+        "insight": "Pointing works in person but place names help later.",
+        "action": "Repeat the location of each pot."
+      },
+      "followups": [
+        "Which pot needs checking?",
+        "What will you do if the soil is dry?",
+        "How will you explain why you skipped the other pot?"
+      ],
+      "transfer": "A neighbour asks you to bring in the blue cushion only if it rains and to leave the covered bench alone. Repeat the plan for a dry day and a rainy day.",
+      "feedback": "Could the neighbour tell which item you would check and what would trigger action?"
+    },
+    {
+      "id": "ja-plant-sitting",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "幫鄰居澆花｜哪一盆要先摸土？",
+      "goal": "二つの鉢を区別し、水やりの条件を聞き取る。",
+      "scene": "留守の間、土曜日に窓際の鉢を見てもらえますか。土を触って、乾いているときだけ水をやってください。玄関の鉢は今朝水をやったので、今週末はそのままでお願いします。",
+      "question": "土曜日、窓際の鉢の土はまだ湿っています。どうしますか。",
+      "choices": [
+        "玄関の鉢だけに水をやる。",
+        "どちらにも水をやらない。",
+        "窓際の鉢だけに水をやる。"
+      ],
+      "correct": 1,
+      "simple": "窓際の鉢は土が乾いているときだけですね。玄関の鉢はそのままにします。",
+      "sample": "[場所]の鉢は[条件]のときだけ[作業]をするんですね。もう一つはどうしますか。",
+      "chinese": "「見てもらえますか」在這裡是請你查看狀況；「乾いているときだけ」才說明何時要動手。",
+      "vocab": [
+        {
+          "term": "鉢（はち）",
+          "definition": "植物を育てるための容器。",
+          "example": "窓際に鉢が一つあります。"
+        },
+        {
+          "term": "湿る（しめる）",
+          "definition": "水分を含んで少しぬれる。",
+          "example": "土はまだ湿っています。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ときだけ」で行動する条件を絞ります。",
+        "example": "乾いているときだけ水をやります。"
+      },
+      "culture": {
+        "insight": "その場で指さした物も、後では迷うことがあります。",
+        "action": "場所と条件を組み合わせて復唱しましょう。"
+      },
+      "followups": [
+        "土を触るのはどの鉢ですか。",
+        "乾いていたらどうしますか。",
+        "玄関の鉢に水をやらないのはなぜですか。"
+      ],
+      "transfer": "隣の人から、雨のときだけ青いクッションを取り込み、カバーのかかったベンチはそのままにしてほしいと頼まれました。晴れの日と雨の日の対応を伝えましょう。",
+      "feedback": "どの鉢を見て、どんなときに水をやるか伝えられましたか。"
+    },
+    {
+      "id": "en-quote-permission",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "採訪編輯｜這句話可以刊在哪裡、怎麼署名？",
+      "goal": "Ask permission to quote someone and confirm how to credit them.",
+      "scene": "You can use my comment in the staff newsletter. Please credit me as “a workshop participant” and leave out my name. If you want to put it on the public website, please ask me again first.",
+      "question": "What has the speaker agreed to?",
+      "choices": [
+        "A named quote in the staff newsletter.",
+        "An unnamed quote on the public website.",
+        "A newsletter quote credited to a workshop participant."
+      ],
+      "correct": 2,
+      "simple": "May I quote that in the staff newsletter? How would you like to be credited?",
+      "sample": "May we use [comment] in [channel] and credit you as [description]?",
+      "chinese": "credit me as 指刊登時用什麼身分介紹說話者。換刊登管道時要另外確認。",
+      "vocab": [
+        {
+          "term": "quote",
+          "definition": "Repeat someone’s exact words.",
+          "example": "May I quote your last sentence?"
+        },
+        {
+          "term": "credit",
+          "definition": "Identify the source of words or work.",
+          "example": "Please credit me as a participant."
+        }
+      ],
+      "grammar": {
+        "rule": "Use as to specify the description attached to a quote.",
+        "example": "We’ll identify you as a workshop participant."
+      },
+      "culture": {
+        "insight": "Consent for one audience may have a limited scope.",
+        "action": "Read back the channel and the credit line."
+      },
+      "followups": [
+        "Where can you use the comment now?",
+        "What should the credit line say?",
+        "What would you do before posting it online?"
+      ],
+      "transfer": "A trainer lets you use a photo in an internal slide deck with the team name underneath. Ask what permission you would need for a conference slide.",
+      "feedback": "Did you confirm the channel, the credit and when to ask again?"
+    },
+    {
+      "id": "ja-quote-permission",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "採訪編輯｜這句話可以刊在哪裡、怎麼署名？",
+      "goal": "発言を掲載する媒体と、名前の表記を確認する。",
+      "scene": "そのコメントは社内報に載せていただいて構いません。名前は出さず、「研修参加者」としてください。会社のウェブサイトにも載せたい場合は、事前にもう一度聞いてください。",
+      "question": "今の時点で了承されている使い方はどれですか。",
+      "choices": [
+        "社内報に「研修参加者」として載せる。",
+        "会社のサイトに匿名で載せる。",
+        "社内報に実名で載せる。"
+      ],
+      "correct": 0,
+      "simple": "社内報に「研修参加者」として載せます。ウェブサイトへの掲載は改めて伺います。",
+      "sample": "[媒体]に[表記]として掲載してもよろしいですか。",
+      "chinese": "「〜として」說明用什麼身分署名。「改めて伺います」表示屆時會再詢問。",
+      "vocab": [
+        {
+          "term": "社内報（しゃないほう）",
+          "definition": "社内の人に向けて発行する読み物。",
+          "example": "社内報で研修を紹介します。"
+        },
+        {
+          "term": "掲載（けいさい）",
+          "definition": "文章や写真を紙面やサイトに載せること。",
+          "example": "掲載の前に表記を確認します。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ずに」で、ある動作をしないまま進めることを表します。",
+        "example": "名前を出さずに掲載します。"
+      },
+      "culture": {
+        "insight": "読者が変われば希望する表記も変わることがあります。",
+        "action": "媒体と表記を別々に確認しましょう。"
+      },
+      "followups": [
+        "どこに掲載できますか。",
+        "名前の代わりに何と書きますか。",
+        "サイトにも載せたいと言われたらどうしますか。"
+      ],
+      "transfer": "講師が社内スライドに写真を載せることを了承しました。写真の下にはチーム名を添えます。社外の講演でも使いたい場合、どう尋ねますか。",
+      "feedback": "掲載先と表記を復唱し、別の媒体では再確認すると伝えられましたか。"
+    },
+    {
+      "id": "en-speaker-name",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "講者介紹｜上台前，怎麼確認姓名讀音？",
+      "goal": "Check a speaker’s preferred name and rehearse the introduction aloud.",
+      "scene": "The programme lists Dr Mira Sato. Before we go on stage, she tells me, “Please introduce me as Mira Sato. I say Mira as MEE-rah, with the stress on the first syllable. There’s no need to use my title.”",
+      "question": "How does the speaker want to be introduced?",
+      "choices": [
+        "As Dr Sato, without her first name.",
+        "As Mira Sato, stressing the first syllable of Mira.",
+        "As Mira Sato, stressing the second syllable of Mira."
+      ],
+      "correct": 1,
+      "simple": "Could you say your name the way you’d like me to introduce you? May I try it back?",
+      "sample": "Would you like me to use [name or title]? Is the stress on [syllable]?",
+      "chinese": "MEE-rah 的大寫是給司儀看的重音提示。直接聽講者示範，再當面試念一次。",
+      "vocab": [
+        {
+          "term": "syllable",
+          "definition": "A unit of sound in a word.",
+          "example": "Mira has two syllables."
+        },
+        {
+          "term": "title",
+          "definition": "A word such as Doctor used with a name.",
+          "example": "Would you like me to use your title?"
+        }
+      ],
+      "grammar": {
+        "rule": "Use would you like me to when asking about a preference.",
+        "example": "Would you like me to include your title?"
+      },
+      "culture": {
+        "insight": "The printed programme may use a more formal name than the speaker prefers aloud.",
+        "action": "Ask privately and say the full introduction back."
+      },
+      "followups": [
+        "Which syllable carries the stress?",
+        "Should you include the title?",
+        "How would you check your pronunciation without making the speaker correct you on stage?"
+      ],
+      "transfer": "Your podcast guest is listed as Alexandra but asks to be called Sasha on air. Ask for a pronunciation model and practise your opening line with the guest.",
+      "feedback": "Did you ask, listen and try the preferred form aloud?"
+    },
+    {
+      "id": "ja-speaker-name",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "講者介紹｜上台前，怎麼確認姓名讀音？",
+      "goal": "登壇者の希望する呼び方と名前の読みを本番前に確かめる。",
+      "scene": "プログラムの登壇者欄には「上原 葵」とあります。ご本人に伺うと、「『うえばら あおい』と読みます。紹介は肩書きなしで、名前だけでお願いします」とのことでした。",
+      "question": "本人の希望に合う紹介はどれですか。",
+      "choices": [
+        "肩書きを付けて「うえはら あおい」と紹介する。",
+        "苗字だけで「うえばらさん」と紹介する。",
+        "肩書きを付けずに「うえばら あおい」と紹介する。"
+      ],
+      "correct": 2,
+      "simple": "ご紹介の前に、お名前の読み方を確認させていただけますか。",
+      "sample": "[読み]とお呼びしてよろしいでしょうか。[肩書き]はお付けしますか。",
+      "chinese": "漢字的讀音以講者示範為準。複誦時念出全名，讓對方有機會修正。",
+      "vocab": [
+        {
+          "term": "読み方（よみかた）",
+          "definition": "文字を声に出すときの言い方。",
+          "example": "お名前の読み方を教えていただけますか。"
+        },
+        {
+          "term": "肩書き（かたがき）",
+          "definition": "役職や立場を示す呼び名。",
+          "example": "ご紹介の際、肩書きは必要ですか。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜とお呼びしてよろしいでしょうか」で呼び方を丁寧に確認します。",
+        "example": "上原さんとお呼びしてよろしいでしょうか。"
+      },
+      "culture": {
+        "insight": "同じ漢字でも人によって読みが異なることがあります。",
+        "action": "本番前にご本人の発音を聞き、声に出して確認しましょう。"
+      },
+      "followups": [
+        "苗字はどう読みますか。",
+        "肩書きは付けますか。",
+        "本番前に紹介の一言をどう練習しますか。"
+      ],
+      "transfer": "配信番組のゲストから「本名ではなくミナと呼んでください」と頼まれました。希望の呼び方を確認し、冒頭の紹介を本人の前で言ってみましょう。",
+      "feedback": "希望の読みと呼び方で紹介し、本人に確認できましたか。"
     }
   ]
 }
