@@ -772,3 +772,55 @@
 **用語提示**　replace B with D 的順序是舊字在前、新字在後。proof 在這裡指印前校樣。
 
 **換情境再說一次**　A badge proof spells the team name “Field Lab” instead of “Field Labs.” The person’s name is correct. Dictate the edit and request a revised proof before any badges are made.
+
+## 陶藝選色｜想要這個藍，該選哪一罐？
+
+夥伴當陶藝老師。你喜歡樣片上的海藍色，眼前卻有兩罐看起來都不像海藍的釉料。請老師示範怎麼核對，再說出自己的選擇。
+
+- **學員**　I’d like my cup to turn out this shade of blue. Which glaze is it?
+- **老師**　Look on the back of the tile. What number do you see?
+- **學員**　Twelve. Is that the grey-looking jar marked twelve?
+- **老師**　Exactly. The tile shows how it looks after firing.
+
+**用語提示**　fired sample 是燒製完成的樣片。確認的是樣片背面的編號，而非罐中的顏色。
+
+**換情境再說一次**　You want the matte finish on paint card M4. The tin beside it says G4. Ask for the matching tin and confirm the finish before taking it.
+
+## 現場叫號｜螢幕上的 18 號是我嗎？
+
+你拿到 B18，夥伴依序報出 A18 和 B18。第一次先確認是否輪到你，第二次再說出該去哪個櫃檯。
+
+- **顧客**　I heard eighteen. My ticket is B eighteen. Is that me?
+- **服務人員**　That was A eighteen. Please wait for the letter as well as the number to match.
+- **顧客**　Now it says B eighteen, counter five. Do I go to five?
+- **服務人員**　Yes, please take your ticket with you.
+
+**用語提示**　聽到 eighteen 先辨認前面的字母，再聽 counter 後面的櫃檯號碼。
+
+**換情境再說一次**　At a repair desk your ticket is R7. You hear P7 at desk two, then R7 at desk four. Explain which call is yours and where you will go.
+
+## 字幕校時｜字早了兩秒，該移哪一段？
+
+你和剪輯師一起看片。口白在第十秒開始，但字幕第八秒就出現。請用秒數說明偏差、調整方向，以及下一句要不要跟著移。
+
+- **審片者**　The welcome caption comes in at eight seconds. The voice starts at ten.
+- **剪輯師**　Should I stretch the caption or move it?
+- **審片者**　Move the whole caption two seconds later. The next line is already in sync.
+- **剪輯師**　Got it. Let’s replay those two lines after the change.
+
+**用語提示**　early 描述目前的偏差，later 才是修正方向。keep its duration 指開始與結束一起平移。
+
+**換情境再說一次**　A title appears at fifteen seconds, but the matching image appears at fourteen. Ask to move just the title, say in which direction, and confirm its duration.
+
+## 庫存盤點｜兩盒加三支，表上該填多少？
+
+夥伴報出盒數與散裝數，你先問每盒有幾支，再換算成盤點表指定的單位。交換角色時，請對方換一個每盒數量。
+
+- **盤點員**　Are we entering boxes or individual pens?
+- **同事**　Individual pens. There are two sealed boxes of ten and three loose pens.
+- **盤點員**　That’s twenty in the boxes plus three loose, so twenty-three pens altogether.
+- **同事**　Right. Enter twenty-three in the quantity field.
+
+**用語提示**　two boxes of ten 是兩盒、每盒十支。報總數時再念一次 pens，對方就能核對單位。
+
+**換情境再說一次**　The sheet asks for individual folders. You find three packs of six and four loose folders. Report the calculation aloud and tell your partner what to enter.

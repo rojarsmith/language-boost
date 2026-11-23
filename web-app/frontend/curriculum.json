@@ -3540,6 +3540,374 @@
       ],
       "transfer": "名札のチーム名が「企画室」になっています。正しくは「企画部」で、氏名は合っています。修正箇所を伝え、制作前に見本をもう一度送ってもらいましょう。",
       "feedback": "修正前後の表記と、印刷開始の条件を伝えられましたか。"
+    },
+    {
+      "id": "en-pottery-glaze",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "陶藝選色｜想要這個藍，該選哪一罐？",
+      "goal": "Choose a glaze by matching the fired sample to the jar label.",
+      "scene": "You want your cup to match the sea-blue sample. Turn the sample over. The number on the back is twelve. Jar twelve looks grey in the jar, but this sample shows its colour after firing. Jar twenty looks blue now, but its fired sample is green.",
+      "question": "Which jar matches the finish you want?",
+      "choices": [
+        "Jar twenty because it looks blue.",
+        "Jar twelve because its fired sample is sea blue.",
+        "Either jar because the colours match after firing."
+      ],
+      "correct": 1,
+      "simple": "I like this sea blue. The tile says twelve. Is jar twelve the one to use?",
+      "sample": "I’d like the finish on [sample]. Does [code] on the back match [container]?",
+      "chinese": "fired sample 是燒製完成的樣片。確認的是樣片背面的編號，而非罐中的顏色。",
+      "vocab": [
+        {
+          "term": "glaze",
+          "definition": "A coating applied to pottery before firing.",
+          "example": "Which glaze did you use on this cup?"
+        },
+        {
+          "term": "sample tile",
+          "definition": "A small tile showing an example finish.",
+          "example": "The number is on the back of the sample tile."
+        }
+      ],
+      "grammar": {
+        "rule": "Use the one that to identify a choice by a feature.",
+        "example": "Is this the one that turns blue after firing?"
+      },
+      "culture": {
+        "insight": "A maker may label similar materials by code.",
+        "action": "Read the code back before using the material."
+      },
+      "followups": [
+        "What colour do you want after firing?",
+        "Where will you find the code?",
+        "What would you ask if the jar label were hard to read?"
+      ],
+      "transfer": "You want the matte finish on paint card M4. The tin beside it says G4. Ask for the matching tin and confirm the finish before taking it.",
+      "feedback": "Did you describe the desired finish and match the sample code to the jar?"
+    },
+    {
+      "id": "ja-pottery-glaze",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "陶藝選色｜想要這個藍，該選哪一罐？",
+      "goal": "焼き上がりの見本と容器の番号を照らし合わせて釉薬を選ぶ。",
+      "scene": "カップを海のような青にしたいんですね。この色見本を裏返すと、十二番と書いてあります。十二番の釉薬は容器の中では灰色ですが、焼くと見本の青になります。二十番は今は青く見えますが、焼き上がりの見本は緑です。",
+      "question": "希望の仕上がりにするには、どれを選びますか。",
+      "choices": [
+        "焼き上がりの見本が青い十二番。",
+        "容器の中で青く見える二十番。",
+        "焼けば同じ色になるので、どちらでもよい。"
+      ],
+      "correct": 0,
+      "simple": "この見本の青が好きです。裏に十二番とあります。この容器で合っていますか。",
+      "sample": "[見本]と同じ仕上がりにしたいです。[番号]の[容器]で合っていますか。",
+      "chinese": "「焼き上がり」指燒好後的成品狀態；問「〜で合っていますか」可以確認拿對了沒有。",
+      "vocab": [
+        {
+          "term": "釉薬（ゆうやく）",
+          "definition": "焼き物の表面をおおうために塗る材料。",
+          "example": "この釉薬をカップに使います。"
+        },
+        {
+          "term": "色見本（いろみほん）",
+          "definition": "色を選ぶときに参考にするもの。",
+          "example": "色見本の裏を見てください。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜と同じ」で目指す仕上がりを伝えます。",
+        "example": "この見本と同じ青にしたいです。"
+      },
+      "culture": {
+        "insight": "似た材料が並ぶ場所では、見本の番号が手掛かりになります。",
+        "action": "使い始める前に容器の番号を読み上げましょう。"
+      },
+      "followups": [
+        "希望の焼き上がりは何色ですか。",
+        "番号は見本のどこにありますか。",
+        "容器の番号が読めなければどう聞きますか。"
+      ],
+      "transfer": "つや消しの塗料を探しています。色見本はM4、隣の缶にはG4とあります。見本に合う缶を尋ね、仕上がりを確認してください。",
+      "feedback": "希望の色を伝え、見本と容器の番号を確認できましたか。"
+    },
+    {
+      "id": "en-queue-ticket",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "現場叫號｜螢幕上的 18 號是我嗎？",
+      "goal": "Distinguish your ticket number from the counter number.",
+      "scene": "Your ticket is B eighteen. The screen now reads A eighteen, counter three. Stay seated for now. When B eighteen appears, look for the counter shown beside it. A moment later, the screen reads B eighteen, counter five.",
+      "question": "What should you do after the second announcement?",
+      "choices": [
+        "Go to counter eighteen.",
+        "Go to counter three.",
+        "Take ticket B eighteen to counter five."
+      ],
+      "correct": 2,
+      "simple": "I have B eighteen. Was that A eighteen or B eighteen?",
+      "sample": "My ticket says [letter and number]. Did you call that ticket for counter [number]?",
+      "chinese": "聽到 eighteen 先辨認前面的字母，再聽 counter 後面的櫃檯號碼。",
+      "vocab": [
+        {
+          "term": "counter",
+          "definition": "A place where staff serve customers.",
+          "example": "Please come to counter five."
+        },
+        {
+          "term": "prefix",
+          "definition": "A letter or group of characters at the start of a code.",
+          "example": "My ticket has the prefix B."
+        }
+      ],
+      "grammar": {
+        "rule": "Use when to connect the call and your action.",
+        "example": "I’ll go up when my full number appears."
+      },
+      "culture": {
+        "insight": "Different queues can use the same digits.",
+        "action": "Read the letter and number together when asking."
+      },
+      "followups": [
+        "Why do you wait at the first call?",
+        "What changes at the second call?",
+        "How would you ask for the counter number again?"
+      ],
+      "transfer": "At a repair desk your ticket is R7. You hear P7 at desk two, then R7 at desk four. Explain which call is yours and where you will go.",
+      "feedback": "Did you repeat the full ticket code and the correct counter?"
+    },
+    {
+      "id": "ja-queue-ticket",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "現場叫號｜螢幕上的 18 號是我嗎？",
+      "goal": "受付番号と窓口番号を聞き分け、自分が呼ばれたか確認する。",
+      "scene": "整理券の番号はBの十八番です。今の表示は「Aの十八番、三番窓口」です。まだ席でお待ちください。しばらくすると、「Bの十八番の方、五番窓口へどうぞ」と呼ばれました。",
+      "question": "二回目に呼ばれたとき、どこへ行きますか。",
+      "choices": [
+        "十八番窓口。",
+        "五番窓口。",
+        "三番窓口。"
+      ],
+      "correct": 1,
+      "simple": "Bの十八番を持っています。今呼ばれたのはAの十八番ですか。",
+      "sample": "私の受付番号は[記号と番号]です。[窓口番号]番窓口でよろしいですか。",
+      "chinese": "「〜番の方」指持號碼牌的人，「〜番窓口へ」才是要前往的位置。",
+      "vocab": [
+        {
+          "term": "整理券（せいりけん）",
+          "definition": "順番などを示すために渡す券。",
+          "example": "整理券を取ってお待ちください。"
+        },
+        {
+          "term": "窓口（まどぐち）",
+          "definition": "係の人が利用者に対応する場所。",
+          "example": "五番窓口へどうぞ。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜番の方」で該当する番号の人に呼びかけます。",
+        "example": "Bの十八番の方はいらっしゃいますか。"
+      },
+      "culture": {
+        "insight": "複数の列で同じ数字を使う場合があります。",
+        "action": "聞き返すときは先頭の記号も言いましょう。"
+      },
+      "followups": [
+        "最初の案内で席を立たないのはなぜですか。",
+        "二回目に呼ばれた番号は何ですか。",
+        "窓口を聞き逃したらどう尋ねますか。"
+      ],
+      "transfer": "修理受付でRの七番を持っています。Pの七番は二番窓口、続いてRの七番は四番窓口と呼ばれました。どの案内でどこへ行くか説明してください。",
+      "feedback": "整理券の記号と数字、向かう窓口の番号を言えましたか。"
+    },
+    {
+      "id": "en-caption-timing",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "字幕校時｜字早了兩秒，該移哪一段？",
+      "goal": "Describe a timing mismatch and give a bounded edit.",
+      "scene": "The welcome caption appears at eight seconds. The speaker starts saying those words at ten seconds. Move that whole caption two seconds later and keep its duration. The next caption already matches the speech.",
+      "question": "Which edit should the editor make?",
+      "choices": [
+        "Move the welcome caption two seconds later.",
+        "Move all captions two seconds later.",
+        "Move the welcome caption two seconds earlier."
+      ],
+      "correct": 0,
+      "simple": "The welcome line is two seconds early. Please move just that caption two seconds later.",
+      "sample": "[Caption] appears at [time], but the words start at [time]. Shift it [amount and direction].",
+      "chinese": "early 描述目前的偏差，later 才是修正方向。keep its duration 指開始與結束一起平移。",
+      "vocab": [
+        {
+          "term": "caption",
+          "definition": "Text on screen representing speech or sounds.",
+          "example": "The welcome caption comes in early."
+        },
+        {
+          "term": "duration",
+          "definition": "The length of time something lasts.",
+          "example": "Keep the caption’s duration the same."
+        }
+      ],
+      "grammar": {
+        "rule": "Use by to specify the size of a change.",
+        "example": "Delay the first caption by two seconds."
+      },
+      "culture": {
+        "insight": "A timing note is easier to act on when the editor can find the exact line.",
+        "action": "Give the spoken cue and replay the transition after the edit."
+      },
+      "followups": [
+        "When does the speech begin?",
+        "Should the line stay on screen longer?",
+        "What will you replay to check the change?"
+      ],
+      "transfer": "A title appears at fifteen seconds, but the matching image appears at fourteen. Ask to move just the title, say in which direction, and confirm its duration.",
+      "feedback": "Did you identify the line, direction, amount and what to check on playback?"
+    },
+    {
+      "id": "ja-caption-timing",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "字幕校時｜字早了兩秒，該移哪一段？",
+      "goal": "字幕と音声のずれを秒数で伝え、動かす範囲を指定する。",
+      "scene": "冒頭のあいさつの字幕は八秒のところで出ますが、声が入るのは十秒のところです。この字幕だけ、表示時間の長さを変えずに二秒遅らせてください。次の字幕は音声と合っています。",
+      "question": "必要な修正はどれですか。",
+      "choices": [
+        "すべての字幕を二秒遅らせる。",
+        "冒頭の字幕を二秒早める。",
+        "冒頭の字幕だけ二秒遅らせる。"
+      ],
+      "correct": 2,
+      "simple": "冒頭の字幕が二秒早く出ています。その字幕だけ二秒後ろにずらしてください。",
+      "sample": "[字幕]は[時点]で出ますが、声は[時点]からです。[秒数]だけ[方向]にずらしてください。",
+      "chinese": "「二秒早い」是問題，「二秒遅らせる」是修法；「表示時間の長さ」是字幕停留多久。",
+      "vocab": [
+        {
+          "term": "字幕（じまく）",
+          "definition": "発言などを画面に文字で示したもの。",
+          "example": "字幕と音声を合わせます。"
+        },
+        {
+          "term": "ずらす",
+          "definition": "位置や時間を少し動かす。",
+          "example": "表示の開始と終了を同じだけずらします。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ずに」で変更しない条件を添えます。",
+        "example": "長さを変えずに移動します。"
+      },
+      "culture": {
+        "insight": "再生位置を伝えると、相手も同じ場面を確認できます。",
+        "action": "修正後は次の字幕まで続けて再生しましょう。"
+      },
+      "followups": [
+        "声が入るのは何秒のところですか。",
+        "表示の長さは変えますか。",
+        "修正後、どこまで再生して確かめますか。"
+      ],
+      "transfer": "タイトルが十五秒のところで出ますが、対応する映像は十四秒からです。タイトルだけをどちらに何秒動かすか、表示の長さも含めて伝えてください。",
+      "feedback": "対象、方向、秒数と、再生して確かめる箇所を伝えられましたか。"
+    },
+    {
+      "id": "en-stock-units",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "庫存盤點｜兩盒加三支，表上該填多少？",
+      "goal": "Confirm the counting unit before entering a stock total.",
+      "scene": "The stock sheet asks for individual pens. On the shelf there are two sealed boxes with ten pens in each box. There are also three loose pens beside them. Count both the boxed and the loose pens.",
+      "question": "What belongs in the quantity field?",
+      "choices": [
+        "Five, counting each box as one.",
+        "Twenty-three, counting individual pens.",
+        "Twenty, counting the sealed boxes only."
+      ],
+      "correct": 1,
+      "simple": "Two boxes of ten plus three loose pens makes twenty-three pens. I’ll enter twenty-three.",
+      "sample": "There are [boxes] boxes of [units per box] plus [loose units]. Is the sheet asking for [unit]?",
+      "chinese": "two boxes of ten 是兩盒、每盒十支。報總數時再念一次 pens，對方就能核對單位。",
+      "vocab": [
+        {
+          "term": "loose",
+          "definition": "Separate from a pack or box.",
+          "example": "Three loose pens are on the shelf."
+        },
+        {
+          "term": "sealed",
+          "definition": "Closed so the contents stay inside.",
+          "example": "Both boxes are sealed."
+        }
+      ],
+      "grammar": {
+        "rule": "Use each to state the quantity per container.",
+        "example": "Each box contains ten pens."
+      },
+      "culture": {
+        "insight": "A bare number can refer to boxes or individual items.",
+        "action": "Say the unit when reading the total back."
+      },
+      "followups": [
+        "How many pens are in each box?",
+        "What is easy to miss beside the boxes?",
+        "How would you check the unit if the heading were unclear?"
+      ],
+      "transfer": "The sheet asks for individual folders. You find three packs of six and four loose folders. Report the calculation aloud and tell your partner what to enter.",
+      "feedback": "Did you confirm the unit, include loose items and read back the total with its unit?"
+    },
+    {
+      "id": "ja-stock-units",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "庫存盤點｜兩盒加三支，表上該填多少？",
+      "goal": "箱数とばらの本数を区別し、指定された単位で数量を報告する。",
+      "scene": "棚卸し表の単位は「本」です。棚には未開封のペンが二箱あり、一箱に十本ずつ入っています。その横には、ばらのペンが三本あります。箱入りもばらの分も数えてください。",
+      "question": "数量欄に記入する数はいくつですか。",
+      "choices": [
+        "二十三。",
+        "二十。",
+        "五。"
+      ],
+      "correct": 0,
+      "simple": "十本入りが二箱で二十本、ばらが三本なので、合計二十三本です。",
+      "sample": "[入り数]入りが[箱数]、ばらが[数量]です。合計[数量と単位]で記入してよろしいですか。",
+      "chinese": "「二箱」數包裝，「二十本」數裡面的筆；「ばら」指盒外單支的筆。",
+      "vocab": [
+        {
+          "term": "棚卸し（たなおろし）",
+          "definition": "実際にある品物の数を調べること。",
+          "example": "月末に棚卸しをします。"
+        },
+        {
+          "term": "ばら",
+          "definition": "箱や束にまとまっていない状態。",
+          "example": "ばらのペンも数えてください。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ずつ」で各箱に同じ数が入っていることを示します。",
+        "example": "一箱に十本ずつ入っています。"
+      },
+      "culture": {
+        "insight": "同じ在庫でも表によって記入単位が異なることがあります。",
+        "action": "合計は単位を付けて復唱しましょう。"
+      },
+      "followups": [
+        "一箱に何本入っていますか。",
+        "箱の横に何がありますか。",
+        "表の単位が分からなければどう聞きますか。"
+      ],
+      "transfer": "封筒が六枚入りで三袋、ばらで四枚あります。表の単位は「枚」です。計算の内訳と記入する枚数を伝えてください。",
+      "feedback": "一箱当たりの数とばらの分を使い、指定の単位で報告できましたか。"
     }
   ]
 }
