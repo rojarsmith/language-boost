@@ -563,3 +563,55 @@
 **用語提示**　用 I saw／I got stuck 描述實際經驗，再用 Could we…? 提出可試做的一個改動。
 
 **換情境再說一次**　A colleague’s workshop invitation gives a room number but no building name. Describe where you got stuck, propose an edit and offer a way to check it.
+
+## 失物招領｜兩個相似的袋子，哪個是你的？
+
+請夥伴當服務台人員。只描述你確定的特徵，最後確認在哪裡認領。
+
+- **失主**　I think I left a blue pouch here.
+- **服務台**　We found two. What colour is the zip?
+- **失主**　Silver. There’s a train ticket inside.
+- **服務台**　That one is at the information desk.
+
+**用語提示**　用 with 補上外觀特徵，再用 inside 描述袋內物品。
+
+**換情境再說一次**　Two black umbrellas were found at a café. Yours has a wooden handle. Describe it and ask where to pick it up.
+
+## 包裹招領｜錯過配送，改去哪裡領？
+
+夥伴扮演配送人員。你晚上七點才下班，要在兩種領件方式中選一個，並確認需要帶什麼。
+
+- **收件人**　I work until seven tomorrow. Can I still pick up my parcel?
+- **配送人員**　The depot closes at six, but the corner shop is open until nine.
+- **收件人**　Could you send it there? What should I bring?
+- **配送人員**　Just show your pickup code. It’ll be there after five tomorrow.
+
+**用語提示**　after five 是開始可領的時間，until nine 指店家營業到九點。
+
+**換情境再說一次**　Your repaired watch is ready at three. The counter closes at five, but you arrive at six. Ask about collection the next morning and what to bring.
+
+## 電話代接｜回電該找誰、要談哪件事？
+
+夥伴扮演來電者。聽完留言後交換角色，把回電對象、分機和來意轉告同事。
+
+- **接電話的人**　Maya is away from her desk. Can I take a message?
+- **來電者**　Yes, Jo from the print room. Could she call extension forty before noon about the cover colour?
+- **接電話的人**　Four zero, before noon, about the cover colour. Is that right?
+- **來電者**　Exactly. We’ve already agreed on the quantity.
+
+**用語提示**　把 forty 和 fourteen 分開聽；覆誦分機時可以逐位念出。
+
+**換情境再說一次**　A venue calls about the microphone, not the seating. Ask your colleague to call extension fourteen before two and read the message back.
+
+## 數據簡報｜件數下降，比率也下降了嗎？
+
+請夥伴當聽眾。你有兩週的訂單量和退貨量，要說清楚比較結果，再回應對原因的追問。
+
+- **聽眾**　We got fewer returns. Did the return rate go down too?
+- **報告者**　It went up. Last week it was ten out of two hundred. This week it was eight out of a hundred.
+- **聽眾**　Do we know why?
+- **報告者**　Not yet. I’ll check the reasons customers gave.
+
+**用語提示**　用 out of 說出分母，讓聽眾知道百分比代表哪些訂單。
+
+**換情境再說一次**　Six of sixty bookings were cancelled on Monday. Four of twenty were cancelled on Tuesday. Brief a colleague on both the count and the rate, then name one missing detail.

@@ -2068,6 +2068,374 @@
       ],
       "transfer": "研修の案内には部屋番号だけがあり、建物名がありません。迷った点を伝え、追記する内容と確認方法を提案してください。",
       "feedback": "相手が修正できるように、箇所、操作、試し方を具体的に言えましたか。"
+    },
+    {
+      "id": "en-lost-pouch",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "失物招領｜兩個相似的袋子，哪個是你的？",
+      "goal": "Identify a lost item by a distinguishing feature and confirm where to collect it.",
+      "scene": "We found two blue pouches after the concert. The one with a yellow zip is at the ticket office. The one with a silver zip is at the information desk. Mine has a silver zip and a train ticket inside.",
+      "question": "Where should the owner go?",
+      "choices": [
+        "The ticket office.",
+        "The information desk.",
+        "The concert hall entrance."
+      ],
+      "correct": 1,
+      "simple": "It’s a blue pouch with a silver zip. There’s a train ticket inside.",
+      "sample": "It’s a [colour] [item] with [feature]. Should I collect it at [place]?",
+      "chinese": "用 with 補上外觀特徵，再用 inside 描述袋內物品。",
+      "vocab": [
+        {
+          "term": "pouch",
+          "definition": "A small bag for carrying things.",
+          "example": "My earphones are in a cloth pouch."
+        },
+        {
+          "term": "collect",
+          "definition": "To go and get something.",
+          "example": "Where can I collect it?"
+        }
+      ],
+      "grammar": {
+        "rule": "Use the one with to distinguish similar items.",
+        "example": "Mine is the one with the silver zip."
+      },
+      "culture": {
+        "insight": "A shared colour may fit several items.",
+        "action": "Give a second detail the finder can check."
+      },
+      "followups": [
+        "What colour is the zip?",
+        "What is inside your pouch?",
+        "How would you confirm the collection point?"
+      ],
+      "transfer": "Two black umbrellas were found at a café. Yours has a wooden handle. Describe it and ask where to pick it up.",
+      "feedback": "Could the listener identify both the item and the collection point?"
+    },
+    {
+      "id": "ja-lost-pouch",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "失物招領｜兩個相似的袋子，哪個是你的？",
+      "goal": "落とし物の特徴を伝え、受け取り場所を確認する。",
+      "scene": "コンサートの後、青いポーチが二つ届きました。黄色いファスナーのものはチケット売り場、銀色のファスナーのものは案内所でお預かりしています。私のは銀色のファスナーで、中に電車の切符が入っています。",
+      "question": "持ち主はどこへ行けばいいですか。",
+      "choices": [
+        "案内所。",
+        "チケット売り場。",
+        "会場の入口。"
+      ],
+      "correct": 0,
+      "simple": "青いポーチで、ファスナーは銀色です。中に切符が入っています。",
+      "sample": "[色]の[品物]で、[特徴]があります。[場所]で受け取れますか。",
+      "chinese": "「〜が入っています」描述物品目前裝在裡面的狀態。",
+      "vocab": [
+        {
+          "term": "落とし物（おとしもの）",
+          "definition": "どこかに落としたり置き忘れたりした物。",
+          "example": "落とし物を探しています。"
+        },
+        {
+          "term": "案内所（あんないじょ）",
+          "definition": "利用者に場所などを案内する所。",
+          "example": "案内所で受け取れます。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜のもの」で直前に話した品物を指せます。",
+        "example": "銀色のファスナーのものです。"
+      },
+      "culture": {
+        "insight": "同じ色の物が複数届くこともあります。",
+        "action": "中身や持ち手など、見分ける手掛かりを伝えましょう。"
+      },
+      "followups": [
+        "ファスナーは何色ですか。",
+        "何が入っていますか。",
+        "受け取り場所をどう確認しますか。"
+      ],
+      "transfer": "喫茶店に黒い傘が二本届いています。木の持ち手が付いた自分の傘を説明し、受け取り場所を確認してください。",
+      "feedback": "品物を見分ける特徴と受け取り場所を言えましたか。"
+    },
+    {
+      "id": "en-parcel",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "包裹招領｜錯過配送，改去哪裡領？",
+      "goal": "Choose a pickup option that fits your schedule.",
+      "scene": "We missed you today. The depot closes at six. We can leave the parcel at the corner shop after five tomorrow. The shop stays open until nine. Show the pickup code there. I finish work at seven tomorrow.",
+      "question": "How can you get the parcel after work tomorrow?",
+      "choices": [
+        "Visit the depot at seven.",
+        "Visit the shop before five.",
+        "Visit the shop with the code before nine."
+      ],
+      "correct": 2,
+      "simple": "Could you leave it at the corner shop? I can show the code after work.",
+      "sample": "I finish at [time]. Could I collect it at [place] with [item]?",
+      "chinese": "after five 是開始可領的時間，until nine 指店家營業到九點。",
+      "vocab": [
+        {
+          "term": "depot",
+          "definition": "A place where deliveries are stored or sorted.",
+          "example": "The depot closes at six."
+        },
+        {
+          "term": "pickup code",
+          "definition": "A code used to collect an order.",
+          "example": "I have the pickup code on my phone."
+        }
+      ],
+      "grammar": {
+        "rule": "Use until for the end of a period.",
+        "example": "The shop is open until nine."
+      },
+      "culture": {
+        "insight": "Different pickup locations can have different hours.",
+        "action": "Repeat the place, time and item you need to bring."
+      },
+      "followups": [
+        "When does the depot close?",
+        "When can the shop hand over the parcel?",
+        "What will you show there?"
+      ],
+      "transfer": "Your repaired watch is ready at three. The counter closes at five, but you arrive at six. Ask about collection the next morning and what to bring.",
+      "feedback": "Did your plan fit both your schedule and the opening hours?"
+    },
+    {
+      "id": "ja-parcel",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "包裹招領｜錯過配送，改去哪裡領？",
+      "goal": "受け取れる時間帯を聞き、自分に合う方法を選ぶ。",
+      "scene": "本日はご不在でした。営業所は午後六時までです。明日の午後五時以降でしたら、駅前のお店でもお受け取りいただけます。お店は夜九時までです。受け取りコードをお見せください。明日は夜七時まで仕事です。",
+      "question": "明日の仕事の後に荷物を受け取るには、どうしますか。",
+      "choices": [
+        "七時に営業所へ行く。",
+        "九時までに駅前のお店でコードを見せる。",
+        "五時より前に駅前のお店へ行く。"
+      ],
+      "correct": 1,
+      "simple": "駅前のお店で受け取りたいです。仕事の後にコードを持って行きます。",
+      "sample": "[時刻]まで仕事です。[場所]で受け取れますか。[必要なもの]を持って行けばいいですか。",
+      "chinese": "「五時以降」是五點起，「九時まで」指最晚到九點。",
+      "vocab": [
+        {
+          "term": "不在（ふざい）",
+          "definition": "その場所にいないこと。",
+          "example": "昼間は不在です。"
+        },
+        {
+          "term": "営業所（えいぎょうしょ）",
+          "definition": "会社の業務を行う拠点。",
+          "example": "営業所の受付は六時までです。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ばいいですか」で必要な行動を確かめます。",
+        "example": "このコードを見せればいいですか。"
+      },
+      "culture": {
+        "insight": "受け取れる時間は場所によって変わります。",
+        "action": "場所と持ち物を一緒に確認しましょう。"
+      },
+      "followups": [
+        "営業所は何時までですか。",
+        "お店にはいつ荷物が届きますか。",
+        "受け取りの際に何を見せますか。"
+      ],
+      "transfer": "修理した時計は午後三時に仕上がります。受付は五時までですが、着くのは六時です。翌朝の受け取りについて、時間と持ち物を尋ねてください。",
+      "feedback": "勤務時間に合う場所と必要なものを確認できましたか。"
+    },
+    {
+      "id": "en-phone-message",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "電話代接｜回電該找誰、要談哪件事？",
+      "goal": "Take a message and read back the callback details.",
+      "scene": "This is Jo from the print room. Could Maya call me on extension forty before noon? It’s about the cover colour for the brochure. The quantity is already settled.",
+      "question": "What still needs a decision?",
+      "choices": [
+        "The number of copies.",
+        "The delivery address.",
+        "The cover colour."
+      ],
+      "correct": 2,
+      "simple": "I’ll ask Maya to call Jo on extension forty before noon about the cover colour.",
+      "sample": "I’ll ask [colleague] to call [caller] on extension [number] before [time] about [topic].",
+      "chinese": "把 forty 和 fourteen 分開聽；覆誦分機時可以逐位念出。",
+      "vocab": [
+        {
+          "term": "extension",
+          "definition": "An internal phone number.",
+          "example": "Jo is on extension forty."
+        },
+        {
+          "term": "call back",
+          "definition": "To return a phone call.",
+          "example": "Could you call me back before noon?"
+        }
+      ],
+      "grammar": {
+        "rule": "Use ask someone to + verb to relay a request.",
+        "example": "I’ll ask Maya to call you back."
+      },
+      "culture": {
+        "insight": "A brief read-back gives the caller a chance to correct a number.",
+        "action": "Repeat the extension digit by digit if needed."
+      },
+      "followups": [
+        "Who needs to return the call?",
+        "What is the deadline?",
+        "How would you pass the message to Maya?"
+      ],
+      "transfer": "A venue calls about the microphone, not the seating. Ask your colleague to call extension fourteen before two and read the message back.",
+      "feedback": "Did you keep the caller, number, deadline and open question together?"
+    },
+    {
+      "id": "ja-phone-message",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "電話代接｜回電該找誰、要談哪件事？",
+      "goal": "折り返し先と用件を聞き取り、担当者に伝言する。",
+      "scene": "印刷室の森です。正午までに、林さんから内線四十番にお電話いただけますか。パンフレットの表紙の色についてです。部数はもう決まっています。",
+      "question": "折り返しの電話で相談したいことは何ですか。",
+      "choices": [
+        "表紙の色。",
+        "印刷する部数。",
+        "届け先の住所。"
+      ],
+      "correct": 0,
+      "simple": "印刷室の森さんからです。正午までに内線四十番へお願いします。表紙の色についてです。",
+      "sample": "[部署]の[名前]さんからです。[期限]までに[連絡先]へ折り返してほしいとのことです。",
+      "chinese": "接電話時向來電者覆誦，轉告同事時用「〜とのことです」標示這是對方的留言。",
+      "vocab": [
+        {
+          "term": "内線（ないせん）",
+          "definition": "組織の中で使う電話回線。",
+          "example": "内線四十番にお願いします。"
+        },
+        {
+          "term": "折り返し（おりかえし）",
+          "definition": "電話を受けた後に、こちらからかけ直すこと。",
+          "example": "折り返しお電話します。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜とのことです」で聞いた内容を伝えます。",
+        "example": "正午までに連絡がほしいとのことです。"
+      },
+      "culture": {
+        "insight": "数字を復唱すると聞き違いをその場で直せます。",
+        "action": "連絡先と用件を一緒に読み上げましょう。"
+      },
+      "followups": [
+        "どなたからのお電話ですか。",
+        "何時までに折り返しますか。",
+        "林さんにはどう伝えますか。"
+      ],
+      "transfer": "会場の担当者からマイクについて電話がありました。座席は確定しています。午後二時までに内線十四番へ折り返すよう、同僚に伝えてください。",
+      "feedback": "相手、内線、期限、相談内容を正しく伝えられましたか。"
+    },
+    {
+      "id": "en-chart-reading",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "數據簡報｜件數下降，比率也下降了嗎？",
+      "goal": "Explain how a count and a rate can tell different stories.",
+      "scene": "Last week we had ten returns out of two hundred orders. This week we had eight returns out of one hundred orders. That’s two fewer returns, but the return rate rose from five percent to eight percent. We haven’t reviewed the reasons yet.",
+      "question": "Which statement fits the figures?",
+      "choices": [
+        "The count fell and the rate rose.",
+        "Both the count and the rate fell.",
+        "The figures explain why customers returned items."
+      ],
+      "correct": 0,
+      "simple": "We had fewer returns, but a larger share of orders came back. We don’t know why yet.",
+      "sample": "We saw [count] out of [total]. The rate moved from [rate] to [rate]. We’ll check [source] next.",
+      "chinese": "用 out of 說出分母，讓聽眾知道百分比代表哪些訂單。",
+      "vocab": [
+        {
+          "term": "return rate",
+          "definition": "The proportion of orders returned.",
+          "example": "Our return rate was eight percent."
+        },
+        {
+          "term": "out of",
+          "definition": "Used to compare a part with a total.",
+          "example": "Eight out of a hundred orders came back."
+        }
+      ],
+      "grammar": {
+        "rule": "Use fewer with counts and higher with rates.",
+        "example": "We had fewer returns but a higher return rate."
+      },
+      "culture": {
+        "insight": "A listener may hear a smaller number as an improvement.",
+        "action": "Give both totals before discussing causes."
+      },
+      "followups": [
+        "How many orders were there each week?",
+        "What happened to the rate?",
+        "What would you check before explaining why?"
+      ],
+      "transfer": "Six of sixty bookings were cancelled on Monday. Four of twenty were cancelled on Tuesday. Brief a colleague on both the count and the rate, then name one missing detail.",
+      "feedback": "Did you distinguish count from rate and leave the cause open?"
+    },
+    {
+      "id": "ja-chart-reading",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "數據簡報｜件數下降，比率也下降了嗎？",
+      "goal": "件数と割合の変化を区別し、数字から分かる範囲を説明する。",
+      "scene": "先週は注文二百件のうち返品が十件、今週は注文百件のうち八件でした。返品は二件減りましたが、返品率は五パーセントから八パーセントに上がりました。返品理由はまだ確認していません。",
+      "question": "数字から分かるのはどれですか。",
+      "choices": [
+        "件数も割合も下がった。",
+        "返品の理由が判明した。",
+        "件数は減り、割合は上がった。"
+      ],
+      "correct": 2,
+      "simple": "返品件数は減りましたが、注文全体に占める割合は上がりました。理由はこれから確認します。",
+      "sample": "[全体の件数]のうち[該当件数]でした。[割合]は[値]から[値]に変わりました。次に[資料]を確認します。",
+      "chinese": "「〜件のうち」先交代比較基準，再說符合條件的件數。",
+      "vocab": [
+        {
+          "term": "割合（わりあい）",
+          "definition": "全体に対してある部分が占める比率。",
+          "example": "注文に占める返品の割合を出しました。"
+        },
+        {
+          "term": "件数（けんすう）",
+          "definition": "事柄を一件ずつ数えた数。",
+          "example": "返品の件数は減りました。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ましたが」で二つの変化を対比します。",
+        "example": "件数は減りましたが、割合は上がりました。"
+      },
+      "culture": {
+        "insight": "総数が違うと、件数と割合が逆向きに動くことがあります。",
+        "action": "理由を述べる前に、各週の総数を示しましょう。"
+      },
+      "followups": [
+        "各週の注文は何件でしたか。",
+        "返品率はどう変わりましたか。",
+        "理由を知るには何を確認しますか。"
+      ],
+      "transfer": "月曜日は予約六十件のうち六件、火曜日は二十件のうち四件がキャンセルされました。件数と割合の変化を伝え、追加で調べたい点を一つ挙げてください。",
+      "feedback": "件数と割合を分け、理由は未確認だと伝えられましたか。"
     }
   ]
 }
