@@ -824,3 +824,55 @@
 **用語提示**　two boxes of ten 是兩盒、每盒十支。報總數時再念一次 pens，對方就能核對單位。
 
 **換情境再說一次**　The sheet asks for individual folders. You find three packs of six and four loose folders. Report the calculation aloud and tell your partner what to enter.
+
+## 夜間觀星｜你指的是樹梢上方哪一顆？
+
+兩人面向同一方向，想像前方有高塔和一棵樹。導覽員先選一個地標，再引導夥伴找到目標；交換角色時改用另一個地標。
+
+- **參加者**　I see a tower. Do you mean the star above it?
+- **導覽員**　Look at the pine to its left. Can you see two bright stars above the tip?
+- **參加者**　Yes. Is it the faint one just right of the lower star?
+- **導覽員**　That’s it. We’re looking at the same one.
+
+**用語提示**　the lower one 指兩顆亮星裡位置較低的那顆；它是下一步定位的起點。
+
+**換情境再說一次**　At a bird hide, two birds sit on a fence. A third is on a branch just above the bird on the left. Guide a partner to the third bird using the fence first.
+
+## 照片裝框｜標示的尺寸是內框還是外框？
+
+照片是十乘十五公分，層架可用寬度只有十四公分。挑一個能放進照片、也能直立擺上層架的框，並向店員說明理由。
+
+- **顧客**　Does ten by fifteen mean the whole frame?
+- **店員**　It’s the photo size. Upright, the oak frame is sixteen centimetres wide and the black one is thirteen.
+- **顧客**　My shelf has fourteen centimetres of space. I’ll take the black one.
+- **店員**　That will fit. It takes the same size photo.
+
+**用語提示**　holds a ten-by-fifteen photo 指可裝的照片尺寸；outside width 才能用來比對層架空間。
+
+**換情境再說一次**　A storage box fits your papers, but the cupboard opening is thirty centimetres wide. Ask whether the listed width includes the handles and decide what else to measure.
+
+## 錄音試音｜現場聽得到，錄下來也清楚嗎？
+
+一人當主持人，一人當錄音師。主持人用正式開場白試音，錄音師回報試錄中聽到的聲音，再約定如何判斷能否正式開錄。
+
+- **主持人**　Can we start? I sound clear from here.
+- **錄音師**　Listen to the test. Hear that rustle when you turn your head? Your scarf brushes the mic.
+- **主持人**　I’ll move it and say the same line while turning again.
+- **錄音師**　Great. Let’s listen back before we begin.
+
+**用語提示**　on playback 指重播錄音時。說出何時聽到雜音，能讓夥伴重做同樣動作來核對。
+
+**換情境再說一次**　During a remote interview the recording catches a tapping sound whenever you type. Agree on a change and a repeatable test before resuming.
+
+## 產品盲評｜先交評分，還是先揭曉品牌？
+
+你和同事各拿一張評分表。主持人給出兩杯茶的代碼和出場順序；評審先複述怎麼記分，再問什麼時候可以看品牌。
+
+- **評審**　I liked the first tea better. Does that score go in the top row?
+- **主持人**　Read the code on the cup. The top row is four, but you tasted seven first.
+- **評審**　Then seven gets my higher score. When do we find out which tea it was?
+- **主持人**　After you hand in your form.
+
+**用語提示**　beside the code 是依代碼填寫；first cup 和 first row 在這份表上指不同樣品。
+
+**換情境再說一次**　You test headphones marked K and M, starting with M. The form lists K first. Tell the organiser how you’ll label both scores before seeing the model names.

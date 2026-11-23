@@ -3908,6 +3908,374 @@
       ],
       "transfer": "封筒が六枚入りで三袋、ばらで四枚あります。表の単位は「枚」です。計算の内訳と記入する枚数を伝えてください。",
       "feedback": "一箱当たりの数とばらの分を使い、指定の単位で報告できましたか。"
+    },
+    {
+      "id": "en-night-sky",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "夜間觀星｜你指的是樹梢上方哪一顆？",
+      "goal": "Locate a star using a shared landmark.",
+      "scene": "Face the lake with me. See the tall pine to the left of the tower? There are two bright stars above its tip. Find the lower one first, then look just to its right. The faint star there is the one I mean.",
+      "question": "Which star is the guide pointing out?",
+      "choices": [
+        "The brighter star above the tower.",
+        "The faint star just right of the lower bright star.",
+        "The upper bright star above the pine."
+      ],
+      "correct": 1,
+      "simple": "I see the two bright stars above the pine. Do you mean the faint one beside the lower star?",
+      "sample": "I’m facing [direction]. From [landmark], should I look [direction or distance]?",
+      "chinese": "the lower one 指兩顆亮星裡位置較低的那顆；它是下一步定位的起點。",
+      "vocab": [
+        {
+          "term": "landmark",
+          "definition": "A visible feature used to locate something.",
+          "example": "Let’s use the tower as a landmark."
+        },
+        {
+          "term": "faint",
+          "definition": "Hard to see because it gives off little light.",
+          "example": "I can just see a faint star."
+        }
+      ],
+      "grammar": {
+        "rule": "Use the lower one to distinguish two visible objects.",
+        "example": "Start with the lower one and look right."
+      },
+      "culture": {
+        "insight": "Left and right depend on which way you face.",
+        "action": "Agree on a direction before pointing."
+      },
+      "followups": [
+        "Which way are you both facing?",
+        "Which tree is the starting point?",
+        "How would you ask for another clue if you saw only the two bright stars?"
+      ],
+      "transfer": "At a bird hide, two birds sit on a fence. A third is on a branch just above the bird on the left. Guide a partner to the third bird using the fence first.",
+      "feedback": "Could your partner follow the landmarks in order and identify the target?"
+    },
+    {
+      "id": "ja-night-sky",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "夜間觀星｜你指的是樹梢上方哪一顆？",
+      "goal": "共通の目印を使い、相手が指している星の位置を確かめる。",
+      "scene": "一緒に湖の方を向いてください。塔の左に高い松の木が見えますね。木の先の上に明るい星が二つあります。低い方の星から少し右を見ると、かすかに光る星があります。それが今日探す星です。",
+      "question": "探しているのはどの星ですか。",
+      "choices": [
+        "塔の真上の明るい星。",
+        "松の上にある二つのうち、高い方の星。",
+        "低い方の明るい星のすぐ右にある、かすかな星。"
+      ],
+      "correct": 2,
+      "simple": "松の上に明るい星が二つ見えます。低い方のすぐ右にある星ですか。",
+      "sample": "[目印]が見えます。[位置]にある[特徴]の方ですか。",
+      "chinese": "「低い方」是兩顆亮星中較低的那顆。「そこから少し右」才是目標的位置。",
+      "vocab": [
+        {
+          "term": "目印（めじるし）",
+          "definition": "場所を見つける手掛かりになるもの。",
+          "example": "塔を目印にしてください。"
+        },
+        {
+          "term": "かすか",
+          "definition": "よく注意してやっと分かるほど弱い様子。",
+          "example": "かすかに光っています。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜のうち、〜方」で二つの候補から一つを選べます。",
+        "example": "二つのうち、低い方を見てください。"
+      },
+      "culture": {
+        "insight": "向きが違うと左右が伝わりにくくなります。",
+        "action": "最初に同じ方向を向きましょう。"
+      },
+      "followups": [
+        "二人はどちらを向いていますか。",
+        "どの木を目印にしますか。",
+        "明るい星しか見えないとき、どう聞き返しますか。"
+      ],
+      "transfer": "野鳥観察で柵に鳥が二羽います。左の鳥のすぐ上の枝に三羽目がいます。柵を目印にして、相手を三羽目まで案内してください。",
+      "feedback": "目印から順にたどり、相手と同じ星を確認できましたか。"
+    },
+    {
+      "id": "en-photo-frame",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "照片裝框｜標示的尺寸是內框還是外框？",
+      "goal": "Check both photo size and outside width before choosing a frame.",
+      "scene": "Both frames hold a ten-by-fifteen-centimetre photo upright. The oak frame is sixteen centimetres wide on the outside. The black frame is thirteen centimetres wide on the outside. Your shelf has fourteen centimetres of clear width.",
+      "question": "Which frame fits both the photo and the shelf?",
+      "choices": [
+        "The black frame only.",
+        "The oak frame only.",
+        "Both frames because they hold the same photo."
+      ],
+      "correct": 0,
+      "simple": "My photo fits both. How wide is each frame on the outside when it stands upright?",
+      "sample": "My [space] is [width] wide. Is [measurement] the photo size or the outside width?",
+      "chinese": "holds a ten-by-fifteen photo 指可裝的照片尺寸；outside width 才能用來比對層架空間。",
+      "vocab": [
+        {
+          "term": "upright",
+          "definition": "Standing vertically.",
+          "example": "I’d like to display the photo upright."
+        },
+        {
+          "term": "outside width",
+          "definition": "The distance between the outer side edges.",
+          "example": "The outside width is thirteen centimetres."
+        }
+      ],
+      "grammar": {
+        "rule": "Use wide after a measurement.",
+        "example": "The shelf is fourteen centimetres wide."
+      },
+      "culture": {
+        "insight": "A size on a label can describe what fits inside.",
+        "action": "Ask which edges the measurement runs between."
+      },
+      "followups": [
+        "Which measurement is the same for both frames?",
+        "What limits your choice?",
+        "What would you ask if the label gave only the photo size?"
+      ],
+      "transfer": "A storage box fits your papers, but the cupboard opening is thirty centimetres wide. Ask whether the listed width includes the handles and decide what else to measure.",
+      "feedback": "Did you check the photo size, orientation and outside width?"
+    },
+    {
+      "id": "ja-photo-frame",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "照片裝框｜標示的尺寸是內框還是外框？",
+      "goal": "写真の寸法と額の外寸を聞き分け、置き場所に合う額を選ぶ。",
+      "scene": "どちらの額にも、縦十五センチ、横十センチの写真が入ります。縦置きにしたとき、木目の額は外側の幅が十六センチ、黒い額は十三センチです。棚の空きは幅十四センチです。",
+      "question": "写真が入り、棚にも置けるのはどれですか。",
+      "choices": [
+        "木目の額だけ。",
+        "黒い額だけ。",
+        "どちらも置ける。"
+      ],
+      "correct": 1,
+      "simple": "写真はどちらにも入りますね。縦置きにしたときの外寸を教えてください。",
+      "sample": "[場所]の幅は[寸法]です。この表示は写真のサイズですか、それとも額の外寸ですか。",
+      "chinese": "「縦置き」是直立擺放。「外寸」量到框的外緣，與能裝多大的照片不同。",
+      "vocab": [
+        {
+          "term": "額縁（がくぶち）",
+          "definition": "写真や絵の周りに付ける枠。",
+          "example": "写真に合う額縁を探しています。"
+        },
+        {
+          "term": "外寸（がいすん）",
+          "definition": "外側の端から端までの寸法。",
+          "example": "幅の外寸を測ってください。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜にしたとき」で測る向きを指定します。",
+        "example": "縦置きにしたとき、幅は何センチですか。"
+      },
+      "culture": {
+        "insight": "商品の表示が中に入れる物のサイズを示す場合があります。",
+        "action": "どこからどこまで測った寸法か尋ねましょう。"
+      },
+      "followups": [
+        "二つの額に共通する寸法は何ですか。",
+        "棚の空きは何センチですか。",
+        "写真のサイズしか表示されていなければ、どう聞きますか。"
+      ],
+      "transfer": "書類の入る箱を幅三十センチの棚に置きます。表示された幅に取っ手が含まれるか尋ね、置けるか判断するために必要な寸法を確認してください。",
+      "feedback": "写真の寸法、置く向き、外側の幅を確認できましたか。"
+    },
+    {
+      "id": "en-sound-check",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "錄音試音｜現場聽得到，錄下來也清楚嗎？",
+      "goal": "Use a test recording to distinguish what the room hears from what the microphone picks up.",
+      "scene": "Your voice sounds clear from where I’m standing. On the test recording, though, I hear a rustle whenever you turn your head. Your scarf is brushing the microphone. Let’s move the scarf and record the same line again before we start the interview.",
+      "question": "What should the team do next?",
+      "choices": [
+        "Start because the voice sounds clear in the room.",
+        "Turn up the volume on the first take.",
+        "Move the scarf and repeat the test recording."
+      ],
+      "correct": 2,
+      "simple": "I hear the rustle on playback. I’ll move the scarf and repeat the opening line.",
+      "sample": "I hear [sound] on [source] when [action]. Shall we change [one thing] and try the same line again?",
+      "chinese": "on playback 指重播錄音時。說出何時聽到雜音，能讓夥伴重做同樣動作來核對。",
+      "vocab": [
+        {
+          "term": "rustle",
+          "definition": "A soft sound made by things rubbing or moving.",
+          "example": "There’s a rustle when I turn."
+        },
+        {
+          "term": "playback",
+          "definition": "Listening to something that has been recorded.",
+          "example": "Let’s check the playback together."
+        }
+      ],
+      "grammar": {
+        "rule": "Use whenever to link a repeated sound with an action.",
+        "example": "I hear it whenever you turn your head."
+      },
+      "culture": {
+        "insight": "The speaker and the recorder can hear different things.",
+        "action": "Listen to the second take before calling the test complete."
+      },
+      "followups": [
+        "Where was the voice clear?",
+        "Which movement produced the noise?",
+        "What would tell you the adjustment worked?"
+      ],
+      "transfer": "During a remote interview the recording catches a tapping sound whenever you type. Agree on a change and a repeatable test before resuming.",
+      "feedback": "Did you name the sound, the trigger and a playback check?"
+    },
+    {
+      "id": "ja-sound-check",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "錄音試音｜現場聽得到，錄下來也清楚嗎？",
+      "goal": "その場で聞こえる声と録音された音を区別し、同じ条件で再確認する。",
+      "scene": "ここで聞くと声ははっきりしています。ただ、試し録りを再生すると、横を向くたびにガサガサという音が入っています。マフラーがマイクに当たっていますね。位置を直して、インタビューの前に同じ一言をもう一度録りましょう。",
+      "question": "次に何をしますか。",
+      "choices": [
+        "マフラーの位置を直して同じ言葉を試し録りする。",
+        "現場では聞こえるのですぐ本番に入る。",
+        "最初の録音の音量だけを上げる。"
+      ],
+      "correct": 0,
+      "simple": "再生すると、横を向くたびに音がしますね。マフラーをずらして、同じ一言を言ってみます。",
+      "sample": "[動作]のたびに[音]が入っています。[変更]してから、同じ条件で録り直しませんか。",
+      "chinese": "「音が入る」是錄音收進了某個聲音。「再生すると」交代判斷的依據是錄音。",
+      "vocab": [
+        {
+          "term": "試し録り（ためしどり）",
+          "definition": "本番の前に音を確かめるために録音すること。",
+          "example": "まず十秒だけ試し録りをします。"
+        },
+        {
+          "term": "再生（さいせい）",
+          "definition": "録音や映像を聞いたり見たりできる状態にすること。",
+          "example": "今の録音を再生してください。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜たびに」で同じことが繰り返される場面を表します。",
+        "example": "横を向くたびに音が入ります。"
+      },
+      "culture": {
+        "insight": "話し手自身には録音の雑音が聞こえにくい場合があります。",
+        "action": "同じ言葉と動作で録り直し、一緒に聞きましょう。"
+      },
+      "followups": [
+        "声がはっきり聞こえたのはどこですか。",
+        "どんな動作で音が入りましたか。",
+        "何を聞いて本番に進むか判断しますか。"
+      ],
+      "transfer": "オンライン取材で、入力するたびに録音にキーの音が入ります。変えることを一つ決め、同じ一言を録って確認する手順を相談してください。",
+      "feedback": "雑音、きっかけになった動作、再確認の方法を伝えられましたか。"
+    },
+    {
+      "id": "en-coded-samples",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "產品盲評｜先交評分，還是先揭曉品牌？",
+      "goal": "Confirm how to record a blind tasting without mixing up sample codes.",
+      "scene": "Taste cup seven first and cup four second. Write each score beside the code on the cup, even though the form lists four first. Hand in the form before we reveal the brands. You preferred the first cup.",
+      "question": "Where should the higher score go?",
+      "choices": [
+        "Beside code four, the first row.",
+        "Beside code seven, the first cup tasted.",
+        "Beside the brand name after the reveal."
+      ],
+      "correct": 1,
+      "simple": "The first cup was seven, so I’ll put its score on the row marked seven before I hand this in.",
+      "sample": "I tasted [code] first. Should I record the score beside [code] even though [different order]?",
+      "chinese": "beside the code 是依代碼填寫；first cup 和 first row 在這份表上指不同樣品。",
+      "vocab": [
+        {
+          "term": "blind tasting",
+          "definition": "A tasting where participants do not know which brand or product they are trying.",
+          "example": "We used numbered cups for the blind tasting."
+        },
+        {
+          "term": "reveal",
+          "definition": "Make information known.",
+          "example": "We’ll reveal the brands afterwards."
+        }
+      ],
+      "grammar": {
+        "rule": "Use even though to flag an ordering difference.",
+        "example": "I’ll score seven first even though four is listed first."
+      },
+      "culture": {
+        "insight": "People may follow the printed order out of habit.",
+        "action": "Read the cup code aloud when explaining where its score goes."
+      },
+      "followups": [
+        "Which sample did you try first?",
+        "Why would the first row be the wrong place for that score?",
+        "When will you learn the brands?"
+      ],
+      "transfer": "You test headphones marked K and M, starting with M. The form lists K first. Tell the organiser how you’ll label both scores before seeing the model names.",
+      "feedback": "Did you distinguish tasting order from row order and confirm when to submit?"
+    },
+    {
+      "id": "ja-coded-samples",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "產品盲評｜先交評分，還是先揭曉品牌？",
+      "goal": "試した順番と用紙の並び順を区別し、試料の番号で採点する。",
+      "scene": "最初に七番のお茶、次に四番のお茶を飲んでください。用紙は四番が上ですが、点数はカップに書かれた番号の欄に記入します。銘柄は用紙を提出した後でお知らせします。最初のお茶の方が好みでした。",
+      "question": "高い点数を書くのはどこですか。",
+      "choices": [
+        "先に飲んだ七番の欄。",
+        "用紙の一番上にある四番の欄。",
+        "銘柄を聞いた後、その名前の横。"
+      ],
+      "correct": 0,
+      "simple": "先に飲んだのは七番なので、高い点は七番の欄に書きます。",
+      "sample": "最初に試したのは[番号]です。用紙の順番にかかわらず、[番号]の欄に書けばいいですか。",
+      "chinese": "「七番の欄」是標著七號的欄位。「七番目の欄」才是從頭數來第七個欄位。",
+      "vocab": [
+        {
+          "term": "試料（しりょう）",
+          "definition": "試験や評価の対象となるもの。",
+          "example": "試料には番号を付けてあります。"
+        },
+        {
+          "term": "銘柄（めいがら）",
+          "definition": "商品の種類を区別するための名称。",
+          "example": "採点が終わってから銘柄を知らせます。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜にかかわらず」で判断に影響しない条件を示します。",
+        "example": "飲んだ順番にかかわらず、番号で記入します。"
+      },
+      "culture": {
+        "insight": "用紙の並びと試す順番が同じとは限りません。",
+        "action": "記入前に試料と欄の番号を照合しましょう。"
+      },
+      "followups": [
+        "最初に試したのは何番ですか。",
+        "なぜ一番上の欄には書かないのですか。",
+        "銘柄が分かるのはいつですか。"
+      ],
+      "transfer": "KとMのヘッドホンをMから試します。用紙ではKが先です。機種名を聞く前に、二つの点数をどこに記入するか担当者に説明してください。",
+      "feedback": "試した順、欄の番号、提出のタイミングを区別して伝えられましたか。"
     }
   ]
 }
