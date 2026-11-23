@@ -524,3 +524,42 @@
 > “Four of the five returning customers reused their saved address. That's four of the eight people we observed. The customer who moved and the three first-time buyers entered an address.”
 
 **換聽眾。** 店長問 “Most of our customers are visiting for the first time. Would you put this at the top of our list?” 先說功能在哪個條件下有用，再問 “How often do customers reorder to the same address here?” 若店長追問省幾分鐘，請說明下次要計時的步驟。核對時，聽者應能指出四人占哪一群人的比例，而不把這個比例當成省下的時間。
+
+## 車站轉乘｜電梯停用，怎麼走到月台？
+
+你帶著大行李，離發車只剩六分鐘。請夥伴當站務員，把可用的入口和路程說一遍。聽完再決定搭哪班車。
+
+- **旅客**　Is the lift by the gates working?
+- **站務員**　It’s out of service. There’s another one at the east entrance. Allow ten minutes.
+- **旅客**　My train leaves in six minutes. I’ll take the next one. Does it also leave from platform four?
+- **站務員**　Yes, it does.
+
+**用語提示**　allow ten minutes 指預留十分鐘。聽到月台號碼後，還要比對步行時間和發車時間。
+
+**換情境再說一次**　The museum entrance has steps. A side door has a ramp but closes at five. It is ten to five. Ask how far away the door is and repeat the directions.
+
+## 圖書館借閱｜書有人預約，報告還沒寫完
+
+你週五要交報告，手上的書週四到期。請夥伴當館員，說明預約狀況；你要確認何時還書、隔天去哪裡查資料。
+
+- **讀者**　Could I keep this book until Friday? My report is due then.
+- **館員**　Someone has placed a hold on it. Please return it by Thursday evening.
+- **讀者**　Could I come back on Friday and use a reference copy here?
+- **館員**　Yes. Ask at this desk when you come in.
+
+**用語提示**　聽清楚 this copy 和 reference copy 分別指手中的借書和館內用書。
+
+**換情境再說一次**　Your practice room booking ends at noon. Another group is booked next. Ask whether a smaller room is available and confirm when you must move.
+
+## 同儕回饋｜第一次使用的人卡在哪一步？
+
+請夥伴當手冊作者，你當第一次設定帳號的讀者。先說出卡住時看到的畫面，再提議補上一個步驟，約定怎麼驗證修改。
+
+- **作者**　How did the guide work for you?
+- **試讀者**　I got stuck at step two. I was still on the welcome screen.
+- **作者**　What helped you get past it?
+- **試讀者**　Choosing a workspace. Could we add that instruction? I can try again with a fresh account.
+
+**用語提示**　用 I saw／I got stuck 描述實際經驗，再用 Could we…? 提出可試做的一個改動。
+
+**換情境再說一次**　A colleague’s workshop invitation gives a room number but no building name. Describe where you got stuck, propose an edit and offer a way to check it.

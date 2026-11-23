@@ -69,8 +69,8 @@ const fs=require('node:fs/promises');
     for(const language of ['en','ja']){
       await page.locator('#language').selectOption(language);
       await page.locator('[data-filter="life"]').click();
-      assert.equal(await page.locator('#main .mission').count(),13);
-      for(const topic of ['housing-handover','social-group','housing-early-access','social-tentative','housing-photo','social-unconfirmed']){
+      assert.equal(await page.locator('#main .mission').count(),15);
+      for(const topic of ['housing-handover','social-group','housing-early-access','social-tentative','housing-photo','social-unconfirmed','route','library']){
         await page.locator(`[data-lesson="${language}-${topic}"]`).click();
         assert.equal(await page.locator('#practice [name="quiz"]').count(),3);
         await page.locator('[data-step="3"]').click();

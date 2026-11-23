@@ -1792,6 +1792,282 @@
       "followups": ["二人のメモが違います。相手を責めずにどう切り出しますか。","金曜日には誰がどこへ何のために送りますか。","お客様への送付日も予定表に入れたいと言われました。どう答えますか。"],
       "transfer": "一人は『火曜日に価格を公開』、もう一人は『火曜日に経理へ送付』と記録しました。司会者に確認すると、まず経理が確認するそうです。決定事項と未定の点をまとめてください。",
       "feedback": "二つの解釈を示し、確認後の担当者、相手、目的、未定の日付を言えましたか。"
+    },
+    {
+      "id": "en-route",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "車站轉乘｜電梯停用，怎麼走到月台？",
+      "goal": "Find a step-free route and check whether you have enough time.",
+      "scene": "The lift by the ticket gates is out of service. The stairs lead straight to platform four. For a step-free route, follow the signs to the east entrance and take the lift there. Allow ten minutes. Your train leaves in six minutes, but the next one uses the same platform.",
+      "question": "How can you reach platform four without using stairs?",
+      "choices": [
+        "Take the stairs by the gates.",
+        "Use the lift at the east entrance.",
+        "Wait by the broken lift."
+      ],
+      "correct": 1,
+      "simple": "I have a suitcase. Can I get to platform four without using stairs?",
+      "sample": "So I go to [entrance] and take [route]. How long should I allow?",
+      "chinese": "allow ten minutes 指預留十分鐘。聽到月台號碼後，還要比對步行時間和發車時間。",
+      "vocab": [
+        {
+          "term": "step-free",
+          "definition": "Accessible without using stairs.",
+          "example": "Is there a step-free entrance?"
+        },
+        {
+          "term": "allow",
+          "definition": "Set aside enough time.",
+          "example": "Allow ten minutes to get there."
+        }
+      ],
+      "grammar": {
+        "rule": "Use without + -ing to describe a route constraint.",
+        "example": "Can I get there without crossing the footbridge?"
+      },
+      "culture": {
+        "insight": "A direct route may include stairs.",
+        "action": "Mention the feature you need when asking for directions."
+      },
+      "followups": [
+        "Where does the shorter route take you?",
+        "Why would you take the next train?",
+        "How would you confirm the entrance name?"
+      ],
+      "transfer": "The museum entrance has steps. A side door has a ramp but closes at five. It is ten to five. Ask how far away the door is and repeat the directions.",
+      "feedback": "Did you name the entrance, confirm the route and compare the times?"
+    },
+    {
+      "id": "ja-route",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "車站轉乘｜電梯停用，怎麼走到月台？",
+      "goal": "階段を使わずに行ける経路と所要時間を確認する。",
+      "scene": "改札の横のエレベーターは点検中です。階段ならすぐ四番ホームに着きます。階段を使わない場合は、東口のエレベーターをご利用ください。ホームまで十分ほどかかります。電車はあと六分で出ますが、次の電車も四番ホームから出ます。",
+      "question": "階段を使わずに四番ホームへ行くには、どうしますか。",
+      "choices": [
+        "東口のエレベーターを使う。",
+        "改札の横で点検が終わるのを待つ。",
+        "改札の横の階段を上る。"
+      ],
+      "correct": 0,
+      "simple": "荷物が大きいのですが、階段を使わずに四番ホームまで行けますか。",
+      "sample": "[入口]の[設備]を使うんですね。そこから[目的地]まで何分くらいかかりますか。",
+      "chinese": "「あと六分で出ます」是再過六分鐘發車。「十分ほどかかります」是路程約需十分鐘。",
+      "vocab": [
+        {
+          "term": "点検中（てんけんちゅう）",
+          "definition": "設備が正常に動くか調べているところ。",
+          "example": "西口のエレベーターは点検中です。"
+        },
+        {
+          "term": "東口（ひがしぐち）",
+          "definition": "駅などの東側にある出入り口。",
+          "example": "東口に案内所があります。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ずに」で、ある動作をしないで済むことを伝えます。",
+        "example": "外に出ずに乗り換えられますか。"
+      },
+      "culture": {
+        "insight": "同じホームでも、経路によって移動時間が変わります。",
+        "action": "経路を復唱してから時間を尋ねましょう。"
+      },
+      "followups": [
+        "どちらのエレベーターが使えますか。",
+        "六分後の電車に間に合いそうですか。",
+        "次の電車のホームをどう確認しますか。"
+      ],
+      "transfer": "美術館の正面には階段があります。スロープのある通用口は五時に閉まり、今は四時五十分です。行き方と所要時間を尋ねてください。",
+      "feedback": "使える入口、移動時間、乗る電車を確認できましたか。"
+    },
+    {
+      "id": "en-library",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "圖書館借閱｜書有人預約，報告還沒寫完",
+      "goal": "Ask about renewal and arrange another way to consult a book.",
+      "scene": "Your book is due on Thursday. Another reader has placed a hold, so we can’t renew this copy. We do have a reference copy you can use here on Friday. Bring the borrowed copy back by Thursday evening.",
+      "question": "What can you do on Friday?",
+      "choices": [
+        "Keep your borrowed copy at home.",
+        "Take the reference copy home.",
+        "Use the reference copy in the library."
+      ],
+      "correct": 2,
+      "simple": "I’ll return this copy on Thursday. Can I use the other copy here on Friday?",
+      "sample": "If I can’t renew [item], could I use [alternative] on [day]?",
+      "chinese": "聽清楚 this copy 和 reference copy 分別指手中的借書和館內用書。",
+      "vocab": [
+        {
+          "term": "renew",
+          "definition": "Extend the time you can keep an item.",
+          "example": "Can I renew this book online?"
+        },
+        {
+          "term": "place a hold",
+          "definition": "Request an item so it will be set aside for you.",
+          "example": "Someone has placed a hold on this copy."
+        }
+      ],
+      "grammar": {
+        "rule": "Use if to ask about an alternative when your first option is unavailable.",
+        "example": "If I can’t take it home, may I read it here?"
+      },
+      "culture": {
+        "insight": "Copies of the same title may have different borrowing terms.",
+        "action": "Check where you can use each copy."
+      },
+      "followups": [
+        "Why can’t you renew this copy?",
+        "When will you return it?",
+        "How would you ask where to find the reference copy?"
+      ],
+      "transfer": "Your practice room booking ends at noon. Another group is booked next. Ask whether a smaller room is available and confirm when you must move.",
+      "feedback": "Did you give the return deadline and specify where you can use the other copy?"
+    },
+    {
+      "id": "ja-library",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "圖書館借閱｜書有人預約，報告還沒寫完",
+      "goal": "貸出期間を延ばせないとき、別の資料の利用方法を確認する。",
+      "scene": "お借りの本の返却期限は木曜日です。次の方の予約が入っているため、延長はできません。木曜日の閉館までにご返却ください。同じ本がもう一冊あります。そちらは館内用ですが、金曜日に閲覧できます。",
+      "question": "金曜日にできることはどれですか。",
+      "choices": [
+        "借りている本の期限を延ばす。",
+        "同じ本を館内で読む。",
+        "館内用の本を自宅に持ち帰る。"
+      ],
+      "correct": 1,
+      "simple": "この本は木曜日に返します。金曜日は館内用の本を読めますか。",
+      "sample": "[資料]の延長が難しければ、[曜日]に[別の資料]を利用できますか。",
+      "chinese": "「閉館までに」指最晚在閉館時歸還。「館内用」說明另一本書的使用地點。",
+      "vocab": [
+        {
+          "term": "返却期限（へんきゃくきげん）",
+          "definition": "借りたものを返す必要がある期日。",
+          "example": "返却期限は木曜日です。"
+        },
+        {
+          "term": "館内用（かんないよう）",
+          "definition": "施設の中で使うためのもの。",
+          "example": "こちらの地図は館内用です。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜までに」は、動作を終える期限を表します。",
+        "example": "木曜日の閉館までに返します。"
+      },
+      "culture": {
+        "insight": "同じ本でも、貸出用と館内用では使える場所が異なります。",
+        "action": "いつどの本をどこで読むか、最後に確認しましょう。"
+      },
+      "followups": [
+        "なぜ延長できませんか。",
+        "いつまでに返しますか。",
+        "館内用の本の場所をどう尋ねますか。"
+      ],
+      "transfer": "練習室は正午から別の団体が使います。小さい部屋が空いているか尋ね、何時に移動するか確認してください。",
+      "feedback": "返す本の期限と、翌日に使える本の場所を言えましたか。"
+    },
+    {
+      "id": "en-peer-feedback",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "同儕回饋｜第一次使用的人卡在哪一步？",
+      "goal": "Describe a reader’s difficulty and agree on one edit to try.",
+      "scene": "I tried your setup guide with a new account. At step two, it said to open the dashboard, but I was still on the welcome screen. I found the dashboard after choosing a workspace. Could we add that instruction before step two? I can try the revised guide with another new account.",
+      "question": "Which change does the reviewer suggest?",
+      "choices": [
+        "Add a step for choosing a workspace.",
+        "Remove the welcome screen.",
+        "Rename the dashboard."
+      ],
+      "correct": 0,
+      "simple": "I got stuck at step two. Could we tell readers to choose a workspace first?",
+      "sample": "When I tried [task], I saw [observation]. Could we add [change]? I can check it by [test].",
+      "chinese": "用 I saw／I got stuck 描述實際經驗，再用 Could we…? 提出可試做的一個改動。",
+      "vocab": [
+        {
+          "term": "get stuck",
+          "definition": "Be unable to continue a task.",
+          "example": "I got stuck on the welcome screen."
+        },
+        {
+          "term": "try out",
+          "definition": "Use something to see how it works.",
+          "example": "I can try out the revised guide."
+        }
+      ],
+      "grammar": {
+        "rule": "Use when + past tense to connect your observation to a specific attempt.",
+        "example": "When I opened the guide, I couldn’t find the first button."
+      },
+      "culture": {
+        "insight": "Knowing which screen the reader saw helps the writer reproduce the problem.",
+        "action": "Name the step and offer to test the edit."
+      },
+      "followups": [
+        "What did you see at step two?",
+        "How would you propose the missing instruction?",
+        "How could you check that the edit helps a new reader?"
+      ],
+      "transfer": "A colleague’s workshop invitation gives a room number but no building name. Describe where you got stuck, propose an edit and offer a way to check it.",
+      "feedback": "Did you describe an observation, suggest one edit and offer a concrete check?"
+    },
+    {
+      "id": "ja-peer-feedback",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "同儕回饋｜第一次使用的人卡在哪一步？",
+      "goal": "実際につまずいた箇所を伝え、具体的な修正を一つ提案する。",
+      "scene": "新しいアカウントで手順書を試しました。手順二には「ダッシュボードを開く」とありますが、私の画面にはまだ初期画面が表示されていました。ワークスペースを選ぶと先に進めました。手順二の前に、その操作を一行追加しませんか。修正後に別の新しいアカウントで試してみます。",
+      "question": "手順書に追加したいのは何ですか。",
+      "choices": [
+        "初期画面の色を変える操作。",
+        "アカウントを削除する操作。",
+        "ワークスペースを選ぶ操作。"
+      ],
+      "correct": 2,
+      "simple": "手順二で少し迷いました。その前に、ワークスペースを選ぶ操作を一行足しませんか。",
+      "sample": "[箇所]で[見えたもの]が表示されていました。[操作]を追記しませんか。修正後に[方法]で試します。",
+      "chinese": "「〜すると先に進めました」先交代哪個操作有效，再用「〜しませんか」邀請對方一起修改。",
+      "vocab": [
+        {
+          "term": "手順書（てじゅんしょ）",
+          "definition": "作業の進め方を順番に書いたもの。",
+          "example": "手順書を見ながら設定しました。"
+        },
+        {
+          "term": "追記（ついき）する",
+          "definition": "すでにある文章に書き足す。",
+          "example": "画面の名前を追記します。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜てみる」で試しにする行動を表します。",
+        "example": "修正後に初めから操作してみます。"
+      },
+      "culture": {
+        "insight": "自分が見た画面を伝えると、書き手も状況を把握できます。",
+        "action": "迷った場所と、先に進めた操作を一つずつ挙げましょう。"
+      },
+      "followups": [
+        "どの画面で迷いましたか。",
+        "どうすると先に進めましたか。",
+        "修正後はどう確かめますか。"
+      ],
+      "transfer": "研修の案内には部屋番号だけがあり、建物名がありません。迷った点を伝え、追記する内容と確認方法を提案してください。",
+      "feedback": "相手が修正できるように、箇所、操作、試し方を具体的に言えましたか。"
     }
   ]
 }
