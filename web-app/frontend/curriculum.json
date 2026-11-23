@@ -5012,6 +5012,374 @@
       ],
       "transfer": "ロゴ案Aは五票、Bは三票、Cは五票です。同じ取り決めで、残る候補、投票できる人、集計の始め方を案内してください。",
       "feedback": "候補、投票者、前の票の扱いを明確にできましたか。"
+    },
+    {
+      "id": "en-florist",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "花店訂花｜兩束分送，哪張卡片配哪束？",
+      "goal": "Order two separate bouquets and match each message to its recipient.",
+      "scene": "Please wrap the yellow flowers and the white flowers separately. The yellow bouquet is for my teacher and goes with the card that says “Thank you for your patience.” The white one is for a friend who just moved. Its card says “Enjoy your new home.”",
+      "question": "Which card goes with the white bouquet?",
+      "choices": [
+        "The thank-you card.",
+        "The new-home card.",
+        "Both cards."
+      ],
+      "correct": 1,
+      "simple": "Two separate bouquets, please. The thank-you card goes with the yellow flowers.",
+      "sample": "[Colour] is for [recipient]. Could you attach the card that says [message] to that one?",
+      "chinese": "goes with 用來配對花束與卡片；wrap separately 是分開包裝。",
+      "vocab": [
+        {
+          "term": "bouquet",
+          "definition": "A bunch of flowers arranged as a gift.",
+          "example": "The white bouquet is for a friend."
+        },
+        {
+          "term": "separately",
+          "definition": "Apart from each other.",
+          "example": "Please wrap these separately."
+        }
+      ],
+      "grammar": {
+        "rule": "Use the one that says to identify an item by its wording.",
+        "example": "I mean the one that says “Thank you.”"
+      },
+      "culture": {
+        "insight": "Two gifts on one order can easily get mixed up.",
+        "action": "Read each message back with the colour of its bouquet."
+      },
+      "followups": [
+        "Who is getting the yellow flowers?",
+        "How many packages do you need?",
+        "How would you politely correct a swapped card?"
+      ],
+      "transfer": "A bakery packs cinnamon rolls for your aunt and lemon cakes for your neighbour. Ask for separate boxes and specify which gift note to attach to each.",
+      "feedback": "Could the florist match both notes to their bouquets without guessing?"
+    },
+    {
+      "id": "ja-florist",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "花店訂花｜兩束分送，哪張卡片配哪束？",
+      "goal": "二つの花束を別々に包んでもらい、それぞれに添えるカードを指定する。",
+      "scene": "黄色い花と白い花は別々に包んでください。黄色い花束は先生に贈るので、「ご指導ありがとうございました」のカードをお願いします。白い方は引っ越した友人に渡します。「新生活を楽しんでね」のカードを添えてください。",
+      "question": "白い花束に添えるのはどのカードですか。",
+      "choices": [
+        "「新生活を楽しんでね」のカード。",
+        "「ご指導ありがとうございました」のカード。",
+        "二枚とも。"
+      ],
+      "correct": 0,
+      "simple": "二束に分けてください。黄色い方に先生へのお礼のカードをお願いします。",
+      "sample": "[色]の方は[相手]用です。[文面]と書いたカードを添えてください。",
+      "chinese": "「黄色い方」是兩束中黃色的那束。「添える」在這裡是隨花附上卡片。",
+      "vocab": [
+        {
+          "term": "花束（はなたば）",
+          "definition": "贈り物などのために花を束ねたもの。",
+          "example": "花束を二つお願いします。"
+        },
+        {
+          "term": "添える（そえる）",
+          "definition": "主になるものに別のものを付け加える。",
+          "example": "短い手紙を添えます。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜と書いた」で文面を手掛かりに指定できます。",
+        "example": "「ありがとう」と書いた方をお願いします。"
+      },
+      "culture": {
+        "insight": "送り先が複数ある注文では組み合わせを取り違えやすくなります。",
+        "action": "色と文面を一組にして確認しましょう。"
+      },
+      "followups": [
+        "黄色い花束は誰に渡しますか。",
+        "包みはいくつ必要ですか。",
+        "カードが逆ならどう伝えますか。"
+      ],
+      "transfer": "パン屋で叔母にはシナモンロール、隣の人にはレモンケーキを贈ります。箱を分け、それぞれに付けるメッセージを伝えてください。",
+      "feedback": "二束の色とカードの文面を対応させて言えましたか。"
+    },
+    {
+      "id": "en-class-waitlist",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "課程候補｜收到空位通知，就算報名成功了嗎？",
+      "goal": "Respond to a waitlist offer before the place is released.",
+      "scene": "A place has opened up in Saturday’s dance class. We’re offering it to you until six this evening. Reply “yes” by six and we’ll confirm your booking. If we don’t hear from you by then, we’ll offer it to the next person.",
+      "question": "You want the place. What do you need to do?",
+      "choices": [
+        "Just arrive on Saturday.",
+        "Reply after the class starts.",
+        "Reply yes by six this evening."
+      ],
+      "correct": 2,
+      "simple": "Yes, please book me into Saturday’s class. Could you confirm my place?",
+      "sample": "I’d like to [accept or decline] the place in [class]. Is [time] the deadline to reply?",
+      "chinese": "offer 表示有名額可以接受；confirm 才表示預約已確認。別把回覆期限當作上課時間。",
+      "vocab": [
+        {
+          "term": "waitlist",
+          "definition": "A list of people hoping for a place if one becomes available.",
+          "example": "I’m on the waitlist for Saturday."
+        },
+        {
+          "term": "open up",
+          "definition": "Become available.",
+          "example": "A place has opened up in the morning class."
+        }
+      ],
+      "grammar": {
+        "rule": "Use by with a deadline.",
+        "example": "Please reply by six this evening."
+      },
+      "culture": {
+        "insight": "A waitlist message may require an active response.",
+        "action": "Check how to accept and when the offer expires."
+      },
+      "followups": [
+        "When is the class?",
+        "What happens if you stay silent?",
+        "How would you decline so the next person can take the place?"
+      ],
+      "transfer": "A walking tour offers you a place for Sunday morning and needs an answer by noon on Friday. You can’t attend. Decline and ask to stay on the list for the following Sunday.",
+      "feedback": "Did you distinguish the class date from the reply deadline and state a clear decision?"
+    },
+    {
+      "id": "ja-class-waitlist",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "課程候補｜收到空位通知，就算報名成功了嗎？",
+      "goal": "空席の案内に期限内に返事をし、予約が確定したか確認する。",
+      "scene": "土曜日のダンス教室に空きが出ました。本日の午後六時まで席をお取りしておきます。参加をご希望でしたら六時までにご返信ください。ご返信がなければ、次にお待ちの方にご案内します。",
+      "question": "参加したい場合、どうすればいいですか。",
+      "choices": [
+        "返事をせずに土曜日に行く。",
+        "今日の午後六時までに参加すると返信する。",
+        "土曜日の午後六時に返事をする。"
+      ],
+      "correct": 1,
+      "simple": "土曜日の教室に参加します。これで予約は確定でしょうか。",
+      "sample": "[教室]の空席のご案内、ありがとうございます。[意思]。[期限]までにお返事すればよろしいですか。",
+      "chinese": "「空きが出ました」是有了空位。「席をお取りしておきます」表示店家暫時為你保留。",
+      "vocab": [
+        {
+          "term": "キャンセル待ち（キャンセルまち）",
+          "definition": "空きが出たら利用できるように順番を待つこと。",
+          "example": "土曜クラスのキャンセル待ちをしています。"
+        },
+        {
+          "term": "確定（かくてい）",
+          "definition": "内容が正式に決まること。",
+          "example": "返信を受けて予約が確定しました。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜までに」で返事を終える期限を示します。",
+        "example": "本日六時までに返信します。"
+      },
+      "culture": {
+        "insight": "空席案内を受けても返事が必要な場合があります。",
+        "action": "参加するかどうかを明確に伝えましょう。"
+      },
+      "followups": [
+        "教室は何曜日ですか。",
+        "返事をしなければどうなりますか。",
+        "次の人に席を譲りたいとき、どう答えますか。"
+      ],
+      "transfer": "日曜午前の街歩きに空きが出ました。返事は金曜の正午までです。今回は断り、翌週の日曜のキャンセル待ちができるか尋ねてください。",
+      "feedback": "開催日と返事の期限を区別し、参加の意思を伝えられましたか。"
+    },
+    {
+      "id": "en-scene-change",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "舞台換景｜從演員的位置看，道具放哪一側？",
+      "goal": "Clarify whose left is meant before placing props.",
+      "scene": "For the next scene, put the chair on the actor’s left and the table on the actor’s right. The actor is facing the audience. You’re in the audience facing the stage, so the chair should appear on your right. Leave the centre clear.",
+      "question": "From the audience, where should the chair appear?",
+      "choices": [
+        "On the right.",
+        "On the left.",
+        "In the centre."
+      ],
+      "correct": 0,
+      "simple": "Do you mean the actor’s left while facing the audience? That’s on my right from here.",
+      "sample": "From [viewpoint], [object] goes on [side]. Is that the view you mean?",
+      "chinese": "actor’s left 和觀眾的左側剛好相反。複誦時加上 facing the audience 才能確認方向。",
+      "vocab": [
+        {
+          "term": "prop",
+          "definition": "An object used in a performance.",
+          "example": "The chair is a prop for the next scene."
+        },
+        {
+          "term": "stage left",
+          "definition": "The left side from the viewpoint of a performer facing the audience.",
+          "example": "The chair goes stage left."
+        }
+      ],
+      "grammar": {
+        "rule": "Use from where I’m standing to state your viewpoint.",
+        "example": "From where I’m standing, the table is on my left."
+      },
+      "culture": {
+        "insight": "People on opposite sides can both reasonably say “left” and point to different places.",
+        "action": "Name the viewpoint before moving the props."
+      },
+      "followups": [
+        "Which way is the actor facing?",
+        "Which side will the audience see the table on?",
+        "How would you check the layout without pointing?"
+      ],
+      "transfer": "You’re arranging a video interview. The producer wants a plant on the seated guest’s right. Face the guest and describe where the plant should appear from your position.",
+      "feedback": "Did you anchor left and right to a person and check both props?"
+    },
+    {
+      "id": "ja-scene-change",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "舞台換景｜從演員的位置看，道具放哪一側？",
+      "goal": "左右の基準を確かめ、客席から見た配置を復唱する。",
+      "scene": "次の場面では、俳優が客席を向いて立ったとき、左手側に椅子、右手側に机を置きます。あなたは客席から舞台を見ています。椅子はあなたから見て右側になります。中央は空けておいてください。",
+      "question": "客席から見ると、椅子はどこにありますか。",
+      "choices": [
+        "左側。",
+        "中央。",
+        "右側。"
+      ],
+      "correct": 2,
+      "simple": "俳優が客席を向いたときの左ですね。客席から見ると、椅子が右、机が左で合っていますか。",
+      "sample": "[人]が[方向]を向いたときの[左右]ですね。[見る位置]から見ると[配置]で合っていますか。",
+      "chinese": "「客席を向いて」是演員面向觀眾；「客席から見て」是觀眾看向舞台。",
+      "vocab": [
+        {
+          "term": "客席（きゃくせき）",
+          "definition": "観客が座る場所。",
+          "example": "客席から舞台を確認します。"
+        },
+        {
+          "term": "配置（はいち）",
+          "definition": "物をどこに置くかという位置関係。",
+          "example": "机と椅子の配置を決めます。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜から見て」で位置の基準を示します。",
+        "example": "客席から見て右側です。"
+      },
+      "culture": {
+        "insight": "向かい合う人には左右が逆に見えます。",
+        "action": "物を動かす前に、誰から見た左右か確認しましょう。"
+      },
+      "followups": [
+        "俳優はどちらを向いていますか。",
+        "机は客席から見てどちら側ですか。",
+        "指をささずに配置をどう確かめますか。"
+      ],
+      "transfer": "インタビュー収録で、着席したゲストの右手側に鉢植えを置きます。ゲストと向かい合う自分から見た位置を説明してください。",
+      "feedback": "左右の基準を言い、机と椅子の位置を確かめられましたか。"
+    },
+    {
+      "id": "en-billable-hours",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "工時填報｜三小時的工作，哪兩小時能向客戶計費？",
+      "goal": "Separate time worked from time charged to a client.",
+      "scene": "Yesterday you spent two hours preparing the client demo and one hour training a new colleague. For this project, demo preparation is billable and internal training is not. Log all three hours on your timesheet under the two activities. Only the demo time goes on the client invoice.",
+      "question": "What should the client invoice show?",
+      "choices": [
+        "Three hours of demo work.",
+        "Two hours of demo preparation.",
+        "One hour of training."
+      ],
+      "correct": 1,
+      "simple": "I’ll log three hours in total and bill the client for the two demo hours.",
+      "sample": "I spent [duration] on [activity]. Should I log it under [category], and is it billable on this project?",
+      "chinese": "log hours 是登記工作時數，bill the client 是向客戶計費。先問這個專案的約定再分類。",
+      "vocab": [
+        {
+          "term": "billable",
+          "definition": "Eligible to be charged to a client under the project agreement.",
+          "example": "Is demo preparation billable here?"
+        },
+        {
+          "term": "timesheet",
+          "definition": "A record of time spent working on activities.",
+          "example": "I entered the training on my timesheet."
+        }
+      ],
+      "grammar": {
+        "rule": "Use only before the activity or amount you want to limit.",
+        "example": "Only the two demo hours go on the invoice."
+      },
+      "culture": {
+        "insight": "Projects can classify the same activity differently.",
+        "action": "Check the agreed category before submitting time."
+      },
+      "followups": [
+        "How many hours did you work altogether?",
+        "Where does the training hour go?",
+        "How would you explain the difference to a colleague reviewing the invoice?"
+      ],
+      "transfer": "You spent ninety minutes editing a client report and thirty minutes organising internal files. Only report editing is billable on this project. Report both times and the invoice total.",
+      "feedback": "Did you preserve all time worked and identify the client charge separately?"
+    },
+    {
+      "id": "ja-billable-hours",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "工時填報｜三小時的工作，哪兩小時能向客戶計費？",
+      "goal": "勤務の記録と顧客への請求対象時間を区別して報告する。",
+      "scene": "昨日はお客様向けのデモ準備に二時間、新人の社内研修に一時間かかりました。この案件ではデモ準備だけが請求対象です。工数表には作業別に三時間すべてを記入し、請求書にはデモ準備の分だけを載せてください。",
+      "question": "請求書に記載するのはどれですか。",
+      "choices": [
+        "デモ準備の二時間。",
+        "デモ準備の三時間。",
+        "社内研修の一時間。"
+      ],
+      "correct": 0,
+      "simple": "工数表には二つの作業を合わせて三時間、請求書にはデモ準備の二時間を記載します。",
+      "sample": "[作業]に[時間]かかりました。[区分]で記録すればよいですか。この案件では請求対象ですか。",
+      "chinese": "「工数表」記錄實際投入的工作；「請求対象」表示依此專案約定可列入帳單。",
+      "vocab": [
+        {
+          "term": "工数（こうすう）",
+          "definition": "作業に必要な、または実際にかかった仕事量。",
+          "example": "作業ごとに工数を記録します。"
+        },
+        {
+          "term": "請求対象（せいきゅうたいしょう）",
+          "definition": "代金を請求する範囲に含まれるもの。",
+          "example": "今回はデモ準備が請求対象です。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜の分だけ」で計上する範囲を限定します。",
+        "example": "準備にかかった時間の分だけ請求します。"
+      },
+      "culture": {
+        "insight": "作業区分は案件の取り決めによって変わります。",
+        "action": "工数の記録先と請求の可否を分けて確認しましょう。"
+      },
+      "followups": [
+        "作業時間は合計で何時間ですか。",
+        "研修の一時間はどこに記録しますか。",
+        "請求書と工数表で時間が違う理由をどう説明しますか。"
+      ],
+      "transfer": "報告書の編集に九十分、社内ファイルの整理に三十分かかりました。今回は編集だけが請求対象です。内訳、記録する合計時間、請求する時間を伝えてください。",
+      "feedback": "作業時間を漏れなく記録し、請求する分を別に示せましたか。"
     }
   ]
 }

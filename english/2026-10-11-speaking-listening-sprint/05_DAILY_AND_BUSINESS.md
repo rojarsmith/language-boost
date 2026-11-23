@@ -980,3 +980,55 @@
 **用語提示**　four each 是兩案各四票；do not carry over 表示第二輪從零開始計票。
 
 **換情境再說一次**　Three logo designs receive five, three and five votes. Using the same rule, announce which designs remain, who votes again and how the new count starts.
+
+## 花店訂花｜兩束分送，哪張卡片配哪束？
+
+你要送花給老師和朋友。請店員分開包裝，再讓對方只看卡片文字，把兩張卡各放到正確的花束上。
+
+- **顧客**　Could you make these into two bouquets?
+- **店員**　Of course. Which one gets the new-home card?
+- **顧客**　The white one, please. The yellow flowers are for my teacher, with the thank-you card.
+- **店員**　White for the new home and yellow for your teacher. I’ll wrap them separately.
+
+**用語提示**　goes with 用來配對花束與卡片；wrap separately 是分開包裝。
+
+**換情境再說一次**　A bakery packs cinnamon rolls for your aunt and lemon cakes for your neighbour. Ask for separate boxes and specify which gift note to attach to each.
+
+## 課程候補｜收到空位通知，就算報名成功了嗎？
+
+你在候補週六的舞蹈課。搭檔扮演櫃檯，告知有空位及回覆期限；請你分別演練想參加與無法參加時的回覆。
+
+- **候補者**　Thanks for the message. Am I already booked for Saturday?
+- **櫃檯**　We’re holding a place until six today. Would you like it?
+- **候補者**　Yes, please. I’d like to take the place.
+- **櫃檯**　You’re booked. I’ll send your confirmation now.
+
+**用語提示**　offer 表示有名額可以接受；confirm 才表示預約已確認。別把回覆期限當作上課時間。
+
+**換情境再說一次**　A walking tour offers you a place for Sunday morning and needs an answer by noon on Friday. You can’t attend. Decline and ask to stay on the list for the following Sunday.
+
+## 舞台換景｜從演員的位置看，道具放哪一側？
+
+你和舞台監督隔著舞台面對面。把桌、椅當成兩張紙卡，先確認左右是從誰的位置看，再照對方的指示擺好。
+
+- **道具組員**　When you say left, do you mean my left from the audience?
+- **舞台監督**　The actor’s left, facing the audience. That’s where the chair goes.
+- **道具組員**　So from my seat the chair is on my right and the table on my left?
+- **舞台監督**　Exactly. Keep the space between them clear.
+
+**用語提示**　actor’s left 和觀眾的左側剛好相反。複誦時加上 facing the audience 才能確認方向。
+
+**換情境再說一次**　You’re arranging a video interview. The producer wants a plant on the seated guest’s right. Face the guest and describe where the plant should appear from your position.
+
+## 工時填報｜三小時的工作，哪兩小時能向客戶計費？
+
+夥伴扮演專案主管，說明這次的計費約定。你要核對實作與內訓的時數，並說明工時表和客戶帳單各記多少。
+
+- **專案成員**　I worked three hours yesterday. Should I bill all three?
+- **主管**　How much was demo preparation, and how much was internal training?
+- **專案成員**　Two hours on the demo and one on training. I’ll log both, but bill just the two demo hours.
+- **主管**　That matches our agreement for this project.
+
+**用語提示**　log hours 是登記工作時數，bill the client 是向客戶計費。先問這個專案的約定再分類。
+
+**換情境再說一次**　You spent ninety minutes editing a client report and thirty minutes organising internal files. Only report editing is billable on this project. Report both times and the invoice total.
