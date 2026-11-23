@@ -2436,6 +2436,374 @@
       ],
       "transfer": "月曜日は予約六十件のうち六件、火曜日は二十件のうち四件がキャンセルされました。件数と割合の変化を伝え、追加で調べたい点を一つ挙げてください。",
       "feedback": "件数と割合を分け、理由は未確認だと伝えられましたか。"
+    },
+    {
+      "id": "en-haircut",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "理髮溝通｜剪掉兩公分，還是留下兩公分？",
+      "goal": "Describe how much hair to cut and which part to leave alone.",
+      "scene": "I'd like two centimetres off the ends. My fringe is already quite short, so please leave it as it is. Could you show me where the ends will be before you start?",
+      "question": "What should the stylist do?",
+      "choices": [
+        "Leave only two centimetres all over.",
+        "Take two centimetres off the ends and leave the fringe alone.",
+        "Take two centimetres off the fringe only."
+      ],
+      "correct": 1,
+      "simple": "Just two centimetres off the ends, please. Keep the fringe as it is.",
+      "sample": "Could you take [amount] off [part] and leave [other part] as it is?",
+      "chinese": "two centimetres off 指剪掉的長度；若要指定剪完的位置，可以用手比出來。",
+      "vocab": [
+        {
+          "term": "the ends",
+          "definition": "The tips of your hair.",
+          "example": "Just trim the ends, please."
+        },
+        {
+          "term": "fringe",
+          "definition": "Hair that falls over your forehead, also called bangs.",
+          "example": "Please leave my fringe alone."
+        }
+      ],
+      "grammar": {
+        "rule": "Use take an amount off to say how much to remove.",
+        "example": "Could you take one centimetre off the sides?"
+      },
+      "culture": {
+        "insight": "People may picture different lengths when they hear “short.”",
+        "action": "Ask the stylist to show you the length first."
+      },
+      "followups": [
+        "Which part should stay the same?",
+        "How much should come off the ends?",
+        "What would you ask before the stylist starts?"
+      ],
+      "transfer": "A tailor is shortening your trousers. Ask for three centimetres off the legs, keep the waist as it is, and ask to see the length pinned first.",
+      "feedback": "Did you say how much to remove, what to keep and how to check the result beforehand?"
+    },
+    {
+      "id": "ja-haircut",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "理髮溝通｜剪掉兩公分，還是留下兩公分？",
+      "goal": "切る長さと、そのまま残したい部分を伝える。",
+      "scene": "毛先を二センチほど切ってください。前髪はもう短いので、そのままでお願いします。切る前に、仕上がりの長さを見せていただけますか。",
+      "question": "どんな仕上がりを希望していますか。",
+      "choices": [
+        "前髪だけ二センチ切る。",
+        "髪全体を二センチの長さにする。",
+        "毛先を二センチ切り、前髪はそのままにする。"
+      ],
+      "correct": 2,
+      "simple": "毛先を二センチだけ切ってください。前髪はそのままでお願いします。",
+      "sample": "[部分]を[長さ]ほど切ってください。[別の部分]はそのままでお願いします。",
+      "chinese": "「二センチほど切る」說明剪掉多少；「二センチの長さにする」說明剪完剩多長。",
+      "vocab": [
+        {
+          "term": "毛先（けさき）",
+          "definition": "髪の毛の先の部分。",
+          "example": "毛先を少し整えてください。"
+        },
+        {
+          "term": "前髪（まえがみ）",
+          "definition": "額にかかる髪。",
+          "example": "前髪は伸ばしています。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜前に」で先にしてほしい動作を示します。",
+        "example": "切る前に長さを確認したいです。"
+      },
+      "culture": {
+        "insight": "「短め」のイメージは人によって違います。",
+        "action": "指で位置を示して確認しましょう。"
+      },
+      "followups": [
+        "どこを切ってほしいですか。",
+        "前髪はどうしますか。",
+        "切る前に何を確認しますか。"
+      ],
+      "transfer": "ズボンの裾を三センチ短くしたいです。ウエストはそのままにして、縫う前にピンで留めた長さを見せてもらいましょう。",
+      "feedback": "切る量、残す部分、確認のタイミングを伝えられましたか。"
+    },
+    {
+      "id": "en-cooking-class",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "料理教室｜醬汁留一半，什麼時候加？",
+      "goal": "Check the order of a recipe and divide an ingredient correctly.",
+      "scene": "Pour half the sauce over the vegetables while they’re in the pan. Keep the other half in the bowl. Turn off the heat, then stir in the rest just before serving.",
+      "question": "When should you add the second half of the sauce?",
+      "choices": [
+        "Just before serving, after turning off the heat.",
+        "Before adding the vegetables.",
+        "While the pan is still heating up."
+      ],
+      "correct": 0,
+      "simple": "Half goes in now. I add the rest after I turn off the heat, right?",
+      "sample": "Do I add [amount] now and save [remaining amount] for [step]?",
+      "chinese": "聽到 the rest，先找它指哪項材料，再聽 just before serving 確認時機。",
+      "vocab": [
+        {
+          "term": "set aside",
+          "definition": "Keep something for a later step.",
+          "example": "Set aside half the sauce."
+        },
+        {
+          "term": "stir in",
+          "definition": "Mix an ingredient into a dish by stirring.",
+          "example": "Stir in the remaining sauce."
+        }
+      ],
+      "grammar": {
+        "rule": "Use after + -ing to describe the next action.",
+        "example": "Add the herbs after turning off the heat."
+      },
+      "culture": {
+        "insight": "A cook may give several steps while demonstrating one action.",
+        "action": "Repeat the amount and the timing before pouring."
+      },
+      "followups": [
+        "How much stays in the bowl?",
+        "Should the heat still be on for the second half?",
+        "How would you check before pouring it all in?"
+      ],
+      "transfer": "A baking instructor says to fold half the nuts into the batter and scatter the rest on top before baking. Repeat the two steps to your partner.",
+      "feedback": "Could your partner tell how much goes in at each step and when?"
+    },
+    {
+      "id": "ja-cooking-class",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "料理教室｜醬汁留一半，什麼時候加？",
+      "goal": "材料の分量と入れる順番を聞き返す。",
+      "scene": "野菜を炒めているところに、たれを半分入れます。残りは器に取っておいてください。火を止めてから、盛り付ける直前に残りのたれを混ぜます。",
+      "question": "残りのたれを入れるのはいつですか。",
+      "choices": [
+        "野菜を炒め始める前。",
+        "火を止めて、盛り付ける直前。",
+        "火を止める直前。"
+      ],
+      "correct": 1,
+      "simple": "今は半分だけですね。残りは火を止めてから入れるんですね。",
+      "sample": "今は[分量]だけ入れて、残りは[工程]の後で入れるんですね。",
+      "chinese": "「火を止める直前」與「火を止めてから」順序相反。聽到「直前」時要抓住前面的動作。",
+      "vocab": [
+        {
+          "term": "たれ",
+          "definition": "料理に味を付ける液状の調味料。",
+          "example": "たれを半分入れます。"
+        },
+        {
+          "term": "盛り付ける（もりつける）",
+          "definition": "料理を皿などに整えてのせる。",
+          "example": "野菜を皿に盛り付けます。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ておく」で後のためにする準備を表します。",
+        "example": "残りのたれは別の器に取っておきます。"
+      },
+      "culture": {
+        "insight": "実演では手元の動きと言葉が同時に進みます。",
+        "action": "注ぐ前に分量と順番を復唱しましょう。"
+      },
+      "followups": [
+        "今はどれくらい入れますか。",
+        "器に残したたれはいつ使いますか。",
+        "全部入れてよいか迷ったら何と聞きますか。"
+      ],
+      "transfer": "お菓子教室で、ナッツの半分を生地に混ぜ、残りを焼く前に上に散らすよう言われました。二つの手順を復唱してください。",
+      "feedback": "分量と順番を両方伝えられましたか。"
+    },
+    {
+      "id": "en-expense-claim",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "費用核銷｜收據包含私人用品，該報多少？",
+      "goal": "Explain a mixed receipt and confirm the amount to claim.",
+      "scene": "The receipt shows twenty-four dollars for printer paper and six for a personal notebook. Please attach the full receipt and circle the paper. Enter only the cost of the paper on the expense form.",
+      "question": "What amount should go on the form?",
+      "choices": [
+        "Thirty dollars.",
+        "Six dollars.",
+        "Twenty-four dollars."
+      ],
+      "correct": 2,
+      "simple": "The total is thirty dollars. I’ll claim twenty-four for the paper and circle that line on the receipt.",
+      "sample": "The total includes [personal item]. I’m claiming [amount] for [work item]. Should I mark that line?",
+      "chinese": "attach the full receipt 說的是附件；enter only the cost of the paper 才是要填的金額。",
+      "vocab": [
+        {
+          "term": "claim",
+          "definition": "Ask to be paid back for an expense.",
+          "example": "I’ll claim the cost of the paper."
+        },
+        {
+          "term": "line item",
+          "definition": "One entry on a bill or receipt.",
+          "example": "I circled the line item for paper."
+        }
+      ],
+      "grammar": {
+        "rule": "Use only before the part you are limiting.",
+        "example": "I’m claiming only the cost of the paper."
+      },
+      "culture": {
+        "insight": "A receipt total can differ from a claim amount.",
+        "action": "Ask what detail the reviewer needs on a mixed receipt."
+      },
+      "followups": [
+        "Which item was personal?",
+        "What will you circle?",
+        "How would you explain the six-dollar difference?"
+      ],
+      "transfer": "A receipt lists twelve dollars for work postage and three for a personal greeting card. Tell the reviewer what you’ll claim and ask how to mark the receipt.",
+      "feedback": "Did you separate the receipt total from the claim and confirm the attachment?"
+    },
+    {
+      "id": "ja-expense-claim",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "費用核銷｜收據包含私人用品，該報多少？",
+      "goal": "私物が含まれるレシートの内訳を説明して申請額を確認する。",
+      "scene": "コピー用紙が千二百円、私用のノートが三百円で、レシートの合計は千五百円です。レシートは全体を添付して、用紙の行を丸で囲んでください。申請書には用紙の代金だけを記入してください。",
+      "question": "申請書に記入する金額はいくらですか。",
+      "choices": [
+        "千二百円。",
+        "千五百円。",
+        "三百円。"
+      ],
+      "correct": 0,
+      "simple": "合計は千五百円ですが、用紙代の千二百円だけ申請します。",
+      "sample": "合計には[私用の品物]も含まれています。[業務用の品物]の[金額]だけ申請します。",
+      "chinese": "「全体を添付」指整張收據都要附上；「代金だけを記入」限定的是申報金額。",
+      "vocab": [
+        {
+          "term": "内訳（うちわけ）",
+          "definition": "合計の中に何がいくら含まれるかを示したもの。",
+          "example": "購入費の内訳を説明します。"
+        },
+        {
+          "term": "添付（てんぷ）",
+          "definition": "書類などを一緒に付けること。",
+          "example": "レシートを添付します。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜だけを」で対象を絞ります。",
+        "example": "用紙の代金だけを記入します。"
+      },
+      "culture": {
+        "insight": "合計と申請額が違うと、確認する人は内訳を知りたくなります。",
+        "action": "対象の行をどう示すか尋ねましょう。"
+      },
+      "followups": [
+        "どれが私用ですか。",
+        "どの行に丸を付けますか。",
+        "差額の三百円をどう説明しますか。"
+      ],
+      "transfer": "送料六百円と私用のカード二百円が一枚のレシートに載っています。申請額を伝え、対象の行の示し方を確認してください。",
+      "feedback": "合計と申請額を言い分け、添付方法も確認できましたか。"
+    },
+    {
+      "id": "en-turn-taking",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "會議主持｜兩人同時開口，怎麼把話交回去？",
+      "goal": "Manage overlapping turns and invite the second speaker back in.",
+      "scene": "Rae was halfway through an example when Ben started to ask a question. As chair, I said, “Ben, let’s hear the rest of Rae’s example first. Then I’ll come back to you.” Rae has just finished.",
+      "question": "What should the chair say next?",
+      "choices": [
+        "Rae, could you start your example again?",
+        "Ben, what did you want to ask?",
+        "Let’s leave questions until next week."
+      ],
+      "correct": 1,
+      "simple": "Rae, please finish your example. Ben, you’re next.",
+      "sample": "Let’s let [name] finish [point]. Then, [name], I’ll come back to you.",
+      "chinese": "come back to you 在這裡指稍後把發言機會還給對方。",
+      "vocab": [
+        {
+          "term": "halfway through",
+          "definition": "In the middle of something.",
+          "example": "Rae was halfway through her example."
+        },
+        {
+          "term": "come back to someone",
+          "definition": "Return to someone for their contribution.",
+          "example": "I’ll come back to Ben after this example."
+        }
+      ],
+      "grammar": {
+        "rule": "Use let + person + verb to give someone room to act.",
+        "example": "Let’s let Rae finish her point."
+      },
+      "culture": {
+        "insight": "Someone who paused may wait for a clear invitation to continue.",
+        "action": "Name the next speaker and follow through."
+      },
+      "followups": [
+        "Who was still explaining?",
+        "How would you acknowledge Ben without losing Rae’s example?",
+        "What will you say when Rae finishes?"
+      ],
+      "transfer": "In a workshop two people volunteer at once. Invite one to demonstrate first and then explicitly invite the other to show a different method.",
+      "feedback": "Did both speakers know when to speak, and did you return to the one who waited?"
+    },
+    {
+      "id": "ja-turn-taking",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "會議主持｜兩人同時開口，怎麼把話交回去？",
+      "goal": "発言が重なったときに順番を整え、待っていた人に話を戻す。",
+      "scene": "森さんが例を説明している途中で、林さんが質問を始めました。司会の私は「林さん、先に森さんの例を最後まで伺ってから、ご質問をお願いします」と伝えました。今、森さんの説明が終わりました。",
+      "question": "次に司会は何と言えばよいですか。",
+      "choices": [
+        "森さん、最初からもう一度お願いします。",
+        "では、次の議題に移ります。",
+        "林さん、お待たせしました。ご質問をどうぞ。"
+      ],
+      "correct": 2,
+      "simple": "先に森さんの例を最後まで伺いましょう。林さん、その後でご質問をお願いします。",
+      "sample": "まず[名前]さんに[内容]をお願いします。その後で[名前]さんに伺います。",
+      "chinese": "「〜てから」先排出順序；說完第一段後，用「お待たせしました」把話交回去。",
+      "vocab": [
+        {
+          "term": "司会（しかい）",
+          "definition": "会の進行を担当すること、またはその人。",
+          "example": "今日の司会を務めます。"
+        },
+        {
+          "term": "発言（はつげん）",
+          "definition": "会議などで意見を述べること。",
+          "example": "二人の発言が重なりました。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜てから」で二つの行動の順番を示します。",
+        "example": "例を伺ってから、質問を受けます。"
+      },
+      "culture": {
+        "insight": "待っている人は話し始めるきっかけをつかみにくい場合があります。",
+        "action": "順番が来たら名前を呼んで促しましょう。"
+      },
+      "followups": [
+        "説明の途中だったのは誰ですか。",
+        "質問したい人にはどう声をかけますか。",
+        "説明が終わったらどう進めますか。"
+      ],
+      "transfer": "研修で二人が同時に実演を申し出ました。一人に先にお願いし、終わったらもう一人に別の方法を見せてもらいましょう。",
+      "feedback": "二人に順番を伝え、待っていた人に発言を促せましたか。"
     }
   ]
 }

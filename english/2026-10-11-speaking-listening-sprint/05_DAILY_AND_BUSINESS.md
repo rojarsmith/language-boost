@@ -615,3 +615,56 @@
 **用語提示**　用 out of 說出分母，讓聽眾知道百分比代表哪些訂單。
 
 **換情境再說一次**　Six of sixty bookings were cancelled on Monday. Four of twenty were cancelled on Tuesday. Brief a colleague on both the count and the rate, then name one missing detail.
+
+## 理髮溝通｜剪掉兩公分，還是留下兩公分？
+
+夥伴當設計師，刻意把「剪掉」聽成「留下」。請你在動剪前說清楚長度，並指出哪個部位要保留。
+
+- **設計師**　So you want it two centimetres long?
+- **顧客**　Oh, just two centimetres off the ends. I’d like to keep the length overall.
+- **設計師**　And the fringe?
+- **顧客**　Please leave it as it is. Could you show me the length before you cut?
+
+**用語提示**　two centimetres off 指剪掉的長度；若要指定剪完的位置，可以用手比出來。
+
+**換情境再說一次**　A tailor is shortening your trousers. Ask for three centimetres off the legs, keep the waist as it is, and ask to see the length pinned first.
+
+## 料理教室｜醬汁留一半，什麼時候加？
+
+夥伴當老師，把食譜口頭念一遍。你要一邊複述一邊比出分量，確認關火前後各做哪一步。
+
+- **老師**　Pour half the sauce into the pan with the vegetables.
+- **學員**　Should I add the rest while it’s still on the heat?
+- **老師**　Turn off the heat first. Stir in the rest just before serving.
+- **學員**　Got it. I’ll keep half in the bowl until then.
+
+**用語提示**　聽到 the rest，先找它指哪項材料，再聽 just before serving 確認時機。
+
+**換情境再說一次**　A baking instructor says to fold half the nuts into the batter and scatter the rest on top before baking. Repeat the two steps to your partner.
+
+## 費用核銷｜收據包含私人用品，該報多少？
+
+夥伴當會計。請用收據上的兩筆金額算出申報金額，再確認如何標記品項，讓會計看得出差額的原因。
+
+- **會計**　The receipt says thirty dollars. Is that all for the office?
+- **申請人**　Only the paper is. It cost twenty-four dollars. The notebook was for me.
+- **會計**　Please attach the full receipt and circle the paper.
+- **申請人**　I’ll do that and enter twenty-four dollars on the form.
+
+**用語提示**　attach the full receipt 說的是附件；enter only the cost of the paper 才是要填的金額。
+
+**換情境再說一次**　A receipt lists twelve dollars for work postage and three for a personal greeting card. Tell the reviewer what you’ll claim and ask how to mark the receipt.
+
+## 會議主持｜兩人同時開口，怎麼把話交回去？
+
+三人練習。一位同事正在舉例，另一位想補充。主持人要保留兩人的發言機會，再用名字把話交給下一位。
+
+- **補充者**　Could I jump in with a question?
+- **主持人**　Ben, let’s hear the end of Rae’s example first. Then I’ll come back to you.
+- **補充者**　Sure, I can wait.
+- **舉例者**　For example, in last week’s workshop we tried the exercise in pairs.
+- **主持人**　Thanks for that example, Rae. Ben, what was your question?
+
+**用語提示**　come back to you 在這裡指稍後把發言機會還給對方。
+
+**換情境再說一次**　In a workshop two people volunteer at once. Invite one to demonstrate first and then explicitly invite the other to show a different method.
