@@ -3172,6 +3172,374 @@
       ],
       "transfer": "配信番組のゲストから「本名ではなくミナと呼んでください」と頼まれました。希望の呼び方を確認し、冒頭の紹介を本人の前で言ってみましょう。",
       "feedback": "希望の読みと呼び方で紹介し、本人に確認できましたか。"
+    },
+    {
+      "id": "en-board-game",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "桌遊入門｜要抽牌還是移動棋子？",
+      "goal": "Explain a turn by demonstrating one legal move.",
+      "scene": "In this game you can draw one card or move your piece two spaces. Pick just one action per turn. Drawing a card ends your turn, even if you like the card you picked. I’ve just drawn a card.",
+      "question": "What should I do now?",
+      "choices": [
+        "Move two spaces.",
+        "Draw a second card.",
+        "Let the next player take a turn."
+      ],
+      "correct": 2,
+      "simple": "I’ve drawn a card, so it’s your turn now.",
+      "sample": "If I choose to [action], can I still [other action] this turn?",
+      "chinese": "聽到 per turn，先確認限制是每人每回合一次，還是整局一次。",
+      "vocab": [
+        {
+          "term": "draw",
+          "definition": "Take a card from the pile.",
+          "example": "I’ll draw one card."
+        },
+        {
+          "term": "space",
+          "definition": "A marked position on a game board.",
+          "example": "Move your piece two spaces."
+        }
+      ],
+      "grammar": {
+        "rule": "Use either … or to present two choices.",
+        "example": "You can either draw or move."
+      },
+      "culture": {
+        "insight": "Rules are easier to check with a sample turn.",
+        "action": "Make one move and ask who goes next."
+      },
+      "followups": [
+        "What are your two options?",
+        "What ends your turn if you choose a card?",
+        "Show a new player what happens if you choose to move instead."
+      ],
+      "transfer": "At a puzzle night, each team may ask for a hint or try an answer on its turn. Your team has taken a hint. Explain who goes next and why.",
+      "feedback": "Did you give both options and show where the turn ends?"
+    },
+    {
+      "id": "ja-board-game",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "桌遊入門｜要抽牌還是移動棋子？",
+      "goal": "一回の手番でできることを、実際の動きで説明する。",
+      "scene": "このゲームでは、自分の番にカードを一枚引くか、コマを二マス進めます。できるのはどちらか一つです。いいカードが出ても、引いたらそこで自分の番は終わりです。今、私はカードを一枚引きました。",
+      "question": "この後、どうしますか。",
+      "choices": [
+        "次の人に番を渡す。",
+        "もう一枚引く。",
+        "コマを二マス進める。"
+      ],
+      "correct": 0,
+      "simple": "カードを引いたので、次はあなたの番です。",
+      "sample": "[動作]を選んだら、同じ番に[別の動作]もできますか。",
+      "chinese": "「二マス」是棋盤上的兩格；「どちらか一つ」限定這回合只能選一項動作。",
+      "vocab": [
+        {
+          "term": "コマ",
+          "definition": "盤の上で動かす小さな印や人形。",
+          "example": "青いコマを使います。"
+        },
+        {
+          "term": "手番（てばん）",
+          "definition": "ゲームで自分が行動できる順番。",
+          "example": "これで私の手番は終わりです。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜か、〜か」で選択肢を並べます。",
+        "example": "カードを引くか、コマを進めるか、選んでください。"
+      },
+      "culture": {
+        "insight": "ルールは一回やってみると伝わりやすくなります。",
+        "action": "実際に動かしながら、次は誰の番か言いましょう。"
+      },
+      "followups": [
+        "自分の番に何を選べますか。",
+        "カードを引いた後は誰の番ですか。",
+        "コマを進める方を選んだらどうなりますか。"
+      ],
+      "transfer": "クイズ大会では、一回の手番でヒントをもらうか、答えを一つ言うかを選びます。ヒントをもらった直後、次にどのチームが動くか説明してください。",
+      "feedback": "二つの選択肢と手番が終わるタイミングを説明できましたか。"
+    },
+    {
+      "id": "en-donation-drive",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "社區募集｜這袋毛巾可以捐嗎？",
+      "goal": "Check an item's condition against a donation drive's request.",
+      "scene": "For this drive we're collecting unused towels. They don't have to be in their original packaging. A freshly washed towel that someone has used is outside this collection. One of my towels is new but unwrapped. The other is used and clean.",
+      "question": "Which towel can I leave here?",
+      "choices": [
+        "Only the new, unwrapped towel.",
+        "Only the washed, used towel.",
+        "Both towels because they’re clean."
+      ],
+      "correct": 0,
+      "simple": "This one has never been used. Can I donate it without the wrapper?",
+      "sample": "Does [item] have to be [condition], or is [alternative] okay?",
+      "chinese": "unused 說的是使用狀態；unwrapped 說的是包裝。不要只靠 clean 判斷能否捐贈。",
+      "vocab": [
+        {
+          "term": "unused",
+          "definition": "Never put to use.",
+          "example": "This towel is unused."
+        },
+        {
+          "term": "packaging",
+          "definition": "The material around a product when it is sold.",
+          "example": "I removed the packaging yesterday."
+        }
+      ],
+      "grammar": {
+        "rule": "Use have to in a question to check a requirement.",
+        "example": "Does it have to be in its original packaging?"
+      },
+      "culture": {
+        "insight": "Each collection may ask for different items.",
+        "action": "Describe the condition before handing anything over."
+      },
+      "followups": [
+        "Has either towel been used?",
+        "Does taking off the wrapper matter here?",
+        "What will you do with the towel the drive cannot accept?"
+      ],
+      "transfer": "A book drive accepts second-hand notebooks only if every page is blank. One notebook has a name on its cover and blank pages. Describe it and ask whether the cover matters.",
+      "feedback": "Did you distinguish use from packaging and confirm which item to take home?"
+    },
+    {
+      "id": "ja-donation-drive",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "社區募集｜這袋毛巾可以捐嗎？",
+      "goal": "募集条件を聞き、品物の状態を伝えて寄付できるか確認する。",
+      "scene": "今回集めているのは未使用のタオルです。袋から出してあっても構いません。一度使ったものは、洗濯済みでも今回は受け付けていません。持ってきた二枚のうち、一枚は未使用で袋なし、もう一枚は使用済みで洗濯してあります。",
+      "question": "今回寄付できるのはどれですか。",
+      "choices": [
+        "洗濯した使用済みの一枚。",
+        "袋に入っていない未使用の一枚。",
+        "洗ってあれば二枚とも。"
+      ],
+      "correct": 1,
+      "simple": "袋から出しましたが、まだ使っていません。この一枚は寄付できますか。",
+      "sample": "[品物]は[状態]ですが、今回の募集の対象になりますか。",
+      "chinese": "「未使用」是沒用過，「未開封」是沒拆封。志工只要求前者。",
+      "vocab": [
+        {
+          "term": "未使用（みしよう）",
+          "definition": "まだ一度も使っていないこと。",
+          "example": "こちらは未使用です。"
+        },
+        {
+          "term": "洗濯済み（せんたくずみ）",
+          "definition": "すでに洗ってあること。",
+          "example": "こちらは洗濯済みですが、使ったことがあります。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ても構いません」は許容される条件を示します。",
+        "example": "袋から出してあっても構いません。"
+      },
+      "culture": {
+        "insight": "募集ごとに受け付ける状態は変わります。",
+        "action": "使ったことがあるかと、袋があるかを分けて伝えましょう。"
+      },
+      "followups": [
+        "袋がない一枚は使ったことがありますか。",
+        "もう一枚を受け付けない理由は何ですか。",
+        "どちらを持ち帰ると伝えますか。"
+      ],
+      "transfer": "ノートの募集では、中のページがすべて白紙なら中古でも受け付けます。表紙に名前を書いたノートがあります。状態を説明し、表紙の記名は問題ないか尋ねましょう。",
+      "feedback": "使用状況と包装の有無を言い分け、渡す物を確認できましたか。"
+    },
+    {
+      "id": "en-interpreted-talk",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "口譯協作｜說完一個意思，在哪裡停？",
+      "goal": "Agree on pauses and a cue for resuming an interpreted talk.",
+      "scene": "I’ll interpret after each complete idea. Please pause then, even if your slide has more text. Wait until I finish interpreting and nod to you before you continue. Your first slide covers the test date and the date for sending the results.",
+      "question": "After saying when the test takes place, what should the speaker do?",
+      "choices": [
+        "Read the rest of the slide.",
+        "Start speaking again as soon as the interpreter begins.",
+        "Pause for the interpretation and wait for the nod."
+      ],
+      "correct": 2,
+      "simple": "I’ll give the test date and pause. After you finish and nod, I’ll give the second date.",
+      "sample": "I’ll pause after [unit]. Shall I continue when you [cue]?",
+      "chinese": "看懂 wait until 的終點。即使投影片還有字，也要等口譯員譯完並點頭。",
+      "vocab": [
+        {
+          "term": "interpret",
+          "definition": "Render spoken words in another language.",
+          "example": "Could you interpret the first question?"
+        },
+        {
+          "term": "pause",
+          "definition": "Stop briefly before continuing.",
+          "example": "I’ll pause after the date."
+        }
+      ],
+      "grammar": {
+        "rule": "Use until to set the endpoint of a wait.",
+        "example": "I’ll wait until you nod."
+      },
+      "culture": {
+        "insight": "A slide may contain several ideas that need separate turns.",
+        "action": "Try the first two ideas aloud with the interpreter."
+      },
+      "followups": [
+        "Where will you pause on the first slide?",
+        "What tells you to resume?",
+        "How would you check whether the first chunk was too long?"
+      ],
+      "transfer": "A demonstrator and a sign language interpreter agree to pause after each instruction. Practise giving two instructions and letting the interpreter signal each restart.",
+      "feedback": "Did you give one complete idea and leave time for the agreed cue?"
+    },
+    {
+      "id": "ja-interpreted-talk",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "口譯協作｜說完一個意思，在哪裡停？",
+      "goal": "逐次通訳で話を区切る位置と再開の合図を決める。",
+      "scene": "一つの内容を話し終えたら、スライドに続きがあってもいったん止めてください。私が通訳を終えてうなずいたら、次の内容をお願いします。最初のスライドにはテスト日と結果の送付日が載っています。",
+      "question": "テスト日を伝えた直後、話し手はどうしますか。",
+      "choices": [
+        "スライドを最後まで読む。",
+        "通訳が終わり、相手がうなずくまで待つ。",
+        "通訳が始まったら送付日を言う。"
+      ],
+      "correct": 1,
+      "simple": "テスト日を伝えたところで区切ります。通訳が終わって合図をいただいたら、送付日をお伝えします。",
+      "sample": "[内容]まで話したところで区切ります。[合図]があったら続けてよろしいですか。",
+      "chinese": "「区切る」指把發言分段；「うなずいたら」說的是講者再次開口的時機。",
+      "vocab": [
+        {
+          "term": "逐次通訳（ちくじつうやく）",
+          "definition": "話し手が区切ったところで、順に訳すこと。",
+          "example": "今回は逐次通訳で進めます。"
+        },
+        {
+          "term": "区切る（くぎる）",
+          "definition": "内容をいくつかのまとまりに分ける。",
+          "example": "日付を伝えたところで区切ります。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜たところで」で動作を区切る位置を示せます。",
+        "example": "一つ目の説明が終わったところで止めます。"
+      },
+      "culture": {
+        "insight": "一枚のスライドにも複数の情報が含まれます。",
+        "action": "最初の二つの内容で合図を試しましょう。"
+      },
+      "followups": [
+        "最初はどこで区切りますか。",
+        "いつ次の内容に移りますか。",
+        "一区切りが長すぎないか、どう尋ねますか。"
+      ],
+      "transfer": "実演を手話通訳してもらいます。操作を一つ伝えるたびに止まり、合図を待つことにしました。二つの操作で練習してください。",
+      "feedback": "意味のまとまりごとに止まり、合図を待って再開できましたか。"
+    },
+    {
+      "id": "en-print-proof",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "印刷打樣｜改完這一行就能開印嗎？",
+      "goal": "Mark a precise correction on a proof and specify who clears it for print.",
+      "scene": "On the poster proof, the venue line says Hall B. Please change just that line to Hall D. The date underneath is correct. Send me a revised proof first. Please wait for my written approval before printing the posters.",
+      "question": "What should the printer do immediately after making the edit?",
+      "choices": [
+        "Print the posters.",
+        "Send the revised proof for review.",
+        "Change the date too."
+      ],
+      "correct": 1,
+      "simple": "Please change Hall B to Hall D on the venue line. I’d like to check the revised proof before you print.",
+      "sample": "On [line], replace [old text] with [new text]. Please send [item] for approval before [action].",
+      "chinese": "replace B with D 的順序是舊字在前、新字在後。proof 在這裡指印前校樣。",
+      "vocab": [
+        {
+          "term": "proof",
+          "definition": "A sample checked before the final copies are printed.",
+          "example": "I’ll check the poster proof."
+        },
+        {
+          "term": "sign off on",
+          "definition": "Give final approval for something.",
+          "example": "I’ll sign off on the revised proof by email."
+        }
+      ],
+      "grammar": {
+        "rule": "Use before + -ing to state which action must wait.",
+        "example": "Please send the revision before printing."
+      },
+      "culture": {
+        "insight": "Agreeing to a correction and approving a print run are separate steps in this job.",
+        "action": "Name the person who will approve the proof."
+      },
+      "followups": [
+        "Which line needs changing?",
+        "Which nearby detail is already correct?",
+        "What must the printer receive before starting the print run?"
+      ],
+      "transfer": "A badge proof spells the team name “Field Lab” instead of “Field Labs.” The person’s name is correct. Dictate the edit and request a revised proof before any badges are made.",
+      "feedback": "Could the printer identify the exact edit and the approval needed to start production?"
+    },
+    {
+      "id": "ja-print-proof",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "印刷打樣｜改完這一行就能開印嗎？",
+      "goal": "校正の修正箇所と、印刷開始の条件を伝える。",
+      "scene": "ポスターの校正刷りですが、会場の行が「Bホール」になっています。その行だけ「Dホール」に修正してください。すぐ下の日付は合っています。修正版を先にお送りください。私がメールで了承してから印刷をお願いします。",
+      "question": "修正後、印刷会社がまずすることは何ですか。",
+      "choices": [
+        "修正版を依頼者に送る。",
+        "日付も修正する。",
+        "すぐに必要部数を印刷する。"
+      ],
+      "correct": 0,
+      "simple": "会場の行を「Bホール」から「Dホール」に変更してください。印刷前に修正版を確認します。",
+      "sample": "[箇所]の[元の表記]を[新しい表記]に修正してください。[作業]の前に[確認物]をお願いします。",
+      "chinese": "「BをDに」依序點出原字和新字。「了承してから」交代開印前要等誰確認。",
+      "vocab": [
+        {
+          "term": "校正刷り（こうせいずり）",
+          "definition": "本番の印刷前に内容を確かめるための試し刷り。",
+          "example": "校正刷りで会場名を確認します。"
+        },
+        {
+          "term": "修正版（しゅうせいばん）",
+          "definition": "指摘を受けて直した版。",
+          "example": "修正版をメールで送ってください。"
+        }
+      ],
+      "grammar": {
+        "rule": "「AをBに変更する」で、変更前と変更後を示します。",
+        "example": "会場名をDホールに変更してください。"
+      },
+      "culture": {
+        "insight": "修正の依頼だけでは印刷開始の判断が伝わらない場合があります。",
+        "action": "誰のどの連絡を待つか伝えましょう。"
+      },
+      "followups": [
+        "どの行を直しますか。",
+        "その下の日付はどうしますか。",
+        "印刷を始めてよいのはいつですか。"
+      ],
+      "transfer": "名札のチーム名が「企画室」になっています。正しくは「企画部」で、氏名は合っています。修正箇所を伝え、制作前に見本をもう一度送ってもらいましょう。",
+      "feedback": "修正前後の表記と、印刷開始の条件を伝えられましたか。"
     }
   ]
 }

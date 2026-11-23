@@ -720,3 +720,55 @@
 **用語提示**　MEE-rah 的大寫是給司儀看的重音提示。直接聽講者示範，再當面試念一次。
 
 **換情境再說一次**　Your podcast guest is listed as Alexandra but asks to be called Sasha on air. Ask for a pronunciation model and practise your opening line with the guest.
+
+## 桌遊入門｜要抽牌還是移動棋子？
+
+兩人各拿一枚棋子，新玩家先說出這回合想做的事。教學者說明規則後，請新玩家做出合法的一步，再把回合交給對方。
+
+- **新玩家**　I’ve drawn a card. Can I move two spaces now?
+- **教學者**　That’s your whole turn. You can draw or move.
+- **新玩家**　So if I want to move, I wait until my next turn?
+- **教學者**　Exactly. It’s my turn now.
+
+**用語提示**　聽到 per turn，先確認限制是每人每回合一次，還是整局一次。
+
+**換情境再說一次**　At a puzzle night, each team may ask for a hint or try an answer on its turn. Your team has taken a hint. Explain who goes next and why.
+
+## 社區募集｜這袋毛巾可以捐嗎？
+
+你帶了一條全新毛巾和一條洗過的舊毛巾。請夥伴扮演募集站志工，說明這次收哪些物品，再確認兩條毛巾各該怎麼處理。
+
+- **捐贈者**　This towel is new, but I took the wrapper off. Can you use it?
+- **志工**　Yes. We’re asking for unused towels. The wrapper is optional.
+- **捐贈者**　The other one has been washed, but I’ve used it. Shall I take it home?
+- **志工**　Yes, please. We can take just the first one today.
+
+**用語提示**　unused 說的是使用狀態；unwrapped 說的是包裝。不要只靠 clean 判斷能否捐贈。
+
+**換情境再說一次**　A book drive accepts second-hand notebooks only if every page is blank. One notebook has a name on its cover and blank pages. Describe it and ask whether the cover matters.
+
+## 口譯協作｜說完一個意思，在哪裡停？
+
+一人當講者，一人當口譯員。先約定停頓點和繼續的手勢，再用「週五測試。週一寄結果。」演練兩次交棒。
+
+- **講者**　Should I finish the whole slide before I pause?
+- **口譯員**　One idea at a time, please. I’ll nod when I’m done.
+- **講者**　Let’s try it. We’ll run the test on Friday.
+- **口譯員**　Good. Once I’ve interpreted that and nodded, give the date for sending the results.
+
+**用語提示**　看懂 wait until 的終點。即使投影片還有字，也要等口譯員譯完並點頭。
+
+**換情境再說一次**　A demonstrator and a sign language interpreter agree to pause after each instruction. Practise giving two instructions and letting the interpreter signal each restart.
+
+## 印刷打樣｜改完這一行就能開印嗎？
+
+夥伴當印刷店窗口。請你指出海報哪一行要換成什麼字，並說清楚下一次收到的應該是校樣還是成品。
+
+- **委印人**　The venue line still says Hall B. Could you change the B to a D?
+- **印刷窗口**　Certainly. The date below stays as it is. Shall we print after the change?
+- **委印人**　Please send me another proof first. I’ll email you once I’ve checked it.
+- **印刷窗口**　Understood. We’ll wait for your written approval.
+
+**用語提示**　replace B with D 的順序是舊字在前、新字在後。proof 在這裡指印前校樣。
+
+**換情境再說一次**　A badge proof spells the team name “Field Lab” instead of “Field Labs.” The person’s name is correct. Dictate the edit and request a revised proof before any badges are made.
