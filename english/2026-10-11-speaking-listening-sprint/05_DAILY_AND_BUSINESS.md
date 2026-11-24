@@ -1032,3 +1032,55 @@
 **用語提示**　log hours 是登記工作時數，bill the client 是向客戶計費。先問這個專案的約定再分類。
 
 **換情境再說一次**　You spent ninety minutes editing a client report and thirty minutes organising internal files. Only report editing is billable on this project. Report both times and the invoice total.
+
+## 讀書會｜怎麼聊角色，又不透露後面的劇情？
+
+先問夥伴讀到哪一章，複述兩人都能談的範圍。接著問一個角色動機問題；請夥伴只引用已讀段落作答。
+
+- **帶讀者**　Before we start, how far did you get?
+- **讀者**　I finished chapter four last night. I’m still guessing who sent the letter.
+- **帶讀者**　Let’s leave that for next week. Why do you think she kept the letter?
+- **讀者**　Maybe it reminded her of home. What did you think?
+
+**用語提示**　through chapter four 包含第四章。用 What did you make of…? 邀請對方分享看法。
+
+**換情境再說一次**　A friend has seen the first two episodes of a series. Ask about an event in episode two and agree on a way to pause if someone starts discussing episode three.
+
+## 衣物送洗｜要處理哪一處污漬，追加費用先怎麼確認？
+
+顧客指出外套袖口的污漬，交代哪些服務可直接做。店員提出加價處理時，顧客要確認通知方式及是否已同意加做。
+
+- **顧客**　There’s a stain here on the left cuff. Can you clean the jacket?
+- **店員**　Yes. If the standard clean doesn’t lift it, would you like an extra treatment?
+- **顧客**　Please call me with the price first. I’d like to decide then.
+- **店員**　Certainly. I’ll put standard cleaning only on the ticket for now.
+
+**用語提示**　go ahead 表示已同意基本清洗；wait for my answer 表示追加服務仍要等顧客回覆。
+
+**換情境再說一次**　A shoe repair shop can replace the heels now, but the soles may also need work. Authorise the heels and ask for a quote before the soles are replaced.
+
+## 器材借用｜借出前就少了配件，怎麼留紀錄？
+
+夥伴扮演器材管理員。請一起核對相機包與清單，提出現場看得到的差異，並讓借用紀錄反映你實際領到的配件。
+
+- **借用者**　Could we check the camera bag before I sign?
+- **管理員**　Of course. The sheet lists two batteries and a charger.
+- **借用者**　The charger’s here, but we found only one battery. Could you note that only one was issued?
+- **管理員**　Done. The record now shows one battery and one charger to return.
+
+**用語提示**　issued 指實際交付；listed 只是清單上列有。用 we found 描述雙方當場點到的數量。
+
+**換情境再說一次**　A workshop tool case lists three adapters but contains two. No replacement is available. Agree on the checkout entry and the quantity expected back.
+
+## 平面圖圖例｜虛線是規劃中的動線，今天可以走嗎？
+
+你和同事要帶新進人員走訪辦公區。先核對圖例和現場可走的路，再用一句話說明為什麼不能選看來較短的動線。
+
+- **帶隊者**　Could we take this shortcut through the courtyard?
+- **設施同事**　Check the legend. The dashed line is a proposed route.
+- **帶隊者**　So for today we use the solid line along the corridor?
+- **設施同事**　Exactly. That route is open.
+
+**用語提示**　proposed 表示提案中；線畫在圖上，仍要讀圖例才知道是否開放。
+
+**換情境再說一次**　On an exhibit plan, hollow circles show planned displays and filled circles show installed ones. Describe which stops you can show a visitor today and why.

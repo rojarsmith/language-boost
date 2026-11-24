@@ -5380,6 +5380,374 @@
       ],
       "transfer": "報告書の編集に九十分、社内ファイルの整理に三十分かかりました。今回は編集だけが請求対象です。内訳、記録する合計時間、請求する時間を伝えてください。",
       "feedback": "作業時間を漏れなく記録し、請求する分を別に示せましたか。"
+    },
+    {
+      "id": "en-book-club",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "讀書會｜怎麼聊角色，又不透露後面的劇情？",
+      "goal": "Agree on a spoiler boundary and ask a question within it.",
+      "scene": "I’ve finished chapter four but haven’t started chapter five. We can talk about the letter that arrived in chapter four. Please save the sender’s identity for next week. I’d rather guess for myself.",
+      "question": "Which question fits this reader’s request?",
+      "choices": [
+        "Why do you think the character kept the letter?",
+        "Were you surprised when the sender confessed in chapter five?",
+        "Shall I tell you who wrote it?"
+      ],
+      "correct": 0,
+      "simple": "How far have you read? We can talk about the letter without naming the sender.",
+      "sample": "Have you finished [chapter]? What did you make of [event already read]?",
+      "chinese": "through chapter four 包含第四章。用 What did you make of…? 邀請對方分享看法。",
+      "vocab": [
+        {
+          "term": "spoiler",
+          "definition": "Information that gives away a later part of a story.",
+          "example": "Can we avoid spoilers for chapter five?"
+        },
+        {
+          "term": "give away",
+          "definition": "Reveal something meant to be discovered later.",
+          "example": "That detail might give away the ending."
+        }
+      ],
+      "grammar": {
+        "rule": "Use without + -ing to set a limit on your discussion.",
+        "example": "Can we discuss her reaction without giving away the ending?"
+      },
+      "culture": {
+        "insight": "Readers may be at different points even at the same meeting.",
+        "action": "Ask where everyone stopped before mentioning a twist."
+      },
+      "followups": [
+        "Which chapter has the reader finished?",
+        "Which fact should wait?",
+        "What detail from the letter scene would you like to discuss?"
+      ],
+      "transfer": "A friend has seen the first two episodes of a series. Ask about an event in episode two and agree on a way to pause if someone starts discussing episode three.",
+      "feedback": "Did you check the last completed chapter and ask a question the reader could safely answer?"
+    },
+    {
+      "id": "ja-book-club",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "讀書會｜怎麼聊角色，又不透露後面的劇情？",
+      "goal": "読んだ範囲を確認し、先の展開を明かさずに感想を聞く。",
+      "scene": "第四章まで読み終えました。第五章はまだです。第四章で届いた手紙の話ならできます。差出人が誰なのかは自分で考えたいので、その話は来週にしませんか。",
+      "question": "相手の希望に合う質問はどれですか。",
+      "choices": [
+        "第五章で差出人が名乗った場面は意外でしたか。",
+        "差出人を教えましょうか。",
+        "主人公が手紙を取っておいたのはなぜだと思いますか。"
+      ],
+      "correct": 2,
+      "simple": "何章まで読みましたか。差出人の話は次回にして、手紙を読んだ場面について話しませんか。",
+      "sample": "[章]まで読み終えましたか。[出来事]をどう思いましたか。",
+      "chinese": "「第四章まで読み終えた」表示第四章已讀完。「〜については次回に」可以把話題留到下次。",
+      "vocab": [
+        {
+          "term": "差出人（さしだしにん）",
+          "definition": "手紙などを送った人。",
+          "example": "差出人の名前はまだ分かりません。"
+        },
+        {
+          "term": "展開（てんかい）",
+          "definition": "物語が進んでいく様子。",
+          "example": "先の展開は言わないでおきます。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜ずに」で明かさずにできることを示します。",
+        "example": "結末に触れずに感想を聞きましょう。"
+      },
+      "culture": {
+        "insight": "同じ読書会でも読む速さには差があります。",
+        "action": "話題を出す前にどこまで読んだか尋ねましょう。"
+      },
+      "followups": [
+        "どの章を読み終えましたか。",
+        "来週に回す話題は何ですか。",
+        "手紙を読む場面について、どう質問しますか。"
+      ],
+      "transfer": "友人はドラマを第二話まで見ています。第二話の出来事について感想を尋ね、第三話に入りそうなときの声のかけ方を決めてください。",
+      "feedback": "読み終えた範囲を確かめ、その範囲で答えられる質問ができましたか。"
+    },
+    {
+      "id": "en-cleaners",
+      "language": "en",
+      "track": "life",
+      "icon": "◇",
+      "title": "衣物送洗｜要處理哪一處污漬，追加費用先怎麼確認？",
+      "goal": "Point out a stain and set a condition for extra work.",
+      "scene": "The stain is on the left cuff of my jacket. Please go ahead with the standard cleaning. If the stain needs a treatment that costs extra, call me with the price and wait for my answer before you start that treatment.",
+      "question": "What can the cleaner start without another call?",
+      "choices": [
+        "Any treatment for the cuff.",
+        "Standard cleaning only.",
+        "No cleaning at all."
+      ],
+      "correct": 1,
+      "simple": "Standard cleaning is fine. If there’s an extra charge for the cuff, please call me first.",
+      "sample": "The mark is on [part]. Please check with me before [extra service].",
+      "chinese": "go ahead 表示已同意基本清洗；wait for my answer 表示追加服務仍要等顧客回覆。",
+      "vocab": [
+        {
+          "term": "cuff",
+          "definition": "The end of a sleeve at the wrist.",
+          "example": "There’s a mark on the left cuff."
+        },
+        {
+          "term": "extra charge",
+          "definition": "A cost added to the original price.",
+          "example": "Is there an extra charge for stain removal?"
+        }
+      ],
+      "grammar": {
+        "rule": "Use before + -ing to specify when agreement is needed.",
+        "example": "Please call before adding a treatment."
+      },
+      "culture": {
+        "insight": "A shop may offer several levels of service.",
+        "action": "Specify which service you authorise today."
+      },
+      "followups": [
+        "Which cuff should the cleaner check?",
+        "What information should the call include?",
+        "What should the cleaner do if you miss the call?"
+      ],
+      "transfer": "A shoe repair shop can replace the heels now, but the soles may also need work. Authorise the heels and ask for a quote before the soles are replaced.",
+      "feedback": "Did you name the location, the approved service and when the shop should wait?"
+    },
+    {
+      "id": "ja-cleaners",
+      "language": "ja",
+      "track": "life",
+      "icon": "◇",
+      "title": "衣物送洗｜要處理哪一處污漬，追加費用先怎麼確認？",
+      "goal": "汚れの場所を伝え、追加作業の前に料金の確認を頼む。",
+      "scene": "上着の左の袖口に汚れがあります。通常のクリーニングはお願いします。追加料金のかかる染み抜きが必要なら、作業に入る前に電話で料金を教えてください。染み抜きは私の返事を待ってからお願いします。",
+      "question": "店が今すぐ始めてよいのはどれですか。",
+      "choices": [
+        "通常のクリーニングだけ。",
+        "追加の染み抜きも含めたすべての作業。",
+        "料金の電話をするまではどの作業もできない。"
+      ],
+      "correct": 0,
+      "simple": "通常のクリーニングをお願いします。左の袖口の染み抜きが別料金なら、先にご連絡ください。",
+      "sample": "[場所]に汚れがあります。[追加作業]が必要な場合は、先に[連絡方法]で料金を教えてください。",
+      "chinese": "「別料金なら」設下聯絡條件；再補「返事を待ってください」，店員就知道要等你同意。",
+      "vocab": [
+        {
+          "term": "袖口（そでぐち）",
+          "definition": "袖の先の手首が通る部分。",
+          "example": "左の袖口を見てください。"
+        },
+        {
+          "term": "染み抜き（しみぬき）",
+          "definition": "布についた染みを取る作業。",
+          "example": "染み抜きには追加料金がかかりますか。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜場合は」で対応が変わる条件を示します。",
+        "example": "別料金になる場合は電話をお願いします。"
+      },
+      "culture": {
+        "insight": "通常料金に含まれる作業は店によって異なります。",
+        "action": "今日頼む作業と返事を待ってほしい作業を伝えましょう。"
+      },
+      "followups": [
+        "汚れはどこにありますか。",
+        "電話で何を知らせてほしいですか。",
+        "電話に出られないときはどの作業を待ってもらいますか。"
+      ],
+      "transfer": "靴のかかとの修理を頼みます。靴底の修理も必要なら、先に見積もりを聞きたいです。今日頼む作業と事前連絡の条件を伝えてください。",
+      "feedback": "場所、依頼する作業、追加料金を確認する時点を言えましたか。"
+    },
+    {
+      "id": "en-equipment-kit",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "器材借用｜借出前就少了配件，怎麼留紀錄？",
+      "goal": "Reconcile the kit checklist before signing for equipment.",
+      "scene": "The camera kit list says two batteries and one charger. We opened the bag together and found one battery and the charger. There isn’t a spare battery available today. Please update the loan record to show one battery issued before I sign.",
+      "question": "What should the signed record show for batteries?",
+      "choices": [
+        "Two issued, one returned.",
+        "One issued and one missing at checkout.",
+        "Two issued because that is the standard kit."
+      ],
+      "correct": 1,
+      "simple": "The sheet lists two batteries. I count one in the bag. Could we note that before I sign?",
+      "sample": "The checklist says [expected contents]. We found [actual contents]. Could you record [difference] at checkout?",
+      "chinese": "issued 指實際交付；listed 只是清單上列有。用 we found 描述雙方當場點到的數量。",
+      "vocab": [
+        {
+          "term": "kit",
+          "definition": "A set of items supplied together.",
+          "example": "The camera kit includes a charger."
+        },
+        {
+          "term": "issue",
+          "definition": "Hand something out for use.",
+          "example": "Only one battery was issued today."
+        }
+      ],
+      "grammar": {
+        "rule": "Use before to connect the correction and the signature.",
+        "example": "Let’s record the difference before I sign."
+      },
+      "culture": {
+        "insight": "A standard packing list can differ from what is physically handed over.",
+        "action": "Count together and read back the issued quantity."
+      },
+      "followups": [
+        "What was listed?",
+        "Which item matches the checklist?",
+        "What will you refer to when you return the kit?"
+      ],
+      "transfer": "A workshop tool case lists three adapters but contains two. No replacement is available. Agree on the checkout entry and the quantity expected back.",
+      "feedback": "Did you distinguish a discrepancy found at checkout from a loss on return?"
+    },
+    {
+      "id": "ja-equipment-kit",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "器材借用｜借出前就少了配件，怎麼留紀錄？",
+      "goal": "貸出時に備品の内訳を照合し、実際に受け取る数量を記録してもらう。",
+      "scene": "カメラセットの一覧にはバッテリー二個と充電器一台とあります。二人でバッグを開けると、バッテリーは一個で、充電器は入っていました。今日は予備がありません。署名の前に、実際に貸し出すバッテリーは一個だと記録してください。",
+      "question": "貸出時の記録には何と書きますか。",
+      "choices": [
+        "二個貸し出し、一個返却済み。",
+        "標準どおり二個貸し出し。",
+        "一覧は二個だが、貸出時点で一個のみ。"
+      ],
+      "correct": 2,
+      "simple": "一覧では二個ですが、バッグには一個です。署名の前に貸出数を一個と記録していただけますか。",
+      "sample": "一覧では[予定数]ですが、実際に受け取ったのは[実数]です。[記録]に残していただけますか。",
+      "chinese": "「貸出時点で」交代差異是在借出當下就發現；「返却時に不足」則是另一件事。",
+      "vocab": [
+        {
+          "term": "内訳（うちわけ）",
+          "definition": "全体を構成する物とその数量。",
+          "example": "セットの内訳を確認します。"
+        },
+        {
+          "term": "貸出数（かしだしすう）",
+          "definition": "実際に貸し出す数。",
+          "example": "貸出数は一個です。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜時点で」で確認した時を明確にします。",
+        "example": "貸出時点で一個でした。"
+      },
+      "culture": {
+        "insight": "セットの一覧は標準構成を示している場合があります。",
+        "action": "署名前に現物を数えて記録と合わせましょう。"
+      },
+      "followups": [
+        "一覧のバッテリーは何個ですか。",
+        "一覧と合っていたのは何ですか。",
+        "返却時にはどの記録を確認しますか。"
+      ],
+      "transfer": "工具ケースの一覧にはアダプター三個とありますが、現物は二個で予備はありません。記録に残す内容と返す予定の数を確認してください。",
+      "feedback": "貸出時の不足と返却時の紛失を混同せず、実数を記録できましたか。"
+    },
+    {
+      "id": "en-map-legend",
+      "language": "en",
+      "track": "work",
+      "icon": "↗",
+      "title": "平面圖圖例｜虛線是規劃中的動線，今天可以走嗎？",
+      "goal": "Read a floor-plan legend and explain the route available today.",
+      "scene": "On the office plan, solid lines mark routes that are open. Dashed lines show proposed routes. The shortcut through the courtyard is dashed. The longer corridor route is solid. For today’s tour, take the corridor.",
+      "question": "Which route should the guide use today?",
+      "choices": [
+        "The dashed courtyard shortcut.",
+        "Either route because both appear on the plan.",
+        "The solid corridor route."
+      ],
+      "correct": 2,
+      "simple": "The courtyard route is proposed. We’ll use the corridor, which is marked open.",
+      "sample": "According to the legend, [symbol] means [status]. For [occasion], we’ll use [route].",
+      "chinese": "proposed 表示提案中；線畫在圖上，仍要讀圖例才知道是否開放。",
+      "vocab": [
+        {
+          "term": "legend",
+          "definition": "The part of a map that explains its symbols.",
+          "example": "Check the legend beside the plan."
+        },
+        {
+          "term": "proposed",
+          "definition": "Suggested for future consideration.",
+          "example": "The proposed path crosses the courtyard."
+        }
+      ],
+      "grammar": {
+        "rule": "Use according to to identify your source.",
+        "example": "According to the legend, solid lines mark open routes."
+      },
+      "culture": {
+        "insight": "Symbols can mean different things on different plans.",
+        "action": "Read the legend for the plan you are using."
+      },
+      "followups": [
+        "What do dashed lines mean here?",
+        "Which route is shorter?",
+        "How would you explain your choice to a new colleague?"
+      ],
+      "transfer": "On an exhibit plan, hollow circles show planned displays and filled circles show installed ones. Describe which stops you can show a visitor today and why.",
+      "feedback": "Did you connect the symbol, its meaning and today’s choice?"
+    },
+    {
+      "id": "ja-map-legend",
+      "language": "ja",
+      "track": "work",
+      "icon": "↗",
+      "title": "平面圖圖例｜虛線是規劃中的動線，今天可以走嗎？",
+      "goal": "平面図の凡例を読み、今日利用できるルートを案内する。",
+      "scene": "事務所の平面図では、実線は通行できるルート、破線は計画中のルートを示しています。中庭を抜ける近道は破線です。廊下を通るルートは少し遠回りですが実線です。今日の見学では廊下を通ってください。",
+      "question": "今日の見学で使うのはどのルートですか。",
+      "choices": [
+        "実線で示された廊下。",
+        "破線で示された中庭の近道。",
+        "図にあるのでどちらでもよい。"
+      ],
+      "correct": 0,
+      "simple": "凡例によると、破線は計画中のルートです。今日は実線の廊下を通ります。",
+      "sample": "凡例では[記号]が[状態]を表しています。[予定]には[ルート]を使います。",
+      "chinese": "「凡例によると」是指出判讀依據；「計画中」表示目前還在規劃。",
+      "vocab": [
+        {
+          "term": "凡例（はんれい）",
+          "definition": "図に使われる記号や線の意味を説明する部分。",
+          "example": "右下の凡例を見てください。"
+        },
+        {
+          "term": "遠回り（とおまわり）",
+          "definition": "目的地まで長い経路を通ること。",
+          "example": "少し遠回りですが廊下を通ります。"
+        }
+      ],
+      "grammar": {
+        "rule": "「〜によると」で情報の出所を示します。",
+        "example": "この図の凡例によると、実線が利用できる通路です。"
+      },
+      "culture": {
+        "insight": "線の意味は図面によって変わることがあります。",
+        "action": "手元の図の凡例と対応させて説明しましょう。"
+      },
+      "followups": [
+        "この図で破線は何を示しますか。",
+        "短いのはどちらですか。",
+        "初めて来た人に廊下を通る理由をどう説明しますか。"
+      ],
+      "transfer": "展示図では白丸が設置予定、黒丸が設置済みの展示を示します。今日案内できる展示とその理由を来場者に説明してください。",
+      "feedback": "線の種類と意味を結び付け、実際に通るルートを言えましたか。"
     }
   ]
 }
