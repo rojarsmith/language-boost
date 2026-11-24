@@ -10,6 +10,8 @@
 
 ## 目錄結構
 
+各級能力與成績判讀可參閱[英文與日文的國際能力分級](../research/language-proficiency-levels.md)，內含 JLPT 與 CEFR 官方對照。
+
 ```text
 japanese/
 ├── README.md                       # 本總覽

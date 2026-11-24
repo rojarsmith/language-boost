@@ -1,5 +1,7 @@
 # English learning and presentation materials
 
+[English and Japanese proficiency levels](../research/language-proficiency-levels.md) compares CEFR, English test scores, and JLPT levels (in Traditional Chinese).
+
 ## Beginner speaking and listening sprint
 
 Start with the [7-day speaking and listening plan](2026-10-11-speaking-listening-sprint/README.md) for a beginner rebuilding English grammar. It includes software engineer and engineering manager interview tracks, everyday conversations, business meetings, listening drills, and a day-seven mock interview. Optional 14-day and 30-day extensions are included.
