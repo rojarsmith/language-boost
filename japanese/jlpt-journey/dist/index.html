@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f9f8f4" />
+    <meta
+      name="description"
+      content="從 N5 到 N1 的個人日語學習手帳，依程度安排練習與錯題複習。"
+    />
+    <title>日語行路｜JLPT 學習手帳</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23a83729'/%3E%3Ctext x='7' y='30' font-size='27' fill='white'%3E日%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="curriculum.js"></script>
+    <script defer src="extra-n5.js"></script>
+    <script defer src="extra-n4.js"></script>
+    <script defer src="extra-n3.js"></script>
+    <script defer src="extra-n2.js"></script>
+    <script defer src="extra-n1.js"></script>
+    <script defer src="planner.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a href="#main" class="skip">跳至主要內容</a>
+    <header class="mast">
+      <div class="wrap bar">
+        <a class="brand" href="#today"
+          ><span class="seal" aria-hidden="true">日</span
+          ><span>日語行路<small>NIHONGO JOURNEY</small></span></a
+        >
+        <nav aria-label="主導覽">
+          <a href="#today" data-icon="sun">今日學習</a>
+          <a href="#route" data-icon="route">學習路線</a>
+          <a href="#notes" data-icon="book">我的手帳</a>
+        </nav>
+        <span class="goal" data-icon="flag">目標 <b>N1</b></span>
+      </div>
+    </header>
+    <main id="main" tabindex="-1" class="wrap">
+      <noscript>請啟用 JavaScript 以使用互動練習。</noscript>
+    </main>
+    <dialog aria-labelledby="dialog-title" id="study"></dialog>
+    <footer class="wrap">
+      <strong>日語行路</strong><span>學習紀錄儲存在此瀏覽器</span>
+    </footer>
+    <div role="status" id="notice"></div>
+  </body>
+</html>

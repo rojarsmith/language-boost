@@ -1,0 +1,13 @@
+日語行路・日語聽力音源
+
+教材依本課日語逐字稿，由 pyopenjtalk-plus 及 HTS Voice “Mei (Normal)” 合成，再轉為 MP3。各級採用不同語速。
+
+HTS Voice “Mei”
+Released by MMDAgent Project Team.
+Copyright (c) 2009–2013 Nagoya Institute of Technology, Department of Computer Science.
+The acoustic voice model is licensed under Creative Commons Attribution 3.0.
+https://creativecommons.org/licenses/by/3.0/
+https://github.com/tsukumijima/pyopenjtalk-plus/blob/master/pyopenjtalk/htsvoice/LICENSE_mei_normal.htsvoice
+
+Speech synthesis engine
+https://github.com/tsukumijima/pyopenjtalk-plus
