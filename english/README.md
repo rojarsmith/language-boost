@@ -2,6 +2,12 @@
 
 [English and Japanese proficiency levels](../research/language-proficiency-levels.md) compares CEFR, English test scores, and JLPT levels (in Traditional Chinese).
 
+## TOEIC Listening and Reading
+
+For TOEIC Listening and Reading, open [Peakline 多益學習基地](toeic-peakline/dist/index.html) in a browser. Start with the six-question diagnostic, then follow the listening, reading, and review activities. Progress is saved in the current browser.
+
+Choose **限時模測** for either of two original 8-minute papers. Each has six listening and six reading questions separate from the practice bank. Answers are saved as you go. The deadline continues across reloads and closed tabs. After submission, review section scores, missed items, transcripts, and explanations in the mock history.
+
 ## Beginner speaking and listening sprint
 
 Start with the [7-day speaking and listening plan](2026-10-11-speaking-listening-sprint/README.md) for a beginner rebuilding English grammar. It includes software engineer and engineering manager interview tracks, everyday conversations, business meetings, listening drills, and a day-seven mock interview. Optional 14-day and 30-day extensions are included.
