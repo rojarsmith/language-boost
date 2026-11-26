@@ -141,6 +141,7 @@ function defaults() {
     minutes: 25,
     learned: {},
     activity: {},
+    mockFocus: [0, 0, 0, 0],
   };
 }
 let state = defaults(),
@@ -342,6 +343,7 @@ function planCard(plan) {
       "</span><span><strong>" +
       planTitle(task) +
       "</strong><small>" +
+      (state.mockFocus[skill] > 0 ? "模測補強 · " : "") +
       (weak ? "弱項加練" : planNames[task.kind]) +
       " · " +
       count +
@@ -372,7 +374,9 @@ function planCard(plan) {
     plan.spent +
     " 分鐘課量 · " +
     day() +
-    '</small></div><div class="rows">' +
+    "</small>" +
+    mockPlanNote() +
+    '</div><div class="rows">' +
     (rows.join("") ||
       '<p class="empty">今天的排程已完成。明天會依最新進度接續安排。</p>') +
     (plan.deferred
@@ -402,7 +406,7 @@ function planSettings() {
         '<option value="' +
         i +
         '"' +
-        (i === activeLevel(curriculum, state) ? " selected" : "") +
+        (i === state.level ? " selected" : "") +
         ">" +
         l.level +
         " · " +
@@ -474,6 +478,7 @@ function route() {
     (i !== state.level
       ? button("select-" + i, "設為目前學習級別", "plain")
       : '<span class="caption">目前學習級別</span>') +
+    button("exam-" + i, "本級限時模測", "plain") +
     "</div>" +
     lessonRows(i) +
     '</section><section class="paper block"><h2>這一級怎麼練</h2><p>今日計畫會依你設定的時間穿插錯題與新課，優先補強較常答錯的技能。想把學過的內容用在新材料，可以挑戰下面的延伸任務。</p><div class="lesson-example"><b>' +
@@ -550,7 +555,7 @@ function notes() {
 }
 function page() {
   const name = location.hash.slice(1);
-  return ["route", "notes"].includes(name) ? name : "today";
+  return ["route", "notes", "mock"].includes(name) ? name : "today";
 }
 function render() {
   renderedDate = day();
@@ -559,7 +564,7 @@ function render() {
     if (a.hash === "#" + key) a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
   });
-  main.innerHTML = { today, route, notes }[key]();
+  main.innerHTML = { today, route, notes, mock: mockPage }[key]();
 }
 function show(title, body, label = "單元練習") {
   player.pause();
@@ -629,13 +634,13 @@ function review() {
   question();
 }
 const player = new Audio();
-function playClip(id, feedback) {
+function playClip(id, feedback, message = "音檔無法播放，請展開逐字稿。") {
   player.pause();
   player.src = "audio/" + id + ".mp3";
   if (feedback) feedback.textContent = "";
   player.play().catch((error) => {
     if (error.name === "AbortError") return;
-    if (feedback) feedback.textContent = "音檔無法播放，請展開逐字稿。";
+    if (feedback) feedback.textContent = message;
     else toast("音檔無法播放，請稍後再試。");
   });
 }
@@ -760,6 +765,9 @@ dialog.addEventListener("submit", (event) => {
     const log = (state.activity[day()] ||= []);
     log.push({ id, kind, minutes: questionMinutes(curriculum, id, kind) });
     if (correct && !id.includes("-d-")) state.learned[id] = day();
+    const skill = questionSkill(curriculum, id);
+    if (correct && s.type === "plan" && state.mockFocus[skill] > 0)
+      state.mockFocus[skill]--;
   }
   if (s.type === "lesson" && s.index === s.ids.length - 1) {
     const key = s.i + "-" + s.j;
@@ -768,9 +776,6 @@ dialog.addEventListener("submit", (event) => {
       s.results.filter(Boolean).length,
     );
   }
-  const priorLevel = state.level;
-  state.level = activeLevel(curriculum, state);
-  if (priorLevel !== state.level) viewLevel = state.level;
   save();
   form.querySelector("fieldset").disabled = true;
   form.querySelector("[type=submit]").hidden = true;
@@ -797,11 +802,6 @@ dialog.addEventListener("submit", (event) => {
             : "查看今日成果",
         )
       : button(end ? "finish" : "next", end ? "查看結果" : "下一題")) +
-    (priorLevel !== state.level
-      ? "<p>本級單元已完成，接著練習 " +
-        curriculum[state.level].level +
-        "。</p>"
-      : "") +
     "</div>";
   document.querySelector("#result button").focus();
 });
@@ -839,19 +839,14 @@ function finish() {
         (score < s.ids.length
           ? "錯題已加入手帳，之後的每日計畫會安排複習。"
           : next < 0
-            ? "這一級的單元都完成了，可用官方樣題驗收。"
+            ? "這一級的單元都完成了，可用限時模測驗收。"
             : "可以接著練習下一個單元。") +
         '</p><div class="tools">' +
         (score < s.ids.length
           ? button("lesson-" + s.i + "-" + s.j, "重練本單元")
           : next >= 0
             ? button("lesson-" + s.i + "-" + next, "下一個單元")
-            : s.i < 4
-              ? button(
-                  "adopt-" + (s.i + 1),
-                  "前往 " + curriculum[s.i + 1].level,
-                )
-              : button("map", "查看官方資源")) +
+            : button("exam-" + s.i, "參加本級模測")) +
         button("close", "結束練習", "plain") +
         "</div>",
       "練習結果",
@@ -878,7 +873,6 @@ function finish() {
 function setLevel(i) {
   player.pause();
   state.level = i;
-  state.level = activeLevel(curriculum, state);
   viewLevel = state.level;
   wordIndex = new Date().getDate() % words[i].length;
   save();
@@ -892,6 +886,12 @@ document.addEventListener("click", (e) => {
   if (!b) return;
   const [a, v, k] = b.dataset.act.split("-");
   switch (a) {
+    case "exam":
+      mockLevel = Number(v);
+      mockReport = null;
+      closeDialog();
+      location.hash = "mock";
+      break;
     case "level":
       if (page() === "route") {
         viewLevel = Number(v);
@@ -1016,4 +1016,5 @@ window.addEventListener("storage", (event) => {
     render();
   } catch {}
 });
+initMock();
 render();

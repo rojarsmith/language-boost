@@ -2,7 +2,9 @@
 // Each further block of four follows the same skill order.
 function questionSkill(course, id) {
   const [level, lesson, q] = id.split("-");
-  return lesson === "d" ? course[level].diagnostic[q].skill : Number(lesson) % 4;
+  return lesson === "d"
+    ? course[level].diagnostic[q].skill
+    : Number(lesson) % 4;
 }
 function questionMinutes(course, id, kind) {
   const level = Number(id.split("-")[0]);
@@ -19,20 +21,8 @@ function lessonComplete(course, state, level, index) {
   );
 }
 
-function activeLevel(course, state) {
-  let level = state.level;
-  while (
-    level < course.length - 1 &&
-    course[level].lessons.every((_, j) =>
-      lessonComplete(course, state, level, j),
-    )
-  )
-    level++;
-  return level;
-}
-
 function dailyPlan(course, state, date) {
-  const level = activeLevel(course, state);
+  const level = state.level;
   const log = state.activity[date] || [];
   const spent = log.reduce((n, item) => n + item.minutes, 0);
   const seen = new Set(log.map((item) => item.id));
@@ -95,6 +85,24 @@ function dailyPlan(course, state, date) {
     });
   });
   const counts = [0, 0, 0, 0];
+  const focus = state.mockFocus || [0, 0, 0, 0];
+  const byNeed = [0, 1, 2, 3]
+    .filter((s) => focus[s] > 0)
+    .sort((a, b) => focus[b] - focus[a]);
+  for (const skill of byNeed) {
+    weights[skill] += Math.min(4, focus[skill]);
+    if (fresh[skill].length) {
+      if (add(fresh[skill][0], "new")) {
+        fresh[skill].shift();
+        counts[skill]++;
+      }
+    } else {
+      const id = familiar.find(
+        (id) => questionSkill(course, id) === skill && !seen.has(id),
+      );
+      if (id) add(id, "recall");
+    }
+  }
   for (const item of log) {
     const [i, j] = item.id.split("-");
     if (Number(i) === level && item.kind === "new" && j !== "d")

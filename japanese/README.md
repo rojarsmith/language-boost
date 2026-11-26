@@ -4,7 +4,7 @@
 
 | 目標 | 入口 | 內容 |
 | --- | --- | --- |
-| 從 N5 到 N1 安排日檢練習 | [日語行路 Web App](jlpt-journey/dist/index.html) | 60 個單元、220 道練習題與程度診斷，依每日可用時間和錯題自動排課 |
+| 從 N5 到 N1 安排日檢練習 | [日語行路 Web App](jlpt-journey/dist/index.html) | 60 個單元、220 道日常練習題與 15 份獨立限時模測，依可用時間、錯題及模測成績安排升級或補強 |
 | 重建初階口說、聽力，準備軟體業面試與生活溝通 | [口說與聽力衝刺](speaking-listening-sprint/README.md) | 7／14／30 天計畫、文法、面試、生活與工作會議 |
 | 撰寫或查找日文商務信件 | [商務信件](business-email/README.md) | 按日期與主題保存的信件、讀音及用語說明 |
 | 準備 EDT HMI Studio 的日文簡報、Demo 與客戶問答 | [產品簡報訓練包](edt-hmi-studio/README.md) | 84 天計畫、產品事實、講稿、題庫、餐敘與活動演練 |

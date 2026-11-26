@@ -8,16 +8,19 @@ const files = [
   "curriculum.js",
   ...[5, 4, 3, 2, 1].map((n) => "extra-n" + n + ".js"),
   "planner.js",
+  "mock-model.js",
+  ...[5, 4, 3, 2, 1].map((n) => "mock-n" + n + ".js"),
 ];
 const context = vm.createContext({});
 for (const file of files)
   vm.runInContext(readFileSync(path.join(root, file), "utf8"), context, {
     filename: file,
   });
-const { course, plan, completed, current } = vm.runInContext(
-  "({course:curriculum, plan:dailyPlan, completed:lessonComplete, current:activeLevel})",
-  context,
-);
+const { course, plan, completed, mocks, begin, finish, apply } =
+  vm.runInContext(
+    "({course:curriculum, plan:dailyPlan, completed:lessonComplete, mocks:mockBank, begin:startMock, finish:finishMock, apply:applyMockResult})",
+    context,
+  );
 const today = "2026-11-25";
 const fresh = () => ({
   level: 0,
@@ -91,7 +94,7 @@ test("overdue mistakes and weak skills are prioritized without crowding out new 
   assert.ok(!p.tasks.some((t) => t.id === "0-1-2"));
   assert.equal(plan(course, s, "2026-11-26").tasks[0].id, "0-1-2");
 });
-test("old completed lessons remain credited and all levels are reachable with five minutes a day", () => {
+test("daily study preserves old credit and waits for an assessment before promotion", () => {
   const s = fresh();
   s.minutes = 5;
   s.best["0-0"] = 3;
@@ -104,17 +107,106 @@ test("old completed lessons remain credited and all levels are reachable with fi
       if (!task) break;
       s.learned[task.id] = date;
       s.activity[date].push(task);
-      s.level = current(course, s);
     }
-    if (course[4].lessons.every((_, j) => completed(course, s, 4, j))) break;
+    if (course[0].lessons.every((_, j) => completed(course, s, 0, j))) break;
   }
-  assert.equal(s.level, 4);
-  assert.ok(
-    course.every((l, i) =>
-      l.lessons.every((_, j) => completed(course, s, i, j)),
-    ),
-  );
+  assert.equal(s.level, 0);
+  assert.ok(course[0].lessons.every((_, j) => completed(course, s, 0, j)));
   assert.ok(
     plan(course, s, "2027-12-25").tasks.every((t) => t.kind === "recall"),
   );
+});
+test("all 15 held-out papers have 12 unique items and working listening assets", () => {
+  const prompts = new Set(
+    course
+      .flatMap((l) => [
+        ...l.diagnostic,
+        ...l.lessons.flatMap((u) => u.questions),
+      ])
+      .map((q) => q.prompt.trim()),
+  );
+  const scripts = new Set(
+    course.flatMap((l) =>
+      l.lessons.flatMap((u) => u.questions.map((q) => q.audio).filter(Boolean)),
+    ),
+  );
+  for (const [level, forms] of mocks.entries()) {
+    assert.equal(forms.length, 3);
+    forms.forEach((qs, form) => {
+      assert.equal(qs.length, 12);
+      qs.forEach((q, i) => {
+        assert.ok(
+          q.why && q.options.length === 4 && new Set(q.options).size === 4,
+        );
+        assert.ok(Number.isInteger(q.answer) && q.answer >= 0 && q.answer < 4);
+        assert.ok(!prompts.has(q.prompt.trim()), q.prompt);
+        prompts.add(q.prompt.trim());
+        if (i >= 9) {
+          assert.ok(q.audio && !scripts.has(q.audio));
+          scripts.add(q.audio);
+          assert.ok(
+            existsSync(
+              path.join(root, "audio", `mock-${level}-${form}-${i}.mp3`),
+            ),
+          );
+        } else assert.ok(!q.audio);
+      });
+    });
+  }
+});
+test("a weak section blocks promotion even at 10/12 and changes the budgeted plan", () => {
+  const book = { active: null, history: [] },
+    s = fresh();
+  begin(book, 0, 1000);
+  const q = mocks[0][book.active.form];
+  book.active.answers = q.map((x, i) => (i <= 1 ? null : x.answer));
+  const result = finish(book, 5000);
+  assert.equal(result.total, 10);
+  assert.equal(result.ready, false);
+  apply(s, result);
+  assert.equal(s.level, 0);
+  assert.equal(s.mockFocus[0], 4);
+  s.best = Object.fromEntries(
+    course[0].lessons.map((u, j) => ["0-" + j, u.questions.length]),
+  );
+  const tasks = plan(course, s, today).tasks;
+  assert.equal(Number(tasks[0].id.split("-")[1]) % 4, 0);
+  assert.equal(tasks[0].kind, "recall");
+  s.mockFocus[0]--;
+  assert.equal(apply(s, result), false);
+  assert.equal(s.mockFocus[0], 3);
+});
+test("fresh forms, partial timeout, passing boundary, N1 ceiling and no demotion", () => {
+  for (let level = 0; level < 5; level++) {
+    const book = { active: null, history: [] },
+      s = fresh();
+    s.level = level;
+    for (let n = 0; n < 3; n++) {
+      begin(book, level, 1000);
+      const a = book.active;
+      assert.equal(a.form, n);
+      begin(book, level + 1, 2000);
+      assert.equal(book.active, a);
+      const q = mocks[level][n];
+      a.answers = q.map((x, i) =>
+        n === 0
+          ? i === 1
+            ? x.answer
+            : null
+          : [0, 3, 6].includes(i)
+            ? null
+            : x.answer,
+      );
+      const result = finish(book, n === 0 ? a.deadline + 500 : 2000);
+      assert.equal(result.timedOut, n === 0);
+      assert.equal(result.total, n === 0 ? 1 : 9);
+      assert.equal(result.ready, n !== 0);
+      apply(s, result);
+      assert.equal(s.level, n === 0 ? level : Math.min(4, level + 1));
+      assert.equal(finish(book, 3000), null);
+    }
+    begin(book, level, 4000);
+    assert.equal(book.active, null);
+    assert.equal(book.history.length, 3);
+  }
 });
