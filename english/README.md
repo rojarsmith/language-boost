@@ -6,7 +6,7 @@
 
 For TOEIC Listening and Reading, open [Peakline 多益學習基地](toeic-peakline/dist/index.html) in a browser. Start with the six-question diagnostic, then follow the listening, reading, and review activities. Progress is saved in the current browser.
 
-Choose **限時模測** for one of four original 8-minute papers (A, B, C, or D). Each has six listening and six reading questions separate from the practice bank. Answers are saved as you go. The deadline continues across reloads and closed tabs. After submission, review section scores, missed items, transcripts, and explanations in the mock history.
+Choose **限時模測** for one of six original 8-minute papers (A–F). Each has six listening and six reading questions separate from the practice bank. Answers are saved as you go. The deadline continues across reloads and closed tabs. After submission, review section scores, missed items, transcripts, and explanations in the mock history.
 
 Missed and unanswered mock questions appear in **錯題本** with the form and reason. They use the same review schedule as practice mistakes, starting the day after submission. **今日訓練** uses the latest submitted paper to assign four questions to the weaker section and two to the other, or three each for a tie. An in-progress drill keeps its original questions.
 

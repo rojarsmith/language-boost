@@ -22,10 +22,10 @@ test('timed papers, resume, deadlines and result history', async () => {
     const act = name => page.locator('[data-mock="' + name + '"]').click();
     const pick = index => page.getByRole('radio').nth(index).check();
     const bank = await page.evaluate(() => mockQuestions);
-    assert.equal(bank.length, 48);
-    assert.equal(new Set(bank.map(q => q.id)).size, 48);
+    assert.equal(bank.length, 72);
+    assert.equal(new Set(bank.map(q => q.id)).size, 72);
     assert(await page.evaluate(() => mockQuestions.every(q => !questions.some(practice => practice.id === q.id) && q.choices[q.right])));
-    for (const form of ['ma', 'mb', 'mc', 'md']) {
+    for (const form of ['ma', 'mb', 'mc', 'md', 'me', 'mf']) {
       const questions = bank.filter(q => q.id.startsWith(form));
       assert.equal(questions.filter(q => q.mode === 'R').length, 6);
       assert.equal(questions.filter(q => q.mode === 'L').length, 6);
@@ -136,19 +136,23 @@ test('timed papers, resume, deadlines and result history', async () => {
   }
 });
 
-test('forms C and D play, resume, populate review and update daily training', async () => {
+async function checkPaperPair(first, second, nextAfterPair) {
   const browser = await chromium.launch({executablePath: process.env.PLAYWRIGHT_EXECUTABLE});
   try {
     const page = await browser.newPage({viewport:{width:320,height:800}});
     const url = process.env.PEAKLINE_URL || pathToFileURL(resolve(__dirname, '../dist/index.html')).href;
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
+    await page.clock.install({time:new Date('2026-11-27T12:00:00+08:00')});
     await page.goto(url + '#mock');
-    for (const form of ['C','D']) {
-      const weak = form === 'C' ? 'L' : 'R';
+    for (const form of [first, second]) {
+      const weak = form === first ? 'L' : 'R';
       const firstMiss = weak === 'L' ? 0 : 6;
       const paper = await page.evaluate(form => mockQuestions.filter(q=>q.id.startsWith('m'+form.toLowerCase())),form);
       await page.getByRole('button',{name:'開始 '+form+' 卷'}).click();
+      await page.locator('#mock-paper').waitFor();
+      const attempt = await page.evaluate(()=>JSON.parse(localStorage.getItem('peakline-timed-mock-v1')).active);
+      assert.equal(attempt.deadline-attempt.started, 8*60*1000);
       for (const [i,q] of paper.entries()) {
         const card = page.locator('#mock-paper[data-index="'+i+'"]');
         await card.waitFor();
@@ -178,6 +182,7 @@ test('forms C and D play, resume, populate review and update daily training', as
       assert.equal(await page.getByText(new RegExp('模測 '+form+' 卷 · 未作答')).count(),1);
       await page.getByRole('button',{name:'提前練習'}).click();
       const ids = await page.evaluate(()=>state.drafts.review.ids);
+      assert(ids.includes(paper[firstMiss].id) && ids.includes(paper[firstMiss+1].id));
       for (const id of ids) {
         const q = await page.evaluate(id=>byId.get(id),id);
         await page.locator('#quiz [data-act="answer-'+q.right+'"]').click();
@@ -192,12 +197,15 @@ test('forms C and D play, resume, populate review and update daily training', as
       }
       await page.locator('nav [data-page="mock"]').click();
       await page.locator('[data-mock="list"]').click();
-      await page.getByText('建議從 '+(form==='C'?'D':'A')+' 卷開始。',{exact:false}).waitFor();
+      await page.getByText('建議從 '+(form===first?second:nextAfterPair)+' 卷開始。',{exact:false}).waitFor();
       assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
     }
     assert.deepEqual(errors,[]);
   } finally { await browser.close(); }
-});
+}
+
+test('forms C and D play, resume, populate review and update daily training', () => checkPaperPair('C','D','E'));
+test('forms E and F play, resume, populate review and update daily training', () => checkPaperPair('E','F','A'));
 
 test('old submissions, review intervals, repeat misses and adaptive drill sizes', async () => {
   const browser = await chromium.launch({executablePath: process.env.PLAYWRIGHT_EXECUTABLE});

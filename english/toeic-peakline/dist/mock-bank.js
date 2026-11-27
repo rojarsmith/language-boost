@@ -758,5 +758,385 @@ const mockQuestions = [
     ],
     "right": 3,
     "why": "票券指定搭乘 10:20 的船班，登船在十分鐘前的 10:10 截止，因此換班須在 10:10 之前辦理。"
+  },
+  {
+    "id": "me01",
+    "mode": "L",
+    "part": 2,
+    "skill": "頻率詢問",
+    "material": "How often does the florist change the window display?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "Just inside the window.",
+      "About twice a month.",
+      "Three bunches of roses."
+    ],
+    "right": 1,
+    "why": "How often 問頻率。twice a month 表示每月兩次。"
+  },
+  {
+    "id": "me02",
+    "mode": "L",
+    "part": 2,
+    "skill": "辨認婉拒",
+    "material": "Can you take the minutes at this afternoon’s committee meeting?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "It lasted fifty minutes.",
+      "They met in the cafeteria.",
+      "I’ll be interviewing a candidate then."
+    ],
+    "right": 2,
+    "why": "take the minutes 是做會議紀錄。回答者當時要面試應徵者，間接表示無法幫忙。"
+  },
+  {
+    "id": "me03",
+    "mode": "L",
+    "part": 3,
+    "skill": "推論場地需求",
+    "material": "The studio upstairs is quieter. Should we record the piano there?||The piano won’t fit through the upstairs doorway. Let’s use the hall and record before the audience comes in.",
+    "prompt": "Why do the speakers decide to use the hall?",
+    "choices": [
+      "The instrument cannot be moved into the studio.",
+      "The audience asked for a recording.",
+      "The hall has a smaller doorway.",
+      "The upstairs room is too noisy."
+    ],
+    "right": 0,
+    "why": "樓上的錄音室比較安靜，但鋼琴過不了門。選擇大廳是受到樂器尺寸限制。"
+  },
+  {
+    "id": "me04",
+    "mode": "L",
+    "part": 3,
+    "skill": "辨認修訂重點",
+    "material": "I checked the proofs for the concert program. The performers’ names are all correct.||Good. The violinist just called, though. She’s playing after the choir, so we need to switch the order on page three.",
+    "prompt": "What needs to be changed on page three?",
+    "choices": [
+      "The name of the choir.",
+      "The date of the concert.",
+      "The ticket price.",
+      "The sequence of performances."
+    ],
+    "right": 3,
+    "why": "人名已確認正確。switch the order 是調整順序，小提琴手改在合唱團之後演出。"
+  },
+  {
+    "id": "me05",
+    "mode": "L",
+    "part": 4,
+    "skill": "理解公告目的",
+    "material": "Good morning, stallholders. Last week, several shoppers missed our market because the street signs were hard to see. We have printed larger signs. Please collect one at the information booth and display it at your entrance.",
+    "prompt": "Why were larger signs printed?",
+    "choices": [
+      "To advertise new prices.",
+      "To help visitors find the market.",
+      "To identify the information staff.",
+      "To list available stalls."
+    ],
+    "right": 1,
+    "why": "路牌不夠醒目，導致顧客找不到市集。放大路牌是為了讓入口更容易被找到。"
+  },
+  {
+    "id": "me06",
+    "mode": "L",
+    "part": 4,
+    "skill": "判讀取件條件",
+    "material": "This is Northside Framing calling about your photograph. The frame is ready. If someone else collects it for you, please email us their name before they arrive. They will need to show identification at the counter.",
+    "prompt": "What must the customer do before a friend collects the photograph?",
+    "choices": [
+      "Pay for a second frame.",
+      "Send the original photograph.",
+      "Email the friend’s name to the shop.",
+      "Leave identification at the shop."
+    ],
+    "right": 2,
+    "why": "顧客要先把代領人的姓名寄給店家；到櫃檯出示證件的是代領人。"
+  },
+  {
+    "id": "me07",
+    "mode": "R",
+    "part": 5,
+    "skill": "關係代名詞",
+    "material": "",
+    "prompt": "The illustrator _____ designed our new logo will speak at the launch.",
+    "choices": [
+      "whose",
+      "which",
+      "who",
+      "whom"
+    ],
+    "right": 2,
+    "why": "先行詞 illustrator 指人，關係子句缺少 designed 的主詞，應使用 who。"
+  },
+  {
+    "id": "me08",
+    "mode": "R",
+    "part": 5,
+    "skill": "分詞形容詞",
+    "material": "",
+    "prompt": "Only _____ members may vote in the association’s election.",
+    "choices": [
+      "register",
+      "registers",
+      "registration",
+      "registered"
+    ],
+    "right": 3,
+    "why": "registered members 指已登記的會員。過去分詞 registered 在此修飾名詞 members。"
+  },
+  {
+    "id": "me09",
+    "mode": "R",
+    "part": 6,
+    "skill": "指示順序",
+    "material": "Your exhibition badge is attached to this email. _____. Staff will scan the code on the printed page when you enter the hall.",
+    "prompt": "Which sentence best fills the gap?",
+    "choices": [
+      "Please print it before you arrive.",
+      "The exhibition was held last year.",
+      "The hall will close for lunch.",
+      "Staff badges are a different color."
+    ],
+    "right": 0,
+    "why": "下一句提到工作人員會掃描紙上的代碼，因此前一步要先把電子識別證列印出來。"
+  },
+  {
+    "id": "me10",
+    "mode": "R",
+    "part": 6,
+    "skill": "動詞搭配",
+    "material": "Dear Ms. Lin, thank you for lending us the sculpture. Our records list your old address. Could you _____ your current address so that we can arrange the return shipment?",
+    "prompt": "Which word best fills the gap?",
+    "choices": [
+      "deliver",
+      "confirm",
+      "attend",
+      "weigh"
+    ],
+    "right": 1,
+    "why": "主辦單位只有舊地址，寄回雕塑前需要對方確認目前的地址。confirm your address 是確認地址。"
+  },
+  {
+    "id": "me11",
+    "mode": "R",
+    "part": 7,
+    "skill": "辨認歸還規則",
+    "material": "Costume hire agreement\nReturn all items to the fittings desk by noon on Monday. Leave the cleaning to our staff. If a costume needs a repair, pin a note to its hanger so the wardrobe team can find the damage.",
+    "prompt": "What should a customer do with a torn costume?",
+    "choices": [
+      "Wash it before returning it.",
+      "Take it to a tailor on Monday.",
+      "Attach a note to its hanger.",
+      "Keep it until the next fitting."
+    ],
+    "right": 2,
+    "why": "撕破的戲服需要修補。店家要求把說明別在衣架上，方便服裝人員找到破損處。"
+  },
+  {
+    "id": "me12",
+    "mode": "R",
+    "part": 7,
+    "skill": "跨文件折扣計算",
+    "material": "Print shop offer • Posters cost $5 each. Orders of 20 or more posters receive 10% off the poster price. Delivery costs $8 per order and is excluded from the discount.\nOrder slip • 20 posters, delivery requested.",
+    "prompt": "What total should appear on the invoice?",
+    "choices": [
+      "$90.",
+      "$98.",
+      "$100.",
+      "$108."
+    ],
+    "right": 1,
+    "why": "20 張海報原價 100 元，符合九折門檻，折後 90 元。運費 8 元另計，因此帳單共 98 元。"
+  },
+  {
+    "id": "mf01",
+    "mode": "L",
+    "part": 2,
+    "skill": "交通方式",
+    "material": "How will the visiting engineers get from the station to our factory?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "Our driver will pick them up.",
+      "The factory opened last year.",
+      "Their visit lasts two days."
+    ],
+    "right": 0,
+    "why": "How ... get from ... to ... 問交通安排。司機去接他們，就是從車站到工廠的方式。"
+  },
+  {
+    "id": "mf02",
+    "mode": "L",
+    "part": 2,
+    "skill": "辨認查詢途徑",
+    "material": "Do we still have enough envelopes for the mailing?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "Yes, the email was brief.",
+      "She addressed the audience.",
+      "Let me check the supply cabinet."
+    ],
+    "right": 2,
+    "why": "問句想確認信封存量。回答者提出查看用品櫃，可以直接查明數量。"
+  },
+  {
+    "id": "mf03",
+    "mode": "L",
+    "part": 3,
+    "skill": "辨認計價單位",
+    "material": "The quote says eighty dollars for the translation. Is that for the whole brochure?||That’s the rate per page. We only need the two pages with safety instructions translated.",
+    "prompt": "How much will the requested translation cost?",
+    "choices": [
+      "Forty dollars.",
+      "Eighty dollars.",
+      "Two hundred dollars.",
+      "One hundred sixty dollars."
+    ],
+    "right": 3,
+    "why": "報價是每頁 80 元，只翻譯兩頁，合計 160 元。"
+  },
+  {
+    "id": "mf04",
+    "mode": "L",
+    "part": 3,
+    "skill": "辨識先後順序",
+    "material": "Should I send the new staff their building passes today?||Hold on. Two of them have the same surname. I’ll send you their employee numbers so you can match each pass to the right person.",
+    "prompt": "What will the second speaker do next?",
+    "choices": [
+      "Print new building passes.",
+      "Provide identification numbers.",
+      "Change the employees’ surnames.",
+      "Collect the old passes."
+    ],
+    "right": 1,
+    "why": "兩人同姓，要先提供員工編號，才能把通行證交給正確的人。"
+  },
+  {
+    "id": "mf05",
+    "mode": "L",
+    "part": 4,
+    "skill": "篩選適用對象",
+    "material": "A reminder for this week’s mentoring event. Mentors will receive their partners’ names by email on Monday. Participants seeking a mentor should check in at the blue table on arrival. Mentors can go straight to their assigned seats.",
+    "prompt": "Who should check in at the blue table?",
+    "choices": [
+      "People looking for a mentor.",
+      "The people sending the emails.",
+      "All mentors with assigned seats.",
+      "Everyone attending the event."
+    ],
+    "right": 0,
+    "why": "seeking a mentor 指希望獲得指導的參加者。導師可以直接到指定座位。"
+  },
+  {
+    "id": "mf06",
+    "mode": "L",
+    "part": 4,
+    "skill": "辨認未來安排",
+    "material": "Thank you for testing our reservation system. You may notice that the confirmation messages still show our old telephone number. We have corrected the number in the next version, which will be installed on Friday evening. Until then, please give callers the number printed on your desk card.",
+    "prompt": "What should staff use as a reference until Friday evening?",
+    "choices": [
+      "The next software release.",
+      "A recent confirmation message.",
+      "A list of reservations.",
+      "The card on their desk."
+    ],
+    "right": 3,
+    "why": "新版安裝前，系統的確認訊息仍顯示舊號碼。工作人員應以桌上卡片印的號碼為準。"
+  },
+  {
+    "id": "mf07",
+    "mode": "R",
+    "part": 5,
+    "skill": "副詞修飾形容詞",
+    "material": "",
+    "prompt": "The two estimates are based on _____ different assumptions about demand.",
+    "choices": [
+      "complete",
+      "completion",
+      "completely",
+      "completes"
+    ],
+    "right": 2,
+    "why": "different 是形容詞，需要用副詞 completely 修飾，表示對需求的假設截然不同。"
+  },
+  {
+    "id": "mf08",
+    "mode": "R",
+    "part": 5,
+    "skill": "條件與例外",
+    "material": "",
+    "prompt": "Employees must attend the afternoon briefing _____ their supervisor has already excused them.",
+    "choices": [
+      "despite",
+      "unless",
+      "during",
+      "whereas"
+    ],
+    "right": 1,
+    "why": "unless 表示「除非」。員工原則上要出席，主管已准假的人例外。"
+  },
+  {
+    "id": "mf09",
+    "mode": "R",
+    "part": 6,
+    "skill": "代名詞指涉",
+    "material": "We have placed comment boxes beside both exits. Please drop your suggestions into either box. A member of the training team will empty _____ every Friday.",
+    "prompt": "Which word best fills the gap?",
+    "choices": [
+      "their",
+      "they",
+      "themselves",
+      "them"
+    ],
+    "right": 3,
+    "why": "empty 在這裡是「清空」，後面需要受格代名詞 them，代指前文的兩個意見箱。"
+  },
+  {
+    "id": "mf10",
+    "mode": "R",
+    "part": 6,
+    "skill": "說明試辦安排",
+    "material": "We will try staggered lunch breaks in July to reduce queues in the cafeteria. _____. We will use their feedback to decide whether to continue the trial in August.",
+    "prompt": "Which sentence best fills the gap?",
+    "choices": [
+      "We will ask employees how long they waited during the trial.",
+      "The cafeteria serves soup every day.",
+      "The old building has three floors.",
+      "All employees must bring their own chairs."
+    ],
+    "right": 0,
+    "why": "後句的 their feedback 需要有回饋者，詢問員工試辦期間等了多久，也切合縮短排隊時間的目的。"
+  },
+  {
+    "id": "mf11",
+    "mode": "R",
+    "part": 7,
+    "skill": "推論費用範圍",
+    "material": "Repair service notice • A technician can inspect your appliance at home for $35. If you authorize the repair during that visit, the $35 counts toward the repair bill. If you decline, the inspection fee remains payable.",
+    "prompt": "What happens if a customer declines the repair after the inspection?",
+    "choices": [
+      "The technician refunds $35.",
+      "The repair is rescheduled automatically.",
+      "The customer still owes the inspection fee.",
+      "The fee is credited to a future visit."
+    ],
+    "right": 2,
+    "why": "decline 指不接受這次維修。條款說此時 inspection fee remains payable，所以檢查費仍須支付。"
+  },
+  {
+    "id": "mf12",
+    "mode": "R",
+    "part": 7,
+    "skill": "整合預約與限制",
+    "material": "Room guide • Birch seats 14 and has no video equipment. Cedar seats 12 and supports video calls. Maple seats 18 and supports video calls.\nMeeting request • Thirteen people will attend in person, and a colleague will join from abroad by video.",
+    "prompt": "Which room meets both requirements?",
+    "choices": [
+      "Birch only.",
+      "Cedar only.",
+      "Maple only.",
+      "Both Cedar and Maple."
+    ],
+    "right": 2,
+    "why": "會議同時需要至少 13 個現場座位及視訊設備。Birch 缺設備，Cedar 只有 12 席，Maple 兩項都符合。"
   }
 ];

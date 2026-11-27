@@ -1,7 +1,7 @@
 const timedMock = (() => {
   const storageKey = 'peakline-timed-mock-v1';
   const duration = 8 * 60 * 1000;
-  const forms = ['A', 'B', 'C', 'D'];
+  const forms = ['A', 'B', 'C', 'D', 'E', 'F'];
   const papers = Object.fromEntries(forms.map(form => [
     form, mockQuestions.filter(q => q.id.startsWith('m' + form.toLowerCase()))
   ]));
@@ -128,7 +128,7 @@ const timedMock = (() => {
     }).join('');
     return heading('限時模測') +
       '<section class="panel"><h2>8 分鐘聽讀短模測</h2><p class="sub">每卷 12 題，先聽力 6 題，再閱讀 6 題。兩部分共用 8 分鐘。可回頭改答或重播錄音；交卷後才顯示答案與解析。切換頁面或關閉瀏覽器時，時間繼續計算。</p>' +
-      '<p>建議從 ' + next + ' 卷開始。四卷各有獨立題目，未作答算錯。</p><div class="result-buttons">' +
+      '<p>建議從 ' + next + ' 卷開始。各卷題目獨立，未作答算錯。</p><div class="result-buttons">' +
       forms.map(form => action('開始 ' + form + ' 卷', 'start-' + form, form !== next)).join('') +
       '</div></section><section class="panel resource"><h2>模測紀錄</h2>' +
       (history ? '<ul class="score-list">' + history + '</ul>' : '<p class="meta">交卷後，可在這裡查看兩科答對題數與逐題檢討。</p>') + '</section>';
