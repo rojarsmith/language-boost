@@ -8,6 +8,8 @@ For TOEIC Listening and Reading, open [Peakline 多益學習基地](toeic-peakli
 
 Choose **限時模測** for either of two original 8-minute papers. Each has six listening and six reading questions separate from the practice bank. Answers are saved as you go. The deadline continues across reloads and closed tabs. After submission, review section scores, missed items, transcripts, and explanations in the mock history.
 
+Missed and unanswered mock questions appear in **錯題本** with the form and reason. They use the same review schedule as practice mistakes, starting the day after submission. **今日訓練** uses the latest submitted paper to assign four questions to the weaker section and two to the other, or three each for a tie. An in-progress drill keeps its original questions.
+
 ## Beginner speaking and listening sprint
 
 Start with the [7-day speaking and listening plan](2026-10-11-speaking-listening-sprint/README.md) for a beginner rebuilding English grammar. It includes software engineer and engineering manager interview tracks, everyday conversations, business meetings, listening drills, and a day-seven mock interview. Optional 14-day and 30-day extensions are included.

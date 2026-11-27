@@ -45,6 +45,7 @@ const timedMock = (() => {
       if (record.active && now >= record.active.deadline) {
         closeAttempt(record, now);
         persist(record);
+        if (location.hash !== '#mock') render();
         redraw = true;
       } else if (apply(record, now)) {
         persist(record);
@@ -72,6 +73,24 @@ const timedMock = (() => {
       const choice = exam.choices[i];
       return { q, choice, correct: choice === q.right };
     });
+  }
+
+  function feedback() {
+    const misses = new Map();
+    let latest = null;
+    // Results are newest first. Only the latest miss of a question starts its review cycle.
+    for (const exam of read().results) {
+      const scores = {L: 0, R: 0};
+      for (const {q, choice, correct} of labels(exam)) {
+        if (correct) scores[q.mode]++;
+        else if (!misses.has(q.id)) misses.set(q.id, {
+          attempt: exam.id, due: day(1, exam.finished), step: 0,
+          source: '模測 ' + exam.form + ' 卷 · ' + (choice === null ? '未作答' : '答錯')
+        });
+      }
+      if (!latest) latest = {form: exam.form, ...scores};
+    }
+    return {latest, misses};
   }
 
   function startClock(exam) {
@@ -153,6 +172,7 @@ const timedMock = (() => {
       (exam.expired ? '時間到，自動交卷' : '已交卷') + ' · 用時 ' + clock(exam.finished - exam.started) + ' · 未作答 ' + missing +
       ' 題</p><div class="result-number">' + score + ' <small>/ 12 題答對</small></div><p>聽力 ' + byMode('L') +
       ' / 6　 ·　閱讀 ' + byMode('R') + ' / 6</p><p class="meta">短模測只記錄原始答對題數。</p><div class="result-buttons">' +
+      '<a class="action light" href="#home">查看今日訓練</a><a class="action light" href="#review">開啟錯題本</a>' +
       action('返回模測清單', 'list', true) + '</div></section><section class="panel resource"><h2>逐題檢討</h2>' + details + '</section>';
   }
 
@@ -224,12 +244,16 @@ const timedMock = (() => {
     else if (location.hash === '#mock') render();
   }
   window.addEventListener('storage', e => {
-    if (e.key !== storageKey || location.hash !== '#mock') return;
+    if (e.key !== storageKey) return;
+    if (location.hash !== '#mock') {
+      if (e.newValue && JSON.parse(e.newValue).results[0]?.id !== JSON.parse(e.oldValue || '{}').results?.[0]?.id) render();
+      return;
+    }
     const previous = document.querySelector('#mock-paper')?.dataset.id;
     if (previous && !read().active) selectedResult = previous;
     sync();
   });
   window.addEventListener('pageshow', sync);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) sync(); });
-  return { page };
+  return { page, feedback };
 })();

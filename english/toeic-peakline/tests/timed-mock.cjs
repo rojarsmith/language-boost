@@ -24,7 +24,7 @@ test('timed papers, resume, deadlines and result history', async () => {
     const bank = await page.evaluate(() => mockQuestions);
     assert.equal(bank.length, 24);
     assert.equal(new Set(bank.map(q => q.id)).size, 24);
-    assert(await page.evaluate(() => mockQuestions.every(q => !byId.has(q.id) && q.choices[q.right])));
+    assert(await page.evaluate(() => mockQuestions.every(q => !questions.some(practice => practice.id === q.id) && q.choices[q.right])));
     for (const form of ['ma', 'mb']) {
       const questions = bank.filter(q => q.id.startsWith(form));
       assert.equal(questions.filter(q => q.mode === 'R').length, 6);
@@ -61,6 +61,7 @@ test('timed papers, resume, deadlines and result history', async () => {
     await act('finish');
     await page.getByRole('heading', {name:'模測結果'}).waitFor();
     assert.match(await page.locator('main').innerText(), /聽力 6 \/ 6.*閱讀 6 \/ 6/);
+    assert.equal(await page.evaluate(()=>timedMock.feedback().misses.size),0);
     assert.equal(await page.locator('details').count(), 12);
     await page.reload();
     await act('result-' + first.id);
@@ -82,6 +83,15 @@ test('timed papers, resume, deadlines and result history', async () => {
     assert.equal(data.results[0].choices.filter(Number.isInteger).length, 1);
     assert.match(await page.locator('main').innerText(), /聽力 1 \/ 6.*閱讀 0 \/ 6/);
     assert.match(await page.locator('main').innerText(), /未作答 11 題/);
+    await page.getByRole('link',{name:'開啟錯題本'}).click();
+    await page.locator('.review-list').waitFor();
+    assert.equal(await page.locator('.review-list .row').count(),11);
+    assert.equal(await page.getByText(/模測 B 卷 · 未作答/).count(),11);
+    await page.getByRole('link',{name:'學習總覽',exact:true}).click();
+    assert.equal(await page.locator('.hero button').getAttribute('data-act'),'start-R');
+    assert.match(await page.locator('[data-act="start-R"].row').innerText(),/4 題/);
+    assert.match(await page.locator('[data-act="start-L"].row').innerText(),/2 題/);
+    await page.getByRole('link',{name:'限時模測',exact:true}).click();
 
     // Timer alone submits. Leaving the site and reopening after expiry also submits once.
     await act('list');
@@ -111,13 +121,101 @@ test('timed papers, resume, deadlines and result history', async () => {
     assert.equal(await peer.locator('#mock-paper').getAttribute('data-id'), (await read()).active.id);
     await pick(1);
     await peer.waitForFunction(() => document.querySelector('input[value="1"]')?.checked);
+    const dashboard=await context.newPage();
+    await dashboard.goto(url+'#home');
+    await dashboard.getByText(/最近模測 B 卷/).waitFor();
     peer.once('dialog', dialog => dialog.accept());
     await peer.locator('[data-mock="finish"]').click();
     await page.getByRole('heading', {name:'模測結果'}).waitFor();
+    await dashboard.getByText(/最近模測 A 卷 · 聽力 1\/6、閱讀 0\/6/).waitFor();
     assert.equal((await read()).results.length, 5);
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     assert.deepEqual(errors, []);
   } finally {
     await browser.close();
   }
+});
+
+test('old submissions, review intervals, repeat misses and adaptive drill sizes', async () => {
+  const browser = await chromium.launch({executablePath: process.env.PLAYWRIGHT_EXECUTABLE});
+  try {
+    const context = await browser.newContext({timezoneId:'Asia/Taipei'});
+    const page = await context.newPage();
+    const url = process.env.PEAKLINE_URL || pathToFileURL(resolve(__dirname, '../dist/index.html')).href;
+    await page.clock.install({time:new Date('2026-11-27T12:00:00+08:00')});
+    await page.goto(url);
+    const act = name => page.locator('[data-act="' + name + '"]:visible').last().click();
+    const navigate = async name => {
+      await page.locator('nav [data-page="'+name+'"]').click();
+      await page.locator('nav [data-page="'+name+'"][aria-current="page"]').waitFor();
+    };
+    const reviewDate = () => page.evaluate(() => reviewQueue.ma01?.due);
+    const readDraft = () => page.evaluate(() => state.drafts[active]);
+    async function addSavedResult(form, wrong, missing) {
+      await page.evaluate(({form, wrong, missing}) => {
+        const key='peakline-timed-mock-v1';
+        const saved=JSON.parse(localStorage.getItem(key)) || {active:null,results:[]};
+        const paper=mockQuestions.filter(q=>q.id.startsWith('m'+form.toLowerCase()));
+        const choices=paper.map(q=>missing.includes(q.id)?null:wrong.includes(q.id)?(q.right+1)%q.choices.length:q.right);
+        saved.results.unshift({id:crypto.randomUUID(),form,choices,finished:Date.now(),started:Date.now()-120000,expired:false});
+        localStorage.setItem(key,JSON.stringify(saved));
+      }, {form,wrong,missing});
+      await page.reload();
+    }
+    async function finishReview() {
+      await navigate('review');
+      await act('start-review');
+      const {ids}=await readDraft();
+      for(const id of ids) {
+        const right=await page.evaluate(id=>byId.get(id).right,id);
+        await act('answer-'+right);
+        await act('next');
+      }
+      await act('home');
+    }
+    await page.evaluate(()=>{
+      state.review.a1={due:'2027-01-01',step:1};
+      save();
+    });
+    // A legacy paper has one wrong listening answer and one unanswered reading item.
+    await addSavedResult('A',['ma01'],['ma08']);
+    await navigate('review');
+    assert.equal(await page.locator('.review-list .row').count(),3);
+    assert.equal(await page.getByText(/模測 A 卷 · 答錯/).count(),1);
+    assert.equal(await page.getByText(/模測 A 卷 · 未作答/).count(),1);
+    await navigate('home');
+    await act('start-R');
+    assert.equal((await readDraft()).ids.length,3);
+    await act('close');
+    await finishReview(); // early practice leaves the due date intact
+    assert.equal(await reviewDate(),'2026-11-28');
+    await page.clock.setSystemTime(new Date('2026-11-28T12:00:00+08:00'));
+    await finishReview();
+    assert.equal(await reviewDate(),'2026-12-01');
+    await page.reload();
+    assert.equal(await reviewDate(),'2026-12-01');
+    await page.clock.setSystemTime(new Date('2026-12-01T12:00:00+08:00'));
+    await finishReview();
+    await page.reload();
+    assert.deepEqual(await page.evaluate(()=>reviewIds()),['a1']);
+    // A new miss starts a fresh cycle, while the old unanswered item stays retired.
+    await addSavedResult('A',[],['ma01','ma02']);
+    assert.deepEqual((await page.evaluate(()=>reviewIds())).sort(),['a1','ma01','ma02']);
+    assert.equal(await page.locator('.hero button').getAttribute('data-act'),'start-L');
+    await act('start-L');
+    assert.equal((await readDraft()).ids.length,4);
+    await act('close');
+    await act('start-R'); // earlier three-question drill survives the new 4:2 plan
+    assert.equal((await readDraft()).ids.length,3);
+    await act('begin');
+    for (const id of (await readDraft()).ids) {
+      await act('answer-'+await page.evaluate(id=>byId.get(id).right,id));
+      await act('next');
+    }
+    await act('home');
+    await act('start-R');
+    assert.equal((await readDraft()).ids.length,2);
+    const mixed = await page.evaluate(()=>idsFor('mix').map(id=>byId.get(id).mode));
+    assert.deepEqual(mixed,['L','L','L','R']);
+  } finally { await browser.close(); }
 });

@@ -22,7 +22,7 @@ const icons = {
 };
 function icon(name){return '<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+icons[name]+'</svg>'}
 document.querySelectorAll('[data-icon]').forEach(el=>el.innerHTML=icon(el.dataset.icon));
-const byId=new Map(questions.map(q=>[q.id,q]));
+const byId=new Map([...questions,...mockQuestions].map(q=>[q.id,q]));
 const main=document.querySelector('#main'), dialog=document.querySelector('#quiz');
 const key='peakline-toeic-v1';
 const defaults=()=>({stage:0, history:[], review:{}, drafts:{}});
@@ -35,12 +35,42 @@ function readState(){
 }
 let state=readState(), active='', screen='home';
 const save=()=>{try{localStorage.setItem(key,JSON.stringify(state))}catch{document.querySelector('#storage-note').hidden=false;document.querySelector('#storage-note').textContent='此瀏覽器無法保存進度。這次練習仍可繼續。'}};
-function day(offset=0){const d=new Date();d.setDate(d.getDate()+offset);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function day(offset=0,base=Date.now()){const d=new Date(base);d.setDate(d.getDate()+offset);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
 function answers(){return state.history.flatMap(h=>h.responses)}
 function diagnosed(){return state.history.some(h=>h.type==='diagnosis')}
 function items(stage,mode){return questions.filter(q=>q.id.startsWith(stageInfo[stage].key)&&(!mode||q.mode===mode))}
 function mastery(stage){const last=new Map(answers().map(r=>[r.id,r.correct]));return items(stage).filter(q=>last.get(q.id)).length}
-function reviewIds(){return Object.keys(state.review).filter(id=>byId.has(id)).sort((a,b)=>state.review[a].due.localeCompare(state.review[b].due))}
+let latestMock, reviewQueue;
+function afterPractice(entry,correct,date) {
+  const base=date+'T12:00:00';
+  if(!correct)return {...entry,due:day(1,base),step:0};
+  if(!entry||entry.due>date)return entry;
+  return entry.step===1?null:{...entry,due:day(3,base),step:1};
+}
+function refreshLearningPlan() {
+  const {latest,misses}=timedMock.feedback();
+  latestMock=latest;
+  // Replay only reviews of the same miss. A later failed attempt starts a new cycle.
+  for(const session of state.history){
+    if(session.type!=='review')continue;
+    for(const answer of session.responses){
+      const entry=misses.get(answer.id);
+      if(!entry||entry.attempt!==answer.mockAttempt)continue;
+      const next=afterPractice(entry,answer.correct,session.day);
+      if(next)misses.set(answer.id,next);
+      else misses.delete(answer.id);
+    }
+  }
+  reviewQueue={...state.review,...Object.fromEntries(misses)};
+}
+function reviewIds(){return Object.keys(reviewQueue).filter(id=>byId.has(id)).sort((a,b)=>reviewQueue[a].due.localeCompare(reviewQueue[b].due))}
+function dailyCounts(){
+  if(!latestMock)return {L:4,R:4};
+  if(latestMock.L===latestMock.R)return {L:3,R:3};
+  return latestMock.L<latestMock.R?{L:4,R:2}:{L:2,R:4};
+}
+function dailyModes(){return latestMock?.R<latestMock?.L?['R','L']:['L','R']}
+function completedToday(type){return state.history.some(h=>h.day===day()&&h.type===type&&(type!=='L'&&type!=='R'||h.stage===state.stage))}
 function dateLabel(){return new Intl.DateTimeFormat('zh-TW',{month:'long',day:'numeric',weekday:'long'}).format(new Date())}
 function accuracy(rs){return rs.length?Math.round(100*rs.filter(r=>r.correct).length/rs.length)+'%':'—'}
 function streak(){const days=new Set(state.history.map(h=>h.day));let offset=days.has(day())?0:-1,count=0;while(days.has(day(offset--)))count++;return count}
@@ -51,11 +81,12 @@ function taskRow(type,title,meta,symbol,color,done){
   return '<button class="row" data-act="start-'+type+'"><span class="row-icon '+color+'">'+icon(symbol)+'</span><span><span class="row-head">'+title+'</span><span class="meta">'+meta+'</span></span><span class="go">'+icon(done?'check':'chevron')+'</span></button>';
 }
 function recommended(){
-  if(!diagnosed())return 'diagnosis';
-  if(reviewIds().some(id=>state.review[id].due<=day()))return 'review';
+  if(!diagnosed()&&!latestMock)return 'diagnosis';
+  if(reviewIds().some(id=>reviewQueue[id].due<=day()))return 'review';
   const stats=items(state.stage).map(q=>({q,r:answers().filter(r=>r.id===q.id).at(-1)}));
   const mastered=mode=>stats.filter(({q,r})=>q.mode===mode&&r?.correct).length;
   if(mastered('L')===4&&mastered('R')===4)return state.stage<3?'advance':'route';
+  if(latestMock)return dailyModes().find(mode=>!completedToday(mode))||'mix';
   if(mastered('L')===mastered('R')){
     const diag=state.history.filter(h=>h.type==='diagnosis').at(-1);
     const score=m=>diag.responses.filter(r=>byId.get(r.id).mode===m&&r.correct).length;
@@ -70,8 +101,15 @@ function week(){
   }).join('')+'</div></section>';
 }
 function home(){
-  const stage=stageInfo[state.stage],hist=state.history.filter(h=>h.day===day()),done=t=>hist.some(h=>h.type===t&&(t!=='L'&&t!=='R'||h.stage===state.stage));
+  const stage=stageInfo[state.stage],done=completedToday;
   const first=(!diagnosed()||done('diagnosis'))?'diagnosis':reviewIds().length||done('review')?'review':'mix';
+  const counts=dailyCounts();
+  const planNote=latestMock?'<p class="meta">最近模測 '+latestMock.form+' 卷 · 聽力 '+latestMock.L+'/6、閱讀 '+latestMock.R+'/6。新題組安排聽力 '+counts.L+' 題、閱讀 '+counts.R+' 題。</p>':'';
+  const subjectRows=dailyModes().map(mode=>{
+    const draft=state.drafts[mode];
+    const count=draft?.stage===state.stage?draft.ids.length:counts[mode];
+    return taskRow(mode,trainingNames[mode],stage.title+' · '+count+' 題',mode==='L'?'headphones':'book',mode==='L'?'mint':'blue',done(mode));
+  }).join('');
   const next=recommended(),cta=next==='advance'?'前往下一階段':next==='route'?'查看衝刺路線':(state.drafts[next]?'繼續':'開始')+trainingNames[next];
   const act=next==='advance'||next==='route'?'route':'start-'+next;
   return heading('學習總覽')+'<section class="hero"><div class="hero-content"><span class="tag">'+icon('flag')+' TOEIC LISTENING &amp; READING</span><h2 lang="en">Road to <em>990</em></h2><p>從 10 分起步，走出你的多益滿分路線。</p>'+btn(icon('play')+cta,act)+'</div></section>'+
@@ -79,9 +117,8 @@ function home(){
     ['flag','mint','990','分','多益目標'],['fire','peach',streak(),'天','連續練習'],['chart','blue',answers().length,'題','累計完成']
   ].map(([ic,c,n,u,l])=>'<div class="stat"><span class="stat-icon '+c+'">'+icon(ic)+'</span><div><strong>'+n+'<small>'+u+'</small></strong><p>'+l+'</p></div></div>').join('')+'</section>'+
   '<div class="grid"><section class="panel"><div class="card-title"><h2>今日訓練</h2><span class="count">'+[first,'L','R'].filter(done).length+' / 3 完成</span></div>'+
-  taskRow(first,trainingNames[first],first==='diagnosis'?'聽讀定位 · 6 題':first==='review'?'重新練習錯題 · 最多 6 題':'聽力與閱讀 · 4 題','compass','peach',done(first))+
-  taskRow('L','聽力訓練',stage.title+' · 4 題','headphones','mint',done('L'))+
-  taskRow('R','閱讀訓練',stage.title+' · 4 題','book','blue',done('R'))+'</section>'+
+  planNote+taskRow(first,trainingNames[first],first==='diagnosis'?'聽讀定位 · 6 題':first==='review'?'重新練習錯題 · 最多 6 題':'聽力與閱讀 · 4 題','compass','peach',done(first))+
+  subjectRows+'</section>'+
   '<section class="panel"><div class="card-title"><h2>登峰路線</h2><a class="text-btn" href="#route">查看路線</a></div><ol class="route-mini">'+
   stageInfo.map((s,i)=>'<li class="'+(i===state.stage?'current':'')+'"><span class="node"></span><strong>'+s.title+(i===state.stage?' · 目前':'')+'</strong><span>'+s.range+' 分</span></li>').join('')+'</ol></section></div>'+week();
 }
@@ -100,47 +137,65 @@ function route(){
   }).join('')+'</div><section class="panel resource"><h2>用完整測驗檢查進度</h2><p class="sub">聽力 100 題約 45 分鐘，閱讀 100 題 75 分鐘。完成一個階段後，用未做過的完整模考檢查速度，再把失分題型帶回練習。本站小題組使用合成語音與中文解析，只記錄答對率。</p><a href="https://www.toeic.com.tw/sample-test/toeic-listening-reading/sample01.html" target="_blank" rel="noopener">練習官方題型範例（含照片描述）</a></section>'+scoreLog();
 }
 function reviewPage(){
-  const ids=reviewIds(),due=ids.filter(id=>state.review[id].due<=day());
+  const ids=reviewIds(),due=ids.filter(id=>reviewQueue[id].due<=day());
   if(!ids.length)return heading('錯題本')+'<section class="panel empty"><span class="tile-icon mint">'+icon('bookmark')+'</span><h2>目前沒有待複習的錯題</h2><p class="muted">完成一組練習後，答錯的題目會出現在這裡。</p>'+btn('開始'+trainingNames[diagnosed()?'mix':'diagnosis'],'start-'+(diagnosed()?'mix':'diagnosis'))+'</section>';
-  return heading('錯題本')+'<section class="panel review-list"><div class="card-title"><div><h2>'+ids.length+' 題待複習</h2><p class="meta">今天到期 '+due.length+' 題，每組最多 6 題。</p></div>'+btn(due.length?'複習到期題目':'提前練習','start-review')+'</div>'+ids.map(id=>{const q=byId.get(id),r=state.review[id];return '<div class="row"><span class="row-icon '+(q.mode==='L'?'mint':'blue')+'">'+icon(q.mode==='L'?'headphones':'book')+'</span><div><span class="row-head">'+q.skill+'</span><span class="meta">Part '+q.part+' · '+(r.due<=day()?'已到期':r.due+' 複習')+'</span></div></div>'}).join('')+'</section>';
+  return heading('錯題本')+'<section class="panel review-list"><div class="card-title"><div><h2>'+ids.length+' 題待複習</h2><p class="meta">今天到期 '+due.length+' 題，每組最多 6 題。</p></div>'+btn(due.length?'複習到期題目':'提前練習','start-review')+'</div>'+ids.map(id=>{const q=byId.get(id),r=reviewQueue[id];return '<div class="row"><span class="row-icon '+(q.mode==='L'?'mint':'blue')+'">'+icon(q.mode==='L'?'headphones':'book')+'</span><div><span class="row-head">'+q.skill+'</span><span class="meta">'+(r.source?r.source+' · ':'')+'Part '+q.part+' · '+(r.due<=day()?'已到期':r.due+' 複習')+'</span></div></div>'}).join('')+'</section>';
 }
 function render(){
   screen=location.hash.slice(1);if(!['home','route','review','mock'].includes(screen))screen='home';
+  if(screen!=='mock')refreshLearningPlan();
   document.querySelectorAll('nav a').forEach(a=>{if(a.dataset.page===screen)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   const pages={home,route,review:reviewPage,mock:timedMock.page};
   main.innerHTML=pages[screen]();
 }
 function go(routeName){if(location.hash==='#'+routeName)render();else location.hash=routeName}
+window.addEventListener('storage',e=>{
+  if(e.key!==key)return;
+  const previousDraft=state.drafts[active];
+  state=readState();
+  if(dialog.open&&JSON.stringify(previousDraft)!==JSON.stringify(state.drafts[active]))dialog.close();
+  if(screen!=='mock')render();
+});
 window.addEventListener('hashchange',()=>{render();window.scrollTo(0,0);main.focus({preventScroll:true})});
-function idsFor(type){
+function idsFor(type,fullStage=false){
   if(type==='diagnosis')return questions.filter(q=>q.id.startsWith('d')).map(q=>q.id);
   if(type==='review'){
-    const all=reviewIds(),due=all.filter(id=>state.review[id].due<=day());return (due.length?due:all).slice(0,6);
+    const all=reviewIds(),due=all.filter(id=>reviewQueue[id].due<=day());return (due.length?due:all).slice(0,6);
   }
-  if(type==='mix'){
-    const times=new Map();for(const r of answers())times.set(r.id,(times.get(r.id)||0)+1);
-    return ['L','R'].flatMap(m=>items(state.stage,m).sort((a,b)=>(times.get(a.id)||0)-(times.get(b.id)||0)).slice(0,2).map(q=>q.id));
-  }
-  return items(state.stage,type).map(q=>q.id);
+  if(type!=='mix'&&(!latestMock||fullStage))return items(state.stage,type).map(q=>q.id);
+  const times=new Map();
+  for(const r of answers())times.set(r.id,(times.get(r.id)||0)+1);
+  const counts=dailyCounts();
+  const modes=type==='mix'?dailyModes():[type];
+  return modes.flatMap(mode=>{
+    // The four-question mixed set takes one fewer item per section than the six-question plan.
+    const size=type==='mix'?(latestMock?counts[mode]-1:2):counts[mode];
+    return items(state.stage,mode).sort((a,b)=>(times.get(a.id)||0)-(times.get(b.id)||0)).slice(0,size).map(q=>q.id);
+  });
 }
 function modal(html){
   dialog.innerHTML=html;
   if(!dialog.open)dialog.showModal();else{dialog.scrollTop=0;dialog.querySelector('#quiz-title')?.focus()}
 }
 function quizHeading(title,tag){return '<div class="quiz-top"><span class="quiz-tag">'+tag+'</span>'+btn(icon('close')+'<span hidden>關閉</span>','close','dismiss').replace('data-act="close"','aria-label="關閉" data-act="close"')+'</div><h2 id="quiz-title" tabindex="-1" class="quiz-prompt">'+title+'</h2>'}
-function start(type){
+function start(type,fullStage=false){
   if(!Object.hasOwn(trainingNames,type))return;
-  const ids=idsFor(type);
+  const ids=idsFor(type,fullStage);
   if(!ids.length){go('review');return}
   active=type;
   const draft=state.drafts[type];
   if(!draft||(type!=='diagnosis'&&type!=='review'&&draft.stage!==state.stage)){
-    state.drafts[type]={stage:state.stage,ids,responses:[],index:0,intro:type==='L'||type==='R'};save();
+    state.drafts[type]={stage:state.stage,ids,responses:[],index:0,intro:type==='L'||type==='R'};
+    if(type==='review'){
+      const draft=state.drafts[type];
+      draft.mockAttempts=Object.fromEntries(ids.filter(id=>reviewQueue[id].attempt).map(id=>[id,reviewQueue[id].attempt]));
+    }
+    save();
   }
   const s=state.drafts[type];
   if(s.intro){
     const st=stageInfo[s.stage],listen=type==='L';
-    modal(quizHeading(st.title+' · '+trainingNames[type],'練習前導讀')+'<p class="sub">'+(listen?st.tip:st.read)+'</p><div class="lesson"><b>先看一個例子</b>'+(listen?st.example:st.phrase)+'</div><div class="result-buttons">'+btn('開始 4 題練習','begin')+'</div>');return;
+    modal(quizHeading(st.title+' · '+trainingNames[type],'練習前導讀')+'<p class="sub">'+(listen?st.tip:st.read)+'</p><div class="lesson"><b>先看一個例子</b>'+(listen?st.example:st.phrase)+'</div><div class="result-buttons">'+btn('開始 '+s.ids.length+' 題練習','begin')+'</div>');return;
   }
   showQuestion();
 }
@@ -156,11 +211,11 @@ function showQuestion(){
 function record(s){
   const type=active;
   for(const r of s.responses){
-    if(!r.correct)state.review[r.id]={due:day(1),step:0};
-    else if(type==='review'&&state.review[r.id]?.due<=day()){
-      if(state.review[r.id].step===1)delete state.review[r.id];
-      else state.review[r.id]={due:day(3),step:1};
-    }
+    if(s.mockAttempts?.[r.id]){r.mockAttempt=s.mockAttempts[r.id];continue}
+    if(r.correct&&type!=='review')continue;
+    const next=afterPractice(state.review[r.id],r.correct,day());
+    if(next)state.review[r.id]=next;
+    else delete state.review[r.id];
   }
   const entry={day:day(),type,stage:s.stage,responses:s.responses};
   if(type==='diagnosis'&&!diagnosed()){
@@ -179,7 +234,7 @@ document.addEventListener('click',e=>{
   const a=button.dataset.act;
   if(a==='close'){dialog.close();return}
   if(a==='home'||a==='route'){if(dialog.open)dialog.close();go(a);return}
-  if(a.startsWith('stage-')){state.stage=Number(a.slice(6));save();render();const next=recommended();start(next==='R'?'R':'L');return}
+  if(a.startsWith('stage-')){state.stage=Number(a.slice(6));save();render();const next=recommended();start(next==='R'?'R':'L',true);return}
   if(a.startsWith('start-')){start(a.slice(6));return}
   const s=state.drafts[active];if(!s)return;
   if(a==='begin'){s.intro=false;save();showQuestion();return}
