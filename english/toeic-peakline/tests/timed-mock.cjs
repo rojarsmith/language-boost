@@ -22,10 +22,10 @@ test('timed papers, resume, deadlines and result history', async () => {
     const act = name => page.locator('[data-mock="' + name + '"]').click();
     const pick = index => page.getByRole('radio').nth(index).check();
     const bank = await page.evaluate(() => mockQuestions);
-    assert.equal(bank.length, 72);
-    assert.equal(new Set(bank.map(q => q.id)).size, 72);
+    assert.equal(bank.length, 96);
+    assert.equal(new Set(bank.map(q => q.id)).size, 96);
     assert(await page.evaluate(() => mockQuestions.every(q => !questions.some(practice => practice.id === q.id) && q.choices[q.right])));
-    for (const form of ['ma', 'mb', 'mc', 'md', 'me', 'mf']) {
+    for (const form of ['ma', 'mb', 'mc', 'md', 'me', 'mf', 'mg', 'mh']) {
       const questions = bank.filter(q => q.id.startsWith(form));
       assert.equal(questions.filter(q => q.mode === 'R').length, 6);
       assert.equal(questions.filter(q => q.mode === 'L').length, 6);
@@ -205,7 +205,8 @@ async function checkPaperPair(first, second, nextAfterPair) {
 }
 
 test('forms C and D play, resume, populate review and update daily training', () => checkPaperPair('C','D','E'));
-test('forms E and F play, resume, populate review and update daily training', () => checkPaperPair('E','F','A'));
+test('forms E and F play, resume, populate review and update daily training', () => checkPaperPair('E','F','G'));
+test('forms G and H play, resume, populate review and update daily training', () => checkPaperPair('G','H','A'));
 
 test('old submissions, review intervals, repeat misses and adaptive drill sizes', async () => {
   const browser = await chromium.launch({executablePath: process.env.PLAYWRIGHT_EXECUTABLE});

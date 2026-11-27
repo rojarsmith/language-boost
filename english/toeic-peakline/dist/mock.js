@@ -1,7 +1,7 @@
 const timedMock = (() => {
   const storageKey = 'peakline-timed-mock-v1';
   const duration = 8 * 60 * 1000;
-  const forms = ['A', 'B', 'C', 'D', 'E', 'F'];
+  const forms = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
   const papers = Object.fromEntries(forms.map(form => [
     form, mockQuestions.filter(q => q.id.startsWith('m' + form.toLowerCase()))
   ]));

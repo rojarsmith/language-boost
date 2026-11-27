@@ -1138,5 +1138,385 @@ const mockQuestions = [
     ],
     "right": 2,
     "why": "會議同時需要至少 13 個現場座位及視訊設備。Birch 缺設備，Cedar 只有 12 席，Maple 兩項都符合。"
+  },
+  {
+    "id": "mg01",
+    "mode": "L",
+    "part": 2,
+    "skill": "辨認地點",
+    "material": "Where can I weigh this parcel before I buy postage?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "Just under two kilograms.",
+      "On the scale beside the counter.",
+      "The parcel arrived yesterday."
+    ],
+    "right": 1,
+    "why": "Where 問地點。the scale beside the counter 指櫃檯旁的秤，可以在那裡量包裹重量。"
+  },
+  {
+    "id": "mg02",
+    "mode": "L",
+    "part": 2,
+    "skill": "辨認替代人選",
+    "material": "Could you lead the warehouse tour on Tuesday?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "The tour lasted an hour.",
+      "Through the loading bay.",
+      "I’ll be away, but Nina knows the route."
+    ],
+    "right": 2,
+    "why": "說話者當天不在，接著提到熟悉路線的 Nina，是在推薦其他可帶團的人。"
+  },
+  {
+    "id": "mg03",
+    "mode": "L",
+    "part": 3,
+    "skill": "判斷變更原因",
+    "material": "Shall we use the glass jars for the first batch of jam?||The lids for those jars haven’t arrived. Let’s fill the sample cups today and save the jars for tomorrow.",
+    "prompt": "Why does the second speaker suggest using sample cups?",
+    "choices": [
+      "The jar lids are missing.",
+      "The jam needs another day to cool.",
+      "The cups are cheaper.",
+      "The glass jars are too small."
+    ],
+    "right": 0,
+    "why": "玻璃罐本身已備妥，但蓋子還沒送到，因此先用試吃杯分裝。"
+  },
+  {
+    "id": "mg04",
+    "mode": "L",
+    "part": 3,
+    "skill": "辨認下一步",
+    "material": "The driver has been waiting at our rear entrance for ten minutes.||That gate is for outgoing shipments. I’ll meet her there and walk her to the receiving desk.",
+    "prompt": "What will the second speaker do next?",
+    "choices": [
+      "Send a parcel to the driver.",
+      "Open the receiving desk tomorrow.",
+      "Cancel an outgoing shipment.",
+      "Guide the driver to the correct desk."
+    ],
+    "right": 3,
+    "why": "walk her to 在此是「陪她走到」。第二位說話者會帶司機到負責收貨的櫃檯。"
+  },
+  {
+    "id": "mg05",
+    "mode": "L",
+    "part": 4,
+    "skill": "找出公告重點",
+    "material": "A message for customers collecting bakery orders. Your receipt shows a shelf number. Please collect your bread from that shelf. Cakes are kept in the refrigerator, so show your receipt to a staff member if your order includes a cake.",
+    "prompt": "What should a customer collecting a cake do?",
+    "choices": [
+      "Leave the receipt on a shelf.",
+      "Show the receipt to an employee.",
+      "Take a cake from the bread shelf.",
+      "Call the bakery after pickup."
+    ],
+    "right": 1,
+    "why": "蛋糕放在冰箱裡，領取時要向店員出示收據。架號是供客人自取麵包使用的。"
+  },
+  {
+    "id": "mg06",
+    "mode": "L",
+    "part": 4,
+    "skill": "區分舊安排與新安排",
+    "material": "Welcome to the food photography workshop. Our outdoor session was planned for this morning. The courtyard is still in use, so we will photograph table settings indoors first. We can move outside once the lunch service ends.",
+    "prompt": "When will the outdoor session take place?",
+    "choices": [
+      "Before the indoor session.",
+      "During the morning delivery.",
+      "After lunch service finishes.",
+      "As soon as the tables are set."
+    ],
+    "right": 2,
+    "why": "原訂上午的戶外拍攝改期。once the lunch service ends 表示午餐供應結束後才能移到戶外。"
+  },
+  {
+    "id": "mg07",
+    "mode": "R",
+    "part": 5,
+    "skill": "不定詞搭配",
+    "material": "",
+    "prompt": "The distributor agreed _____ the damaged cartons at no extra charge.",
+    "choices": [
+      "replace",
+      "replacement",
+      "replacing",
+      "to replace"
+    ],
+    "right": 3,
+    "why": "agree to do something 表示同意做某事。供應商同意免費更換受損紙箱。"
+  },
+  {
+    "id": "mg08",
+    "mode": "R",
+    "part": 5,
+    "skill": "名詞詞形",
+    "material": "",
+    "prompt": "The tasting panel praised the _____ of the new recipe.",
+    "choices": [
+      "simple",
+      "simplicity",
+      "simply",
+      "simplify"
+    ],
+    "right": 1,
+    "why": "the 與 of the new recipe 之間需要名詞。simplicity 指新配方的簡潔。"
+  },
+  {
+    "id": "mg09",
+    "mode": "R",
+    "part": 6,
+    "skill": "辨認通知中的因果",
+    "material": "The labels on our small spice jars are difficult to read. Several customers have asked for larger lettering. _____, the next batch of labels will use a bigger typeface.",
+    "prompt": "Which phrase best fills the gap?",
+    "choices": [
+      "Nevertheless",
+      "By contrast",
+      "For this reason",
+      "Previously"
+    ],
+    "right": 2,
+    "why": "前文說標籤難讀、有客人要求放大字體。採用較大字體是回應這項需求的結果。"
+  },
+  {
+    "id": "mg10",
+    "mode": "R",
+    "part": 6,
+    "skill": "篇章細節銜接",
+    "material": "Dear tenants, the mailroom shelves will be replaced on Friday. _____. Any parcels still on the shelves that evening will be moved to the reception desk.",
+    "prompt": "Which sentence best fills the gap?",
+    "choices": [
+      "Please collect your parcels before five that afternoon.",
+      "Our rent payments are due next month.",
+      "The new shelves were delivered last winter to another building.",
+      "Reception sells envelopes in three sizes."
+    ],
+    "right": 0,
+    "why": "後一句交代當晚仍未領取的包裹會移到櫃檯，因此空格應先提醒住戶在更換層架前取件。"
+  },
+  {
+    "id": "mg11",
+    "mode": "R",
+    "part": 7,
+    "skill": "分辨訂單狀態",
+    "material": "Bulk order instructions • We send an automatic email as soon as your request reaches us. The email contains a reference number. Your pickup slot is reserved only when our dispatcher sends a second message with a time.",
+    "prompt": "What does the first email confirm?",
+    "choices": [
+      "A pickup time has been set.",
+      "The goods have been packed.",
+      "The payment has cleared.",
+      "The request has been received."
+    ],
+    "right": 3,
+    "why": "第一封自動信只確認收到申請並提供編號。收到調度員寄來含時間的第二封信後，取貨時段才確定。"
+  },
+  {
+    "id": "mg12",
+    "mode": "R",
+    "part": 7,
+    "skill": "跨文件計算運費",
+    "material": "Courier tariff • For parcels up to and including 3 kg, delivery costs $9. Each additional kilogram or part of a kilogram costs $2.\nDispatch note • One parcel. Packed weight: 4.2 kg.",
+    "prompt": "What delivery charge applies to this parcel?",
+    "choices": [
+      "$11.",
+      "$13.",
+      "$9.",
+      "$15."
+    ],
+    "right": 1,
+    "why": "超過 3 公斤的部分為 1.2 公斤。費率規定不足一公斤也以一公斤計，因此加收兩次 2 元，總計 13 元。"
+  },
+  {
+    "id": "mh01",
+    "mode": "L",
+    "part": 2,
+    "skill": "選擇問句",
+    "material": "Would you prefer a seat near the window or near the aisle?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "The aisle, please. I’ll need to get up early.",
+      "The windows were cleaned.",
+      "Yes, the seats are reserved."
+    ],
+    "right": 0,
+    "why": "問句要在兩個位置中擇一。回答者選走道座位，因為需要提早起身。"
+  },
+  {
+    "id": "mh02",
+    "mode": "L",
+    "part": 2,
+    "skill": "間接詢問進度",
+    "material": "Did anyone record yesterday’s staff presentation?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "I presented my badge.",
+      "The staff room is upstairs.",
+      "There’s a video of it on our team site."
+    ],
+    "right": 2,
+    "why": "團隊網站上有那場簡報的影片，間接表示有人錄下了簡報。"
+  },
+  {
+    "id": "mh03",
+    "mode": "L",
+    "part": 3,
+    "skill": "推論物品用途",
+    "material": "Why are you taking a roll of tape to the training room?||The floor arrows keep sliding when people walk on them. I want them to stay in place during the safety drill.",
+    "prompt": "What will the second speaker use the tape for?",
+    "choices": [
+      "To mark attendance.",
+      "To secure directions on the floor.",
+      "To repair a training video.",
+      "To close the room entrance."
+    ],
+    "right": 1,
+    "why": "arrows keep sliding 表示地上的指示箭頭會滑動。拿膠帶是為了把它們固定好。"
+  },
+  {
+    "id": "mh04",
+    "mode": "L",
+    "part": 3,
+    "skill": "核對附加條件",
+    "material": "Can we put my bicycle on the morning shuttle?||Bicycles are allowed, but each one needs its own reservation. Your seat booking covers only you.",
+    "prompt": "What must the first speaker do to take the bicycle?",
+    "choices": [
+      "Buy a seat for another passenger.",
+      "Choose an afternoon shuttle.",
+      "Cancel the existing seat booking.",
+      "Make a separate reservation for the bicycle."
+    ],
+    "right": 3,
+    "why": "each one needs its own reservation 表示腳踏車要另外預約。原有的座位預約只適用於乘客本人。"
+  },
+  {
+    "id": "mh05",
+    "mode": "L",
+    "part": 4,
+    "skill": "確認來電者的請求",
+    "material": "Hello, this is Omar at the town archive. Thank you for offering to donate the old maps. Before you bring them in, could you send me their measurements? I need to make sure our flat storage drawers are large enough.",
+    "prompt": "What information does Omar request?",
+    "choices": [
+      "The dimensions of the maps.",
+      "The price of the storage drawers.",
+      "The donor’s home address.",
+      "The dates printed on the maps."
+    ],
+    "right": 0,
+    "why": "measurements 指尺寸。Omar 需要確認典藏用的平放式抽屜是否夠大。"
+  },
+  {
+    "id": "mh06",
+    "mode": "L",
+    "part": 4,
+    "skill": "掌握退款方式",
+    "material": "Thank you for registering for the evening lecture. The speaker cannot travel today, so the event has been canceled. Card payments will be refunded automatically. If you paid cash at the box office, take your ticket there to receive your refund.",
+    "prompt": "What should a customer who paid cash do?",
+    "choices": [
+      "Wait for a credit on a card.",
+      "Contact the speaker directly.",
+      "Present the ticket at the box office.",
+      "Reserve a seat for another lecture."
+    ],
+    "right": 2,
+    "why": "刷卡款項會自動退回，現金購票者則要持票到原售票處領取退款。"
+  },
+  {
+    "id": "mh07",
+    "mode": "R",
+    "part": 5,
+    "skill": "時間介系詞",
+    "material": "",
+    "prompt": "The campaign has attracted over 200 volunteers _____ its launch in March.",
+    "choices": [
+      "among",
+      "since",
+      "while",
+      "during which"
+    ],
+    "right": 1,
+    "why": "現在完成式搭配 since 加起始時間，表示從三月啟動以來累積了兩百多位志工。"
+  },
+  {
+    "id": "mh08",
+    "mode": "R",
+    "part": 5,
+    "skill": "平行動詞結構",
+    "material": "",
+    "prompt": "The coordinator is responsible for booking venues and _____ speakers.",
+    "choices": [
+      "invite",
+      "invitation",
+      "invited",
+      "inviting"
+    ],
+    "right": 3,
+    "why": "介系詞 for 後的兩個動作由 and 連接，booking 和 inviting 都用動名詞。"
+  },
+  {
+    "id": "mh09",
+    "mode": "R",
+    "part": 6,
+    "skill": "對照新舊流程",
+    "material": "Under our old policy, travel claims had to include original boarding passes. _____, a scanned copy will be sufficient. This change takes effect on the first of next month.",
+    "prompt": "Which expression best fills the gap?",
+    "choices": [
+      "In other words",
+      "For example",
+      "Under the revised policy",
+      "At the same price"
+    ],
+    "right": 2,
+    "why": "舊辦法要求登機證正本。新辦法下個月生效，屆時只需掃描件，因此用 Under the revised policy 引出新規定。"
+  },
+  {
+    "id": "mh10",
+    "mode": "R",
+    "part": 6,
+    "skill": "補足申請步驟",
+    "material": "To join the language exchange, fill out the short form on our website. _____. We use that information to match you with a suitable conversation partner.",
+    "prompt": "Which sentence best fills the gap?",
+    "choices": [
+      "Tell us which languages you speak and which one you want to practice.",
+      "The library was built near a public park.",
+      "The exchange ran for six weeks last year.",
+      "Refreshments are served in the entrance hall."
+    ],
+    "right": 0,
+    "why": "that information 指配對所需的資料。填寫自己會說和想練習的語言，主辦單位才能安排合適的語伴。"
+  },
+  {
+    "id": "mh11",
+    "mode": "R",
+    "part": 7,
+    "skill": "解讀候補規則",
+    "material": "Course waiting list • When a place opens, the first person on the list receives an email offer. That person has 12 hours to accept. If we receive no reply, we offer the place to the next person. Joining the list is free.",
+    "prompt": "What happens if the first person does not reply within 12 hours?",
+    "choices": [
+      "The course fee increases.",
+      "The place is offered to someone else.",
+      "The entire list is canceled.",
+      "The place is held until the course begins."
+    ],
+    "right": 1,
+    "why": "規則明訂超過 12 小時沒有回覆，名額會依序提供給下一位候補者。"
+  },
+  {
+    "id": "mh12",
+    "mode": "R",
+    "part": 7,
+    "skill": "核對時程與間隔",
+    "material": "Assembly schedule • Room checks: 8:45, 9:15, 9:45, 10:15. Select one check for each presentation.\nPresenter’s email • I will arrive at 9:05. I need at least 20 minutes after I arrive to set up my equipment before the room check.",
+    "prompt": "Which is the earliest room check the presenter can select?",
+    "choices": [
+      "8:45.",
+      "9:15.",
+      "9:45.",
+      "10:15."
+    ],
+    "right": 2,
+    "why": "9:05 抵達後至少需要 20 分鐘架設器材，最早 9:25 才準備好。符合條件的第一個檢查時段是 9:45。"
   }
 ];
