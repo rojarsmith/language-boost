@@ -1518,5 +1518,385 @@ const mockQuestions = [
     ],
     "right": 2,
     "why": "9:05 抵達後至少需要 20 分鐘架設器材，最早 9:25 才準備好。符合條件的第一個檢查時段是 9:45。"
+  },
+  {
+    "id": "mi01",
+    "mode": "L",
+    "part": 2,
+    "skill": "辨認歸屬",
+    "material": "Whose umbrella was left in the interview room?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "Only when it rains.",
+      "Next to the elevator.",
+      "I think it belongs to the last applicant."
+    ],
+    "right": 2,
+    "why": "Whose 問物品屬於誰。the last applicant 是最後一位面試者，回答指出可能的失主。"
+  },
+  {
+    "id": "mi02",
+    "mode": "L",
+    "part": 2,
+    "skill": "間接確認可用時間",
+    "material": "Is the loading ramp free at three this afternoon?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "Our furniture delivery is booked for that time.",
+      "There’s no charge for the samples.",
+      "Three boxes of lamps."
+    ],
+    "right": 0,
+    "why": "free 在這裡指「有沒有空檔」。家具已約在三點送達，暗示當時有人要使用卸貨坡道。"
+  },
+  {
+    "id": "mi03",
+    "mode": "L",
+    "part": 3,
+    "skill": "辨別問題成因",
+    "material": "Why did the total on the fabric invoice go up? Did we order more material?||No, the number of meters is the same. We asked for the rolls to be sent overnight, and that added a delivery charge.",
+    "prompt": "What caused the increase on the invoice?",
+    "choices": [
+      "More fabric was ordered.",
+      "The rolls were cut to a different width.",
+      "The fabric price rose.",
+      "The buyer chose a faster shipping service."
+    ],
+    "right": 3,
+    "why": "布料長度沒變。overnight 表示要求隔夜送達，新增的運費才是總額上升的原因。"
+  },
+  {
+    "id": "mi04",
+    "mode": "L",
+    "part": 3,
+    "skill": "聽出承諾的行動",
+    "material": "I’ve set the table for our product demonstration, but the back row might not see the smaller tools.||There’s a camera in my office. I’ll bring it down so we can project a close-up on the wall.",
+    "prompt": "What does the second speaker offer to do?",
+    "choices": [
+      "Move the back row outdoors.",
+      "Bring equipment to show a larger view.",
+      "Replace the smaller tools.",
+      "Postpone the demonstration."
+    ],
+    "right": 1,
+    "why": "project a close-up 是把特寫畫面投影出來。說話者要取相機，讓後排也看得到細節。"
+  },
+  {
+    "id": "mi05",
+    "mode": "L",
+    "part": 4,
+    "skill": "分辨領取方式",
+    "material": "Welcome to the upholstery class. You’ll find practice fabric at each workbench. The fabric you chose for your own chair is in the cupboard near the door. Each piece has a paper band with a student’s name on it. Please check that band before you cut anything.",
+    "prompt": "How can students identify the fabric for their own chairs?",
+    "choices": [
+      "Look for their names on the paper bands.",
+      "Choose the fabric already on their workbenches.",
+      "Measure the width of the cupboard.",
+      "Ask for a sample at the door."
+    ],
+    "right": 0,
+    "why": "工作台上的是練習布。個人椅子用的布料放在櫃子裡，用紙帶上的學生姓名辨認。"
+  },
+  {
+    "id": "mi06",
+    "mode": "L",
+    "part": 4,
+    "skill": "掌握通話目的",
+    "material": "Hello, this is Elena from the tile showroom. You asked whether our blue tiles would match the paint in your lobby. I’ve put two sample tiles aside for you. You can borrow them until Monday and compare them under the lights in your building.",
+    "prompt": "Why has Elena set aside two tiles?",
+    "choices": [
+      "To repair a damaged display.",
+      "To reserve the last items in a sale.",
+      "To let a customer check the color on site.",
+      "To teach a customer how to install them."
+    ],
+    "right": 2,
+    "why": "顧客想知道磁磚與油漆是否相配。Elena 留下樣品，讓顧客在大廳實際的燈光下比色。"
+  },
+  {
+    "id": "mi07",
+    "mode": "R",
+    "part": 5,
+    "skill": "依主詞選動詞",
+    "material": "",
+    "prompt": "Each of the rental vans _____ a folding ramp for heavy boxes.",
+    "choices": [
+      "carry",
+      "carries",
+      "carrying",
+      "to carry"
+    ],
+    "right": 1,
+    "why": "主詞是單數的 Each。of the rental vans 說明範圍，因此動詞要用 carries。"
+  },
+  {
+    "id": "mi08",
+    "mode": "R",
+    "part": 5,
+    "skill": "分辨形容詞與副詞",
+    "material": "",
+    "prompt": "The revised sewing pattern is _____ enough for a beginner to follow.",
+    "choices": [
+      "clearly",
+      "clarify",
+      "clarity",
+      "clear"
+    ],
+    "right": 3,
+    "why": "is 後面用形容詞 clear 描述紙型說明的清楚程度。此處 enough 放在形容詞後面。"
+  },
+  {
+    "id": "mi09",
+    "mode": "R",
+    "part": 6,
+    "skill": "用上下文選動詞",
+    "material": "Some items in our online catalog are made to order. Before you pay, please _____ the production time shown beside the item. It tells you how long we need to make it before shipping.",
+    "prompt": "Which word best fills the gap?",
+    "choices": [
+      "check",
+      "pack",
+      "lend",
+      "repair"
+    ],
+    "right": 0,
+    "why": "下一句說明標出的時間是製作所需時間。付款前應查看（check）該時間，才知道多久後能出貨。"
+  },
+  {
+    "id": "mi10",
+    "mode": "R",
+    "part": 6,
+    "skill": "銜接例子與建議",
+    "material": "The design team welcomes photographs showing how our desks are used. _____. A photo like that helps us see which cables and devices need more space.",
+    "prompt": "Which sentence best fills the gap?",
+    "choices": [
+      "Our warehouse closes at six on Fridays.",
+      "Every desk comes with written instructions.",
+      "For example, show us your desk with your usual equipment connected.",
+      "You can pay for your desk in two installments."
+    ],
+    "right": 2,
+    "why": "A photo like that 指前一句的照片。拍下接上日常設備的桌面，才能看出線材和裝置佔了多少空間。"
+  },
+  {
+    "id": "mi11",
+    "mode": "R",
+    "part": 7,
+    "skill": "辨識寄售付款條件",
+    "material": "Consignment terms • We display local artists’ work for up to six weeks. The gallery pays artists on the last weekday of the month for pieces sold that month. Unsold pieces may be collected at the end of the display period.",
+    "prompt": "What triggers a payment to an artist?",
+    "choices": [
+      "Delivering a piece to the gallery.",
+      "Having a piece purchased by a customer.",
+      "Leaving a piece on display for six weeks.",
+      "Collecting a piece at the end of the display."
+    ],
+    "right": 1,
+    "why": "款項是針對 pieces sold，也就是已售出的作品。每月最後一個工作日是付款日，上架本身不會產生款項。"
+  },
+  {
+    "id": "mi12",
+    "mode": "R",
+    "part": 7,
+    "skill": "核對折抵金額",
+    "material": "Tailoring receipt • Jacket alteration: $68. Deposit paid: $20. Balance due on collection.\nCustomer email • Please add the $7 garment bag to my order. I’ll pay for it when I collect the jacket.",
+    "prompt": "How much should the customer pay at collection?",
+    "choices": [
+      "$48.",
+      "$75.",
+      "$88.",
+      "$55."
+    ],
+    "right": 3,
+    "why": "修改費 68 元先扣除已付訂金 20 元，尾款是 48 元。取件時另付衣袋費 7 元，合計 55 元。"
+  },
+  {
+    "id": "mj01",
+    "mode": "L",
+    "part": 2,
+    "skill": "確認截止時間",
+    "material": "By when do you need my comments on the draft agenda?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "On the second page.",
+      "By noon on Thursday.",
+      "The agenda is two pages long."
+    ],
+    "right": 1,
+    "why": "By when 問最晚何時要完成。By noon on Thursday 表示最晚在星期四中午前交回意見。"
+  },
+  {
+    "id": "mj02",
+    "mode": "L",
+    "part": 2,
+    "skill": "辨認主動協助",
+    "material": "These boxes are too wide for the cart, aren’t they?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "I can fetch the larger cart from downstairs.",
+      "Only the small boxes were empty.",
+      "The store accepts credit cards."
+    ],
+    "right": 0,
+    "why": "說話者指出箱子太寬，回應者提出去樓下拿大推車，直接解決搬運問題。"
+  },
+  {
+    "id": "mj03",
+    "mode": "L",
+    "part": 3,
+    "skill": "辨認選擇理由",
+    "material": "The express train gets us there twenty minutes sooner. Shall I book it?||The local train stops right beside the exhibition center. On the express, we’d have to take a taxi back from the terminal. Let’s take the local.",
+    "prompt": "Why does the second speaker prefer the local train?",
+    "choices": [
+      "It has reserved seats.",
+      "It runs later in the evening.",
+      "It stops closer to the destination.",
+      "It arrives twenty minutes earlier."
+    ],
+    "right": 2,
+    "why": "快車雖然較早到終點站，卻得再搭計程車折返。區間車就停在展覽中心旁，因此位置更方便。"
+  },
+  {
+    "id": "mj04",
+    "mode": "L",
+    "part": 3,
+    "skill": "聽懂交接安排",
+    "material": "I’m about to hand over the front desk. Has anyone returned the locker key for number sixteen?||The guest is still using it. I’ve written the locker number in the shift log so the evening clerk knows to collect the key.",
+    "prompt": "What has the second speaker already done?",
+    "choices": [
+      "Returned the locker key.",
+      "Emptied the locker.",
+      "Called the evening guest.",
+      "Added a reminder to the shift log."
+    ],
+    "right": 3,
+    "why": "鑰匙仍在客人手上。I’ve written 表示已完成的動作，即把置物櫃號碼記入交班簿，提醒晚班同事收回鑰匙。"
+  },
+  {
+    "id": "mj05",
+    "mode": "L",
+    "part": 4,
+    "skill": "區分兩個付款步驟",
+    "material": "A reminder for sellers at our neighborhood book sale. Buyers choose books at your table, but all payments go through the central cashier. Write the price and your table number on a slip for each buyer. The table number lets us credit the sale to you.",
+    "prompt": "Why should sellers write their table number on the slip?",
+    "choices": [
+      "To show buyers where the cashier sits.",
+      "To ensure the correct seller receives the proceeds.",
+      "To reserve a table for the next sale.",
+      "To tell buyers how many books are left."
+    ],
+    "right": 1,
+    "why": "款項統一由收銀台處理。credit the sale to you 表示依攤號把這筆銷售收入歸給正確的賣家。"
+  },
+  {
+    "id": "mj06",
+    "mode": "L",
+    "part": 4,
+    "skill": "從線索推論行動",
+    "material": "This is a message from Willow Guesthouse. A street parade will pass our main entrance on Saturday afternoon. Guests arriving with luggage can still reach us by car. Ask your driver to use the lane behind the bakery, where a porter will meet you at our side door.",
+    "prompt": "What should guests arriving by car on Saturday afternoon do?",
+    "choices": [
+      "Leave their luggage at the bakery.",
+      "Wait for the parade to finish.",
+      "Direct the driver to the lane behind the bakery.",
+      "Meet the porter at the main entrance."
+    ],
+    "right": 2,
+    "why": "遊行會經過正門。旅館請客人告訴司機改走麵包店後方的巷子，再由行李員於旅館側門接應。"
+  },
+  {
+    "id": "mj07",
+    "mode": "R",
+    "part": 5,
+    "skill": "區辨讓步連接詞",
+    "material": "",
+    "prompt": "_____ the hall was nearly full, the usher found two seats together.",
+    "choices": [
+      "Although",
+      "Despite",
+      "During",
+      "Because of"
+    ],
+    "right": 0,
+    "why": "空格後有完整子句 the hall was nearly full，需用連接詞 Although。整句表示儘管大廳幾乎滿座，帶位員仍找到相鄰座位。"
+  },
+  {
+    "id": "mj08",
+    "mode": "R",
+    "part": 5,
+    "skill": "辨認職務名詞",
+    "material": "",
+    "prompt": "One _____ from each branch will attend the planning session.",
+    "choices": [
+      "represent",
+      "representing",
+      "representative",
+      "represents"
+    ],
+    "right": 2,
+    "why": "One 後面需要可數單數名詞。representative 指代表，整句表示各分公司派一位代表參加規劃會議。"
+  },
+  {
+    "id": "mj09",
+    "mode": "R",
+    "part": 6,
+    "skill": "辨認步驟關係",
+    "material": "To borrow a portable screen, first choose a date on the equipment calendar. _____, enter the meeting room number so our staff know where to deliver it. You will receive a confirmation after submitting the form.",
+    "prompt": "Which word best fills the gap?",
+    "choices": [
+      "Otherwise",
+      "Next",
+      "Previously",
+      "Nevertheless"
+    ],
+    "right": 1,
+    "why": "first 引出填表的第一步，接著填入會議室號碼，因此用 Next 標示下一步。"
+  },
+  {
+    "id": "mj10",
+    "mode": "R",
+    "part": 6,
+    "skill": "連結問題與解決方法",
+    "material": "Visitors sometimes confuse our two buildings because both entrances face King Street. _____. Please include the appropriate color in any directions you send to guests.",
+    "prompt": "Which sentence best fills the gap?",
+    "choices": [
+      "The offices are closed on public holidays.",
+      "The receptionists share a telephone directory.",
+      "Both buildings were renovated last summer.",
+      "We have marked the east entrance in blue and the west entrance in green."
+    ],
+    "right": 3,
+    "why": "下一句要求指路時註明相應顏色，空格必須先解釋兩個入口各用哪種顏色標示。"
+  },
+  {
+    "id": "mj11",
+    "mode": "R",
+    "part": 7,
+    "skill": "解析訪客政策",
+    "material": "Trial membership • A trial pass includes one free guest visit. The member must accompany the guest on arrival. After checking in together, the guest may attend a different activity from the member. Guest visits must be booked by phone.",
+    "prompt": "Which arrangement is allowed under the trial pass?",
+    "choices": [
+      "The guest checks in alone before the member arrives.",
+      "The member books two free visits for one guest.",
+      "After booking by phone, both check in together and join separate classes.",
+      "The guest books online and meets the member after class."
+    ],
+    "right": 2,
+    "why": "規則要求電話預約，且會員與訪客一起報到。報到後可以各自參加不同活動。"
+  },
+  {
+    "id": "mj12",
+    "mode": "R",
+    "part": 7,
+    "skill": "比對班表與承諾",
+    "material": "Volunteer rota • Morning shift: 8:00–12:00. Midday shift: 10:00–14:00. Afternoon shift: 13:00–17:00. Volunteers must cover a whole shift.\nMessage from Iris • I can arrive at 9:30 and need to leave by 15:00.",
+    "prompt": "Which shift can Iris cover in full?",
+    "choices": [
+      "The morning shift only.",
+      "The midday shift only.",
+      "The afternoon shift only.",
+      "Both the midday and afternoon shifts."
+    ],
+    "right": 1,
+    "why": "Iris 最早 9:30 到、最晚 15:00 離開。早班開始時她還沒到，下午班結束時她已離開，只有 10:00 到 14:00 的班次能全程值勤。"
   }
 ];
