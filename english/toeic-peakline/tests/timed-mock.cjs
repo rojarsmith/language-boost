@@ -22,10 +22,10 @@ test('timed papers, resume, deadlines and result history', async () => {
     const act = name => page.locator('[data-mock="' + name + '"]').click();
     const pick = index => page.getByRole('radio').nth(index).check();
     const bank = await page.evaluate(() => mockQuestions);
-    assert.equal(bank.length, 24);
-    assert.equal(new Set(bank.map(q => q.id)).size, 24);
+    assert.equal(bank.length, 48);
+    assert.equal(new Set(bank.map(q => q.id)).size, 48);
     assert(await page.evaluate(() => mockQuestions.every(q => !questions.some(practice => practice.id === q.id) && q.choices[q.right])));
-    for (const form of ['ma', 'mb']) {
+    for (const form of ['ma', 'mb', 'mc', 'md']) {
       const questions = bank.filter(q => q.id.startsWith(form));
       assert.equal(questions.filter(q => q.mode === 'R').length, 6);
       assert.equal(questions.filter(q => q.mode === 'L').length, 6);
@@ -134,6 +134,69 @@ test('timed papers, resume, deadlines and result history', async () => {
   } finally {
     await browser.close();
   }
+});
+
+test('forms C and D play, resume, populate review and update daily training', async () => {
+  const browser = await chromium.launch({executablePath: process.env.PLAYWRIGHT_EXECUTABLE});
+  try {
+    const page = await browser.newPage({viewport:{width:320,height:800}});
+    const url = process.env.PEAKLINE_URL || pathToFileURL(resolve(__dirname, '../dist/index.html')).href;
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
+    await page.goto(url + '#mock');
+    for (const form of ['C','D']) {
+      const weak = form === 'C' ? 'L' : 'R';
+      const firstMiss = weak === 'L' ? 0 : 6;
+      const paper = await page.evaluate(form => mockQuestions.filter(q=>q.id.startsWith('m'+form.toLowerCase())),form);
+      await page.getByRole('button',{name:'開始 '+form+' 卷'}).click();
+      for (const [i,q] of paper.entries()) {
+        const card = page.locator('#mock-paper[data-index="'+i+'"]');
+        await card.waitFor();
+        if (i === 2) await page.reload();
+        assert.match(await card.locator('h2').innerText(), new RegExp(form+' 卷'));
+        if (q.mode === 'L') {
+          const audio = card.locator('audio');
+          assert.equal(await audio.getAttribute('src'),'audio/'+q.id+'.mp3');
+          await audio.evaluate(async el => {
+            await el.play(); el.pause();
+            if (!(el.duration > 0)) throw Error('Empty listening clip');
+          });
+        }
+        if (i !== firstMiss+1) {
+          const choice = i === firstMiss ? (q.right+1)%q.choices.length : q.right;
+          await card.getByRole('radio').nth(choice).check();
+        }
+        if (i < 11) await card.getByRole('button',{name:'下一題'}).click();
+      }
+      page.once('dialog', d=>d.accept());
+      await page.getByRole('button',{name:'交卷'}).click();
+      await page.getByRole('heading',{name:'模測結果'}).waitFor();
+      assert.match(await page.locator('main').innerText(), weak==='L' ? /聽力 4 \/ 6.*閱讀 6 \/ 6/ : /聽力 6 \/ 6.*閱讀 4 \/ 6/);
+      await page.getByRole('link',{name:'開啟錯題本'}).click();
+      await page.locator('.review-list').waitFor();
+      assert.equal(await page.getByText(new RegExp('模測 '+form+' 卷 · 答錯')).count(),1);
+      assert.equal(await page.getByText(new RegExp('模測 '+form+' 卷 · 未作答')).count(),1);
+      await page.getByRole('button',{name:'提前練習'}).click();
+      const ids = await page.evaluate(()=>state.drafts.review.ids);
+      for (const id of ids) {
+        const q = await page.evaluate(id=>byId.get(id),id);
+        await page.locator('#quiz [data-act="answer-'+q.right+'"]').click();
+        await page.getByText(q.why,{exact:true}).waitFor();
+        await page.locator('#quiz [data-act="next"]').click();
+      }
+      await page.locator('#quiz [data-act="home"]').click();
+      await page.locator('.hero').waitFor();
+      assert.equal(await page.locator('.hero button').getAttribute('data-act'),'start-'+weak);
+      for (const mode of ['L','R']) {
+        assert.match(await page.locator('.row[data-act="start-'+mode+'"]').innerText(),new RegExp((mode===weak?4:2)+' 題'));
+      }
+      await page.locator('nav [data-page="mock"]').click();
+      await page.locator('[data-mock="list"]').click();
+      await page.getByText('建議從 '+(form==='C'?'D':'A')+' 卷開始。',{exact:false}).waitFor();
+      assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+    }
+    assert.deepEqual(errors,[]);
+  } finally { await browser.close(); }
 });
 
 test('old submissions, review intervals, repeat misses and adaptive drill sizes', async () => {

@@ -378,5 +378,385 @@ const mockQuestions = [
     ],
     "right": 3,
     "why": "螢幕已包含在租金中，投影機自行攜帶，因此只需支付半日場租 120 元。"
+  },
+  {
+    "id": "mc01",
+    "mode": "L",
+    "part": 2,
+    "skill": "確認數量",
+    "material": "How many name tags should I set aside for visitors?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "Put them on the chairs.",
+      "Six, plus one spare.",
+      "At the visitor entrance."
+    ],
+    "right": 1,
+    "why": "How many 問數量。六張再加一張備用，共要留下七張名牌。"
+  },
+  {
+    "id": "mc02",
+    "mode": "L",
+    "part": 2,
+    "skill": "替代方案",
+    "material": "Would you like a paper copy of the floor plan?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "The floor was cleaned yesterday.",
+      "A copy shop on Pine Street.",
+      "A link to the digital version would be easier."
+    ],
+    "right": 2,
+    "why": "對方問是否需要紙本。回答者表示電子版連結更方便，提出了另一種取得平面圖的方式。"
+  },
+  {
+    "id": "mc03",
+    "mode": "L",
+    "part": 3,
+    "skill": "找出延誤原因",
+    "material": "Can we send the new menu to the printer this morning?||The prices are final, but the photographer is still editing the cover image. She promised to send it by noon.",
+    "prompt": "What is the team waiting for?",
+    "choices": [
+      "A finished photograph.",
+      "A revised price list.",
+      "A printing estimate.",
+      "A delivery address."
+    ],
+    "right": 0,
+    "why": "價格已確定。but 之後才是阻礙送印的原因，封面照片仍在編修。"
+  },
+  {
+    "id": "mc04",
+    "mode": "L",
+    "part": 3,
+    "skill": "判讀下一步",
+    "material": "My visitor pass expires at five, and the seminar runs until six.||The reception desk can extend it. Show them your registration email before the afternoon break.",
+    "prompt": "What should the visitor do?",
+    "choices": [
+      "Leave the seminar at five.",
+      "Request a different seminar.",
+      "Print a new invitation at home.",
+      "Take proof of registration to reception."
+    ],
+    "right": 3,
+    "why": "櫃檯可以延長通行時間，訪客需要出示報名電郵。proof of registration 改寫了 registration email。"
+  },
+  {
+    "id": "mc05",
+    "mode": "L",
+    "part": 4,
+    "skill": "辨認替代服務",
+    "material": "A message for guests at Harbor Lodge. The dining room will open an hour late tomorrow while we inspect the ovens. Guests leaving before seven may collect a packed breakfast from the front desk. Please place your order there tonight.",
+    "prompt": "What should guests leaving early do tonight?",
+    "choices": [
+      "Inspect the dining room.",
+      "Order breakfast at reception.",
+      "Return their room keys.",
+      "Pick up their packed meals."
+    ],
+    "right": 1,
+    "why": "tonight 是預訂的時間，隔天提早離開時才領餐。front desk 與 reception 同義。"
+  },
+  {
+    "id": "mc06",
+    "mode": "L",
+    "part": 4,
+    "skill": "區分必要與選配",
+    "material": "Thank you for joining our walking tour. A map is included in your ticket price. If you would like to borrow a headset, leave a ten-dollar deposit with your guide. You will get the money back when you return the headset.",
+    "prompt": "Under what condition will a visitor get the deposit back?",
+    "choices": [
+      "By showing the map.",
+      "By buying a second ticket.",
+      "By handing back the headset.",
+      "By reserving the next tour."
+    ],
+    "right": 2,
+    "why": "押金只適用於借用耳機的人。when you return the headset 說明退還押金的條件。"
+  },
+  {
+    "id": "mc07",
+    "mode": "R",
+    "part": 5,
+    "skill": "比較級",
+    "material": "",
+    "prompt": "The revised checklist is _____ to follow than the previous version.",
+    "choices": [
+      "easiest",
+      "easily",
+      "ease",
+      "easier"
+    ],
+    "right": 3,
+    "why": "than 引出比較對象，easy 的比較級是 easier。整句表示修訂後的清單更容易照著做。"
+  },
+  {
+    "id": "mc08",
+    "mode": "R",
+    "part": 5,
+    "skill": "所有格限定詞",
+    "material": "",
+    "prompt": "Before entering the laboratory, visitors must place _____ bags in a locker.",
+    "choices": [
+      "their",
+      "they",
+      "them",
+      "theirs"
+    ],
+    "right": 0,
+    "why": "空格後已有名詞 bags，需要用所有格限定詞 their 來表示訪客的包袋。"
+  },
+  {
+    "id": "mc09",
+    "mode": "R",
+    "part": 6,
+    "skill": "對應指示",
+    "material": "Please attach a label to each box before the movers arrive. _____. This will help the crew take each box directly to the right office.",
+    "prompt": "Which sentence best fills the gap?",
+    "choices": [
+      "The elevators were installed last year.",
+      "We have not chosen a moving company.",
+      "Write the destination room number on the label.",
+      "Most offices use the same size boxes."
+    ],
+    "right": 2,
+    "why": "後句說搬運人員可以直接找到正確辦公室，因此標籤上要註明目的地房號。"
+  },
+  {
+    "id": "mc10",
+    "mode": "R",
+    "part": 6,
+    "skill": "動作先後",
+    "material": "Thank you for sending the draft flyer. Our editor will check the event details this afternoon. _____ she finishes, we will send you the file for final approval.",
+    "prompt": "Which word best fills the gap?",
+    "choices": [
+      "Despite",
+      "Once",
+      "During",
+      "Unless"
+    ],
+    "right": 1,
+    "why": "Once she finishes 表示編輯完成檢查後，就會寄出檔案請對方核准。During 和 despite 不能直接接這個完整子句。"
+  },
+  {
+    "id": "mc11",
+    "mode": "R",
+    "part": 7,
+    "skill": "重述時間要求",
+    "material": "Garden Center pickup notice\nOnline orders are held for three days after the pickup email is sent. Need more time? Reply to that email before the hold expires and we can keep the order for two extra days.",
+    "prompt": "How can customers extend the pickup period?",
+    "choices": [
+      "Place a second order.",
+      "Pay a storage fee at the center.",
+      "Wait for the order to expire.",
+      "Reply to the pickup email before the deadline."
+    ],
+    "right": 3,
+    "why": "通知要求在保留期限屆滿前回覆取貨電郵，才能多保留兩天。"
+  },
+  {
+    "id": "mc12",
+    "mode": "R",
+    "part": 7,
+    "skill": "比對數量與包裝",
+    "material": "Supply catalog • Sketchbooks are sold in packs of eight. Packs cannot be split.\nInstructor’s note • We expect 27 students. Each needs one sketchbook. There are five unused sketchbooks in the cupboard.",
+    "prompt": "What is the smallest number of packs the instructor should order?",
+    "choices": [
+      "Two.",
+      "Three.",
+      "Four.",
+      "Five."
+    ],
+    "right": 1,
+    "why": "27 人扣掉現有 5 本，還缺 22 本。每包 8 本，2 包不足，3 包共 24 本才夠。"
+  },
+  {
+    "id": "md01",
+    "mode": "L",
+    "part": 2,
+    "skill": "辨認負責人",
+    "material": "Who should approve the changes to the lobby display?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "On the ground floor.",
+      "Before the lobby opens.",
+      "The branch manager handles that."
+    ],
+    "right": 2,
+    "why": "Who 問的是負責人。handles that 表示分行經理負責處理這件事。"
+  },
+  {
+    "id": "md02",
+    "mode": "L",
+    "part": 2,
+    "skill": "澄清選項",
+    "material": "Are these folders for the new hires or for their supervisors?",
+    "prompt": "Choose the best response.",
+    "choices": [
+      "The new hires get them at orientation.",
+      "Yes, it was a new folder.",
+      "She supervises the night shift."
+    ],
+    "right": 0,
+    "why": "這是二選一的問句。回答說明資料夾要在職前說明會發給新進人員。"
+  },
+  {
+    "id": "md03",
+    "mode": "L",
+    "part": 3,
+    "skill": "數量修正",
+    "material": "I ordered thirty mugs for the awards dinner. That should cover everyone, right?||We have thirty guests, but the two hosts need mugs as well. Could you add two to the order?",
+    "prompt": "How many mugs are needed in total?",
+    "choices": [
+      "Two.",
+      "Twenty-eight.",
+      "Thirty.",
+      "Thirty-two."
+    ],
+    "right": 3,
+    "why": "原有三十位賓客，另有兩位主持人也需要杯子，合計三十二個。"
+  },
+  {
+    "id": "md04",
+    "mode": "L",
+    "part": 3,
+    "skill": "間接表達偏好",
+    "material": "I found a cheaper flight for the conference, but it lands at midnight.||My presentation starts at eight the next morning. Is the earlier flight still available?",
+    "prompt": "Why does the second speaker ask about the earlier flight?",
+    "choices": [
+      "It costs less.",
+      "The speaker has an early commitment.",
+      "The conference ends at midnight.",
+      "The hotel has canceled the booking."
+    ],
+    "right": 1,
+    "why": "對方提到隔天早上八點就要簡報，因此詢問能較早抵達的航班。"
+  },
+  {
+    "id": "md05",
+    "mode": "L",
+    "part": 4,
+    "skill": "分辨公告對象",
+    "material": "This announcement is for exhibitors at the craft fair. You may unload your goods at the south gate until nine. After unloading, move your vehicle to the field behind the hall. The spaces beside the gate must stay clear for other deliveries.",
+    "prompt": "Where should exhibitors park after unloading?",
+    "choices": [
+      "In the field behind the hall.",
+      "Beside the south gate.",
+      "Inside the exhibition hall.",
+      "At the visitor entrance."
+    ],
+    "right": 0,
+    "why": "南門只供卸貨。After unloading 引出下一步，要把車移到會場後方的空地。"
+  },
+  {
+    "id": "md06",
+    "mode": "L",
+    "part": 4,
+    "skill": "依條件採取行動",
+    "material": "You have reached Meadow Clinic. If you already have an appointment and only need to change the time, press four. For a copy of a past invoice, press two. To book your first visit, please stay on the line.",
+    "prompt": "What should a caller do to reschedule an existing visit?",
+    "choices": [
+      "Press two.",
+      "Wait for an operator.",
+      "Press four.",
+      "Call back after the visit."
+    ],
+    "right": 2,
+    "why": "reschedule 是重新安排時間，對應 change the time。已有預約且只需改時間的人要按四。"
+  },
+  {
+    "id": "md07",
+    "mode": "R",
+    "part": 5,
+    "skill": "不可數名詞的一致性",
+    "material": "",
+    "prompt": "The equipment for the outdoor screenings _____ stored in the basement between events.",
+    "choices": [
+      "are",
+      "is",
+      "have",
+      "were"
+    ],
+    "right": 1,
+    "why": "主詞 equipment 是不可數名詞，即使指多件器材也用單數 is。for the outdoor screenings 是修飾語。"
+  },
+  {
+    "id": "md08",
+    "mode": "R",
+    "part": 5,
+    "skill": "固定搭配",
+    "material": "",
+    "prompt": "The editor looks forward to _____ the final manuscript next week.",
+    "choices": [
+      "receive",
+      "received",
+      "receives",
+      "receiving"
+    ],
+    "right": 3,
+    "why": "look forward to 中的 to 是介系詞，後接動名詞 receiving，表示期待收到最終稿件。"
+  },
+  {
+    "id": "md09",
+    "mode": "R",
+    "part": 6,
+    "skill": "篇章對比",
+    "material": "All four branches used to close at six. Starting next month, the downtown branch will stay open until eight on weekdays. _____. Please check your branch name before planning an evening visit.",
+    "prompt": "Which sentence best fills the gap?",
+    "choices": [
+      "The other three will keep their current closing time.",
+      "All branches will open two hours later.",
+      "The downtown branch closed permanently.",
+      "A new branch is under construction abroad."
+    ],
+    "right": 0,
+    "why": "下一句提醒讀者確認分店，因為延長營業只適用於市中心分店，其餘三家仍於六點打烊。"
+  },
+  {
+    "id": "md10",
+    "mode": "R",
+    "part": 6,
+    "skill": "字義與語境",
+    "material": "We appreciate your feedback on the prototype. Several testers found the handle difficult to grip. The design team will _____ the handle to make it easier to hold. A new sample will be ready in April.",
+    "prompt": "Which word best fills the gap?",
+    "choices": [
+      "invoice",
+      "attend",
+      "reshape",
+      "postpone"
+    ],
+    "right": 2,
+    "why": "測試者反映握把不好握，設計團隊要改變其形狀。reshape 表示重新塑形。"
+  },
+  {
+    "id": "md11",
+    "mode": "R",
+    "part": 7,
+    "skill": "辨識合格對象",
+    "material": "Recognition program • Staff may nominate a colleague who has worked here for at least one year. Managers may submit nominations but cannot be nominated. Each nomination must include a short example of the colleague’s work.",
+    "prompt": "Who is eligible to receive the award?",
+    "choices": [
+      "A manager with five years of service.",
+      "A technician who joined three years ago and has no management duties.",
+      "A new assistant in her first month.",
+      "A customer who visits the office every week."
+    ],
+    "right": 1,
+    "why": "獲提名者必須是任職至少一年的非主管員工。服務三年的技術員符合這兩項條件。"
+  },
+  {
+    "id": "md12",
+    "mode": "R",
+    "part": 7,
+    "skill": "比對行程與票種",
+    "material": "Ferry schedule • Island departures: 8:20, 10:20, 12:20. Boarding closes ten minutes before each departure.\nTicket email • Your ticket is valid for the 10:20 departure only. To change sailings, visit the ticket office before boarding closes.",
+    "prompt": "When does boarding close for this passenger’s booked sailing?",
+    "choices": [
+      "8:10.",
+      "10:20.",
+      "12:10.",
+      "10:10."
+    ],
+    "right": 3,
+    "why": "票券指定搭乘 10:20 的船班，登船在十分鐘前的 10:10 截止，因此換班須在 10:10 之前辦理。"
   }
 ];
